@@ -1,0 +1,31 @@
+.headlogo {
+  @apply block;
+  background-image: url('/assets/images/logo-7ddb1f8f39.png');
+  background-size: 155px 48px;
+  height: 48px;
+  width: 155px;
+}
+
+.headlogoSide {
+  @apply block;
+  @apply mx-auto;
+  background-image: url('/assets/images/logo-7ddb1f8f39.png');
+  background-size: 155px 48px;
+  height: 48px;
+  width: 155px;
+}
+
+@media screen and (max-width: 639px) {
+  .headlogo {
+    background-size: 110px 34px;
+    height: 34px;
+    width: 110px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .headlogo,
+  .headlogoSide {
+    background-image: url('/assets/images/logo-dark-7ddb1f8f39.png');
+  }
+}

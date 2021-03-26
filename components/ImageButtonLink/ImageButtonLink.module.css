@@ -1,0 +1,28 @@
+.link {
+  @apply h-full;
+  @apply flex;
+  @apply items-center;
+  @apply border;
+  @apply rounded-lg;
+  @apply border-gray-200;
+  @apply bg-white;
+}
+
+.link:hover {
+  @apply bg-gray-200;
+  @apply border-gray-300;
+  @apply no-underline;
+}
+
+@media (prefers-color-scheme: dark) {
+  .link {
+    @apply border-gray-500;
+    @apply bg-black;
+  }
+
+  .link:hover {
+    @apply bg-gray-500;
+    @apply border-gray-600;
+    @apply no-underline;
+  }
+}
