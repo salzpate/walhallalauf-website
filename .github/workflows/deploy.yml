@@ -32,11 +32,9 @@ jobs:
     - name: FTP Deploy
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
       with:
-        ftp-server: ${{ secrets.FTP_SERVER }}
+        ftp-server: sftp://${{ secrets.FTP_SERVER }}
         ftp-username: ${{ secrets.FTP_USERNAME }}
         ftp-password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ${{ env.FTP_LOCAL_DIR }}
         entryPoint: ${{ secrets.FTP_SERVER_DIR }}
-        protocol: ${{ secrets.FTP_PROTOCOL }}
-        port: ${{ secrets.FTP_PORT }}
         git-ftp-args: --insecure
