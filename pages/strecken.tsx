@@ -22,7 +22,6 @@ const Strecken: FunctionComponent = () => {
         </div>
       </PageSection>
       <PageSection headline="10 km Lauf" id="lauf10" subSection className="pb-8">
-
         <h4 className="font-bold pb-4">Profil</h4>
         <div>10 km Rundkurs, flach, meist geteert, geschottert</div>
 
@@ -35,7 +34,7 @@ const Strecken: FunctionComponent = () => {
         durch und nach 20m wieder links unter der Walhalla entlang. Bei Donaustauf Ost die Straße überqueren, im Fürstengarten einbiegen und Richtung Ziel laufen.</div>
           </div>
           <div className="w-full md:w-1/3 md:flex-shrink-0 md:justify-center">
-            <img src="/assets/images/strecken-10km.jpg" alt="10 km Lauf" />
+            <img src="/assets/images/strecken-10km.jpg" alt="Strecke 10 km Lauf" />
             <div className="my-4">
               <a href="/assets/gpx/walhallalauf-10-km.gpx" className="button-link w-full block bg-transparent text-secondary dark:text-secondary-dark text-sm uppercase tracking-wider py-2 px-4 border border-secondary rounded transition ease-in-out duration-150 hover:bg-secondary hover:bg-opacity-15 dark:border-secondary-dark dark:hover:bg-secondary-dark">
                 GPX-Datei (10km Strecke)
@@ -55,7 +54,7 @@ const Strecken: FunctionComponent = () => {
         links unter der Walhalla entlang. Bei Donaustauf Ost die Straße überqueren, im Fürstengarten einbiegen und Richtung Ziel laufen.</div>
           </div>
           <div className="w-full md:w-1/3 md:flex-shrink-0 md:justify-center">
-            <img src="/assets/images/strecken-5km.jpg" alt="5 km Lauf" />
+            <img src="/assets/images/strecken-5km.jpg" alt="Strecke 5 km Lauf" />
             <div className="my-4">
               <a href="/assets/gpx/walhallalauf-5-km.gpx" className="button-link w-full block bg-transparent text-secondary dark:text-secondary-dark text-sm uppercase tracking-wider py-2 px-4 border border-secondary rounded transition ease-in-out duration-150 hover:bg-secondary hover:bg-opacity-15 dark:border-secondary-dark dark:hover:bg-secondary-dark">
                 GPX-Datei (5km Strecke)
@@ -76,7 +75,7 @@ const Strecken: FunctionComponent = () => {
         Wörther Straße überqueren und im Fürstengarten ins Ziel Walken.</div>
           </div>
           <div className="w-full md:w-1/3 md:flex-shrink-0 md:justify-center">
-            <img src="/assets/images/strecken-waldlauf.jpg" alt="Waldlauf" />
+            <img src="/assets/images/strecken-waldlauf.jpg" alt="Strecke Waldlauf" />
             <div className="my-4">
               <a href="/assets/gpx/walhallalauf-7-km.gpx" className="button-link w-full block bg-transparent text-secondary dark:text-secondary-dark text-sm uppercase tracking-wider py-2 px-4 border border-secondary rounded transition ease-in-out duration-150 hover:bg-secondary hover:bg-opacity-15 dark:border-secondary-dark dark:hover:bg-secondary-dark">
                 GPX-Datei (Waldlauf Strecke)
@@ -94,7 +93,7 @@ const Strecken: FunctionComponent = () => {
             <div>Der Start erfolgt in Richtung Osten etwas unterhalb der Zielbereiches. Am chinesischen Turm wird zweimal hintereinander links abgebogen. Es werden drei Runden gelaufen, bevor es ins Ziel geht.</div>
           </div>
           <div className="w-full md:w-1/3 md:flex-shrink-0 md:justify-center">
-            <img src="/assets/images/strecken-kidsrun.jpg" alt="Kid's Run" />
+            <img src="/assets/images/strecken-kidsrun.jpg" alt="Strecke Kid's Run" />
             <div className="my-4">
               <a href="/assets/gpx/walhallalauf-kidsrun.gpx" className="button-link w-full block bg-transparent text-secondary dark:text-secondary-dark text-sm uppercase tracking-wider py-2 px-4 border border-secondary rounded transition ease-in-out duration-150 hover:bg-secondary hover:bg-opacity-15 dark:border-secondary-dark dark:hover:bg-secondary-dark">
                 GPX-Datei (Kid's Run Strecke)
@@ -107,7 +106,14 @@ const Strecken: FunctionComponent = () => {
         <h4 className="font-bold pb-4">Profil</h4>
         <div>400 m Strecke, geschottert (bis 7 Jahre)</div>
         <h4 className="text-lg tracking-wide font-medium py-4">Wegbeschreibung</h4>
-        <div>Der Start erfolgt in Richtung Osten etwas unterhalb der Zielbereiches. Am chinesischen Turm wird zweimal hintereinander links abgebogen, bevor es ins Ziel geht.</div>
+        <div className="md:inline-flex">
+          <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
+            <div>Der Start erfolgt in Richtung Osten etwas unterhalb der Zielbereiches. Am chinesischen Turm wird zweimal hintereinander links abgebogen, bevor es ins Ziel geht.</div>
+          </div>
+          <div className="w-full md:w-1/3 md:flex-shrink-0 md:justify-center">
+            <img src="/assets/images/strecken-bambini.jpg" alt="Strecke Bambinilauf" />
+          </div>
+        </div>
       </PageSection>
     </Layout>
   );
