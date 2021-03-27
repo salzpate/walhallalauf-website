@@ -29,12 +29,11 @@ jobs:
         npm run build --if-present
         npm run export --if-present
         npm run sitemap --if-present
-    - name: FTP Deploy
-      uses: SamKirkland/FTP-Deploy-Action@3.1.1
+    - name: SFTP Deploy
+      uses: wangyucode/sftp-upload-action@1.1
       with:
-        ftp-server: sftp://${{ secrets.FTP_SERVER }}
-        ftp-username: ${{ secrets.FTP_USERNAME }}
-        ftp-password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ${{ env.FTP_LOCAL_DIR }}
-        entryPoint: ${{ secrets.FTP_SERVER_DIR }}
-        git-ftp-args: --insecure
+        host: ${{ secrets.FTP_SERVER }},
+        username: ${{ secrets.FTP_USERNAME }},
+        password: ${{ secrets.FTP_PASSWORD }},
+        localDir: ${{ env.FTP_LOCAL_DIR }},
+        remoteDir: ${{ secrets.FTP_SERVER_DIR }}
