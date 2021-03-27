@@ -39,4 +39,3 @@ jobs:
         server-dir: ${{ secrets.FTP_SERVER_DIR }}
         protocol: ${{ secrets.FTP_PROTOCOL }}
         port: ${{ secrets.FTP_PORT }}
-        git-ftp-args: --insecure
