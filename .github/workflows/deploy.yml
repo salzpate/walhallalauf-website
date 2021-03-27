@@ -29,12 +29,11 @@ jobs:
         npm run build --if-present
         npm run export --if-present
         npm run sitemap --if-present
-    - name: FTP Deployer
-      uses: sand4rt/ftp-deployer@v1.2
+    - name: SFTP uploader
+      uses: wangyucode/sftp-upload-action@v1.1
       with:
-        sftp: true
         host: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local_folder: ${{ env.FTP_LOCAL_DIR }}
-        remote_folder: ${{ secrets.FTP_SERVER_DIR }}
+        localDir: ${{ env.FTP_LOCAL_DIR }}
+        remoteDir: ${{ secrets.FTP_SERVER_DIR }}
