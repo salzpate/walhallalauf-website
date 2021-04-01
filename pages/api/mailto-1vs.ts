@@ -6,6 +6,5 @@ type Data = {
 
 export default (req: NextApiRequest, res: NextApiResponse<Data>) => {
   res.setHeader('Location', 'mailto:1.vorstand@sv-donaustauf.de');
-  res.redirect(307, 'mailto:1.vorstand@sv-donaustauf.de');
-  res.end(res.getHeader('Location'));
+  res.end();
 }

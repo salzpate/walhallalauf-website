@@ -24,7 +24,7 @@ const Contact: FunctionComponent = () => {
             <ContactCard name="Eduard Zimmermann" position="2. Vorstand" imageSrc="/assets/images/contact-zimmermann-618c567e52.jpg" email="2.ausdauer@sv-donaustauf.de" emailHref="/api/mailto-2aus/" />
           </div>
           <div className="sm:col-span-2 lg:col-span-2">
-            <ContactForm url="/lib/sendmail.php" />
+            <ContactForm url="/api/send-email/" />
           </div>
         </div>
       </PageSection>

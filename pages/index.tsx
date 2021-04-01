@@ -65,7 +65,7 @@ const Home: FunctionComponent = () => {
             <ContactCard name="Eduard Zimmermann" position="2. Vorstand" imageSrc="/assets/images/contact-zimmermann-618c567e52.jpg" email="2.ausdauer@sv-donaustauf.de" emailHref="/api/mailto-2aus/" className="bg-white dark:bg-black" />
           </div>
           <div className="sm:col-span-2 lg:col-span-2">
-            <ContactForm url="/lib/sendmail.php" style="white" />
+            <ContactForm url="/api/send-email/" style="white" />
           </div>
         </div>
       </PageSection>

@@ -4,7 +4,7 @@ const fs = require("fs");
 const BUILD_ID = fs.readFileSync(".next/BUILD_ID").toString();
 
 sitemap({
-  baseUrl: "https://walhallalauf.sv-donaustauf.info",
+  baseUrl: "https://www.walhallalauf.de",
   pagesDirectory: __dirname + "/.next/serverless/pages",
   targetDirectory: "public/",
   ignoredExtensions: ["js", "map"],
