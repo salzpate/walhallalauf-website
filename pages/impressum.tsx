@@ -10,7 +10,7 @@ const Impressum: FunctionComponent = () => {
     <Layout title={pageTitle + ' - ' + siteTitle}>
       <PageSection headline="Impressum" id="impressum">
         <div className="pb-8 page-section">
-          <h2 className="uppercase text-3xl dark:text-gray-200">Angaben gemäß § 5 TMG</h2>
+          <h2 className="uppercase text-xl sm:text-2xl lg:text-3xl dark:text-gray-200">Angaben gemäß § 5 TMG</h2>
           <br />
           SV Donaustauf e.V.
           <br />
@@ -29,24 +29,24 @@ const Impressum: FunctionComponent = () => {
           Vertretungsberechtigter Vorstand (§ 26 BGB): Eduard Zimmermann <a href="tel:+499403967488">+49 9403 967488</a>
           <br />
           <br />
-          <h2 className="uppercase text-3xl dark:text-gray-200">Kontakt</h2>
+          <h2 className="uppercase text-xl sm:text-2xl lg:text-3xl dark:text-gray-200">Kontakt</h2>
           <br />
           Telefon: <a href="tel:+4994034613">+49 9403 4613</a>
           <br />
           Telefax: <a href="tel:+499403518915">+49 9403 518915</a>
           <br />
           E-Mail:{' '}
-          <a href="/lib/mailto-1vs.php" rel="nofollow noreferrer">
+          <a href="/api/mailto-1vs/" rel="nofollow noreferrer">
             1.Vorstand<span className="hidden">beuro</span>@sv-donaustauf.de
           </a>
           <br />
           <br />
-          <h2 className="uppercase text-3xl dark:text-gray-200">Umsatzsteuer-ID</h2>
+          <h2 className="uppercase text-xl sm:text-2xl lg:text-3xl dark:text-gray-200">Umsatzsteuer-ID</h2>
           <br />
           Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: 244 / 110 / 90023
           <br />
           <br />
-          <h2 className="uppercase text-3xl dark:text-gray-200">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
+          <h2 className="uppercase text-xl sm:text-2xl lg:text-3xl dark:text-gray-200">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
           <br />
           Ronny Krammer
           <br />
@@ -55,7 +55,7 @@ const Impressum: FunctionComponent = () => {
           93093 Donaustauf
           <br />
           <br />
-          <h2 className="uppercase text-3xl dark:text-gray-200">EU-Streitschlichtung</h2>
+          <h2 className="uppercase text-xl sm:text-2xl lg:text-3xl dark:text-gray-200">EU-Streitschlichtung</h2>
           <br />
           Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:{' '}
           <a href="https://ec.europa.eu/consumers/odr" rel="nofollow noreferrer" target="_blank">
@@ -64,12 +64,12 @@ const Impressum: FunctionComponent = () => {
           . Unsere E-Mail-Adresse finden Sie oben im Impressum.
           <br />
           <br />
-          <h2 className="uppercase text-3xl dark:text-gray-200">Verbraucher­streit­beilegung / Universal­schlichtungs­stelle</h2>
+          <h2 className="uppercase text-xl sm:text-2xl lg:text-3xl dark:text-gray-200">Verbraucher­streit­beilegung / Universal­schlichtungs­stelle</h2>
           <br />
           Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
           <br />
           <br />
-          <h2 className="uppercase text-3xl dark:text-gray-200">Haftung für Inhalte</h2>
+          <h2 className="uppercase text-xl sm:text-2xl lg:text-3xl dark:text-gray-200">Haftung für Inhalte</h2>
           <br />
           Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder
           gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
@@ -79,7 +79,7 @@ const Impressum: FunctionComponent = () => {
           Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
           <br />
           <br />
-          <h2 className="uppercase text-3xl dark:text-gray-200">Haftung für Links</h2>
+          <h2 className="uppercase text-xl sm:text-2xl lg:text-3xl dark:text-gray-200">Haftung für Links</h2>
           <br />
           Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der
           jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht
@@ -89,7 +89,7 @@ const Impressum: FunctionComponent = () => {
           Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
           <br />
           <br />
-          <h2 className="uppercase text-3xl dark:text-gray-200">Urheberrecht</h2>
+          <h2 className="uppercase text-xl sm:text-2xl lg:text-3xl dark:text-gray-200">Urheberrecht</h2>
           <br />
           Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des
           Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.
@@ -99,7 +99,7 @@ const Impressum: FunctionComponent = () => {
           Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
           <br />
           <br />
-          <h2 className="uppercase text-3xl dark:text-gray-200">Haftungsausschluss</h2>
+          <h2 className="uppercase text-xl sm:text-2xl lg:text-3xl dark:text-gray-200">Haftungsausschluss</h2>
           <br />
           § 1 Inhalt des Onlineangebotes
           <br />

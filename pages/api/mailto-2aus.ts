@@ -5,5 +5,6 @@ type Data = {
 }
 
 export default (req: NextApiRequest, res: NextApiResponse<Data>) => {
-  res.status(200).json({ name: 'Hello World' })
+  res.setHeader('Location', 'mailto:2.ausdauer@sv-donaustauf.de');
+  res.end(res.getHeader('Location'));
 }
