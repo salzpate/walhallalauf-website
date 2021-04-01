@@ -21,7 +21,8 @@ const Strecken: FunctionComponent = () => {
           <Banner type={BannerTypes.warning}>Durch die aktuelle Situation können wir leider noch nicht sagen, ob wir wieder alle Strecken anbieten können. Bis zur endgültigen Version der Ausschreibung ab ca. 01.09.2021 kann es noch zu Änderungen kommen.</Banner>
         </div>
       </PageSection>
-      <PageSection headline="10 km Lauf" id="lauf10" subSection className="pb-8">
+      <a id="lauf10"></a>
+      <PageSection headline="10 km Lauf" id="sectionlauf10" subSection className="pb-8">
         <h4 className="font-bold pb-4">Profil</h4>
         <div>10 km Rundkurs, flach, meist geteert, geschottert</div>
 
@@ -43,7 +44,8 @@ const Strecken: FunctionComponent = () => {
           </div>
         </div>
       </PageSection>
-      <PageSection headline="5 km Lauf" id="lauf5" subSection className="bg-gray-200 dark:bg-gray-900 sm:pb-8 page-section pb-8">
+      <a id="lauf5"></a>
+      <PageSection headline="5 km Lauf" id="sectionlauf5" subSection className="bg-gray-200 dark:bg-gray-900 sm:pb-8 page-section pb-8">
         <h4 className="font-bold pb-4">Profil</h4>
         <div>5,4 km Rundkurs, flach, meist geteert</div>
         <h4 className="text-lg tracking-wide font-medium py-4">Wegbeschreibung</h4>
@@ -63,7 +65,8 @@ const Strecken: FunctionComponent = () => {
           </div>
         </div>
       </PageSection>
-      <PageSection headline="7,1 km Waldlauf und Nordic Walken" id="waldlauf" subSection className="pb-8">
+      <a id="waldlauf"></a>
+      <PageSection headline="7,1 km Waldlauf und Nordic Walken" id="sectionwaldlauf" subSection className="pb-8">
         <h4 className="font-bold pb-4">Profil</h4>
         <div>7,1 km Rundkurs, anspruchvoll (ca. 160 HM) geteert, geschottert und Waldweg</div>
         <h4 className="text-lg tracking-wide font-medium py-4">Wegbeschreibung</h4>
@@ -84,7 +87,8 @@ const Strecken: FunctionComponent = () => {
           </div>
         </div>
       </PageSection>
-      <PageSection headline="1,6 km Kid's Run" id="kidsrun" subSection className="bg-gray-200 dark:bg-gray-900 sm:pb-8 page-section pb-8">
+      <a id="kidsrun"></a>
+      <PageSection headline="1,6 km Kid's Run" id="sectionkidsrun" subSection className="bg-gray-200 dark:bg-gray-900 sm:pb-8 page-section pb-8">
         <h4 className="font-bold pb-4">Profil</h4>
         <div>1,6 km Rundkurs, 3 Runden, geschottert (ab 7 Jahre)</div>
         <h4 className="text-lg tracking-wide font-medium py-4">Wegbeschreibung</h4>
@@ -102,7 +106,8 @@ const Strecken: FunctionComponent = () => {
           </div>
         </div>
       </PageSection>
-      <PageSection headline="400 m Bambinilauf" id="bambini" subSection className="pb-8">
+      <a id="bambini"></a>
+      <PageSection headline="400 m Bambinilauf" id="sectionbambini" subSection className="pb-8">
         <h4 className="font-bold pb-4">Profil</h4>
         <div>400 m Strecke, geschottert (bis 7 Jahre)</div>
         <h4 className="text-lg tracking-wide font-medium py-4">Wegbeschreibung</h4>
