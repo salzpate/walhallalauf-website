@@ -8,7 +8,7 @@ sitemap({
   pagesDirectory: __dirname + "/.next/serverless/pages",
   targetDirectory: "public/",
   ignoredExtensions: ["js", "map"],
-  ignoredPaths: ["404"],
+  ignoredPaths: ["404", "500"],
   ignoreIndexFiles: true,
   nextConfigPath: __dirname + "/next.config.js",
 });
