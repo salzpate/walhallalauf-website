@@ -11,5 +11,4 @@ sitemap({
   ignoredPaths: ["404"],
   ignoreIndexFiles: true,
   nextConfigPath: __dirname + "/next.config.js",
-  targetDirectory : 'out/',
 });
