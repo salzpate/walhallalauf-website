@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && node sitemap_generator.js",
+    "build": "next build",
     "export": "next export",
     "start": "next start",
     "sitemap": "node sitemap_generator.js"
