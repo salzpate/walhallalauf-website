@@ -20,7 +20,7 @@ const Ausschreibung: FunctionComponent = () => {
           <Banner type={BannerTypes.warning}>Durch die aktuelle Situation können wir hier bisher leider nur eine vorläufige Ausschreibung anzeigen. Bis zur endgültigen Version ab ca. 01.09.2021 kann es noch zu Änderungen kommen.</Banner>
         </div>
         <DataList headline="Veranstaltung">11. Walhallalauf</DataList>
-        <DataList headline="Termin">Sonntag, 03.10.2021</DataList>
+        <DataList headline="Termin">Samstag, 25.09.2021</DataList>
         <DataList headline="Veranstalter">SV Donaustauf, Abteilung Ausdauer</DataList>
         <DataList headline="Ort">
           Fürstengarten <br />
@@ -105,9 +105,9 @@ const Ausschreibung: FunctionComponent = () => {
           93093 Donaustauf
           <br />
           <br />
-          02.20.2021 von 17:00 Uhr – 19:00 Uhr
+          24.09.2021 von 17:00 Uhr – 19:00 Uhr
           <br />
-          03.10. von 10:00 Uhr bis 15 Minuten vor dem jeweiligen Start möglich.
+          25.09. von 10:00 Uhr bis 15 Minuten vor dem jeweiligen Start möglich.
         </DataList>
         <DataList headline="Zeitnahme">
           Mit Transponder durch Zeitgemaess GmbH bei 5 km Lauf, 7 km Waldlauf, 10 km Lauf und Nordic-Walking.
