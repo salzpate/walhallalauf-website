@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 type ContactCardProps = {
   className?: string;
   email?: string;

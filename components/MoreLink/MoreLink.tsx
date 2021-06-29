@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { PropsWithChildren, ReactNode } from 'react';
 import { UrlObject } from 'url';
 import cn from 'classnames';

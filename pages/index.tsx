@@ -14,19 +14,29 @@ const Home: FunctionComponent = () => {
     <Layout>
       <HeaderImage text1={HEADER_LINE_1} text2={HEADER_LINE_2} imageClass={styles.headerimage} />
       <section id="fuss" className="page-section">
-        <div className="max-w-screen-xl mx-auto tracking-wide text-gray-900 dark:text-gray-300 py-4 text-center font-bold text-2xl sm:text-3xl lg:text-4xl sm:py-6 lg:px-8 lg:py-8">
-          Donaustauf erleben - Der Lauf am Fuße der Walhalla
-        </div>
+        <div className="max-w-screen-xl mx-auto tracking-wide text-gray-900 dark:text-gray-300 py-4 text-center font-bold text-2xl sm:text-3xl lg:text-4xl sm:py-6 lg:px-8 lg:py-8">Donaustauf erleben - Der Lauf am Fuße der Walhalla</div>
       </section>
 
       <PageSection headline="Aktuelles" id="aktuelles" subSection className="pb-12 sm:pb-16 page-section">
         <div className="max-w-screen-xl mx-auto text-gray-900 dark:text-gray-300">
           <p>Der Walhallalauf musste leider als einer der ersten Läufe im vergangenen Jahr abgesagt werden und die Pandemie führte danach noch zu vielen weiteren Absagen.</p>
-          <p>Nach Monaten einsamer Trainingsrunden und dem Fehlen der Veranstaltungen stellen wir immer mehr fest, dass unsere Motivation langsam nachlässt. Zusammen zu laufen, ob gegen andere oder nur gegen deine eigene Zeit, macht immer noch am meisten Spaß. Wir brauchen endlich wieder neue Ziele und vermissen die Atmosphäre der Veranstaltungen und das Kribbeln kurz vor dem Start.</p>
+          <p>
+            Nach Monaten einsamer Trainingsrunden und dem Fehlen der Veranstaltungen stellen wir immer mehr fest, dass unsere Motivation langsam nachlässt. Zusammen zu laufen, ob gegen andere oder nur gegen deine eigene Zeit, macht immer
+            noch am meisten Spaß. Wir brauchen endlich wieder neue Ziele und vermissen die Atmosphäre der Veranstaltungen und das Kribbeln kurz vor dem Start.
+          </p>
           <DisplayMore>
-            <p>Uns war sehr schnell klar, dass wir 2021 unbedingt wieder einen Lauf anbieten wollen, da hinter dem Walhallalauf auch seit Jahren ein Benefiz Gedanke steht und das Ziel Kinder und Jugendliche dem Spaß am Sport näher zu bringen.</p>
-            <p>Leider können wir unseren üblichen Termin im April dieses Jahres nicht einhalten. Nach vielen Überlegungen und viel Hin und Her denken wir, endlich ein Datum gefunden zu haben, an dem der Lauf allen Spaß machen könnte und auch alle gesund bleiben.</p>
-            <p>Heute können wir noch nicht sicher sagen, ob und unter welchen Auflagen wir an den Start gehen können. Wir wissen auch noch nicht, ob wir wieder alle Strecken anbieten können. Deswegen wird es leider vorerst noch keine endgültige Ausschreibung geben und wir werden die Anmeldung vermutlich erst ab 1. September freischalten lassen. Aber wir haben heute schon ein Ziel und auch ein Datum.</p>
+            <p>
+              Uns war sehr schnell klar, dass wir 2021 unbedingt wieder einen Lauf anbieten wollen, da hinter dem Walhallalauf auch seit Jahren ein Benefiz Gedanke steht und das Ziel Kinder und Jugendliche dem Spaß am Sport näher zu
+              bringen.
+            </p>
+            <p>
+              Leider können wir unseren üblichen Termin im April dieses Jahres nicht einhalten. Nach vielen Überlegungen und viel Hin und Her denken wir, endlich ein Datum gefunden zu haben, an dem der Lauf allen Spaß machen könnte und auch
+              alle gesund bleiben.
+            </p>
+            <p>
+              Heute können wir noch nicht sicher sagen, ob und unter welchen Auflagen wir an den Start gehen können. Wir wissen auch noch nicht, ob wir wieder alle Strecken anbieten können. Deswegen wird es leider vorerst noch keine
+              endgültige Ausschreibung geben und wir werden die Anmeldung vermutlich erst ab 1. September freischalten lassen. Aber wir haben heute schon ein Ziel und auch ein Datum.
+            </p>
             <p>Wir wünschen allen ein verletzungsfreies und erfolgreiches Sportjahr. Bleibt gesund und wir freuen uns auf euch.</p>
           </DisplayMore>
         </div>
@@ -35,22 +45,34 @@ const Home: FunctionComponent = () => {
         <div>Mit unseren Strecken decken wir alle Alters- und Leistungsstufen ab. Beim Walhallalauf geht es auch darum, etwas von Donaustauf zu erleben.</div>
         <div className="flex flex-wrap -m-2 my-6 sm:my-8">
           <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
-            <ImageButtonLink headline="10 km Lauf" href="/strecken/#lauf10" imgSrc="/assets/images/index-10km.jpg">10 km Rundkurs, flach, meist geteert, geschottert</ImageButtonLink>
+            <ImageButtonLink headline="10 km Lauf" href="/strecken/#lauf10" imgSrc="/assets/images/index-10km.jpg">
+              10 km Rundkurs, flach, meist geteert, geschottert
+            </ImageButtonLink>
           </div>
           <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
-            <ImageButtonLink headline="5 km Lauf" href="/strecken/#lauf5" imgSrc="/assets/images/index-5km.jpg">5,4 km Rundkurs, flach, meist geteert</ImageButtonLink>
+            <ImageButtonLink headline="5 km Lauf" href="/strecken/#lauf5" imgSrc="/assets/images/index-5km.jpg">
+              5,4 km Rundkurs, flach, meist geteert
+            </ImageButtonLink>
           </div>
           <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
-            <ImageButtonLink headline="Waldlauf" href="/strecken/#waldlauf" imgSrc="/assets/images/index-waldlauf.jpg">7,1 km Rundkurs, anspruchvoll (ca. 160 HM) geteert, geschottert und Waldweg</ImageButtonLink>
+            <ImageButtonLink headline="Waldlauf" href="/strecken/#waldlauf" imgSrc="/assets/images/index-waldlauf.jpg">
+              7,1 km Rundkurs, anspruchvoll (ca. 160 HM) geteert, geschottert und Waldweg
+            </ImageButtonLink>
           </div>
           <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
-            <ImageButtonLink headline="Nordic Walken" href="/strecken/#waldlauf" imgSrc="/assets/images/index-walken.jpg">7,1 km Rundkurs, anspruchvoll (ca. 160 HM) geteert, geschottert und Waldweg</ImageButtonLink>
+            <ImageButtonLink headline="Nordic Walken" href="/strecken/#waldlauf" imgSrc="/assets/images/index-walken.jpg">
+              7,1 km Rundkurs, anspruchvoll (ca. 160 HM) geteert, geschottert und Waldweg
+            </ImageButtonLink>
           </div>
           <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
-            <ImageButtonLink headline="1,6 km Kid's Run" href="/strecken/#kidsrun" imgSrc="/assets/images/index-kidsrun.jpg">1,6 km Rundkurs, 3 Runden, geschottert (ab 7 Jahre)</ImageButtonLink>
+            <ImageButtonLink headline="1,6 km Kid's Run" href="/strecken/#kidsrun" imgSrc="/assets/images/index-kidsrun.jpg">
+              1,6 km Rundkurs, 3 Runden, geschottert (ab 7 Jahre)
+            </ImageButtonLink>
           </div>
           <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
-            <ImageButtonLink headline="400 m Bambinilauf" href="/strecken/#bambini" imgSrc="/assets/images/index-bambini.jpg">400 m Strecke, geschottert (bis 7 Jahre)</ImageButtonLink>
+            <ImageButtonLink headline="400 m Bambinilauf" href="/strecken/#bambini" imgSrc="/assets/images/index-bambini.jpg">
+              400 m Strecke, geschottert (bis 7 Jahre)
+            </ImageButtonLink>
           </div>
         </div>
       </PageSection>
@@ -69,7 +91,7 @@ const Home: FunctionComponent = () => {
           </div>
         </div>
       </PageSection>
-    </Layout >
+    </Layout>
   );
 };
 

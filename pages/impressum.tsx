@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 import Layout from '@/components/Layout';
 import { siteTitle } from '@/components/Layout/Layout';
 import PageSection from '@/components/PageSection';
