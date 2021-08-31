@@ -17,10 +17,12 @@ const Ausschreibung: FunctionComponent = () => {
       <HeaderImage text1={HEADER_LINE_1} text2={HEADER_LINE_2} imageClass={styles.headerimage} />
       <PageSection headline={pageTitle} id="ausschreibung">
         <div className="mb-8">
-          <Banner type={BannerTypes.warning}>Durch die aktuelle Situation können wir hier bisher leider nur eine vorläufige Ausschreibung anzeigen. Bis zur endgültigen Version ab ca. 01.09.2021 kann es noch zu Änderungen kommen.</Banner>
+          <Banner type={BannerTypes.warning}>Leider sind wir auch 2021 wieder dazu gezwungen, den Walhallalauf abzusagen.</Banner>
         </div>
         <DataList headline="Veranstaltung">11. Walhallalauf</DataList>
-        <DataList headline="Termin">Samstag, 25.09.2021</DataList>
+        <DataList headline="Termin">
+          <span className="line-through">Samstag, 25.09.2021</span>
+        </DataList>
         <DataList headline="Veranstalter">SV Donaustauf, Abteilung Ausdauer</DataList>
         <DataList headline="Ort">
           Fürstengarten <br />

@@ -1,6 +1,5 @@
 import ContactCard from '@/components/Contact/ContactCard';
 import ContactForm from '@/components/Contact/ContactForm';
-import DisplayMore from '@/components/DisplayMore';
 import HeaderImage from '@/components/Header/HeaderImage';
 import ImageButtonLink from '@/components/ImageButtonLink';
 import Layout from '@/components/Layout';
@@ -19,26 +18,14 @@ const Home: FunctionComponent = () => {
 
       <PageSection headline="Aktuelles" id="aktuelles" subSection className="pb-12 sm:pb-16 page-section">
         <div className="max-w-screen-xl mx-auto text-gray-900 dark:text-gray-300">
-          <p>Der Walhallalauf musste leider als einer der ersten Läufe im vergangenen Jahr abgesagt werden und die Pandemie führte danach noch zu vielen weiteren Absagen.</p>
+          <p className="font-bold">Leider sind wir auch dieses Jahr wieder dazu gezwungen, den Walhallalauf abzusagen.</p>
+          <p>&nbsp;</p>
           <p>
-            Nach Monaten einsamer Trainingsrunden und dem Fehlen der Veranstaltungen stellen wir immer mehr fest, dass unsere Motivation langsam nachlässt. Zusammen zu laufen, ob gegen andere oder nur gegen deine eigene Zeit, macht immer
-            noch am meisten Spaß. Wir brauchen endlich wieder neue Ziele und vermissen die Atmosphäre der Veranstaltungen und das Kribbeln kurz vor dem Start.
+            Wir hatten die letzten Wochen versucht, verschiedene Szenarien durchzuspielen und sogar überlegt, die Strecken und den Termin nochmals kurzfristig zu ändern. Aber nach den ständigen Änderungen und Kompromissen, die wir eingehen
+            hätten müssen, glauben wir inzwischen leider nicht mehr daran, euch dieses Jahr ein Laufevent bieten zu können, welches allen Seiten Spaß hat.
           </p>
-          <DisplayMore>
-            <p>
-              Uns war sehr schnell klar, dass wir 2021 unbedingt wieder einen Lauf anbieten wollen, da hinter dem Walhallalauf auch seit Jahren ein Benefiz Gedanke steht und das Ziel Kinder und Jugendliche dem Spaß am Sport näher zu
-              bringen.
-            </p>
-            <p>
-              Leider können wir unseren üblichen Termin im April dieses Jahres nicht einhalten. Nach vielen Überlegungen und viel Hin und Her denken wir, endlich ein Datum gefunden zu haben, an dem der Lauf allen Spaß machen könnte und auch
-              alle gesund bleiben.
-            </p>
-            <p>
-              Heute können wir noch nicht sicher sagen, ob und unter welchen Auflagen wir an den Start gehen können. Wir wissen auch noch nicht, ob wir wieder alle Strecken anbieten können. Deswegen wird es leider vorerst noch keine
-              endgültige Ausschreibung geben und wir werden die Anmeldung vermutlich erst ab 1. September freischalten lassen. Aber wir haben heute schon ein Ziel und auch ein Datum.
-            </p>
-            <p>Wir wünschen allen ein verletzungsfreies und erfolgreiches Sportjahr. Bleibt gesund und wir freuen uns auf euch.</p>
-          </DisplayMore>
+          <p>Wir bieten euch um Verständnis und hoffen, euch nächstes Jahr wieder ein angemessene Veranstaltung bieten zu können.</p>
+          <p>Wir wünschen euch eine verletzungsfreie Zeit und bleibt gesund.</p>
         </div>
       </PageSection>
       <PageSection headline="Strecken" id="strecken" subSection className="pb-6 sm:pb-8 page-section strecken-index-image">

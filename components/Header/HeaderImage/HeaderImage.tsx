@@ -23,7 +23,7 @@ function HeaderImage(props: PropsWithChildren<HeaderImageProps>): JSX.Element {
                 <span className="uppercase text-white px-6 text-xl tracking-tight font-bold sm:text-3xl lg:text-4xl bg-secondary">{text1}</span>
               </div>
               <div className="pl-16 mt-3 sm:mt-4">
-                <span className="uppercase text-white px-6 text-xl tracking-tight font-bold sm:text-3xl lg:text-4xl bg-secondary">{text2}</span>
+                <span className="uppercase line-through text-white px-6 text-xl tracking-tight font-bold sm:text-3xl lg:text-4xl bg-secondary">{text2}</span>
               </div>
             </div>
           </div>
