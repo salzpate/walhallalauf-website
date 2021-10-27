@@ -207,7 +207,7 @@ const Datenschutz: FunctionComponent = () => {
               Die Datenschutzhinweise, Auskunftsmöglichkeiten und Widerspruchmöglichkeiten (Opt-Out) der jeweiligen Netzwerke / Diensteanbieter finden Sie hier:
               <br />
               <br />• <strong>Facebook</strong> – Diensteanbieter: Facebook Ireland Ltd., 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Irland); Website:{' '}
-              <a href="http://www.facebook.com/" rel="nofollow noreferrer" target="_blank">
+              <a href="https://www.facebook.com/" rel="nofollow noreferrer" target="_blank">
                 www.facebook.com
               </a>
               ; Datenschutzerklärung:&nbsp;
@@ -219,8 +219,8 @@ const Datenschutz: FunctionComponent = () => {
                 https://www.facebook.com/settings?tab=ads
               </a>
               &nbsp;und&nbsp;
-              <a href="http://www.youronlinechoices.com/" rel="nofollow noreferrer" target="_blank">
-                http://www.youronlinechoices.com
+              <a href="https://www.youronlinechoices.com/" rel="nofollow noreferrer" target="_blank">
+                https://www.youronlinechoices.com
               </a>
               ; Widerspruch:{' '}
               <a href="https://www.facebook.com/help/contact/2061665240770586" rel="nofollow noreferrer" target="_blank">
