@@ -3,7 +3,7 @@ const fs = require("fs");
 
 sitemap({
   baseUrl: "https://www.walhallalauf.de",
-  pagesDirectory: __dirname + "/.next/serverless/pages",
+  pagesDirectory: __dirname + "/.next/server/pages",
   targetDirectory: "public/",
   ignoredExtensions: ["js", "map"],
   ignoredPaths: ["404", "500"],
