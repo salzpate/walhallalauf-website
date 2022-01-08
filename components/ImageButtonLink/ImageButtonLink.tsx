@@ -18,8 +18,8 @@ function ImageButtonLink(props: PropsWithChildren<ImageButtonLinkProps>): JSX.El
   return (
     <Link href={href}>
       <a className={styles.link + ' button-link'}>
-        {imgSrc && <img className="w-32 h-auto object-cover object-center flex-shrink-0 mr-4 rounded-l-lg images-dark" src={imgSrc} alt={headline as string} />}
-        <div className="flex-grow">
+        {imgSrc && <img className="w-32 h-auto object-cover object-center shrink-0 mr-4 rounded-l-lg images-dark" src={imgSrc} alt={headline as string} />}
+        <div className="grow">
           <h2 className="text-gray-900 title-font font-bold pb-1 dark:text-gray-200">{headline}</h2>
           <p className="text-gray-500 text-sm dark:text-gray-400 pr-2">{children}</p>
         </div>

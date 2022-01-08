@@ -35,7 +35,7 @@ const Strecken: FunctionComponent = () => {
               unter der Unterführung durch und nach 20m wieder links unter der Walhalla entlang. Bei Donaustauf Ost die Straße überqueren, im Fürstengarten einbiegen und Richtung Ziel laufen.
             </div>
           </div>
-          <div className="w-full md:w-1/3 md:flex-shrink-0 md:justify-center">
+          <div className="w-full md:w-1/3 md:shrink-0 md:justify-center">
             <img src="/assets/images/strecken-10km.jpg" alt="Strecke 10 km Lauf" />
             <div className="my-4">
               <a
@@ -61,7 +61,7 @@ const Strecken: FunctionComponent = () => {
               nach 20m wieder links unter der Walhalla entlang. Bei Donaustauf Ost die Straße überqueren, im Fürstengarten einbiegen und Richtung Ziel laufen.
             </div>
           </div>
-          <div className="w-full md:w-1/3 md:flex-shrink-0 md:justify-center">
+          <div className="w-full md:w-1/3 md:shrink-0 md:justify-center">
             <img src="/assets/images/strecken-5km.jpg" alt="Strecke 5 km Lauf" />
             <div className="my-4">
               <a
@@ -88,7 +88,7 @@ const Strecken: FunctionComponent = () => {
               Ludwigstraße. Dort die Wörther Straße überqueren und im Fürstengarten ins Ziel Walken.
             </div>
           </div>
-          <div className="w-full md:w-1/3 md:flex-shrink-0 md:justify-center">
+          <div className="w-full md:w-1/3 md:shrink-0 md:justify-center">
             <img src="/assets/images/strecken-waldlauf.jpg" alt="Strecke Waldlauf" />
             <div className="my-4">
               <a
@@ -110,7 +110,7 @@ const Strecken: FunctionComponent = () => {
           <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
             <div>Der Start erfolgt in Richtung Osten etwas unterhalb der Zielbereiches. Am chinesischen Turm wird zweimal hintereinander links abgebogen. Es werden drei Runden gelaufen, bevor es ins Ziel geht.</div>
           </div>
-          <div className="w-full md:w-1/3 md:flex-shrink-0 md:justify-center">
+          <div className="w-full md:w-1/3 md:shrink-0 md:justify-center">
             <img src="/assets/images/strecken-kidsrun.jpg" alt="Strecke Kid's Run" />
             <div className="my-4">
               <a
@@ -132,7 +132,7 @@ const Strecken: FunctionComponent = () => {
           <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
             <div>Der Start erfolgt in Richtung Osten etwas unterhalb der Zielbereiches. Am chinesischen Turm wird zweimal hintereinander links abgebogen, bevor es ins Ziel geht.</div>
           </div>
-          <div className="w-full md:w-1/3 md:flex-shrink-0 md:justify-center">
+          <div className="w-full md:w-1/3 md:shrink-0 md:justify-center">
             <img src="/assets/images/strecken-bambini.jpg" alt="Strecke Bambinilauf" />
           </div>
         </div>

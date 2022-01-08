@@ -5,11 +5,10 @@ module.exports = {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
   },
-  purge: [
+  content: [
     './pages/**/*.tsx',
     './components/**/*.tsx'
   ],
-  darkMode: 'media',
   theme: {
     columnCount: [ 1, 2, 3, 4, 5 ],
     colors: {
@@ -20,7 +19,7 @@ module.exports = {
       primary: '#fff',
       secondary: '#FF0000',
       blue: colors.blue,
-      gray: colors.trueGray,
+      gray: colors.neutral,
       orange: colors.orange,
       red: colors.red,
       yellow: colors.yellow,
@@ -47,10 +46,4 @@ module.exports = {
       },
     },
   },
-  variants: {
-    borderColor: ['responsive', 'hover', 'focus', 'focus-within'],
-    columnCount: ['responsive'],
-    gap: ['hover', 'focus'],
-    margin: ['responsive', 'last']
-  }
 }
