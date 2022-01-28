@@ -18,14 +18,12 @@ const Home: FunctionComponent = () => {
 
       <PageSection headline="Aktuelles" id="aktuelles" subSection className="pb-12 sm:pb-16 page-section">
         <div className="max-w-screen-xl mx-auto text-gray-900 dark:text-gray-300">
-          <p className="font-bold">Leider sind wir auch dieses Jahr wieder dazu gezwungen, den Walhallalauf abzusagen.</p>
+          <p className="font-bold">Nach 2 Jahren Pause wird es wieder Zeit die Laufschuhe zu schnüren.</p>
           <p>&nbsp;</p>
           <p>
-            Wir hatten die letzten Wochen versucht, verschiedene Szenarien durchzuspielen und sogar überlegt, die Strecken und den Termin nochmals kurzfristig zu ändern. Aber nach den ständigen Änderungen und Kompromissen, die wir eingehen
-            hätten müssen, glauben wir inzwischen leider nicht mehr daran, euch dieses Jahr ein Laufevent bieten zu können, welches allen Seiten Spaß hat.
+            Der Lauf findet zwar etwas später als gewohnt statt, dadurch kann er aber auch als perfekte Vorbereitung für den Regensburg Marathon genutzt werden. Auch dieses Jahr werden wir den Lauf wieder mit einer Benefizaktion verbinden.
+            Weiteres dazu folgt ...
           </p>
-          <p>Wir bieten euch um Verständnis und hoffen, euch nächstes Jahr wieder ein angemessene Veranstaltung bieten zu können.</p>
-          <p>Wir wünschen euch eine verletzungsfreie Zeit und bleibt gesund.</p>
         </div>
       </PageSection>
       <PageSection headline="Strecken" id="strecken" subSection className="pb-6 sm:pb-8 page-section strecken-index-image">

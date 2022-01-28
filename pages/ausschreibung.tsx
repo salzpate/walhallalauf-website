@@ -17,12 +17,10 @@ const Ausschreibung: FunctionComponent = () => {
       <HeaderImage text1={HEADER_LINE_1} text2={HEADER_LINE_2} imageClass={styles.headerimage} />
       <PageSection headline={pageTitle} id="ausschreibung">
         <div className="mb-8">
-          <Banner type={BannerTypes.warning}>Leider sind wir auch 2021 wieder dazu gezwungen, den Walhallalauf abzusagen.</Banner>
+          <Banner type={BannerTypes.warning}>Durch die aktuelle Situation können wir hier bisher leider nur eine vorläufige Ausschreibung anzeigen. Bis zur endgültigen Version ab ca. 15.03.2022 kann es noch zu Änderungen kommen.</Banner>
         </div>
         <DataList headline="Veranstaltung">11. Walhallalauf</DataList>
-        <DataList headline="Termin">
-          <span className="line-through">Samstag, 25.09.2021</span>
-        </DataList>
+        <DataList headline="Termin">Sonntag, 15.05.2022</DataList>
         <DataList headline="Veranstalter">SV Donaustauf, Abteilung Ausdauer</DataList>
         <DataList headline="Ort">
           Fürstengarten <br />
@@ -33,7 +31,7 @@ const Ausschreibung: FunctionComponent = () => {
         <DataList headline="Strecken">
           <h4 className="md:font-bold">Bambini-Lauf:</h4>
           <p>400 m Strecke, geschottert (bis 7 Jahre)</p>
-          <h4 className="md:font-bold mt-2">Kid’s Run:</h4>
+          <h4 className="md:font-bold mt-2">Kid&apos;s Run:</h4>
           <p>1,6 km Rundkurs, 3 Runden, geschottert (ab 7 Jahre)</p>
           <h4 className="md:font-bold mt-2">Waldlauf:</h4>
           <p>7,1 km Rundkurs, anspruchvoll (ca. 160 HM) geteert, geschottert und Waldweg</p>
@@ -55,7 +53,7 @@ const Ausschreibung: FunctionComponent = () => {
               <tr>
                 <td>11:20 Uhr</td>
                 <td className="text-right px-4">1,6 km</td>
-                <td>Kid’s Run (ab 7 Jahren)</td>
+                <td>Kid&apos;s Run (ab 7 Jahren)</td>
               </tr>
               <tr>
                 <td>12:10 Uhr</td>
@@ -86,7 +84,7 @@ const Ausschreibung: FunctionComponent = () => {
             5 km Lauf, 7km Waldlauf 10 km Lauf und Nordic-Walking: jeweils die Ersten drei Sieger männlich und weiblich
             <br />
             Jugend U16: jeweils die Ersten drei Sieger männlich und weiblich <br />
-            Bambini-Lauf und Kid’s Run: Medaillen und Urkunden
+            Bambini-Lauf und Kid&apos;s Run: Medaillen und Urkunden
           </p>
         </DataList>
         <DataList headline="Startgebühren">
@@ -95,10 +93,10 @@ const Ausschreibung: FunctionComponent = () => {
           Nachmeldegebühr am Veranstaltungstag 2 EUR
           <br />
           <br />
-          Bambini-Lauf und Kid’s Run kostenfrei
+          Bambini-Lauf und Kid&apos;s Run kostenfrei
         </DataList>
-        <DataList headline="Anmeldung">Wird ab dem 01.09.2021 freigeschaltet</DataList>
-        <DataList headline="Anmeldeschluss">Samstag, den 02.10.2021, 12:00 Uhr (Online)</DataList>
+        <DataList headline="Anmeldung">Wird ab dem 15.03.2022 freigeschaltet</DataList>
+        <DataList headline="Anmeldeschluss">Samstag, den 14.03.2022, 12:00 Uhr (Online)</DataList>
         <DataList headline="Nachmeldung / Startunterlagen">
           Sportverein Donaustauf
           <br />
@@ -107,15 +105,15 @@ const Ausschreibung: FunctionComponent = () => {
           93093 Donaustauf
           <br />
           <br />
-          24.09.2021 von 17:00 Uhr – 19:00 Uhr
+          14.05.2022 von 17:00 Uhr – 19:00 Uhr
           <br />
-          25.09. von 10:00 Uhr bis 15 Minuten vor dem jeweiligen Start möglich.
+          15.05.2022 von 10:00 Uhr bis 15 Minuten vor dem jeweiligen Start möglich.
         </DataList>
         <DataList headline="Zeitnahme">
           Mit Transponder durch Zeitgemaess GmbH bei 5 km Lauf, 7 km Waldlauf, 10 km Lauf und Nordic-Walking.
           <br />
           <br />
-          Bambini-Lauf und Kid’s Run sind ohne Zeitmessung.
+          Bambini-Lauf und Kid&apos;s Run sind ohne Zeitmessung.
         </DataList>
         <DataList headline="Ergebnisliste">Nach dem Lauf werden die Ergebnisse und Online-Urkunden bei Zeitgemaess GmbH veröffentlicht.</DataList>
         <DataList headline="Verpflegung">Wasserstation beim 10 km Lauf und bei Nordic-Walking Getränke und Obst im Zielbereich</DataList>
