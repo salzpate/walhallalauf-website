@@ -61,7 +61,7 @@ const Home: FC<HomeProps> = (props: HomeProps) => {
         <div className="max-w-screen-xl mx-auto tracking-wide text-gray-900 dark:text-gray-300 py-4 text-center font-bold text-2xl sm:text-3xl lg:text-4xl sm:py-6 lg:px-8 lg:py-8">Donaustauf erleben - Der Lauf am Fuße der Walhalla</div>
       </section>
 
-      <PageSection headline="Aktuelles" id="aktuelles" subSection className="pb-12 sm:pb-16 page-section">
+      <PageSection headline="Aktuelles" id="aktuelles" subSection className="pb-4 sm:pb-8 page-section">
         {infos &&
           infos.map(info => (
             <InfoArticle key={info.id} headline={info.title}>
