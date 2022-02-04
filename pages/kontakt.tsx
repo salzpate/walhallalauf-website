@@ -6,11 +6,11 @@ import { siteTitle } from '@/components/Layout/Layout';
 import PageSection from '@/components/PageSection';
 import styles from '@/styles/kontakt.module.css';
 import { HEADER_LINE_1, HEADER_LINE_2 } from 'lib/constants';
-import { FunctionComponent } from 'react';
+import { FC } from 'react';
 
 export const pageTitle = 'Kontakt';
 
-const Contact: FunctionComponent = () => {
+const Contact: FC = () => {
   return (
     <Layout title={pageTitle + ' - ' + siteTitle} activeMenu="kontakt">
       <HeaderImage text1={HEADER_LINE_1} text2={HEADER_LINE_2} imageClass={styles.headerimage} />

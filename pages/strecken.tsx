@@ -5,11 +5,11 @@ import { siteTitle } from '@/components/Layout/Layout';
 import PageSection from '@/components/PageSection';
 import styles from '@/styles/index.module.css';
 import { HEADER_LINE_1, HEADER_LINE_2 } from 'lib/constants';
-import { FunctionComponent } from 'react';
+import { FC } from 'react';
 
 export const pageTitle = 'Strecken';
 
-const Strecken: FunctionComponent = () => {
+const Strecken: FC = () => {
   return (
     <Layout title={pageTitle + ' - ' + siteTitle}>
       <HeaderImage text1={HEADER_LINE_1} text2={HEADER_LINE_2} imageClass={styles.headerimage} />

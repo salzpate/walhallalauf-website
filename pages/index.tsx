@@ -2,13 +2,58 @@ import ContactCard from '@/components/Contact/ContactCard';
 import ContactForm from '@/components/Contact/ContactForm';
 import HeaderImage from '@/components/Header/HeaderImage';
 import ImageButtonLink from '@/components/ImageButtonLink';
+import InfoArticle from '@/components/InfoArticle';
 import Layout from '@/components/Layout';
 import PageSection from '@/components/PageSection';
+import infoService from '@/lib/InfoService';
 import styles from '@/styles/index.module.css';
 import { HEADER_LINE_1, HEADER_LINE_2 } from 'lib/constants';
-import { FunctionComponent } from 'react';
+import { GetStaticProps } from 'next';
+import { FC } from 'react';
 
-const Home: FunctionComponent = () => {
+type Info = {
+  id: number;
+  title: string;
+  message: string;
+};
+
+type HomeProps = {
+  infos: Info[];
+};
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const getStaticProps: GetStaticProps = async context => {
+  try {
+    const res = await infoService.getInfos();
+    const infos = res.data.data.map((d: { id: number; attributes: { title: string; message: string } }) => {
+      return {
+        id: d.id,
+        title: d.attributes.title,
+        message: d.attributes.message,
+      };
+    });
+    return {
+      props: { infos: infos },
+    };
+  } catch (error) {
+    return {
+      props: {
+        infos: [
+          {
+            id: 1,
+            title: 'Nach 2 Jahren Pause wird es wieder Zeit die Laufschuhe zu schnüren',
+            message:
+              'Der Lauf findet zwar etwas später als gewohnt statt, dadurch kann er aber auch als perfekte Vorbereitung für den Regensburg Marathon genutzt werden. Auch dieses Jahr werden wir den Lauf wieder mit einer Benefizaktion verbinden. Weiteres dazu folgt ...',
+          },
+        ],
+      },
+    };
+  }
+};
+
+const Home: FC<HomeProps> = (props: HomeProps) => {
+  const { infos } = props;
+
   return (
     <Layout>
       <HeaderImage text1={HEADER_LINE_1} text2={HEADER_LINE_2} imageClass={styles.headerimage} />
@@ -17,14 +62,12 @@ const Home: FunctionComponent = () => {
       </section>
 
       <PageSection headline="Aktuelles" id="aktuelles" subSection className="pb-12 sm:pb-16 page-section">
-        <div className="max-w-screen-xl mx-auto text-gray-900 dark:text-gray-300">
-          <p className="font-bold">Nach 2 Jahren Pause wird es wieder Zeit die Laufschuhe zu schnüren.</p>
-          <p>&nbsp;</p>
-          <p>
-            Der Lauf findet zwar etwas später als gewohnt statt, dadurch kann er aber auch als perfekte Vorbereitung für den Regensburg Marathon genutzt werden. Auch dieses Jahr werden wir den Lauf wieder mit einer Benefizaktion verbinden.
-            Weiteres dazu folgt ...
-          </p>
-        </div>
+        {infos &&
+          infos.map(info => (
+            <InfoArticle key={info.id} headline={info.title}>
+              {info.message}
+            </InfoArticle>
+          ))}
       </PageSection>
       <PageSection headline="Strecken" id="strecken" subSection className="pb-6 sm:pb-8 page-section strecken-index-image">
         <div>Mit unseren Strecken decken wir alle Alters- und Leistungsstufen ab. Beim Walhallalauf geht es auch darum, etwas von Donaustauf zu erleben.</div>

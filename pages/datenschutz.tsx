@@ -1,11 +1,11 @@
 import Layout from '@/components/Layout';
 import { siteTitle } from '@/components/Layout/Layout';
 import PageSection from '@/components/PageSection';
-import { FunctionComponent } from 'react';
+import { FC } from 'react';
 
 export const pageTitle = 'Datenschutz';
 
-const Datenschutz: FunctionComponent = () => {
+const Datenschutz: FC = () => {
   return (
     <Layout title={pageTitle + ' - ' + siteTitle}>
       <PageSection headline="Datenschutz" id="datenschutz">

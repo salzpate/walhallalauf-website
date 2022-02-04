@@ -2,11 +2,11 @@
 import Layout from '@/components/Layout';
 import { siteTitle } from '@/components/Layout/Layout';
 import PageSection from '@/components/PageSection';
-import { FunctionComponent } from 'react';
+import { FC } from 'react';
 
 export const pageTitle = 'Impressum';
 
-const Impressum: FunctionComponent = () => {
+const Impressum: FC = () => {
   return (
     <Layout title={pageTitle + ' - ' + siteTitle}>
       <PageSection headline="Impressum" id="impressum">
