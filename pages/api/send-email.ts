@@ -33,7 +33,7 @@ const sendHomepageEMail = async (req: NextApiRequest, res: NextApiResponse): Pro
       .catch(error => {
         return res.status(200).json({ status: 'error', message: 'Ihre Nachricht konnte leider nicht versendet werden!' });
       });
-    return res.status(200).end();
+    return res.status(200).json({ status: 'error', message: 'Ihre Nachricht konnte leider nicht versendet werden!' });
   }
   return res.status(404).json({
     error: {
