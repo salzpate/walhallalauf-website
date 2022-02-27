@@ -43,7 +43,7 @@ export const getStaticProps: GetStaticProps = async context => {
             id: 1,
             title: 'Nach 2 Jahren Pause wird es wieder Zeit die Laufschuhe zu schnüren',
             message:
-              'Der Lauf findet zwar etwas später als gewohnt statt, dadurch kann er aber auch als perfekte Vorbereitung für den Regensburg Marathon genutzt werden. Auch dieses Jahr werden wir den Lauf wieder mit einer Benefizaktion verbinden. Weiteres dazu folgt ...',
+              'Der Lauf findet zwar etwas später als gewohnt statt, dadurch kann er aber auch als perfekte Vorbereitung für den Regensburg Marathon genutzt werden. Hinter dem Walhallalauf steht seit Jahren der Benefiz-Gedanke verbunden mit dem Ziel Kinder und Jugendliche dem Spaß am Sport näher zu bringen. Wir werden auch dieses Jahr wieder einen Großteil der Einnahmen Spenden und bieten die Teilnahme an den Kinderläufen wieder kostenlos an. Aktuell gilt für alle Teilnehmenden die 3G Regel, daher sind wir auch guten Mutes den Lauf in gewohnter Weise durchführen zu können. Sollten sich die Veranstaltungsregeln nochmals ändern, hätten wir u.a. auch noch die Möglichkeit die Startzeiten weiter auseinander zuziehen.',
           },
         ],
       },
