@@ -90,7 +90,7 @@ const Ausschreibung: FC = () => {
         <DataList headline="Startgebühren">
           5 km Lauf, 7km Waldlauf, 10 km Lauf und Nordic-Walking je 10 EUR
           <br />
-          Nachmeldegebühr am Veranstaltungstag 2 EUR
+          Nachmeldegebühr am Veranstaltungstag 5 EUR
           <br />
           <br />
           Bambini-Lauf und Kid&apos;s Run kostenfrei
