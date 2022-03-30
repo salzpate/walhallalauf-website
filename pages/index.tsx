@@ -6,6 +6,7 @@ import InfoArticle from '@/components/InfoArticle';
 import Layout from '@/components/Layout';
 import PageSection from '@/components/PageSection';
 import infoService from '@/lib/InfoService';
+import markdownToHtml from '@/lib/markdownToHtml';
 import styles from '@/styles/index.module.css';
 import { HEADER_LINE_1, HEADER_LINE_2 } from 'lib/constants';
 import { GetStaticProps } from 'next';
@@ -25,13 +26,18 @@ type HomeProps = {
 export const getStaticProps: GetStaticProps = async context => {
   try {
     const res = await infoService.getInfos();
-    const infos = res.data.data.map((d: { id: number; attributes: { title: string; message: string } }) => {
+    const infos: { id: number; title: string; message: string }[] = res.data.data.map((d: { id: number; attributes: { title: string; message: string } }) => {
       return {
         id: d.id,
         title: d.attributes.title,
         message: d.attributes.message,
       };
     });
+
+    infos.forEach(async info => {
+      info.message = await markdownToHtml(info.message);
+    });
+
     return {
       props: { infos: infos },
     };
@@ -65,7 +71,7 @@ const Home: FC<HomeProps> = (props: HomeProps) => {
         {infos &&
           infos.map(info => (
             <InfoArticle key={info.id} headline={info.title}>
-              {info.message}
+              <div className="index-page-article" dangerouslySetInnerHTML={{ __html: info.message }} />
             </InfoArticle>
           ))}
       </PageSection>

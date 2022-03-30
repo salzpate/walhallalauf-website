@@ -48,6 +48,10 @@ a.button-link:hover {
   background-size: cover;
 }
 
+.index-page-article p {
+  margin-bottom: 1rem;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     @apply bg-black;
