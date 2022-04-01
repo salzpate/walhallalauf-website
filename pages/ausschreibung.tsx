@@ -95,7 +95,7 @@ const Ausschreibung: FC = () => {
           <br />
           Bambini-Lauf und Kid&apos;s Run kostenfrei
         </DataList>
-        <DataList headline="Anmeldung">Wird ab dem 15.03.2022 freigeschaltet</DataList>
+        <DataList headline="Anmeldung">Wird ab dem 15.04.2022 freigeschaltet</DataList>
         <DataList headline="Anmeldeschluss">Samstag, den 14.05.2022, 12:00 Uhr (Online)</DataList>
         <DataList headline="Nachmeldung / Startunterlagen">
           Sportverein Donaustauf
