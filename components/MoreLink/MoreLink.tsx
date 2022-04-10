@@ -8,7 +8,7 @@ export type Url = string | UrlObject;
 
 type MoreLinkProps = {
   href: Url;
-  headline: ReactNode;
+  headline?: ReactNode;
   imgSrc?: string;
 };
 
@@ -24,7 +24,7 @@ function MoreLink(props: PropsWithChildren<MoreLinkProps>): JSX.Element {
           </a>
         </Link>
       )}
-      <h3 className={cn('text-gray-900 uppercase tracking-tight text-lg sm:text-xl lg:font-medium lg:text-2xl dark:text-gray-200', { 'mt-4': imgSrc })}>{headline}</h3>
+      {headline && <h3 className={cn('text-gray-900 uppercase tracking-tight text-lg sm:text-xl lg:font-medium lg:text-2xl dark:text-gray-200', { 'mt-4': imgSrc })}>{headline}</h3>}
       <div className="my-4 text-sm lg:text-base font-light lg:font-normal">{children}</div>
       <div className="my-4">
         <Link href={href}>

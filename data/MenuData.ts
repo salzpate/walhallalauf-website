@@ -13,6 +13,11 @@ export const MenuData: AppMenu = {
       activeMenuName: 'strecken',
     },
     {
+      children: 'Benefiz',
+      href: '/benefiz/',
+      activeMenuName: 'benefiz',
+    },
+    {
       children: 'Kontakt',
       href: '/kontakt/',
       activeMenuName: 'kontakt',

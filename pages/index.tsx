@@ -4,6 +4,7 @@ import HeaderImage from '@/components/Header/HeaderImage';
 import ImageButtonLink from '@/components/ImageButtonLink';
 import InfoArticle from '@/components/InfoArticle';
 import Layout from '@/components/Layout';
+import MoreLink from '@/components/MoreLink';
 import PageSection from '@/components/PageSection';
 import infoService from '@/lib/InfoService';
 import markdownToHtml from '@/lib/markdownToHtml';
@@ -109,6 +110,17 @@ const Home: FC<HomeProps> = (props: HomeProps) => {
             </ImageButtonLink>
           </div>
         </div>
+      </PageSection>
+
+      <PageSection headline="Benefiz" id="benefiz" subSection className="pb-6 sm:pb-8 page-section">
+        <MoreLink href="/benefiz/">
+          <p>
+            Seit dem ersten Walhallalauf ist es unser Anspruch &quot;Kinder und Jugendliche für Sport zu begeistern&quot;, weshalb auch die Teilnahme am Baminilauf und am Kid&apos;s Run völlig kostenlos für die Teilnehmer ist. Seit 2015 ist
+            es uns zudem wichtig, regionale Organisationen bei der Bewegungs- und Sportförderung von Kindern und Jugendlichen im Rahmen unserer Benefizaktionen zu unterstützen.
+          </p>
+          <br></br>
+          <p>2022 unterstützen wir mit dem Lauf den Verein für helfende Hunde e.V.</p>
+        </MoreLink>
       </PageSection>
 
       <PageSection headline="Kontakt" id="kontakt" subSection className="bg-gray-200 dark:bg-gray-900 pb-6 sm:pb-8 page-section">
