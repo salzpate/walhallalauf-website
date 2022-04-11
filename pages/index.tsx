@@ -6,12 +6,14 @@ import InfoArticle from '@/components/InfoArticle';
 import Layout from '@/components/Layout';
 import MoreLink from '@/components/MoreLink';
 import PageSection from '@/components/PageSection';
+import SponsorGallery from '@/components/SponsorGallery';
 import infoService from '@/lib/InfoService';
 import markdownToHtml from '@/lib/markdownToHtml';
 import styles from '@/styles/index.module.css';
 import { HEADER_LINE_1, HEADER_LINE_2 } from 'lib/constants';
 import { GetStaticProps } from 'next';
 import { FC } from 'react';
+import { SponsorData } from '@/data/SponsorData';
 
 type Info = {
   id: number;
@@ -121,6 +123,11 @@ const Home: FC<HomeProps> = (props: HomeProps) => {
           <br></br>
           <p>2022 unterstützen wir mit dem Lauf den Verein für helfende Hunde e.V.</p>
         </MoreLink>
+      </PageSection>
+
+      <PageSection headline="Sponsoren" id="sponsoren" subSection className="pb-6 sm:pb-8 page-section">
+        <p>Wir sagen vielen Dank für die Unterstützung an unsere Partner und Sponsoren</p>
+        <SponsorGallery items={SponsorData} />
       </PageSection>
 
       <PageSection headline="Kontakt" id="kontakt" subSection className="bg-gray-200 dark:bg-gray-900 pb-6 sm:pb-8 page-section">
