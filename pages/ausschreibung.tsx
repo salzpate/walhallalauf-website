@@ -1,5 +1,3 @@
-import Banner from '@/components/Banner';
-import { BannerTypes } from '@/components/Banner/Banner';
 import DataList from '@/components/DataList';
 import HeaderImage from '@/components/Header/HeaderImage';
 import Layout from '@/components/Layout';
@@ -16,9 +14,6 @@ const Ausschreibung: FC = () => {
     <Layout title={pageTitle + ' - ' + siteTitle}>
       <HeaderImage text1={HEADER_LINE_1} text2={HEADER_LINE_2} imageClass={styles.headerimage} />
       <PageSection headline={pageTitle} id="ausschreibung">
-        <div className="mb-8">
-          <Banner type={BannerTypes.warning}>Durch die aktuelle Situation können wir hier bisher leider nur eine vorläufige Ausschreibung anzeigen. Bis zur endgültigen Version ab ca. 15.04.2022 kann es noch zu Änderungen kommen.</Banner>
-        </div>
         <DataList headline="Veranstaltung">11. Walhallalauf</DataList>
         <DataList headline="Termin">Sonntag, 15.05.2022</DataList>
         <DataList headline="Veranstalter">SV Donaustauf, Abteilung Ausdauer</DataList>
