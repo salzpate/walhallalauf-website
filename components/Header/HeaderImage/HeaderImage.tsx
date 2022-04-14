@@ -16,18 +16,34 @@ function HeaderImage(props: PropsWithChildren<HeaderImageProps>): JSX.Element {
   } else {
     return (
       <div className={cn(styles.headerimage, 'bg-no-repeat bg-cover bg-center bg-scroll bg-transparent', imageClass)}>
-        <section className="w-full absolute">
-          <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="relative mt-14 sm:mt-32">
-              <div className="pl-6">
-                <span className="uppercase text-white px-6 text-xl tracking-tight font-bold sm:text-3xl lg:text-4xl bg-secondary">{text1}</span>
-              </div>
-              <div className="pl-16 mt-3 sm:mt-4">
-                <span className="uppercase text-white px-6 text-xl tracking-tight font-bold sm:text-3xl lg:text-4xl bg-secondary">{text2}</span>
+        <div className="flex flex-wrap">
+          <section className="w-full absolute">
+            <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 flex">
+              <div className="relative mt-14 sm:mt-32 w-full">
+                <div className="md:flex">
+                  <div className="grow">
+                    <div className="pl-6">
+                      <span className="uppercase text-white px-6 text-xl tracking-tight font-bold sm:text-3xl lg:text-4xl bg-secondary">{text1}</span>
+                    </div>
+                    <div className="pl-16 mt-2 sm:mt-2">
+                      <span className="uppercase text-white px-6 text-xl tracking-tight font-bold sm:text-3xl lg:text-4xl bg-secondary">{text2}</span>
+                    </div>
+                  </div>
+                  <div className="absolute mt-10 px-6 md:px-0 md:mt-0 md:right-6">
+                    <a
+                      className="text-white sm:text-2xl tracking-wider py-1 px-2 border border-white rounded transition ease-in-out duration-150 bg-secondary hover:bg-opacity-75"
+                      href="https://www.zeitgemaess.info/event.php?ACCESSCODE=202205152"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Zur Anmeldung (ab 22.04.)
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </div>
     );
   }

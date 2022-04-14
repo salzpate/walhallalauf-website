@@ -77,6 +77,16 @@ const Home: FC<HomeProps> = (props: HomeProps) => {
               <div className="index-page-article" dangerouslySetInnerHTML={{ __html: info.message }} />
             </InfoArticle>
           ))}
+        <div className="pb-4">
+          <a
+            className="bg-transparent text-secondary dark:text-secondary-dark text-sm uppercase tracking-wider py-2 px-4 border border-secondary rounded transition ease-in-out duration-150 hover:bg-secondary hover:bg-opacity-15 dark:border-secondary-dark dark:hover:bg-secondary-dark"
+            href="https://www.zeitgemaess.info/event.php?ACCESSCODE=202205152"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Zur Anmeldung (ab 22.04.)
+          </a>
+        </div>
       </PageSection>
       <PageSection headline="Strecken" id="strecken" subSection className="pb-6 sm:pb-8 page-section strecken-index-image">
         <div>Mit unseren Strecken decken wir alle Alters- und Leistungsstufen ab. Beim Walhallalauf geht es auch darum, etwas von Donaustauf zu erleben.</div>
