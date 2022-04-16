@@ -93,7 +93,7 @@ const Ausschreibung: FC = () => {
         <DataList headline="Anmeldung">
           <span className="page-section">
             <a href="https://www.zeitgemaess.info/event.php?ACCESSCODE=202205152" target="_blank" rel="noreferrer">
-              über Zeitgemäß ab 22.04.2022
+              über Zeitgemäß
             </a>
           </span>
         </DataList>

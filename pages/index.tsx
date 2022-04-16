@@ -84,7 +84,7 @@ const Home: FC<HomeProps> = (props: HomeProps) => {
             target="_blank"
             rel="noreferrer"
           >
-            Zur Anmeldung (ab 22.04.)
+            Anmeldung
           </a>
         </div>
       </PageSection>

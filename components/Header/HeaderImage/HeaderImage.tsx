@@ -36,7 +36,7 @@ function HeaderImage(props: PropsWithChildren<HeaderImageProps>): JSX.Element {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      Zur Anmeldung (ab 22.04.)
+                      Zur Anmeldung
                     </a>
                   </div>
                 </div>
