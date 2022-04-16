@@ -25,19 +25,31 @@ function HeaderImage(props: PropsWithChildren<HeaderImageProps>): JSX.Element {
                     <div className="pl-6">
                       <span className="uppercase text-white px-6 text-xl tracking-tight font-bold sm:text-3xl lg:text-4xl bg-secondary">{text1}</span>
                     </div>
-                    <div className="pl-16 mt-2 sm:mt-2">
+                    <div className="pl-16 mt-2">
                       <span className="uppercase text-white px-6 text-xl tracking-tight font-bold sm:text-3xl lg:text-4xl bg-secondary">{text2}</span>
                     </div>
                   </div>
                   <div className="absolute mt-10 px-6 md:px-0 md:mt-0 md:right-6">
-                    <a
-                      className="text-white sm:text-2xl tracking-wider py-1 px-2 border border-white rounded transition ease-in-out duration-150 bg-secondary hover:bg-opacity-75"
-                      href="https://www.zeitgemaess.info/event.php?ACCESSCODE=202205152"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Zur Anmeldung
-                    </a>
+                    <div className="float-left md:float-none">
+                      <a
+                        className="text-white sm:text-2xl tracking-wider py-1 px-4 border border-white rounded transition ease-in-out duration-150 bg-secondary hover:bg-opacity-75 md:w-40 inline-block"
+                        href="https://anmeldung.zeitgemaess.info/202205152"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Anmeldung
+                      </a>
+                    </div>
+                    <div className="float-left px-6 md:px-0 md:right-6 md:mt-2 md:float-none">
+                      <a
+                        className="text-white sm:text-2xl tracking-wider py-1 px-4 border border-white rounded transition ease-in-out duration-150 bg-secondary hover:bg-opacity-75 md:w-40 inline-block"
+                        href="https://starterliste.zeitgemaess.info/202205152"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Starterliste
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>

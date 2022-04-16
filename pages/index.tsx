@@ -79,12 +79,20 @@ const Home: FC<HomeProps> = (props: HomeProps) => {
           ))}
         <div className="pb-4">
           <a
-            className="bg-transparent text-secondary dark:text-secondary-dark text-sm uppercase tracking-wider py-2 px-4 border border-secondary rounded transition ease-in-out duration-150 hover:bg-secondary hover:bg-opacity-15 dark:border-secondary-dark dark:hover:bg-secondary-dark"
-            href="https://www.zeitgemaess.info/event.php?ACCESSCODE=202205152"
+            className="bg-transparent text-secondary dark:text-secondary-dark text-sm uppercase tracking-wider py-2 px-4 border border-secondary rounded transition ease-in-out duration-150 hover:bg-secondary hover:bg-opacity-15 hover:no-underline dark:border-secondary-dark dark:hover:bg-secondary-dark"
+            href="https://anmeldung.zeitgemaess.info/202205152"
             target="_blank"
             rel="noreferrer"
           >
             Anmeldung
+          </a>
+          <a
+            className="bg-transparent text-secondary dark:text-secondary-dark text-sm uppercase tracking-wider ml-4 py-2 px-4 border border-secondary rounded transition ease-in-out duration-150 hover:bg-secondary hover:bg-opacity-15 hover:no-underline dark:border-secondary-dark dark:hover:bg-secondary-dark"
+            href="https://starterliste.zeitgemaess.info/202205152"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Starterliste
           </a>
         </div>
       </PageSection>
