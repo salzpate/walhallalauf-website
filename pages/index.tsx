@@ -14,6 +14,7 @@ import { HEADER_LINE_1, HEADER_LINE_2 } from 'lib/constants';
 import { GetStaticProps } from 'next';
 import { FC } from 'react';
 import { SponsorData } from '@/data/SponsorData';
+import { AnmeldungData, ErgebniseData, StarterListeData } from '@/data/TimingPartnerData';
 
 type Info = {
   id: number;
@@ -78,22 +79,36 @@ const Home: FC<HomeProps> = (props: HomeProps) => {
             </InfoArticle>
           ))}
         <div className="pb-4">
-          <a
-            className="bg-transparent text-secondary dark:text-secondary-dark text-sm uppercase tracking-wider py-2 px-4 border border-secondary rounded transition ease-in-out duration-150 hover:bg-secondary hover:bg-opacity-15 hover:no-underline dark:border-secondary-dark dark:hover:bg-secondary-dark"
-            href="https://anmeldung.zeitgemaess.info/202205152"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Anmeldung
-          </a>
-          <a
-            className="bg-transparent text-secondary dark:text-secondary-dark text-sm uppercase tracking-wider ml-4 py-2 px-4 border border-secondary rounded transition ease-in-out duration-150 hover:bg-secondary hover:bg-opacity-15 hover:no-underline dark:border-secondary-dark dark:hover:bg-secondary-dark"
-            href="https://starterliste.zeitgemaess.info/202205152"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Starterliste
-          </a>
+          {AnmeldungData && (
+            <a
+              className="bg-transparent text-secondary dark:text-secondary-dark text-sm uppercase tracking-wider py-2 px-4 border border-secondary rounded transition ease-in-out duration-150 hover:bg-secondary hover:bg-opacity-15 hover:no-underline dark:border-secondary-dark dark:hover:bg-secondary-dark"
+              href={AnmeldungData.link}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {AnmeldungData.name}
+            </a>
+          )}
+          {StarterListeData && (
+            <a
+              className="bg-transparent text-secondary dark:text-secondary-dark text-sm uppercase tracking-wider ml-4 py-2 px-4 border border-secondary rounded transition ease-in-out duration-150 hover:bg-secondary hover:bg-opacity-15 hover:no-underline dark:border-secondary-dark dark:hover:bg-secondary-dark"
+              href={StarterListeData.link}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {StarterListeData.name}
+            </a>
+          )}
+          {ErgebniseData && (
+            <a
+              className="bg-transparent text-secondary dark:text-secondary-dark text-sm uppercase tracking-wider ml-4 py-2 px-4 border border-secondary rounded transition ease-in-out duration-150 hover:bg-secondary hover:bg-opacity-15 hover:no-underline dark:border-secondary-dark dark:hover:bg-secondary-dark"
+              href={ErgebniseData.link}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {ErgebniseData.name}
+            </a>
+          )}
         </div>
       </PageSection>
       <PageSection headline="Strecken" id="strecken" subSection className="pb-6 sm:pb-8 page-section strecken-index-image">

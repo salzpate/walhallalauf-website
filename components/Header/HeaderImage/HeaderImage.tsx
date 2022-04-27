@@ -1,12 +1,21 @@
 import { PropsWithChildren } from 'react';
 import cn from 'classnames';
 import styles from './HeaderImage.module.css';
+import { AnmeldungData, ErgebniseData, StarterListeData } from '@/data/TimingPartnerData';
 
 type HeaderImageProps = {
   imageClass?: string;
   text1?: string;
   text2?: string;
 };
+
+export type TimingPartnerDataItem =
+  | {
+      id: string;
+      name: string;
+      link: string;
+    }
+  | undefined;
 
 function HeaderImage(props: PropsWithChildren<HeaderImageProps>): JSX.Element {
   const { imageClass, text1, text2, children } = props;
@@ -30,26 +39,42 @@ function HeaderImage(props: PropsWithChildren<HeaderImageProps>): JSX.Element {
                     </div>
                   </div>
                   <div className="absolute mt-10 px-6 md:px-0 md:mt-0 md:right-6">
-                    <div className="float-left md:float-none">
-                      <a
-                        className="text-white sm:text-2xl tracking-wider py-1 px-4 border border-white rounded transition ease-in-out duration-150 bg-secondary hover:bg-opacity-75 md:w-40 inline-block"
-                        href="https://anmeldung.zeitgemaess.info/202205152"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        Anmeldung
-                      </a>
-                    </div>
-                    <div className="float-left px-6 md:px-0 md:right-6 md:mt-2 md:float-none">
-                      <a
-                        className="text-white sm:text-2xl tracking-wider py-1 px-4 border border-white rounded transition ease-in-out duration-150 bg-secondary hover:bg-opacity-75 md:w-40 inline-block"
-                        href="https://starterliste.zeitgemaess.info/202205152"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        Starterliste
-                      </a>
-                    </div>
+                    {AnmeldungData && (
+                      <div className="float-left md:float-none">
+                        <a
+                          className="text-white sm:text-2xl tracking-wider py-1 px-4 border border-white rounded transition ease-in-out duration-150 bg-secondary hover:bg-opacity-75 md:w-40 inline-block"
+                          href={AnmeldungData.link}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          {AnmeldungData.name}
+                        </a>
+                      </div>
+                    )}
+                    {StarterListeData && (
+                      <div className="float-left px-6 md:px-0 md:right-6 md:mt-2 md:float-none">
+                        <a
+                          className="text-white sm:text-2xl tracking-wider py-1 px-4 border border-white rounded transition ease-in-out duration-150 bg-secondary hover:bg-opacity-75 md:w-40 inline-block"
+                          href={StarterListeData.link}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          {StarterListeData.name}
+                        </a>
+                      </div>
+                    )}
+                    {ErgebniseData && (
+                      <div className="float-left px-6 md:px-0 md:right-6 md:mt-2 md:float-none">
+                        <a
+                          className="text-white sm:text-2xl tracking-wider py-1 px-4 border border-white rounded transition ease-in-out duration-150 bg-secondary hover:bg-opacity-75 md:w-40 inline-block"
+                          href={ErgebniseData.link}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          {ErgebniseData.name}
+                        </a>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>

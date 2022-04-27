@@ -16,4 +16,9 @@ export const SponsorData: SponsorGalleryItems[] = [
     link: 'https://al-mueller.de',
     name: 'Bureau 2+ Alex Müller',
   },
+  {
+    imageUrl: '/assets/images/sponsoring/tt.png',
+    link: 'https://forst.thurnundtaxis.de/',
+    name: 'Thurn und Taxis Forst GmbH & Co. KG ',
+  },
 ];
