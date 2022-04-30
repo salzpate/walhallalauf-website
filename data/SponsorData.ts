@@ -17,8 +17,13 @@ export const SponsorData: SponsorGalleryItems[] = [
     name: 'Bureau 2+ Alex Müller',
   },
   {
+    imageUrl: '/assets/images/sponsoring/aloha30athletics.png',
+    link: 'http://www.marionsummerer.com',
+    name: 'Marion Summerer',
+  },
+  {
     imageUrl: '/assets/images/sponsoring/tt.png',
-    link: 'https://forst.thurnundtaxis.de/',
-    name: 'Thurn und Taxis Forst GmbH & Co. KG ',
+    link: 'https://forst.thurnundtaxis.de',
+    name: 'Thurn und Taxis Forst GmbH & Co. KG',
   },
 ];
