@@ -122,7 +122,7 @@ const Ausschreibung: FC = () => {
         <DataList headline="Sonstiges">
           Für das leibliche Wohl wird bestens gesorgt.
           <br />
-          Duschmöglichkeiten sind in der Mehrzweckhalle Donaustauf vorhanden.
+          Wir können dieses Jahr leider keine Duschmöglichkeiten anbieten, die Baustelle in der Mehrzweckhalle ist leider noch nicht fertig geworden.
         </DataList>
         <DataList headline="Haftungsausschluss">
           Der SV Donaustauf übernimmt keine Garantie dafür, dass die bereitgestellten Informationen vollständig, richtig und in jedem Fall aktuell sind.
