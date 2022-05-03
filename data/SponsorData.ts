@@ -17,6 +17,11 @@ export const SponsorData: SponsorGalleryItems[] = [
     name: 'Bureau 2+ Alex Müller',
   },
   {
+    imageUrl: '/assets/images/sponsoring/lattus.jpg',
+    link: 'https://www.edeka.de/eh/s%C3%BCdbayern/edeka-lattus-regensburger-stra%C3%9Fe-15/index.jsp',
+    name: 'EDEKA Lattus',
+  },
+  {
     imageUrl: '/assets/images/sponsoring/aloha30athletics.png',
     link: 'http://www.marionsummerer.com',
     name: 'Marion Summerer',
