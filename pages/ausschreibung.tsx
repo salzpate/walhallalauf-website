@@ -97,7 +97,7 @@ const Ausschreibung: FC = () => {
             </a>
           </span>
         </DataList>
-        <DataList headline="Anmeldeschluss">Samstag, den 14.05.2022, 12:00 Uhr (Online)</DataList>
+        <DataList headline="Anmeldeschluss">Samstag, den 12.05.2022, 23:59 Uhr (Online)</DataList>
         <DataList headline="Nachmeldung / Startunterlagen">
           Sportverein Donaustauf
           <br />
