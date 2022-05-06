@@ -32,6 +32,11 @@ export const SponsorData: SponsorGalleryItems[] = [
     name: 'Restaurant Athen Donaustauf',
   },
   {
+    imageUrl: '/assets/images/sponsoring/thurnundtaxis-apotheke.jpg',
+    link: 'https://www.apotheke-donaustauf.de',
+    name: 'Thurn und Taxis Apotheke Donaustauf',
+  },
+  {
     imageUrl: '/assets/images/sponsoring/tt.png',
     link: 'https://forst.thurnundtaxis.de',
     name: 'Thurn und Taxis Forst GmbH & Co. KG',
