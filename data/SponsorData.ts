@@ -12,19 +12,14 @@ export const SponsorData: SponsorGalleryItems[] = [
     name: 'Brauerei Kneitinger',
   },
   {
-    imageUrl: '/assets/images/sponsoring/alexmueller.png',
-    link: 'https://al-mueller.de',
-    name: 'Bureau 2+ Alex Müller',
-  },
-  {
     imageUrl: '/assets/images/sponsoring/lattus.jpg',
     link: 'https://www.edeka.de/eh/s%C3%BCdbayern/edeka-lattus-regensburger-stra%C3%9Fe-15/index.jsp',
     name: 'EDEKA Lattus',
   },
   {
-    imageUrl: '/assets/images/sponsoring/aloha30athletics.png',
-    link: 'http://www.marionsummerer.com',
-    name: 'Marion Summerer',
+    imageUrl: '/assets/images/sponsoring/thurnundtaxis-apotheke.jpg',
+    link: 'https://www.apotheke-donaustauf.de',
+    name: 'Thurn und Taxis Apotheke Donaustauf',
   },
   {
     imageUrl: '/assets/images/sponsoring/athen-donaustauf.jpg',
@@ -32,9 +27,14 @@ export const SponsorData: SponsorGalleryItems[] = [
     name: 'Restaurant Athen Donaustauf',
   },
   {
-    imageUrl: '/assets/images/sponsoring/thurnundtaxis-apotheke.jpg',
-    link: 'https://www.apotheke-donaustauf.de',
-    name: 'Thurn und Taxis Apotheke Donaustauf',
+    imageUrl: '/assets/images/sponsoring/aloha30athletics.png',
+    link: 'http://www.marionsummerer.com',
+    name: 'Marion Summerer',
+  },
+  {
+    imageUrl: '/assets/images/sponsoring/alexmueller.png',
+    link: 'https://al-mueller.de',
+    name: 'Bureau 2+ Alex Müller',
   },
   {
     imageUrl: '/assets/images/sponsoring/tt.png',
