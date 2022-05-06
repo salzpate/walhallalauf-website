@@ -27,6 +27,11 @@ export const SponsorData: SponsorGalleryItems[] = [
     name: 'Marion Summerer',
   },
   {
+    imageUrl: '/assets/images/sponsoring/athen-donaustauf.jpg',
+    link: 'https://athen-donaustauf.business.site/',
+    name: 'Restaurant Athen Donaustauf',
+  },
+  {
     imageUrl: '/assets/images/sponsoring/tt.png',
     link: 'https://forst.thurnundtaxis.de',
     name: 'Thurn und Taxis Forst GmbH & Co. KG',
