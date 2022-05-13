@@ -85,7 +85,7 @@ const Ausschreibung: FC = () => {
         <DataList headline="Startgebühren">
           5 km Lauf, 7km Waldlauf, 10 km Lauf und Nordic-Walking je 10 EUR
           <br />
-          Nachmeldegebühr am Veranstaltungstag 5 EUR
+          Nachmeldegebühr, am 14.05. und am Veranstaltungstag 5 EUR
           <br />
           <br />
           Bambini-Lauf und Kid&apos;s Run kostenfrei
@@ -93,12 +93,15 @@ const Ausschreibung: FC = () => {
         <DataList headline="Anmeldung">
           <span className="page-section">
             <a href="https://anmeldung.zeitgemaess.info/202205152" target="_blank" rel="noreferrer">
-              über Zeitgemäß
+              über ZEITGEMAESS GmbH
             </a>
           </span>
         </DataList>
-        <DataList headline="Anmeldeschluss">Samstag, den 12.05.2022, 23:59 Uhr (Online)</DataList>
+        <DataList headline="Anmeldeschluss">Donnerstag, den 12.05.2022, 23:59 Uhr (Online)</DataList>
         <DataList headline="Nachmeldung / Startunterlagen">
+          Am 14.05.2022 von 17:00 Uhr – 19:00 Uhr:
+          <br />
+          <br />
           Sportverein Donaustauf
           <br />
           Regensburger Str. 30
@@ -106,17 +109,26 @@ const Ausschreibung: FC = () => {
           93093 Donaustauf
           <br />
           <br />
-          14.05.2022 von 17:00 Uhr – 19:00 Uhr
+          Am 15.05.2022 von 10:00 Uhr bis 15 Minuten vor dem jeweiligen Start möglich:
           <br />
-          15.05.2022 von 10:00 Uhr bis 15 Minuten vor dem jeweiligen Start möglich.
+          Fürstengarten <br />
+          (gegenüber Maxstraße 2)
+          <br />
+          93093 Donaustauf
         </DataList>
         <DataList headline="Zeitnahme">
-          Mit Transponder durch Zeitgemaess GmbH bei 5 km Lauf, 7 km Waldlauf, 10 km Lauf und Nordic-Walking.
+          Mit Transponder durch ZEITGEMAESS GmbH bei 5 km Lauf, 7 km Waldlauf, 10 km Lauf und Nordic-Walking.
           <br />
           <br />
           Bambini-Lauf und Kid&apos;s Run sind ohne Zeitmessung.
         </DataList>
-        <DataList headline="Ergebnisliste">Nach dem Lauf werden die Ergebnisse und Online-Urkunden bei Zeitgemaess GmbH veröffentlicht.</DataList>
+        <DataList headline="Ergebnisliste">
+          Nach dem Lauf werden die Ergebnisse und Online-Urkunden bei
+          <a href="https://ergebnisse.zeitgemaess.info/202205152" target="_blank" rel="noreferrer">
+            ZEITGEMAESS GmbH
+          </a>
+          veröffentlicht.
+        </DataList>
         <DataList headline="Verpflegung">Wasserstation beim 10 km Lauf und bei Nordic-Walking Getränke und Obst im Zielbereich</DataList>
         <DataList headline="Benefizaktion">Verein für helfende Hunde e.V.</DataList>
         <DataList headline="Sonstiges">
