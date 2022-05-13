@@ -102,7 +102,7 @@ const Ausschreibung: FC = () => {
           Am 14.05.2022 von 17:00 Uhr – 19:00 Uhr:
           <br />
           <br />
-          Sportverein Donaustauf
+          Mehrzweckhalle (Jugendzimmer)
           <br />
           Regensburger Str. 30
           <br />
