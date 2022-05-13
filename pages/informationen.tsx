@@ -18,7 +18,7 @@ const Informationen: FC = () => {
       <PageSection headline={pageTitle} id="informationen">
         <div className="mb-4">Neben der Ausschreibung befinden sich hier weitere Informationen rund um den Lauf.</div>
       </PageSection>
-      <PageSection headline="Startzeiten und -richtung" id="sectionzeiten" subSection className="pb-8">
+      <PageSection headline="Startzeiten und -richtung" id="sectionzeiten" subSection className="pb-6 sm:pb-8">
         <div className="md:inline-flex">
           <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
             <h4 className="font-bold pb-4">Bambinilauf</h4>
@@ -35,11 +35,11 @@ const Informationen: FC = () => {
             <div>13:20 Uhr - Richtung Maxstraße - Farbe Blau</div>
           </div>
           <div className="w-full md:w-1/3 md:shrink-0 md:justify-center">
-            <img src="/assets/images/information-start-ziel.jpg" alt="Start-Ziel Bereich" />
+            <img src="/assets/images/information-start-ziel-2022.jpg" alt="Start-Ziel Bereich" />
           </div>
         </div>
       </PageSection>
-      <PageSection headline="Anreise und Parken" id="parken" subSection className="pb-8">
+      <PageSection headline="Anreise und Parken" id="parken" subSection className="bg-gray-200 dark:bg-gray-900 pb-6 sm:pb-8">
         <div className="md:inline-flex">
           <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
             <h4 className="font-bold pb-4">Parkplätze</h4>
@@ -58,7 +58,38 @@ const Informationen: FC = () => {
           </div>
         </div>
       </PageSection>
-      <PageSection headline="Kinder" id="kinder" subSection className="pb-8">
+      <PageSection headline="Nachmeldung / Startunterlagen" id="startnummernausgabe" subSection className="pb-6 sm:pb-8">
+        <div className="md:inline-flex">
+          <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
+            Bereits einen Tag vor dem Lauf kann man sich stressfrei die Startunterlagen im Jugendzimmer der Mehrzweckhalle abholen oder auch noch Nachmelden. Aktuell befindet sich der Eingang zum Jugendzimmer hinter dem Haus:
+            <br />
+            <br />
+            <strong>Samstag, den 14.05.2022 von 17:00 Uhr bis 19:00 Uhr:</strong>
+            <br />
+            <br />
+            Mehrzweckhalle Donaustauf (Jungendzimmer)
+            <br />
+            Regensburger Str. 30
+            <br />
+            93093 Donaustauf
+            <br />
+            <br />
+            <strong>Sonntag, den 15.05.2022 ab 10:00 Uhr bis 15 Minuten vor dem jeweiligen Start:</strong>
+            <br />
+            <br />
+            Fürstengarten <br />
+            (gegenüber Maxstraße 2)
+            <br />
+            93093 Donaustauf
+          </div>
+          <div className="w-full md:w-1/3 md:shrink-0 md:justify-center">
+            <div className="pb-2">
+              <img src="/assets/images/information-jugendzimmer.jpg" alt="Jugendzimmer" />
+            </div>
+          </div>
+        </div>
+      </PageSection>
+      <PageSection headline="Kinder" id="kinder" subSection className="bg-gray-200 dark:bg-gray-900 pb-6 sm:pb-8">
         <div className="md:inline-flex">
           <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
             Unser Anspruch ist es &quot;Kinder und Jugendliche für Sport zu begeistern&quot;, weshalb auch die Teilnahme am Baminilauf und am Kid&apos;s Run völlig kostenlos für die Teilnehmer ist. Die Kinderläufe enden alle im Zielbereich,
@@ -70,15 +101,20 @@ const Informationen: FC = () => {
           </div>
         </div>
       </PageSection>
-      <PageSection headline="Hunde" id="hunde" subSection className="pb-8">
+      <PageSection headline="Hunde" id="hunde" subSection className="pb-6 sm:pb-8">
         <div className="md:inline-flex">
           <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
             Hunde dürfen bei uns sehr gerne mit auf die Strecke, allerdings bitten wir die Halter besonders auf die Unfallverhütung, z.B. durch die Gefahr von Leinen zu achten und sich beim Start eher an das Ende zu orientieren.
           </div>
         </div>
       </PageSection>
-      <PageSection headline="Ergebnislisten vergangener Läufe" id="ergebnislisten" subSection className="pb-8">
+      <PageSection headline="Ergebnislisten vergangener Läufe" id="ergebnislisten" subSection className="bg-gray-200 dark:bg-gray-900 pb-6 sm:pb-8">
         <ul className="page-section">
+          <li>
+            <a href="https://ergebnisse.zeitgemaess.info/202205152" target="_blank" rel="noreferrer">
+              11. Walhallalauf (15.05.2022)
+            </a>
+          </li>
           <li>
             <a href="https://www.zeitgemaess.info/event.php?ACCESSCODE=201904281" target="_blank" rel="noreferrer">
               10. Walhallalauf (28.04.2019)

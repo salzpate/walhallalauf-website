@@ -1,6 +1,6 @@
 import { TimingPartnerDataItem } from '@/components/Header/HeaderImage/HeaderImage';
 
-export const AnmeldungData: TimingPartnerDataItem = {
+export const AnmeldungData2: TimingPartnerDataItem = {
   id: 'anmeldung',
   link: 'https://anmeldung.zeitgemaess.info/202205152',
   name: 'Anmeldung',
@@ -14,8 +14,9 @@ export const StarterListeData: TimingPartnerDataItem = {
 
 export const ErgebniseData2: TimingPartnerDataItem = {
   id: 'ergebnise',
-  link: 'http://ergebnisse.zeitgemaess.info/202205152',
+  link: 'https://ergebnisse.zeitgemaess.info/202205152',
   name: 'Ergebnise 2022',
 };
 
+export const AnmeldungData: TimingPartnerDataItem = undefined;
 export const ErgebniseData: TimingPartnerDataItem = undefined;
