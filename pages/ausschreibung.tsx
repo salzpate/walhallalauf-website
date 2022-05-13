@@ -79,7 +79,7 @@ const Ausschreibung: FC = () => {
             5 km Lauf, 7km Waldlauf 10 km Lauf und Nordic-Walking: jeweils die Ersten drei Sieger männlich und weiblich
             <br />
             Jugend U16: jeweils die Ersten drei Sieger männlich und weiblich <br />
-            Bambini-Lauf und Kid&apos;s Run: Medaillen und Urkunden
+            Bambini-Lauf und Kid&apos;s Run: Medaillen und Online Urkunden
           </p>
         </DataList>
         <DataList headline="Startgebühren">
@@ -99,9 +99,7 @@ const Ausschreibung: FC = () => {
         </DataList>
         <DataList headline="Anmeldeschluss">Donnerstag, den 12.05.2022, 23:59 Uhr (Online)</DataList>
         <DataList headline="Nachmeldung / Startunterlagen">
-          Am 14.05.2022 von 17:00 Uhr – 19:00 Uhr:
-          <br />
-          <br />
+          <h4 className="md:font-bold">Am 14.05.2022 von 17:00 Uhr – 19:00 Uhr:</h4>
           Mehrzweckhalle (Jugendzimmer)
           <br />
           Regensburger Str. 30
@@ -109,8 +107,7 @@ const Ausschreibung: FC = () => {
           93093 Donaustauf
           <br />
           <br />
-          Am 15.05.2022 von 10:00 Uhr bis 15 Minuten vor dem jeweiligen Start möglich:
-          <br />
+          <h4 className="md:font-bold">Am 15.05.2022 von 10:00 Uhr bis 15 Minuten vor dem jeweiligen Start möglich:</h4>
           Fürstengarten <br />
           (gegenüber Maxstraße 2)
           <br />
@@ -123,10 +120,12 @@ const Ausschreibung: FC = () => {
           Bambini-Lauf und Kid&apos;s Run sind ohne Zeitmessung.
         </DataList>
         <DataList headline="Ergebnisliste">
-          Nach dem Lauf werden die Ergebnisse und Online-Urkunden bei
-          <a href="https://ergebnisse.zeitgemaess.info/202205152" target="_blank" rel="noreferrer">
-            ZEITGEMAESS GmbH
-          </a>
+          Nach dem Lauf werden die Ergebnisse und Online-Urkunden bei{' '}
+          <span className="page-section">
+            <a href="https://ergebnisse.zeitgemaess.info/202205152" target="_blank" rel="noreferrer">
+              ZEITGEMAESS GmbH
+            </a>
+          </span>{' '}
           veröffentlicht.
         </DataList>
         <DataList headline="Verpflegung">Wasserstation beim 10 km Lauf und bei Nordic-Walking Getränke und Obst im Zielbereich</DataList>
