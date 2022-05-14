@@ -89,7 +89,7 @@ const Strecken: FC = () => {
             </div>
           </div>
           <div className="w-full md:w-1/3 md:shrink-0 md:justify-center">
-            <img src="/assets/images/strecken-waldlauf.jpg" alt="Strecke Waldlauf" />
+            <img src="/assets/images/strecken-waldlauf-2022.jpg" alt="Strecke Waldlauf" />
             <div className="my-4">
               <a
                 href="/assets/gpx/walhallalauf-7-km.gpx"
