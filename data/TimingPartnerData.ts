@@ -12,10 +12,10 @@ export const StarterListeData: TimingPartnerDataItem = {
   name: 'Starterliste',
 };
 
-export const ErgebniseData2: TimingPartnerDataItem = {
+export const ErgebnisseData2: TimingPartnerDataItem = {
   id: 'ergebnise',
   link: 'https://ergebnisse.zeitgemaess.info/202205152',
-  name: 'Ergebnise 2022',
+  name: 'Ergebnisse 2022',
 };
 
 export const AnmeldungData: TimingPartnerDataItem = undefined;
