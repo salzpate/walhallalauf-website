@@ -6,17 +6,18 @@ export const AnmeldungData2: TimingPartnerDataItem = {
   name: 'Anmeldung',
 };
 
-export const StarterListeData: TimingPartnerDataItem = {
+export const StarterListeData2: TimingPartnerDataItem = {
   id: 'starterliste',
   link: 'https://starterliste.zeitgemaess.info/202205152',
   name: 'Starterliste',
 };
 
-export const ErgebniseData2: TimingPartnerDataItem = {
+export const ErgebniseData: TimingPartnerDataItem = {
   id: 'ergebnise',
   link: 'https://ergebnisse.zeitgemaess.info/202205152',
   name: 'Ergebnise 2022',
 };
 
 export const AnmeldungData: TimingPartnerDataItem = undefined;
-export const ErgebniseData: TimingPartnerDataItem = undefined;
+export const ErgebniseData2: TimingPartnerDataItem = undefined;
+export const StarterListeData: TimingPartnerDataItem = undefined;
