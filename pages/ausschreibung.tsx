@@ -1,3 +1,5 @@
+import Banner from '@/components/Banner';
+import { BannerTypes } from '@/components/Banner/Banner';
 import DataList from '@/components/DataList';
 import HeaderImage from '@/components/Header/HeaderImage';
 import Layout from '@/components/Layout';
@@ -14,8 +16,11 @@ const Ausschreibung: FC = () => {
     <Layout title={pageTitle + ' - ' + siteTitle}>
       <HeaderImage text1={HEADER_LINE_1} text2={HEADER_LINE_2} imageClass={styles.headerimage} />
       <PageSection headline={pageTitle} id="ausschreibung">
-        <DataList headline="Veranstaltung">11. Walhallalauf</DataList>
-        <DataList headline="Termin">Sonntag, 15.05.2022</DataList>
+        <div className="mb-8">
+          <Banner type={BannerTypes.warning}>Die Ausschreibung für 2023 ist noch nicht final.</Banner>
+        </div>
+        <DataList headline="Veranstaltung">12. Walhallalauf</DataList>
+        <DataList headline="Termin">Sonntag, 16.04.2023</DataList>
         <DataList headline="Veranstalter">SV Donaustauf, Abteilung Ausdauer</DataList>
         <DataList headline="Ort">
           Fürstengarten <br />
@@ -74,32 +79,40 @@ const Ausschreibung: FC = () => {
           </table>
         </DataList>
         <DataList headline="Siegerehrung">
-          Ab ca. 15:30 Uhr
+          <h4 className="md:font-bold">Bambini-Lauf und Kid&apos;s Run</h4>
+          Medaillen beim Zieleinlauf und Online Urkunden
+          <br />
+          <br />
+          <h4 className="md:font-bold">7km Waldlauf und Nordic-Walking</h4>
+          Ab ca. 13:30 Uhr
           <p className="text-xs sm:text-sm">
-            5 km Lauf, 7km Waldlauf 10 km Lauf und Nordic-Walking: jeweils die Ersten drei Sieger männlich und weiblich
+            jeweils die Ersten drei Sieger männlich und weiblich
             <br />
             Jugend U16: jeweils die Ersten drei Sieger männlich und weiblich <br />
-            Bambini-Lauf und Kid&apos;s Run: Medaillen und Online Urkunden
+          </p>
+          <br />
+          <h4 className="md:font-bold"> 5 km Lauf und 10 km Lauf</h4>
+          Ab ca. 15:00 Uhr
+          <p className="text-xs sm:text-sm">
+            jeweils die Ersten drei Sieger männlich und weiblich
+            <br />
+            Jugend U16: jeweils die Ersten drei Sieger männlich und weiblich <br />
           </p>
         </DataList>
         <DataList headline="Startgebühren">
           5 km Lauf, 7km Waldlauf, 10 km Lauf und Nordic-Walking je 10 EUR
           <br />
-          Nachmeldegebühr, am 14.05. und am Veranstaltungstag 5 EUR
+          Nachmeldegebühr, am 16.04. und am Veranstaltungstag 5 EUR
           <br />
           <br />
           Bambini-Lauf und Kid&apos;s Run kostenfrei
         </DataList>
         <DataList headline="Anmeldung">
-          <span className="page-section">
-            <a href="https://anmeldung.zeitgemaess.info/202205152" target="_blank" rel="noreferrer">
-              über ZEITGEMAESS GmbH
-            </a>
-          </span>
+          <span className="page-section">über ZEITGEMAESS GmbH</span>
         </DataList>
-        <DataList headline="Anmeldeschluss">Donnerstag, den 12.05.2022, 23:59 Uhr (Online)</DataList>
+        <DataList headline="Anmeldeschluss">Donnerstag, den 13.04.2022, 23:59 Uhr (Online)</DataList>
         <DataList headline="Nachmeldung / Startunterlagen">
-          <h4 className="md:font-bold">Am 14.05.2022 von 17:00 Uhr – 19:00 Uhr:</h4>
+          <h4 className="md:font-bold">Am 15.04.2023 von 17:00 Uhr – 19:00 Uhr:</h4>
           Mehrzweckhalle (Jugendzimmer)
           <br />
           Regensburger Str. 30
@@ -107,7 +120,7 @@ const Ausschreibung: FC = () => {
           93093 Donaustauf
           <br />
           <br />
-          <h4 className="md:font-bold">Am 15.05.2022 von 10:00 Uhr bis 15 Minuten vor dem jeweiligen Start möglich:</h4>
+          <h4 className="md:font-bold">Am 16.04.2023 von 10:00 Uhr bis 15 Minuten vor dem jeweiligen Start möglich:</h4>
           Fürstengarten <br />
           (gegenüber Maxstraße 2)
           <br />
@@ -120,16 +133,10 @@ const Ausschreibung: FC = () => {
           Bambini-Lauf und Kid&apos;s Run sind ohne Zeitmessung.
         </DataList>
         <DataList headline="Ergebnisliste">
-          Nach dem Lauf werden die Ergebnisse und Online-Urkunden bei{' '}
-          <span className="page-section">
-            <a href="https://ergebnisse.zeitgemaess.info/202205152" target="_blank" rel="noreferrer">
-              ZEITGEMAESS GmbH
-            </a>
-          </span>{' '}
-          veröffentlicht.
+          Nach dem Lauf werden die Ergebnisse und Online-Urkunden bei <span className="page-section">ZEITGEMAESS GmbH</span> veröffentlicht.
         </DataList>
         <DataList headline="Verpflegung">Wasserstation beim 10 km Lauf und bei Nordic-Walking Getränke und Obst im Zielbereich</DataList>
-        <DataList headline="Benefizaktion">Verein für helfende Hunde e.V.</DataList>
+        <DataList headline="Benefizaktion">noch offen</DataList>
         <DataList headline="Sonstiges">
           Für das leibliche Wohl wird bestens gesorgt.
           <br />

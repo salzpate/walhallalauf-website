@@ -1,2 +1,2 @@
-export const HEADER_LINE_1 = '11. Walhallalauf';
-export const HEADER_LINE_2 = '15.05.2022';
+export const HEADER_LINE_1 = '12. Walhallalauf';
+export const HEADER_LINE_2 = '16.04.2023';
