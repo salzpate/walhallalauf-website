@@ -40,6 +40,15 @@ const Benefiz: FC = () => {
           im Leben. Für diesen Bedarf kann ein Assistenzhund eine große Stütze sein. Ebenso ist die positive Wirkung eines ausgebildeten Besuchshundes/Therapiebegleithundes in sozialen und therapeutischen Einrichtungen bekannt.
         </p>
         <br></br>
+        <p>
+          Mithilfe unserer Sponsoren, dem Armin Wolf Laufteam und unserer Teilnehmer konnten wir im Jahr 2022 wieder unsere Kinderläufe kostenlos anbieten und dem Verein für helfende Hunde e.V. eine Spendensumme von 3.000,-- EUR
+          überreichen. Vielen Dank an alle, die dies ermöglicht haben. An dieser Stelle wollten wir uns auch nochmals beim Verein für helfende Hunde e.V. bedanken, welcher sich beim Lauf mit eingebracht hat.
+        </p>
+        <br></br>
+        <p>
+          <img src="/assets/images/spende-rote-pfote.jpg" width="640" height="480" alt="Spendenübergabe" />
+        </p>
+        <br></br>
         <p className="page-section">
           Weitere Informationen finden Sie auf der Homepage des Vereins für helfende Hunde e.V.:<br></br>
           <a href="https://www.rote-pfote.de" target="_blank" rel="noreferrer">
