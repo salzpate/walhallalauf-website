@@ -11,21 +11,21 @@
     "sitemap": "node sitemap_generator.js"
   },
   "dependencies": {
-    "@salzpate/react-ui": "^0.1.17",
+    "@salzpate/react-ui": "^0.2.0",
     "@sendgrid/mail": "^7.7.0",
     "axios": "^0.27.2",
     "classnames": "^2.3.1",
     "next": "^12.2.2",
     "normalize.css": "^8.0.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-hook-form": "^7.33.1",
     "remark": "^14.0.2",
     "remark-html": "^15.0.1"
   },
   "devDependencies": {
     "@types/node": "^16.11.44",
-    "@types/react": "^17.0.47",
+    "@types/react": "^18.0.15",
     "@typescript-eslint/eslint-plugin": "^5.30.6",
     "@typescript-eslint/parser": "^5.30.6",
     "autoprefixer": "^10.4.7",
