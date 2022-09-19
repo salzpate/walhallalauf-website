@@ -1,7 +1,7 @@
 import { PropsWithChildren } from 'react';
 import cn from 'classnames';
 import styles from './HeaderImage.module.css';
-import { AnmeldungData, ErgebniseData, StarterListeData } from '@/data/TimingPartnerData';
+import { AnmeldungData, ErgebnisseData, StarterListeData } from '@/data/TimingPartnerData';
 
 type HeaderImageProps = {
   imageClass?: string;
@@ -63,15 +63,15 @@ function HeaderImage(props: PropsWithChildren<HeaderImageProps>): JSX.Element {
                         </a>
                       </div>
                     )}
-                    {ErgebniseData && (
+                    {ErgebnisseData && (
                       <div className="float-left px-6 md:px-0 md:right-6 md:mt-2 md:float-none">
                         <a
                           className="text-white sm:text-2xl tracking-wider py-1 px-4 border border-white rounded transition ease-in-out duration-150 bg-secondary hover:bg-opacity-75 md:w-40 inline-block"
-                          href={ErgebniseData.link}
+                          href={ErgebnisseData.link}
                           target="_blank"
                           rel="noreferrer"
                         >
-                          {ErgebniseData.name}
+                          {ErgebnisseData.name}
                         </a>
                       </div>
                     )}

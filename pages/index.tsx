@@ -14,7 +14,7 @@ import { HEADER_LINE_1, HEADER_LINE_2 } from 'lib/constants';
 import { GetStaticProps } from 'next';
 import { FC } from 'react';
 import { SponsorData } from '@/data/SponsorData';
-import { AnmeldungData, ErgebniseData, StarterListeData } from '@/data/TimingPartnerData';
+import { AnmeldungData, ErgebnisseData, StarterListeData } from '@/data/TimingPartnerData';
 
 type Info = {
   id: number;
@@ -99,14 +99,14 @@ const Home: FC<HomeProps> = (props: HomeProps) => {
               {StarterListeData.name}
             </a>
           )}
-          {ErgebniseData && (
+          {ErgebnisseData && (
             <a
               className="bg-transparent text-secondary dark:text-secondary-dark text-sm uppercase tracking-wider ml-4 py-2 px-4 border border-secondary rounded transition ease-in-out duration-150 hover:bg-secondary hover:bg-opacity-15 hover:no-underline dark:border-secondary-dark dark:hover:bg-secondary-dark"
-              href={ErgebniseData.link}
+              href={ErgebnisseData.link}
               target="_blank"
               rel="noreferrer"
             >
-              {ErgebniseData.name}
+              {ErgebnisseData.name}
             </a>
           )}
         </div>
@@ -126,12 +126,12 @@ const Home: FC<HomeProps> = (props: HomeProps) => {
           </div>
           <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
             <ImageButtonLink headline="Waldlauf" href="/strecken/#waldlauf" imgSrc="/assets/images/index-waldlauf.jpg">
-              7,1 km Rundkurs, anspruchvoll (ca. 160 HM) geteert, geschottert und Waldweg
+              7,1 km Rundkurs, anspruchsvoll (ca. 160 HM) geteert, geschottert und Waldweg
             </ImageButtonLink>
           </div>
           <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
             <ImageButtonLink headline="Nordic Walken" href="/strecken/#waldlauf" imgSrc="/assets/images/index-walken.jpg">
-              7,1 km Rundkurs, anspruchvoll (ca. 160 HM) geteert, geschottert und Waldweg
+              7,1 km Rundkurs, anspruchsvoll (ca. 160 HM) geteert, geschottert und Waldweg
             </ImageButtonLink>
           </div>
           <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
