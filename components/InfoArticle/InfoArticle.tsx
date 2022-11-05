@@ -16,7 +16,7 @@ function InfoArticle(props: PropsWithChildren<InfoArticleProps>): JSX.Element {
     <article className="max-w-screen-xl mx-auto mb-8 text-gray-900 dark:text-gray-300" id={articleId}>
       <p className="font-bold">{headline}</p>
       <p>&nbsp;</p>
-      <p>{content}</p>
+      <div>{content}</div>
     </article>
   );
 }

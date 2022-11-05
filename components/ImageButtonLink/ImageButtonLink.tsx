@@ -16,7 +16,7 @@ function ImageButtonLink(props: PropsWithChildren<ImageButtonLinkProps>): JSX.El
   const { href, headline, imgSrc, children } = props;
 
   return (
-    <Link href={href}>
+    <Link href={href} legacyBehavior>
       <a className={styles.link + ' button-link'}>
         {imgSrc && <img className="w-32 h-auto object-cover object-center shrink-0 mr-4 rounded-l-lg images-dark" src={imgSrc} alt={headline as string} />}
         <div className="grow">
