@@ -100,9 +100,11 @@ const Ausschreibung: FC = () => {
           </p>
         </DataList>
         <DataList headline="Startgebühren">
-          5 km Lauf, 7km Waldlauf, 10 km Lauf und Nordic-Walking je 10 EUR
+          5 km Lauf, 7km Waldlauf, 10 km Lauf und Nordic-Walking bis 15.03.2023 je 12 EUR
           <br />
-          Nachmeldegebühr, am 16.04. und am Veranstaltungstag 5 EUR
+          5 km Lauf, 7km Waldlauf, 10 km Lauf und Nordic-Walking ab 16.03.2023 je 15 EUR
+          <br />
+          Nachmeldegebühr, am 15.04.2023 und am Veranstaltungstag 3 EUR
           <br />
           <br />
           Bambini-Lauf und Kid&apos;s Run kostenfrei
