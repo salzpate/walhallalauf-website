@@ -1,5 +1,3 @@
-import Banner from '@/components/Banner';
-import { BannerTypes } from '@/components/Banner/Banner';
 import DataList from '@/components/DataList';
 import HeaderImage from '@/components/Header/HeaderImage';
 import Layout from '@/components/Layout';
@@ -16,9 +14,6 @@ const Ausschreibung: FC = () => {
     <Layout title={pageTitle + ' - ' + siteTitle}>
       <HeaderImage text1={HEADER_LINE_1} text2={HEADER_LINE_2} imageClass={styles.headerimage} />
       <PageSection headline={pageTitle} id="ausschreibung">
-        <div className="mb-8">
-          <Banner type={BannerTypes.warning}>Die Ausschreibung für 2023 ist noch nicht final.</Banner>
-        </div>
         <DataList headline="Veranstaltung">12. Walhallalauf</DataList>
         <DataList headline="Termin">Sonntag, 16.04.2023</DataList>
         <DataList headline="Veranstalter">SV Donaustauf, Abteilung Ausdauer</DataList>
@@ -46,33 +41,33 @@ const Ausschreibung: FC = () => {
           <table>
             <tbody>
               <tr>
-                <td>11:00 Uhr</td>
+                <td>10:30 Uhr</td>
                 <td className="text-right px-4">400 m</td>
                 <td>Bambini-Lauf (bis 7 Jahre)</td>
               </tr>
               <tr>
-                <td>11:20 Uhr</td>
+                <td>10:50 Uhr</td>
                 <td className="text-right px-4">1,6 km</td>
                 <td>Kid&apos;s Run (ab 7 Jahren)</td>
               </tr>
               <tr>
-                <td>12:10 Uhr</td>
+                <td>11:45 Uhr</td>
                 <td className="text-right px-4">7 km</td>
                 <td>Waldlauf</td>
               </tr>
               <tr>
-                <td>12:15 Uhr</td>
+                <td>11:50 Uhr</td>
                 <td className="text-right px-4">7 km</td>
                 <td>Nordic Walking</td>
               </tr>
               <tr>
-                <td>13:10 Uhr</td>
-                <td className="text-right px-4">5 km</td>
+                <td>13:35 Uhr</td>
+                <td className="text-right px-4">10 km</td>
                 <td>Lauf</td>
               </tr>
               <tr>
-                <td>13:20 Uhr</td>
-                <td className="text-right px-4">10 km</td>
+                <td>13:45 Uhr</td>
+                <td className="text-right px-4">5 km</td>
                 <td>Lauf</td>
               </tr>
             </tbody>
@@ -84,7 +79,7 @@ const Ausschreibung: FC = () => {
           <br />
           <br />
           <h4 className="md:font-bold">7km Waldlauf und Nordic-Walking</h4>
-          Ab ca. 13:30 Uhr
+          Ab ca. 12:50 Uhr
           <p className="text-xs sm:text-sm">
             jeweils die Ersten drei Sieger männlich und weiblich
             <br />
@@ -92,7 +87,7 @@ const Ausschreibung: FC = () => {
           </p>
           <br />
           <h4 className="md:font-bold"> 5 km Lauf und 10 km Lauf</h4>
-          Ab ca. 15:00 Uhr
+          Ab ca. 15:15 Uhr
           <p className="text-xs sm:text-sm">
             jeweils die Ersten drei Sieger männlich und weiblich
             <br />
