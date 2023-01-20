@@ -1,6 +1,6 @@
 import styles from './ContactForm.module.css';
 import { SnackBarTypes, useSnackBar } from '@/components/SnackBar/SnackBar';
-import axios, { AxiosError, AxiosRequestConfig, AxiosResponse } from 'axios';
+import axios, { AxiosError, AxiosResponse, RawAxiosRequestConfig } from 'axios';
 import Link from 'next/link';
 import { useForm } from 'react-hook-form';
 
@@ -33,7 +33,7 @@ function ContactForm(props: ContactFormProps): JSX.Element {
     mode: 'onBlur',
   });
   const onSubmit = (data: ContactFormData) => {
-    const config: AxiosRequestConfig = {
+    const config: RawAxiosRequestConfig = {
       method: 'post',
       url: url,
       headers: { 'Access-Control-Allow-Origin': '*', 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-cache', Pragma: 'no-cache', Expires: '0' },
