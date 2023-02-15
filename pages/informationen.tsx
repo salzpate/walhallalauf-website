@@ -22,20 +22,20 @@ const Informationen: FC = () => {
         <div className="md:inline-flex">
           <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
             <h4 className="font-bold pb-4">Bambinilauf</h4>
-            <div>11:00 Uhr - Richtung Fürstengarten / Wiese - Farbe Weiß</div>
+            <div>10:30 Uhr - Richtung Fürstengarten / Wiese - Farbe Weiß</div>
             <h4 className="font-bold py-4">Kid&apos;s Run</h4>
-            <div>11:20 Uhr - Richtung Fürstengarten / Wiese - Farbe Weiß</div>
+            <div>10:50 Uhr - Richtung Fürstengarten / Wiese - Farbe Weiß</div>
             <h4 className="font-bold py-4">7 km Waldlauf</h4>
-            <div>12:10 Uhr - Richtung Fürstengarten Schotterweg - Farbe Orange</div>
+            <div>11:45 Uhr - Richtung Fürstengarten Schotterweg - Farbe Orange</div>
             <h4 className="font-bold py-4">7 km Nordic Walking</h4>
-            <div>12:15 Uhr - Richtung Fürstengarten Schotterweg - Farbe Gelb</div>
-            <h4 className="font-bold py-4">5 km Laufen</h4>
-            <div>13:10 Uhr - Richtung Maxstraße - Farbe Grün</div>
+            <div>11:50 Uhr - Richtung Fürstengarten Schotterweg - Farbe Gelb</div>
             <h4 className="font-bold py-4">10 km Laufen</h4>
-            <div>13:20 Uhr - Richtung Maxstraße - Farbe Blau</div>
+            <div>13:35 Uhr - Richtung Maxstraße - Farbe Blau</div>
+            <h4 className="font-bold py-4">5 km Laufen</h4>
+            <div>13:45 Uhr - Richtung Maxstraße - Farbe Grün</div>
           </div>
           <div className="w-full md:w-1/3 md:shrink-0 md:justify-center">
-            <img src="/assets/images/information-start-ziel-2022.jpg" alt="Start-Ziel Bereich" />
+            <img src="/assets/images/information-start-ziel-2023.jpg" alt="Start-Ziel Bereich" />
           </div>
         </div>
       </PageSection>
@@ -110,6 +110,11 @@ const Informationen: FC = () => {
       </PageSection>
       <PageSection headline="Ergebnislisten vergangener Läufe" id="ergebnislisten" subSection className="bg-gray-200 dark:bg-gray-900 pb-6 sm:pb-8">
         <ul className="page-section">
+          <li>
+            <a href="http://ergebnisse.zeitgemaess.info/202304161'" target="_blank" rel="noreferrer">
+              12. Walhallalauf (16.04.2023)
+            </a>
+          </li>
           <li>
             <a href="https://ergebnisse.zeitgemaess.info/202205152" target="_blank" rel="noreferrer">
               11. Walhallalauf (15.05.2022)
