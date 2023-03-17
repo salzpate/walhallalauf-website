@@ -17,7 +17,7 @@ function SponsorGallery(props: PropsWithChildren<SponsorGalleryProps>): JSX.Elem
 
   return (
     <div id={id}>
-      <ul className="my-6 sm:my-8 sm:col-count-2 md:col-count-4 lg:col-count-5 block gap-x-4">
+      <ul className="my-6 sm:my-8 sm:columns-2 md:columns-4 lg:columns-5 block gap-x-4">
         {items.map((item, index) => {
           return (
             <li key={index} className="mb-4">
