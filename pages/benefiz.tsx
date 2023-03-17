@@ -19,9 +19,9 @@ const Benefiz: FC = () => {
           es uns zudem wichtig, regionale Organisationen bei der Bewegungs- und Sportförderung von Kindern und Jugendlichen im Rahmen unserer Benefizaktionen zu unterstützen.
         </div>
       </PageSection>
-      <PageSection subSection headline="Benefizaktion 2022" id="benefiz2022" className="pb-6 sm:pb-8 page-section">
+      <PageSection subSection headline="Benefizaktion 2023" id="benefiz2023" className="pb-6 sm:pb-8 page-section">
         <p>
-          2022 unterstützen wir mit dem Lauf den <strong>Verein für helfende Hunde e.V.</strong>
+          Wie schon 2022 unterstützen wir 2023 mit dem Lauf wieder den <strong>Verein für helfende Hunde e.V.</strong>
         </p>
         <br></br>
         <p>
