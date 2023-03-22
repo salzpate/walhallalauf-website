@@ -41,4 +41,9 @@ export const SponsorData: SponsorGalleryItems[] = [
     link: 'https://forst.thurnundtaxis.de',
     name: 'Thurn und Taxis Forst GmbH & Co. KG',
   },
+  {
+    imageUrl: '/assets/images/sponsoring/armenspital-2022.png',
+    link: 'https://www.historisches-armen-spital.de',
+    name: 'Historisches Armen Spital',
+  },
 ];
