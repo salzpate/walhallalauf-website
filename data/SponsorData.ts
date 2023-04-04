@@ -71,4 +71,9 @@ export const SponsorData: SponsorGalleryItems[] = [
     link: 'https://www.la-casa-dei-matti.de',
     name: 'La Casa dei Matti',
   },
+  {
+    imageUrl: '/assets/images/sponsoring/boulderwelt-2023.png',
+    link: 'https://www.boulderwelt-regensburg.de/',
+    name: 'Boulderwelt Regensburg',
+  },
 ];
