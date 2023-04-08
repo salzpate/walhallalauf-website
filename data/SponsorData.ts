@@ -72,8 +72,23 @@ export const SponsorData: SponsorGalleryItems[] = [
     name: 'La Casa dei Matti',
   },
   {
+    imageUrl: '/assets/images/sponsoring/burgfrieden-2023.jpg',
+    link: 'https://burgfrieden-donaustauf.eatbu.com',
+    name: 'Gasthaus Burgfrieden',
+  },
+  {
+    imageUrl: '/assets/images/sponsoring/al-ponte-2023.png',
+    link: 'https://www.pizza-alponte.de/de/',
+    name: 'Al Ponte',
+  },
+  {
+    imageUrl: '/assets/images/sponsoring/sport-hartl-2023.png',
+    link: 'https://www.sporthartl.de',
+    name: 'Sport Hartl',
+  },
+  {
     imageUrl: '/assets/images/sponsoring/boulderwelt-2023.png',
-    link: 'https://www.boulderwelt-regensburg.de/',
+    link: 'https://www.boulderwelt-regensburg.de',
     name: 'Boulderwelt Regensburg',
   },
 ];
