@@ -94,6 +94,7 @@ const Ausschreibung: FC = () => {
             Jugend U16: jeweils die Ersten drei Sieger männlich und weiblich <br />
           </p>
         </DataList>
+        <DataList headline="Verlosung">Ab ca. 11:00 Uhr findet eine Verlosung für die Teilnehmer der Kinderläufe statt.</DataList>
         <DataList headline="Startgebühren">
           5 km Lauf, 7km Waldlauf, 10 km Lauf und Nordic-Walking bis 15.03.2023 je 12 EUR
           <br />
@@ -133,7 +134,7 @@ const Ausschreibung: FC = () => {
           Nach dem Lauf werden die Ergebnisse und Online-Urkunden bei <span className="page-section">ZEITGEMAESS GmbH</span> veröffentlicht.
         </DataList>
         <DataList headline="Verpflegung">Wasserstation beim 10 km Lauf und bei Nordic-Walking Getränke und Obst im Zielbereich</DataList>
-        <DataList headline="Benefizaktion">noch offen</DataList>
+        <DataList headline="Benefizaktion">Verein für helfende Hunde e.V.</DataList>
         <DataList headline="Sonstiges">
           Für das leibliche Wohl wird bestens gesorgt.
           <br />
