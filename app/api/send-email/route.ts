@@ -29,8 +29,7 @@ export async function POST(request: Request): Promise<
 
                 Nachricht:
                 ${nachricht}`;
-  console.log('---- SEND MAIL ----');
-  console.log(antwort + ' ' + name + ' ' + nachricht + ' ' + email + ' ' + datenschutz);
+
   await sendEmail(antwort, text)
     .then(() => {
       return NextResponse.json({ status: 'success', message: 'Ihre Nachricht wurde erfolgreich versendet.' });
