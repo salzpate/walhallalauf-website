@@ -1,7 +1,7 @@
 # www.robotstxt.org/
 
 # Allow crawling of all content
-User-agent: *
+User-Agent: *
 Disallow: /lib/
 
-Sitemap: https://walhallalauf.sv-donaustauf.info/sitemap.xml
+Sitemap: https://www.walhallalauf.de/sitemap.xml
