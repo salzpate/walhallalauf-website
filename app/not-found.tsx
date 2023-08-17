@@ -1,17 +1,19 @@
+import { JSX } from 'react';
 import HeaderImage from '@/components/Header/HeaderImage';
-import Layout from '@/components/Layout';
-import { siteTitle } from '@/components/Layout/Layout';
-import PageSection from '@/components/PageSection';
-import styles from '@/styles/index.module.css';
-import { HEADER_LINE_1, HEADER_LINE_2 } from 'lib/constants';
+import HeaderMainLayout from '@/components/HeaderMainLayout/HeaderMainLayout';
+import { Metadata } from 'next';
+import { HEADER_LINE_1, HEADER_LINE_2 } from '@/lib/constants';
+import PageSection from '@/components/PageSection/PageSection';
 import Link from 'next/link';
-import { FC } from 'react';
+import styles from '@/styles/index.module.css';
 
-export const pageTitle = '404';
+export const metadata: Metadata = {
+  title: '404',
+};
 
-const FileNotFound: FC = () => {
+function FileNotFound(): JSX.Element {
   return (
-    <Layout title={pageTitle + ' - ' + siteTitle}>
+    <HeaderMainLayout>
       <HeaderImage text1={HEADER_LINE_1} text2={HEADER_LINE_2} imageClass={styles.headerimage} />
       <PageSection headline="Seite nicht gefunden" id="notfound">
         <div>Die gewünschte Seite wurde nicht gefunden.</div>
@@ -26,8 +28,8 @@ const FileNotFound: FC = () => {
           </Link>
         </div>
       </PageSection>
-    </Layout>
+    </HeaderMainLayout>
   );
-};
+}
 
 export default FileNotFound;

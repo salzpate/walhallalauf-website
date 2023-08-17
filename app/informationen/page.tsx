@@ -1,21 +1,12 @@
-/* eslint-disable @next/next/no-img-element */
-import HeaderImage from '@/components/Header/HeaderImage';
-import Layout from '@/components/Layout';
-import { siteTitle } from '@/components/Layout/Layout';
+import { JSX } from 'react';
 import PageSection from '@/components/PageSection';
-import SponsorGallery from '@/components/SponsorGallery';
+import SponsorGallery from '@/components/SponsorGallery/SponsorGallery';
 import { SponsorData } from '@/data/SponsorData';
-import styles from '@/styles/index.module.css';
-import { HEADER_LINE_1, HEADER_LINE_2 } from 'lib/constants';
-import { FC } from 'react';
 
-export const pageTitle = 'Informationen';
-
-const Informationen: FC = () => {
+function Informationen(): JSX.Element {
   return (
-    <Layout title={pageTitle + ' - ' + siteTitle}>
-      <HeaderImage text1={HEADER_LINE_1} text2={HEADER_LINE_2} imageClass={styles.headerimage} />
-      <PageSection headline={pageTitle} id="informationen">
+    <>
+      <PageSection headline="Informationen" id="informationen">
         <div className="mb-4">Neben der Ausschreibung befinden sich hier weitere Informationen rund um den Lauf.</div>
       </PageSection>
       <PageSection headline="Startzeiten und -richtung" id="sectionzeiten" subSection className="pb-6 sm:pb-8">
@@ -161,8 +152,8 @@ const Informationen: FC = () => {
         <p>Wir sagen vielen Dank für die Unterstützung an unsere Partner und Sponsoren</p>
         <SponsorGallery items={SponsorData} />
       </PageSection>
-    </Layout>
+    </>
   );
-};
+}
 
 export default Informationen;

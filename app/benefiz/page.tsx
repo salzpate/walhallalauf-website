@@ -1,19 +1,10 @@
-/* eslint-disable @next/next/no-img-element */
-import HeaderImage from '@/components/Header/HeaderImage';
-import Layout from '@/components/Layout';
-import { siteTitle } from '@/components/Layout/Layout';
+import { JSX } from 'react';
 import PageSection from '@/components/PageSection';
-import styles from '@/styles/index.module.css';
-import { HEADER_LINE_1, HEADER_LINE_2 } from 'lib/constants';
-import { FC } from 'react';
 
-export const pageTitle = 'Benefiz';
-
-const Benefiz: FC = () => {
+function Benefiz(): JSX.Element {
   return (
-    <Layout title={pageTitle + ' - ' + siteTitle}>
-      <HeaderImage text1={HEADER_LINE_1} text2={HEADER_LINE_2} imageClass={styles.headerimage} />
-      <PageSection headline={pageTitle} id="benefiz">
+    <>
+      <PageSection headline="Benefiz" id="benefiz">
         <div className="mb-4">
           Seit dem ersten Walhallalauf ist es unser Anspruch &quot;Kinder und Jugendliche für Sport zu begeistern&quot;, weshalb auch die Teilnahme am Baminilauf und am Kid&apos;s Run völlig kostenlos für die Teilnehmer ist. Seit 2015 ist
           es uns zudem wichtig, regionale Organisationen bei der Bewegungs- und Sportförderung von Kindern und Jugendlichen im Rahmen unserer Benefizaktionen zu unterstützen.
@@ -56,8 +47,8 @@ const Benefiz: FC = () => {
           </a>
         </p>
       </PageSection>
-    </Layout>
+    </>
   );
-};
+}
 
 export default Benefiz;

@@ -1,19 +1,10 @@
-/* eslint-disable @next/next/no-img-element */
-import HeaderImage from '@/components/Header/HeaderImage';
-import Layout from '@/components/Layout';
-import { siteTitle } from '@/components/Layout/Layout';
+import { JSX } from 'react';
 import PageSection from '@/components/PageSection';
-import styles from '@/styles/index.module.css';
-import { HEADER_LINE_1, HEADER_LINE_2 } from 'lib/constants';
-import { FC } from 'react';
 
-export const pageTitle = 'Strecken';
-
-const Strecken: FC = () => {
+function Strecken(): JSX.Element {
   return (
-    <Layout title={pageTitle + ' - ' + siteTitle}>
-      <HeaderImage text1={HEADER_LINE_1} text2={HEADER_LINE_2} imageClass={styles.headerimage} />
-      <PageSection headline={pageTitle} id="strecken">
+    <>
+      <PageSection headline="Strecken" id="strecken">
         <div className="mb-4">
           Mit unseren Strecken decken wir alle Alters- und Leistungsstufen ab. Beim Walhallalauf geht es auch darum, etwas von Donaustauf zu erleben. Dein Weg führt dich zunächst durch den historischen Markt. Entlang der Donau siehst du
           schon von Weitem unsere Burg und natürlich auch die Walhalla. Vorbei an der historischen St. Salvator Kirche und dem chinesischen Turm geht es zum Schlussspurt. Im Ziel lädt der Fürstengarten zum Verweilen ein. Dort laufen auch
@@ -137,8 +128,8 @@ const Strecken: FC = () => {
           </div>
         </div>
       </PageSection>
-    </Layout>
+    </>
   );
-};
+}
 
 export default Strecken;
