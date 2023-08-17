@@ -6,16 +6,16 @@ import HeaderImage from '@/components/Header/HeaderImage/HeaderImage';
 import styles from '@/styles/index.module.css';
 
 export const metadata: Metadata = {
-  title: `Informationen - ${SITE_TITLE}`,
+  title: `Strecken - ${SITE_TITLE}`,
 };
 
-function InformationenLayout({ children }: PropsWithChildren<object>): JSX.Element {
+function StreckenLayout({ children }: PropsWithChildren<object>): JSX.Element {
   return (
-    <HeaderMainLayout activeMenu="informationen">
+    <HeaderMainLayout activeMenu="strecken">
       <HeaderImage text1={HEADER_LINE_1} text2={HEADER_LINE_2} imageClass={styles.headerimage} />
       {children}
     </HeaderMainLayout>
   );
 }
 
-export default InformationenLayout;
+export default StreckenLayout;
