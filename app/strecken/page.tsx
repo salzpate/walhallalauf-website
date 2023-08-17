@@ -1,5 +1,6 @@
 import { JSX } from 'react';
 import PageSection from '@/components/PageSection';
+import Image from 'next/image';
 
 function Strecken(): JSX.Element {
   return (
@@ -27,7 +28,7 @@ function Strecken(): JSX.Element {
             </div>
           </div>
           <div className="w-full md:w-1/3 md:shrink-0 md:justify-center">
-            <img src="/assets/images/strecken-10km.jpg" alt="Strecke 10 km Lauf" />
+            <Image src="/assets/images/strecken-10km.jpg" width={405} height={236} alt="Strecke 10 km Lauf" />
             <div className="my-4">
               <a
                 href="/assets/gpx/walhallalauf-10-km.gpx"
@@ -53,7 +54,7 @@ function Strecken(): JSX.Element {
             </div>
           </div>
           <div className="w-full md:w-1/3 md:shrink-0 md:justify-center">
-            <img src="/assets/images/strecken-5km.jpg" alt="Strecke 5 km Lauf" />
+            <Image src="/assets/images/strecken-5km.jpg" width={405} height={155} alt="Strecke 5 km Lauf" />
             <div className="my-4">
               <a
                 href="/assets/gpx/walhallalauf-5-km.gpx"
@@ -80,7 +81,7 @@ function Strecken(): JSX.Element {
             </div>
           </div>
           <div className="w-full md:w-1/3 md:shrink-0 md:justify-center">
-            <img src="/assets/images/strecken-waldlauf-2022.jpg" alt="Strecke Waldlauf" />
+            <Image src="/assets/images/strecken-waldlauf-2022.jpg" width={405} height={304} alt="Strecke Waldlauf" />
             <div className="my-4">
               <a
                 href="/assets/gpx/walhallalauf-7-km.gpx"
@@ -102,7 +103,7 @@ function Strecken(): JSX.Element {
             <div>Der Start erfolgt in Richtung Osten etwas unterhalb der Zielbereiches. Am chinesischen Turm wird zweimal hintereinander links abgebogen. Es werden drei Runden gelaufen, bevor es ins Ziel geht.</div>
           </div>
           <div className="w-full md:w-1/3 md:shrink-0 md:justify-center">
-            <img src="/assets/images/strecken-kidsrun.jpg" alt="Strecke Kid's Run" />
+            <Image src="/assets/images/strecken-kidsrun.jpg" width={405} height={150} alt="Strecke Kid's Run" />
             <div className="my-4">
               <a
                 href="/assets/gpx/walhallalauf-kidsrun.gpx"
@@ -124,7 +125,7 @@ function Strecken(): JSX.Element {
             <div>Der Start erfolgt in Richtung Osten etwas unterhalb der Zielbereiches. Am chinesischen Turm wird zweimal hintereinander links abgebogen, bevor es ins Ziel geht.</div>
           </div>
           <div className="w-full md:w-1/3 md:shrink-0 md:justify-center">
-            <img src="/assets/images/strecken-bambini.jpg" alt="Strecke Bambinilauf" />
+            <Image src="/assets/images/strecken-bambini.jpg" width={405} height={150} alt="Strecke Bambinilauf" />
           </div>
         </div>
       </PageSection>

@@ -2,6 +2,7 @@ import { JSX } from 'react';
 import PageSection from '@/components/PageSection';
 import SponsorGallery from '@/components/SponsorGallery/SponsorGallery';
 import { SponsorData } from '@/data/SponsorData';
+import Image from 'next/image';
 
 function Informationen(): JSX.Element {
   return (
@@ -26,7 +27,7 @@ function Informationen(): JSX.Element {
             <div>13:45 Uhr - Richtung Maxstraße - Farbe Grün</div>
           </div>
           <div className="w-full md:w-1/3 md:shrink-0 md:justify-center">
-            <img src="/assets/images/information-start-ziel-2023.jpg" alt="Start-Ziel Bereich" />
+            <Image src="/assets/images/information-start-ziel-2023.jpg" width={810} height={372} alt="Start-Ziel Bereich" />
           </div>
         </div>
       </PageSection>
@@ -38,13 +39,13 @@ function Informationen(): JSX.Element {
           </div>
           <div className="w-full md:w-1/3 md:shrink-0 md:justify-center">
             <div className="pb-2">
-              <img src="/assets/images/information-parkplatz.jpg" alt="Parkplätze" />
+              <Image src="/assets/images/information-parkplatz.jpg" width={405} height={216} alt="Parkplätze" />
             </div>
             <div className="pb-2">
-              <img src="/assets/images/information-parkplatz2.jpg" alt="Parkplätze" />
+              <Image src="/assets/images/information-parkplatz2.jpg" width={405} height={240} alt="Parkplätze" />
             </div>
             <div className="pb-2">
-              <img src="/assets/images/information-parkplatz3.jpg" alt="Parkplätze" />
+              <Image src="/assets/images/information-parkplatz3.jpg" width={405} height={268} alt="Parkplätze" />
             </div>
           </div>
         </div>
@@ -75,7 +76,7 @@ function Informationen(): JSX.Element {
           </div>
           <div className="w-full md:w-1/3 md:shrink-0 md:justify-center">
             <div className="pb-2">
-              <img src="/assets/images/information-jugendzimmer.jpg" alt="Jugendzimmer" />
+              <Image src="/assets/images/information-jugendzimmer.jpg" width={405} height={263} alt="Jugendzimmer" />
             </div>
           </div>
         </div>
@@ -88,7 +89,7 @@ function Informationen(): JSX.Element {
             genießen.
           </div>
           <div className="w-full md:w-1/3 md:shrink-0 md:justify-center">
-            <img src="/assets/images/information-kinderlauf.jpg" alt="Start-Ziel Bereich" />
+            <Image src="/assets/images/information-kinderlauf.jpg" width={405} height={189} alt="Kinderlauf" />
           </div>
         </div>
       </PageSection>

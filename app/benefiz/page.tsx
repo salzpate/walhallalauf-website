@@ -1,5 +1,6 @@
 import { JSX } from 'react';
 import PageSection from '@/components/PageSection';
+import Image from 'next/image';
 
 function Benefiz(): JSX.Element {
   return (
@@ -37,7 +38,7 @@ function Benefiz(): JSX.Element {
         </p>
         <br></br>
         <p>
-          <img src="/assets/images/spende-rote-pfote.jpg" width="640" height="480" alt="Spendenübergabe" />
+          <Image src="/assets/images/spende-rote-pfote.jpg" width={640} height={480} alt="Spendenübergabe" />
         </p>
         <br></br>
         <p className="page-section">
