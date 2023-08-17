@@ -29,14 +29,15 @@ export async function POST(request: Request): Promise<
 
                 Nachricht:
                 ${nachricht}`;
-
+  console.log('---- SEND MAIL ----');
+  console.log(antwort + ' ' + name + ' ' + nachricht + ' ' + email + ' ' + datenschutz);
   await sendEmail(antwort, text)
     .then(() => {
       return NextResponse.json({ status: 'success', message: 'Ihre Nachricht wurde erfolgreich versendet.' });
     })
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     .catch(_error => {
-      return NextResponse.json({ status: 'error', message: JSON.stringify(_error) });
+      return NextResponse.json({ status: 'error', message: 'Beim Versenden Ihre Nachricht ist ein Fehler aufgetreten!' });
     });
   return NextResponse.json({ status: 'error', message: 'Ihre Nachricht konnte leider nicht versendet werden!' });
 }

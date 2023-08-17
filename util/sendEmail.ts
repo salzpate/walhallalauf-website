@@ -1,7 +1,7 @@
-import { MailService } from '@sendgrid/mail';
+/* eslint-disable @typescript-eslint/ban-types */
+import { ClientResponse, MailService } from '@sendgrid/mail';
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export const sendEmail = async (from: string, text: string): Promise<any> => {
+export const sendEmail = async (from: string, text: string): Promise<[ClientResponse, {}]> => {
   const sgMail = new MailService();
   sgMail.setApiKey(process.env.SENDGRID_API_KEY as string);
   return sgMail.send({
