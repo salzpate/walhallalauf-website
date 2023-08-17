@@ -1,4 +1,4 @@
-import { PropsWithChildren, ReactNode } from 'react';
+import { JSX, PropsWithChildren, ReactNode } from 'react';
 
 type PageSectionProps = {
   id: string;

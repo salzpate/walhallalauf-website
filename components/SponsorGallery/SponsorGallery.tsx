@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { PropsWithChildren } from 'react';
+import { JSX, PropsWithChildren } from 'react';
 
 export type SponsorGalleryItems = {
   imageUrl: string;

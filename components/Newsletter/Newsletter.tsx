@@ -1,3 +1,4 @@
+import { JSX } from 'react';
 import { useForm } from 'react-hook-form';
 import styles from '../Contact/ContactForm/ContactForm.module.css';
 import Link from 'next/link';

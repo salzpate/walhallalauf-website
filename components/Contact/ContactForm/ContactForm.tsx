@@ -1,3 +1,5 @@
+'use client';
+
 import styles from './ContactForm.module.css';
 import { SnackBarTypes, useSnackBar } from '@/components/SnackBar/SnackBar';
 import axios, { AxiosError, AxiosResponse, RawAxiosRequestConfig } from 'axios';

@@ -1,4 +1,6 @@
-import { PropsWithChildren, ReactNode, useEffect, useState } from 'react';
+'use client';
+
+import { JSX, PropsWithChildren, ReactNode, useEffect, useState } from 'react';
 
 type InfoArticleProps = {
   id?: number;

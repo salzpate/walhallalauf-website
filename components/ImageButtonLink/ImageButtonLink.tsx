@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from './ImageButtonLink.module.css';
-import { PropsWithChildren, ReactNode } from 'react';
+import { JSX, PropsWithChildren, ReactNode } from 'react';
 import { UrlObject } from 'url';
 import Link from 'next/link';
 

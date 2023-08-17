@@ -1,6 +1,6 @@
+import { JSX, ReactNode } from 'react';
 import { NavMenuItem } from '@/components/commons/Menu/Menu';
 import FooterLink from '@/components/Footer/FooterLink';
-import { ReactNode } from 'react';
 
 interface FooterProps {
   text: ReactNode;

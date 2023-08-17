@@ -6,8 +6,9 @@ module.exports = {
     purgeLayersByDefault: true,
   },
   content: [
-    './pages/**/*.tsx',
-    './components/**/*.tsx'
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     columnCount: [ 1, 2, 3, 4, 5 ],

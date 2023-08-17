@@ -1,3 +1,4 @@
+import { JSX } from 'react';
 import { NavMenu } from '@/components/commons/Menu/Menu';
 import Link from 'next/link';
 

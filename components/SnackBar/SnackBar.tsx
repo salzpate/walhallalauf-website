@@ -1,5 +1,7 @@
+'use client';
+
 import cn from 'classnames';
-import { createContext, ReactNode, useContext, useState } from 'react';
+import { createContext, JSX, ReactNode, useContext, useState } from 'react';
 import styles from './SnackBar.module.css';
 
 export const defaultDuration = 500;

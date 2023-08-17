@@ -1,4 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
+import { JSX } from 'react';
+
 type ContactCardProps = {
   className?: string;
   email?: string;

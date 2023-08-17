@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { PropsWithChildren, ReactNode } from 'react';
+import { JSX, PropsWithChildren, ReactNode } from 'react';
 import cn from 'classnames';
 
 type HeadlineTextElementProps = {
