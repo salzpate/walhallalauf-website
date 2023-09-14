@@ -13,7 +13,7 @@ function Benefiz(): JSX.Element {
       </PageSection>
       <PageSection subSection headline="Benefizaktion 2023" id="benefiz2023" className="pb-6 sm:pb-8 page-section">
         <p>
-          Wie schon 2022 unterstützen wir 2023 mit dem Lauf wieder den <strong>Verein für helfende Hunde e.V.</strong>
+          Seit 2022 mit dem Lauf den <strong>Verein für helfende Hunde e.V.</strong>
         </p>
         <br></br>
         <p>
@@ -23,8 +23,8 @@ function Benefiz(): JSX.Element {
         </p>
         <br></br>
         <p>
-          Der Verein unterstützt finanziell und beratend die Bereiche Assistenzhunde, tiergestütze soziale/therapeutische Arbeit mit Hunden und setzen uns für Barrierefreiheit und die Teilnahme am sozialen Leben für beeinträchtigte Menschen
-          ein.
+          Der Verein unterstützt finanziell und beratend die Bereiche Assistenzhunde, tiergestützte soziale/therapeutische Arbeit mit Hunden und setzen uns für Barrierefreiheit und die Teilnahme am sozialen Leben für beeinträchtigte
+          Menschen ein.
         </p>
         <br></br>
         <p>
