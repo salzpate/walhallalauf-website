@@ -5,8 +5,8 @@ import PageSection from '@/components/PageSection';
 function Ausschreibung(): JSX.Element {
   return (
     <PageSection headline="Ausschreibung" id="ausschreibung">
-      <DataList headline="Veranstaltung">12. Walhallalauf</DataList>
-      <DataList headline="Termin">Sonntag, 16.04.2023</DataList>
+      <DataList headline="Veranstaltung">13. Walhallalauf</DataList>
+      <DataList headline="Termin">Sonntag, 07.04.2024</DataList>
       <DataList headline="Veranstalter">SV Donaustauf, Abteilung Ausdauer</DataList>
       <DataList headline="Ort">
         Fürstengarten <br />
@@ -87,11 +87,11 @@ function Ausschreibung(): JSX.Element {
       </DataList>
       <DataList headline="Verlosung">Ab ca. 11:00 Uhr findet eine Verlosung für die Teilnehmer der Kinderläufe statt.</DataList>
       <DataList headline="Startgebühren">
-        5 km Lauf, 7km Waldlauf, 10 km Lauf und Nordic-Walking bis 15.03.2023 je 12 EUR
+        5 km Lauf, 7km Waldlauf, 10 km Lauf und Nordic-Walking bis 06.03.2024 je 12 EUR
         <br />
-        5 km Lauf, 7km Waldlauf, 10 km Lauf und Nordic-Walking ab 16.03.2023 je 15 EUR
+        5 km Lauf, 7km Waldlauf, 10 km Lauf und Nordic-Walking ab 07.03.2024 je 15 EUR
         <br />
-        Nachmeldegebühr, am 15.04.2023 und am Veranstaltungstag 3 EUR
+        Nachmeldegebühr, am 07.04.2024 und am Veranstaltungstag 3 EUR
         <br />
         <br />
         Bambini-Lauf und Kid&apos;s Run kostenfrei
@@ -99,9 +99,9 @@ function Ausschreibung(): JSX.Element {
       <DataList headline="Anmeldung">
         <span className="page-section">über ZEITGEMAESS GmbH</span>
       </DataList>
-      <DataList headline="Anmeldeschluss">Donnerstag, den 13.04.2022, 23:59 Uhr (Online)</DataList>
+      <DataList headline="Anmeldeschluss">Donnerstag, den 05.04.2024, 23:59 Uhr (Online)</DataList>
       <DataList headline="Nachmeldung / Startunterlagen">
-        <h4 className="md:font-bold">Am 15.04.2023 von 17:00 Uhr – 19:00 Uhr:</h4>
+        <h4 className="md:font-bold">Am 06.04.2024 von 17:00 Uhr – 19:00 Uhr:</h4>
         Mehrzweckhalle (Jugendzimmer)
         <br />
         Regensburger Str. 30
@@ -109,7 +109,7 @@ function Ausschreibung(): JSX.Element {
         93093 Donaustauf
         <br />
         <br />
-        <h4 className="md:font-bold">Am 16.04.2023 von 10:00 Uhr bis 15 Minuten vor dem jeweiligen Start möglich:</h4>
+        <h4 className="md:font-bold">Am 07.04.2024 von 10:00 Uhr bis 15 Minuten vor dem jeweiligen Start möglich:</h4>
         Fürstengarten <br />
         (gegenüber Maxstraße 2)
         <br />

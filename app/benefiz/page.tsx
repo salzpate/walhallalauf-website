@@ -11,7 +11,7 @@ function Benefiz(): JSX.Element {
           es uns zudem wichtig, regionale Organisationen bei der Bewegungs- und Sportförderung von Kindern und Jugendlichen im Rahmen unserer Benefizaktionen zu unterstützen.
         </div>
       </PageSection>
-      <PageSection subSection headline="Benefizaktion 2023" id="benefiz2023" className="pb-6 sm:pb-8 page-section">
+      <PageSection subSection headline="Benefizaktion 2024" id="benefiz2024" className="pb-6 sm:pb-8 page-section">
         <p>
           Seit 2022 mit dem Lauf den <strong>Verein für helfende Hunde e.V.</strong>
         </p>
