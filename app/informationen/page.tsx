@@ -103,7 +103,7 @@ function Informationen(): JSX.Element {
       <PageSection headline="Ergebnislisten vergangener Läufe" id="ergebnislisten" subSection className="bg-gray-200 dark:bg-gray-900 pb-6 sm:pb-8">
         <ul className="page-section">
           <li>
-            <a href="http://ergebnisse.zeitgemaess.info/202304161'" target="_blank" rel="noreferrer">
+            <a href="http://ergebnisse.zeitgemaess.info/202304161" target="_blank" rel="noreferrer">
               12. Walhallalauf (16.04.2023)
             </a>
           </li>
