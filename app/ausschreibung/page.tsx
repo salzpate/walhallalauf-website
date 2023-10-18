@@ -16,23 +16,23 @@ function Ausschreibung(): JSX.Element {
       </DataList>
       <DataList headline="Strecken">
         <h4 className="md:font-bold">Bambini-Lauf:</h4>
-        <p>400 m Strecke, geschottert (bis 7 Jahre)</p>
+        <p>400 m Strecke - geschottert (bis 7 Jahre)</p>
         <h4 className="md:font-bold mt-2">Kid&apos;s Run:</h4>
-        <p>1,6 km Rundkurs, 3 Runden, geschottert (ab 7 Jahre)</p>
+        <p>1,6 km Rundkurs - 3 Runden - geschottert (ab 7 Jahre)</p>
         <h4 className="md:font-bold mt-2">Waldlauf:</h4>
-        <p>7,1 km Rundkurs, anspruchvoll (ca. 160 HM) geteert, geschottert und Waldweg</p>
+        <p>7,1 km Rundkurs - anspruchvoll (ca. 160 HM) geteert, geschottert und Waldweg - gelbe Bodenmarkierung</p>
         <h4 className="md:font-bold mt-2">Nordic Walking:</h4>
-        <p>7,1 km Rundkurs, anspruchvoll (ca. 160 HM) geteert, geschottert und Waldweg</p>
+        <p>7,1 km Rundkurs - anspruchvoll (ca. 160 HM) geteert, geschottert und Waldweg - gelbe Bodenmarkierung</p>
         <h4 className="md:font-bold mt-2">5km Lauf:</h4>
-        <p>5,4 km Rundkurs, flach, meist geteert</p>
+        <p>5,4 km Rundkurs - flach, meist geteert - weiße Bodenmarkierung</p>
         <h4 className="md:font-bold mt-2">10km Lauf:</h4>
-        <p>10 km Rundkurs, flach, meist geteert, geschottert</p>
+        <p>10 km Rundkurs - flach, meist geteert, geschottert - blaue Bodenmarkierung</p>
       </DataList>
       <DataList headline="Startzeiten">
         <table>
           <tbody>
             <tr>
-              <td>10:30 Uhr</td>
+              <td>10:15 Uhr</td>
               <td className="text-right px-4">400 m</td>
               <td>Bambini-Lauf (bis 7 Jahre)</td>
             </tr>

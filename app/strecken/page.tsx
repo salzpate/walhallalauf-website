@@ -15,7 +15,7 @@ function Strecken(): JSX.Element {
       <a id="lauf10"></a>
       <PageSection headline="10 km Lauf" id="sectionlauf10" subSection className="pb-8">
         <h4 className="font-bold pb-4">Profil</h4>
-        <div>10 km Rundkurs, flach, meist geteert, geschottert</div>
+        <div>10 km Rundkurs, flach, meist geteert, geschottert - blaue Bodenmarkierung</div>
 
         <h4 className="font-bold py-4">Wegbeschreibung</h4>
         <div className="md:inline-flex">
@@ -43,7 +43,7 @@ function Strecken(): JSX.Element {
       <a id="lauf5"></a>
       <PageSection headline="5 km Lauf" id="sectionlauf5" subSection className="bg-gray-200 dark:bg-gray-900 sm:pb-8 page-section pb-8">
         <h4 className="font-bold pb-4">Profil</h4>
-        <div>5,4 km Rundkurs, flach, meist geteert</div>
+        <div>5,4 km Rundkurs, flach, meist geteert - weiße Bodenmarkierung</div>
         <h4 className="text-lg tracking-wide font-medium py-4">Wegbeschreibung</h4>
         <div className="md:inline-flex">
           <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
@@ -69,7 +69,7 @@ function Strecken(): JSX.Element {
       <a id="waldlauf"></a>
       <PageSection headline="7,1 km Waldlauf und Nordic Walken" id="sectionwaldlauf" subSection className="pb-8">
         <h4 className="font-bold pb-4">Profil</h4>
-        <div>7,1 km Rundkurs, anspruchvoll (ca. 160 HM) geteert, geschottert und Waldweg</div>
+        <div>7,1 km Rundkurs, anspruchvoll (ca. 160 HM) geteert, geschottert und Waldweg - gelbe Bodenmarkierung</div>
         <h4 className="text-lg tracking-wide font-medium py-4">Wegbeschreibung</h4>
         <div className="md:inline-flex">
           <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">

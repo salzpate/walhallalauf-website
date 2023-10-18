@@ -14,20 +14,20 @@ function Informationen(): JSX.Element {
         <div className="md:inline-flex">
           <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
             <h4 className="font-bold pb-4">Bambinilauf</h4>
-            <div>10:30 Uhr - Richtung Fürstengarten / Wiese - Farbe Weiß</div>
+            <div>10:15 Uhr - Richtung Fürstengarten / Wiese</div>
             <h4 className="font-bold py-4">Kid&apos;s Run</h4>
-            <div>10:50 Uhr - Richtung Fürstengarten / Wiese - Farbe Weiß</div>
+            <div>10:50 Uhr - Richtung Fürstengarten / Wiese</div>
             <h4 className="font-bold py-4">7 km Waldlauf</h4>
-            <div>11:45 Uhr - Richtung Fürstengarten Schotterweg - Farbe Orange</div>
+            <div>11:45 Uhr - Richtung Fürstengarten Schotterweg - gelbe Bodenmarkierung</div>
             <h4 className="font-bold py-4">7 km Nordic Walking</h4>
-            <div>11:50 Uhr - Richtung Fürstengarten Schotterweg - Farbe Gelb</div>
+            <div>11:50 Uhr - Richtung Fürstengarten Schotterweg - gelbe Bodenmarkierung</div>
             <h4 className="font-bold py-4">10 km Laufen</h4>
-            <div>13:35 Uhr - Richtung Maxstraße - Farbe Blau</div>
+            <div>13:35 Uhr - Richtung Maxstraße - blaue Bodenmarkierung</div>
             <h4 className="font-bold py-4">5 km Laufen</h4>
-            <div>13:45 Uhr - Richtung Maxstraße - Farbe Grün</div>
+            <div>13:45 Uhr - Richtung Maxstraße - weiße Bodenmarkierung</div>
           </div>
           <div className="w-full md:w-1/3 md:shrink-0 md:justify-center">
-            <Image src="/assets/images/information-start-ziel-2023.jpg" width={810} height={372} alt="Start-Ziel Bereich" />
+            <Image src="/assets/images/information-start-ziel-2024.jpg" width={810} height={372} alt="Start-Ziel Bereich" />
           </div>
         </div>
       </PageSection>
