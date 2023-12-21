@@ -20,7 +20,7 @@ function Impressum(): JSX.Element {
         Registergericht: Amtsgericht Regensburg
         <br />
         <br />
-        Vertreten durch: 1. Vorstand: Wolfgang Vogel <a href="tel:+499403969079">+49 9403 969079</a>
+        Vertreten durch: 1. Vorstand: Gerhardt Vogel <a href="tel:+4917621526440">+49 176 21526440</a>
         <br />
         Vertretungsberechtigter Vorstand (§ 26 BGB): Eduard Zimmermann <a href="tel:+499403967488">+49 9403 967488</a>
         <br />

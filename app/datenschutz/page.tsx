@@ -18,7 +18,7 @@ function Datenschutz(): JSX.Element {
         <br />
         SV Donaustauf e.V.
         <br />
-        Wolfgang Vogel
+        Gerhardt Vogel
         <br />
         Regensburgerstraße 30
         <br />
