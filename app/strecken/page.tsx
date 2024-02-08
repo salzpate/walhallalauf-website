@@ -12,7 +12,7 @@ function Strecken(): JSX.Element {
           die Kinder mit unserem Maskottchen um die Wette. Als Alternative zur Donau geht es auch gerne in den Wald und dort du darfst ein paar Höhenmeter zurücklegen.
         </div>
       </PageSection>
-      <a id="lauf10"></a>
+      <a id="lauf10" aria-label="10 km Lauf"></a>
       <PageSection headline="10 km Lauf" id="sectionlauf10" subSection className="pb-8">
         <h4 className="font-bold pb-4">Profil</h4>
         <div>10 km Rundkurs, flach, meist geteert, geschottert - blaue Bodenmarkierung</div>
@@ -40,7 +40,7 @@ function Strecken(): JSX.Element {
           </div>
         </div>
       </PageSection>
-      <a id="lauf5"></a>
+      <a id="lauf5" aria-label="5 km Lauf"></a>
       <PageSection headline="5 km Lauf" id="sectionlauf5" subSection className="bg-gray-200 dark:bg-gray-900 sm:pb-8 page-section pb-8">
         <h4 className="font-bold pb-4">Profil</h4>
         <div>5,4 km Rundkurs, flach, meist geteert - weiße Bodenmarkierung</div>
@@ -66,7 +66,7 @@ function Strecken(): JSX.Element {
           </div>
         </div>
       </PageSection>
-      <a id="waldlauf"></a>
+      <a id="waldlauf" aria-label="7,1 km Waldlauf und Nordic Walken"></a>
       <PageSection headline="7,1 km Waldlauf und Nordic Walken" id="sectionwaldlauf" subSection className="pb-8">
         <h4 className="font-bold pb-4">Profil</h4>
         <div>7,1 km Rundkurs, anspruchvoll (ca. 160 HM) geteert, geschottert und Waldweg - gelbe Bodenmarkierung</div>
@@ -93,10 +93,10 @@ function Strecken(): JSX.Element {
           </div>
         </div>
       </PageSection>
-      <a id="kidsrun"></a>
-      <PageSection headline="1,6 km Kid's Run" id="sectionkidsrun" subSection className="bg-gray-200 dark:bg-gray-900 sm:pb-8 page-section pb-8">
+      <a id="kidsrun" aria-label="1,2 km Kid's Run"></a>
+      <PageSection headline="1,2 km Kid's Run" id="sectionkidsrun" subSection className="bg-gray-200 dark:bg-gray-900 sm:pb-8 page-section pb-8">
         <h4 className="font-bold pb-4">Profil</h4>
-        <div>1,6 km Rundkurs, 3 Runden, geschottert (ab 7 Jahre)</div>
+        <div>1,2 km Rundkurs, 2 Runden, geschottert (ab 7 Jahre)</div>
         <h4 className="text-lg tracking-wide font-medium py-4">Wegbeschreibung</h4>
         <div className="md:inline-flex">
           <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
@@ -115,7 +115,7 @@ function Strecken(): JSX.Element {
           </div>
         </div>
       </PageSection>
-      <a id="bambini"></a>
+      <a id="bambini" aria-label="400 m Bambinilauf"></a>
       <PageSection headline="400 m Bambinilauf" id="sectionbambini" subSection className="pb-8">
         <h4 className="font-bold pb-4">Profil</h4>
         <div>400 m Strecke, geschottert (bis 7 Jahre)</div>

@@ -18,7 +18,7 @@ function Ausschreibung(): JSX.Element {
         <h4 className="md:font-bold">Bambini-Lauf:</h4>
         <p>400 m Strecke - geschottert (bis 7 Jahre)</p>
         <h4 className="md:font-bold mt-2">Kid&apos;s Run:</h4>
-        <p>1,6 km Rundkurs - 3 Runden - geschottert (ab 7 Jahre)</p>
+        <p>1,2 km Rundkurs - 2 Runden - geschottert (ab 7 Jahre)</p>
         <h4 className="md:font-bold mt-2">Waldlauf:</h4>
         <p>7,1 km Rundkurs - anspruchvoll (ca. 160 HM) geteert, geschottert und Waldweg - gelbe Bodenmarkierung</p>
         <h4 className="md:font-bold mt-2">Nordic Walking:</h4>
@@ -38,7 +38,7 @@ function Ausschreibung(): JSX.Element {
             </tr>
             <tr>
               <td>10:50 Uhr</td>
-              <td className="text-right px-4">1,6 km</td>
+              <td className="text-right px-4">1,2 km</td>
               <td>Kid&apos;s Run (ab 7 Jahren)</td>
             </tr>
             <tr>
@@ -109,7 +109,7 @@ function Ausschreibung(): JSX.Element {
         93093 Donaustauf
         <br />
         <br />
-        <h4 className="md:font-bold">Am 07.04.2024 von 10:00 Uhr bis 15 Minuten vor dem jeweiligen Start möglich:</h4>
+        <h4 className="md:font-bold">Am 07.04.2024 von 10:00 Uhr bis 30 Minuten vor dem jeweiligen Start möglich:</h4>
         Fürstengarten <br />
         (gegenüber Maxstraße 2)
         <br />

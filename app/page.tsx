@@ -124,8 +124,8 @@ async function Home(): Promise<JSX.Element> {
             </ImageButtonLink>
           </div>
           <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
-            <ImageButtonLink headline="1,6 km Kid's Run" href="/strecken/#kidsrun" imgSrc="/assets/images/index-kidsrun.jpg">
-              1,6 km Rundkurs, 3 Runden, geschottert (ab 7 Jahre)
+            <ImageButtonLink headline="1,2 km Kid's Run" href="/strecken/#kidsrun" imgSrc="/assets/images/index-kidsrun.jpg">
+              1,2 km Rundkurs, 2 Runden, geschottert (ab 7 Jahre)
             </ImageButtonLink>
           </div>
           <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
