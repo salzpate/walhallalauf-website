@@ -13,7 +13,34 @@ function Benefiz(): JSX.Element {
       </PageSection>
       <PageSection subSection headline="Benefizaktion 2024" id="benefiz2024" className="pb-6 sm:pb-8 page-section">
         <p>
-          Seit 2022 mit dem Lauf den <strong>Verein für helfende Hunde e.V.</strong>
+          Im Jahr 2024 unterstützen wir mit dem Lauf die <strong>Clearingstelle des Kinderzentrum St. Vincent.</strong>
+        </p>
+        <br></br>
+        <p>
+          Die Clearingstelle ist eine sogenannte geschlossene Wohngruppe innerhalb der Kinder- und Jugendhilfe. Hier werden sechs Heranwachsende im Alter von 10 bis 15 Jahren betreut. Die Betreuten kommen aus oft schwierigen Verhältnissen
+          und benötigen intensive Unterstützung zur Stabilisierung sowie zum Selbstschutz. In der Clearingstelle können sie zur Ruhe finden und es wird mit ihnen gemeinsam eine Perspektive für die Zukunft erarbeitet.
+        </p>
+        <br></br>
+        <p>
+          Die Clearingstelle ist Teil des Kinderzentrum St. Vincent, welches unter der Trägerschaft der Katholischen Jugendfürsorge der Diözese Regensburg e. V. differenzierte Maßnahmen im Rahmen der Hilfen zur Erziehung erbringt. Derzeit
+          fördert und betreut die Einrichtung ca. 240 Kinder, Jugendliche und junge Erwachsene in teil- und vollstationären Gruppen sowie im Privaten Förderzentrum mit Förder­schwerpunkt soziale und emotionale Entwicklung.
+        </p>
+        <br></br>
+        <p>
+          Mit Hilfe des Sponsorings sollen Fahrräder für die Wohngruppe beschafft werde. Auch wenn die jungen Menschen den geschlossenen Rahmen benötigen, wird mit ihnen permanent an der perspektivischen Öffnung gearbeitet. Mit den
+          Fahrrädern können spontan kleinere oder auch größere begleitete Ausflüge durchgeführt werden, welche die Lust an der Bewegung wecken sollen.
+        </p>
+        <br></br>
+        <p className="page-section">
+          Weitere Informationen finden Sie auf der Homepage des Kinderzentrum St. Vincent:<br></br>
+          <a href="https://www.vincent-regensburg.de" target="_blank" rel="noreferrer">
+            https://www.vincent-regensburg.de
+          </a>
+        </p>
+      </PageSection>
+      <PageSection subSection headline="Benefizaktion 2023" id="benefiz2023" className="pb-6 sm:pb-8 page-section">
+        <p>
+          In den Jahren 2022 und 2023 unterstützten wir mit dem Lauf den <strong>Verein für helfende Hunde e.V.</strong>
         </p>
         <br></br>
         <p>
@@ -33,7 +60,7 @@ function Benefiz(): JSX.Element {
         </p>
         <br></br>
         <p>
-          Mithilfe unserer Sponsoren, dem Armin Wolf Laufteam und unserer Teilnehmer konnten wir im Jahr 2022 wieder unsere Kinderläufe kostenlos anbieten und dem Verein für helfende Hunde e.V. eine Spendensumme von 3.000,-- EUR
+          Mithilfe unserer Sponsoren, dem Armin Wolf Laufteam und unserer Teilnehmer konnten wir 2022 und 2023 wieder unsere Kinderläufe kostenlos anbieten und dem Verein für helfende Hunde e.V. eine Spendensumme von 3.000,-- EUR
           überreichen. Vielen Dank an alle, die dies ermöglicht haben. An dieser Stelle wollten wir uns auch nochmals beim Verein für helfende Hunde e.V. bedanken, welcher sich beim Lauf mit eingebracht hat.
         </p>
         <br></br>
