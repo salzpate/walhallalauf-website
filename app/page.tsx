@@ -143,7 +143,9 @@ async function Home(): Promise<JSX.Element> {
             es uns zudem wichtig, regionale Organisationen bei der Bewegungs- und Sportförderung von Kindern und Jugendlichen im Rahmen unserer Benefizaktionen zu unterstützen.
           </p>
           <br></br>
-          <p>2022 unterstützen wir mit dem Lauf den Verein für helfende Hunde e.V.</p>
+          <p>
+            Im Jahr 2024 unterstützen wir mit dem Lauf die <strong>Clearingstelle des Kinderzentrum St. Vincent.</strong>
+          </p>
         </MoreLink>
       </PageSection>
 
