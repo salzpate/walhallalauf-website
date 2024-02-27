@@ -47,11 +47,6 @@ export const SponsorData: SponsorGalleryItems[] = [
     name: 'Historisches Armen Spital',
   },
   {
-    imageUrl: '/assets/images/sponsoring/santorini-2023.png',
-    link: 'https://santorini-donaustauf.de',
-    name: 'Santorini',
-  },
-  {
     imageUrl: '/assets/images/sponsoring/bella-napoli-2023.jpg',
     link: 'http://trattoria-bella-napoli.de',
     name: 'Trattoria Bella Napoli',
