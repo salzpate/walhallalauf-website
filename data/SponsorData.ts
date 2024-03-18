@@ -12,6 +12,11 @@ export const SponsorData: SponsorGalleryItems[] = [
     name: 'Brauerei Kneitinger',
   },
   {
+    imageUrl: '/assets/images/sponsoring/peppex-2024.jpg',
+    link: 'https://www.peppex-sports.de',
+    name: 'Peppex Sports',
+  },
+  {
     imageUrl: '/assets/images/sponsoring/killmann-2023.png',
     link: 'https://www.maler-killmann.de',
     name: 'Malerbetrieb Killmann',
