@@ -62,19 +62,24 @@ export const SponsorData: SponsorGalleryItems[] = [
     name: 'Blumen Handl',
   },
   {
-    imageUrl: '/assets/images/sponsoring/tatlis-2023.png',
-    link: 'https://tatlis.de',
-    name: 'Tatlis',
+    imageUrl: '/assets/images/sponsoring/hammermühle-2024.jpg',
+    link: 'https://hammermuehle-donaustauf.de/',
+    name: 'Landgasthof Hammermühle',
   },
   {
-    imageUrl: '/assets/images/sponsoring/casa-dei-matti-2023.webp',
-    link: 'https://www.la-casa-dei-matti.de',
-    name: 'La Casa dei Matti',
+    imageUrl: '/assets/images/sponsoring/carmelina-2024.png',
+    link: 'https://carmelinas-donaustauf.de',
+    name: 'Carmelina`s',
   },
   {
     imageUrl: '/assets/images/sponsoring/burgfrieden-2023.jpg',
     link: 'https://burgfrieden-donaustauf.eatbu.com',
     name: 'Gasthaus Burgfrieden',
+  },
+  {
+    imageUrl: '/assets/images/sponsoring/kupferpfanne-2024.gif',
+    link: 'http://www.kupferpfanne.com',
+    name: 'Die Kupferpfanne',
   },
   {
     imageUrl: '/assets/images/sponsoring/al-ponte-2023.png',

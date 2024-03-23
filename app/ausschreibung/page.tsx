@@ -72,17 +72,17 @@ function Ausschreibung(): JSX.Element {
         <h4 className="md:font-bold">7km Waldlauf und Nordic-Walking</h4>
         Ab ca. 12:50 Uhr
         <p className="text-xs sm:text-sm">
-          jeweils die Ersten drei Sieger männlich und weiblich
+          jeweils die ersten drei Sieger männlich und weiblich
           <br />
-          Jugend U16: jeweils die Ersten drei Sieger männlich und weiblich <br />
+          Jugend U16: jeweils die ersten drei Sieger männlich und weiblich <br />
         </p>
         <br />
         <h4 className="md:font-bold"> 5 km Lauf und 10 km Lauf</h4>
         Ab ca. 15:15 Uhr
         <p className="text-xs sm:text-sm">
-          jeweils die Ersten drei Sieger männlich und weiblich
+          jeweils die ersten drei Sieger männlich und weiblich
           <br />
-          Jugend U16: jeweils die Ersten drei Sieger männlich und weiblich <br />
+          Jugend U16: jeweils die ersten drei Sieger männlich und weiblich <br />
         </p>
       </DataList>
       <DataList headline="Verlosung">Ab ca. 11:00 Uhr findet eine Verlosung für die Teilnehmer der Kinderläufe statt.</DataList>

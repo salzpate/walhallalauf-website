@@ -66,7 +66,7 @@ function Informationen(): JSX.Element {
             93093 Donaustauf
             <br />
             <br />
-            <strong>Sonntag, den 07.04.2024 ab 10:00 Uhr bis 15 Minuten vor dem jeweiligen Start:</strong>
+            <strong>Sonntag, den 07.04.2024 ab 10:00 Uhr bis 30 Minuten vor dem jeweiligen Start:</strong>
             <br />
             <br />
             Fürstengarten <br />
