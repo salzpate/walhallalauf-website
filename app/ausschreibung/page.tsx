@@ -1,6 +1,7 @@
 import { JSX } from 'react';
 import DataList from '@/components/DataList';
 import PageSection from '@/components/PageSection';
+import { START_TIME_10, START_TIME_5, START_TIME_7, START_TIME_BAMBINI, START_TIME_KIDS, START_TIME_NORDIC } from '@/lib/constants';
 
 function Ausschreibung(): JSX.Element {
   return (
@@ -32,32 +33,32 @@ function Ausschreibung(): JSX.Element {
         <table>
           <tbody>
             <tr>
-              <td>10:15 Uhr</td>
+              <td>{START_TIME_BAMBINI}</td>
               <td className="text-right px-4">400 m</td>
               <td>Bambini-Lauf (bis 7 Jahre)</td>
             </tr>
             <tr>
-              <td>10:50 Uhr</td>
+              <td>{START_TIME_KIDS}</td>
               <td className="text-right px-4">1,2 km</td>
               <td>Kid&apos;s Run (ab 7 Jahren)</td>
             </tr>
             <tr>
-              <td>11:45 Uhr</td>
+              <td>{START_TIME_7}</td>
               <td className="text-right px-4">7 km</td>
               <td>Waldlauf</td>
             </tr>
             <tr>
-              <td>11:50 Uhr</td>
+              <td>{START_TIME_NORDIC}</td>
               <td className="text-right px-4">7 km</td>
               <td>Nordic Walking</td>
             </tr>
             <tr>
-              <td>13:35 Uhr</td>
+              <td>{START_TIME_10}</td>
               <td className="text-right px-4">10 km</td>
               <td>Lauf</td>
             </tr>
             <tr>
-              <td>13:45 Uhr</td>
+              <td>{START_TIME_5}</td>
               <td className="text-right px-4">5 km</td>
               <td>Lauf</td>
             </tr>

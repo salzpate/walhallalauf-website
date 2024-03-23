@@ -1,6 +1,7 @@
 import { JSX } from 'react';
 import PageSection from '@/components/PageSection';
 import Image from 'next/image';
+import { START_TIME_10, START_TIME_5, START_TIME_7, START_TIME_BAMBINI, START_TIME_KIDS, START_TIME_NORDIC } from '@/lib/constants';
 
 function Strecken(): JSX.Element {
   return (
@@ -16,7 +17,8 @@ function Strecken(): JSX.Element {
       <PageSection headline="10 km Lauf" id="sectionlauf10" subSection className="pb-8">
         <h4 className="font-bold pb-4">Profil</h4>
         <div>10 km Rundkurs, flach, meist geteert, geschottert - blaue Bodenmarkierung</div>
-
+        <h4 className="font-bold py-4">Startzeit</h4>
+        <div>{START_TIME_10}</div>
         <h4 className="font-bold py-4">Wegbeschreibung</h4>
         <div className="md:inline-flex">
           <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
@@ -44,6 +46,8 @@ function Strecken(): JSX.Element {
       <PageSection headline="5 km Lauf" id="sectionlauf5" subSection className="bg-gray-200 dark:bg-gray-900 sm:pb-8 page-section pb-8">
         <h4 className="font-bold pb-4">Profil</h4>
         <div>5,4 km Rundkurs, flach, meist geteert - weiße Bodenmarkierung</div>
+        <h4 className="font-bold py-4">Startzeit</h4>
+        <div>{START_TIME_5}</div>
         <h4 className="text-lg tracking-wide font-medium py-4">Wegbeschreibung</h4>
         <div className="md:inline-flex">
           <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
@@ -70,6 +74,10 @@ function Strecken(): JSX.Element {
       <PageSection headline="7,1 km Waldlauf und Nordic Walken" id="sectionwaldlauf" subSection className="pb-8">
         <h4 className="font-bold pb-4">Profil</h4>
         <div>7,1 km Rundkurs, anspruchvoll (ca. 160 HM) geteert, geschottert und Waldweg - gelbe Bodenmarkierung</div>
+        <h4 className="font-bold py-4">Startzeit</h4>
+        <div>
+          Waldlauf: {START_TIME_7}, Nordic Walken: {START_TIME_NORDIC}
+        </div>
         <h4 className="text-lg tracking-wide font-medium py-4">Wegbeschreibung</h4>
         <div className="md:inline-flex">
           <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
@@ -97,6 +105,8 @@ function Strecken(): JSX.Element {
       <PageSection headline="1,2 km Kid's Run" id="sectionkidsrun" subSection className="bg-gray-200 dark:bg-gray-900 sm:pb-8 page-section pb-8">
         <h4 className="font-bold pb-4">Profil</h4>
         <div>1,2 km Rundkurs, 2 Runden, geschottert (ab 7 Jahre)</div>
+        <h4 className="font-bold py-4">Startzeit</h4>
+        <div>{START_TIME_KIDS}</div>
         <h4 className="text-lg tracking-wide font-medium py-4">Wegbeschreibung</h4>
         <div className="md:inline-flex">
           <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
@@ -119,6 +129,8 @@ function Strecken(): JSX.Element {
       <PageSection headline="400 m Bambinilauf" id="sectionbambini" subSection className="pb-8">
         <h4 className="font-bold pb-4">Profil</h4>
         <div>400 m Strecke, geschottert (bis 7 Jahre)</div>
+        <h4 className="font-bold py-4">Startzeit</h4>
+        <div>{START_TIME_BAMBINI}</div>
         <h4 className="text-lg tracking-wide font-medium py-4">Wegbeschreibung</h4>
         <div className="md:inline-flex">
           <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
