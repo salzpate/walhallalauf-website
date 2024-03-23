@@ -62,7 +62,7 @@ export const SponsorData: SponsorGalleryItems[] = [
     name: 'Blumen Handl',
   },
   {
-    imageUrl: '/assets/images/sponsoring/hammermühle-2024.jpg',
+    imageUrl: '/assets/images/sponsoring/hammermuehle-2024.jpg',
     link: 'https://hammermuehle-donaustauf.de/',
     name: 'Landgasthof Hammermühle',
   },
