@@ -157,7 +157,7 @@ function Informationen(): JSX.Element {
       </PageSection>
       <PageSection headline="Sponsoren" id="sponsoren" subSection className="pb-6 sm:pb-8 page-section">
         <p>Wir sagen vielen Dank für die Unterstützung an unsere Partner und Sponsoren</p>
-        <SponsorGallery items={SponsorData} />
+        <SponsorGallery groups={SponsorData} />
       </PageSection>
     </>
   );

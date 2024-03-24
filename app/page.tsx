@@ -151,7 +151,7 @@ async function Home(): Promise<JSX.Element> {
 
       <PageSection headline="Sponsoren" id="sponsoren" subSection className="pb-6 sm:pb-8 page-section">
         <p>Wir sagen vielen Dank für die Unterstützung an unsere Partner und Sponsoren</p>
-        <SponsorGallery items={SponsorData} />
+        <SponsorGallery groups={SponsorData} />
       </PageSection>
 
       <PageSection headline="Kontakt" id="kontakt" subSection className="bg-gray-200 dark:bg-gray-900 pb-6 sm:pb-8 page-section">
