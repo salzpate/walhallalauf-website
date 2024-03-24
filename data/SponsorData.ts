@@ -3,7 +3,7 @@ import { SponsorGalleryGroup } from '@/components/SponsorGallery/SponsorGallery'
 export const SponsorData: SponsorGalleryGroup[] = [
   {
     id: 'sponsor-gold',
-    name: 'Gold Sponsor',
+    name: 'Gold Partner',
     items: [
       {
         id: 'sponsor-raiba',
@@ -21,7 +21,7 @@ export const SponsorData: SponsorGalleryGroup[] = [
   },
   {
     id: 'sponsor-silver',
-    name: 'Silber Sponsor',
+    name: 'Silber Partner',
     items: [
       {
         id: 'sponsor-killmann',
@@ -47,18 +47,18 @@ export const SponsorData: SponsorGalleryGroup[] = [
         link: 'https://www.peppex-sports.de',
         name: 'Peppex Sports',
       },
-    ],
-  },
-  {
-    id: 'sponsor-bronze',
-    name: 'Bronze Sponsor',
-    items: [
       {
         id: 'sponsor-tt',
         imageUrl: '/assets/images/sponsoring/tt-2022.png',
         link: 'https://forst.thurnundtaxis.de',
         name: 'Thurn und Taxis Forst GmbH & Co. KG',
       },
+    ],
+  },
+  {
+    id: 'sponsor-bronze',
+    name: 'Bronze Partner',
+    items: [
       {
         id: 'sponsor-apotheke',
         imageUrl: '/assets/images/sponsoring/thurnundtaxis-apotheke-2022.jpg',
