@@ -110,7 +110,7 @@ function Ausschreibung(): JSX.Element {
         93093 Donaustauf
         <br />
         <br />
-        <h4 className="md:font-bold">Am 07.04.2024 von 10:00 Uhr bis 30 Minuten vor dem jeweiligen Start möglich:</h4>
+        <h4 className="md:font-bold">Am 07.04.2024 von 09:30 Uhr bis 30 Minuten vor dem jeweiligen Start möglich:</h4>
         Fürstengarten <br />
         (gegenüber Maxstraße 2)
         <br />
