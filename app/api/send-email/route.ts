@@ -36,7 +36,8 @@ export async function POST(request: Request): Promise<
     })
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     .catch(_error => {
+      console.log(_error);
       return NextResponse.json({ status: 'error', message: 'Beim Versenden Ihre Nachricht ist ein Fehler aufgetreten!' });
     });
-  return NextResponse.json({ status: 'error', message: 'Ihre Nachricht konnte leider nicht versendet werden!' });
+  return NextResponse.json({ status: 'success', message: 'Ihre Nachricht wurde erfolgreich versendet.' });
 }
