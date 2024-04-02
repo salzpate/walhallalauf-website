@@ -14,6 +14,7 @@ import styles from '@/styles/index.module.css';
 import { HEADER_LINE_1, HEADER_LINE_2 } from 'lib/constants';
 import { SponsorData } from '@/data/SponsorData';
 import { AnmeldungData, ErgebnisseData, StarterListeData } from '@/data/TimingPartnerData';
+import Image from 'next/image';
 
 interface Info {
   id: number;
@@ -147,6 +148,23 @@ async function Home(): Promise<JSX.Element> {
             Im Jahr 2024 unterstützen wir mit dem Lauf die <strong>Clearingstelle des Kinderzentrum St. Vincent.</strong>
           </p>
         </MoreLink>
+      </PageSection>
+
+      <PageSection headline="Informationen" id="informationen" subSection className="bg-gray-200 dark:bg-gray-900 pb-6 sm:pb-8 page-section">
+        <div className="md:inline-flex">
+          <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
+            <MoreLink href="/informationen/">
+              <p>
+                Start- und Zielbereich der Veranstaltung ist auf dem Parkplatz des Fürstengarten (gegenüber Maxstraße 2) in Donaustauf. Alles wichtige zur Laufveranstaltung steht in der <a href="/ausschreibung/">Ausschreibung</a>.
+              </p>
+              <br></br>
+              <p>Weitere Themen, wie Startzeiten und Startrichtung, Anreise und Parken, Nachmeldung und Startunterlagen, Kinder, Hunde oder Ergebnislisten befinden sich unter nachfolgenden Link:</p>
+            </MoreLink>
+          </div>
+          <div className="w-full md:w-1/3 md:shrink-0 md:justify-center">
+            <Image src="/assets/images/index-info.jpg" width={405} height={227} alt="Ziel" />
+          </div>
+        </div>
       </PageSection>
 
       <PageSection headline="Sponsoren" id="sponsoren" subSection className="pb-6 sm:pb-8 page-section">
