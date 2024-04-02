@@ -137,20 +137,7 @@ async function Home(): Promise<JSX.Element> {
         </div>
       </PageSection>
 
-      <PageSection headline="Benefiz" id="benefiz" subSection className="pb-6 sm:pb-8 page-section">
-        <MoreLink href="/benefiz/">
-          <p>
-            Seit dem ersten Walhallalauf ist es unser Anspruch &quot;Kinder und Jugendliche für Sport zu begeistern&quot;, weshalb auch die Teilnahme am Baminilauf und am Kid&apos;s Run völlig kostenlos für die Teilnehmer ist. Seit 2015 ist
-            es uns zudem wichtig, regionale Organisationen bei der Bewegungs- und Sportförderung von Kindern und Jugendlichen im Rahmen unserer Benefizaktionen zu unterstützen.
-          </p>
-          <br></br>
-          <p>
-            Im Jahr 2024 unterstützen wir mit dem Lauf die <strong>Clearingstelle des Kinderzentrum St. Vincent.</strong>
-          </p>
-        </MoreLink>
-      </PageSection>
-
-      <PageSection headline="Informationen" id="informationen" subSection className="bg-gray-200 dark:bg-gray-900 pb-6 sm:pb-8 page-section">
+      <PageSection headline="Informationen" id="informationen" subSection className="pb-6 sm:pb-8 page-section">
         <div className="md:inline-flex">
           <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
             <MoreLink href="/informationen/">
@@ -165,6 +152,19 @@ async function Home(): Promise<JSX.Element> {
             <Image src="/assets/images/index-info.jpg" width={405} height={227} alt="Ziel" />
           </div>
         </div>
+      </PageSection>
+
+      <PageSection headline="Benefiz" id="benefiz" subSection className="bg-gray-200 dark:bg-gray-900 pb-6 sm:pb-8 page-section">
+        <MoreLink href="/benefiz/">
+          <p>
+            Seit dem ersten Walhallalauf ist es unser Anspruch &quot;Kinder und Jugendliche für Sport zu begeistern&quot;, weshalb auch die Teilnahme am Baminilauf und am Kid&apos;s Run völlig kostenlos für die Teilnehmer ist. Seit 2015 ist
+            es uns zudem wichtig, regionale Organisationen bei der Bewegungs- und Sportförderung von Kindern und Jugendlichen im Rahmen unserer Benefizaktionen zu unterstützen.
+          </p>
+          <br></br>
+          <p>
+            Im Jahr 2024 unterstützen wir mit dem Lauf die <strong>Clearingstelle des Kinderzentrum St. Vincent.</strong>
+          </p>
+        </MoreLink>
       </PageSection>
 
       <PageSection headline="Sponsoren" id="sponsoren" subSection className="pb-6 sm:pb-8 page-section">
