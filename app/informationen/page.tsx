@@ -37,6 +37,8 @@ function Informationen(): JSX.Element {
           <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
             <h4 className="font-bold pb-4">Parkplätze</h4>
             <div>Donaustauf bietet rund um den Fürstengarten mehrere, kleinere Parkplätze. Es bietet sich an, den von uns bereitgestellten Parkplatz am Festplatz zu benutzen. Dieser liegt ca. 500m vom Veranstaltungsort entfernt.</div>
+            <h4 className="font-bold py-4">Anfahrt mit dem öffentlichen Verkehrsmitteln</h4>
+            <div>Direkt am Veranstaltungsort hält die Buslinie 5 des RVV. Haltestelle: Kriegerdenkmal, Donaustauf.</div>
           </div>
           <div className="w-full md:w-1/3 md:shrink-0 md:justify-center">
             <div className="pb-2">
