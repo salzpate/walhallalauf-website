@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { HTMLAttributeAnchorTarget, ReactNode } from 'react';
 import { UrlObject } from 'url';
 
 export type Url = string | UrlObject;
@@ -7,6 +7,7 @@ export interface NavMenuItem {
   children: ReactNode;
   href: Url;
   activeMenuName?: string;
+  target?: HTMLAttributeAnchorTarget;
 }
 
 export interface ActiveMenuItem {

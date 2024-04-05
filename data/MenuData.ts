@@ -29,6 +29,11 @@ export const MenuData: AppMenu = {
     },
   ],
   footer: [
+    /*  {
+      children: 'Newsletter',
+      href: 'https://85d0cc18.sibforms.com/serve/MUIFAH_G1tZKmiVOaHH3jZu9MQujy0G_G7DECYJNyBhb8SYY0YmEryCX9zyGxEmiMB4zU0fD2xcnN0ZDKf_Bi27_U_MWXXGb6R9K9uJYnG4sEFe81Ynp-oxWvx2F4tLOEeWBjtPLzoz5Yr5viRfg1Dr-RYgKdX9wPFYKyfSvyU7H9PsTFIIwzDlgR1M5hJnxb7xYCoVgovmoHghE',
+      target: '_blank',
+    },*/
     {
       children: 'Datenschutz',
       href: '/datenschutz/',

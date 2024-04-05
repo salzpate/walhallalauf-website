@@ -36,7 +36,9 @@ function Footer(props: FooterProps): JSX.Element {
               return (
                 <span key={'footer' + i} className="text-center md:text-left">
                   {<span className="text-gray-600 mx-1 hidden md:inline">|</span>}
-                  <FooterLink href={item.href}>{item.children}</FooterLink>
+                  <FooterLink href={item.href} target={item.target}>
+                    {item.children}
+                  </FooterLink>
                 </span>
               );
             })}
