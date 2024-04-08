@@ -15,7 +15,7 @@ export const StarterListeData2: TimingPartnerDataItem = {
 export const ErgebnisseData: TimingPartnerDataItem = {
   id: 'ergebnisse',
   link: 'https://ergebnisse.zeitgemaess.info/202404071',
-  name: 'Ergebnisse 2023',
+  name: 'Ergebnisse 2024',
 };
 
 export const AnmeldungData: TimingPartnerDataItem = undefined;
