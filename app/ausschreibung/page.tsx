@@ -6,8 +6,8 @@ import { START_TIME_10, START_TIME_5, START_TIME_7, START_TIME_BAMBINI, START_TI
 function Ausschreibung(): JSX.Element {
   return (
     <PageSection headline="Ausschreibung" id="ausschreibung">
-      <DataList headline="Veranstaltung">13. Walhallalauf</DataList>
-      <DataList headline="Termin">Sonntag, 07.04.2024</DataList>
+      <DataList headline="Veranstaltung">14. Walhallalauf</DataList>
+      <DataList headline="Termin">Sonntag, 27.04.2025</DataList>
       <DataList headline="Veranstalter">SV Donaustauf, Abteilung Ausdauer</DataList>
       <DataList headline="Ort">
         Fürstengarten <br />
@@ -24,9 +24,9 @@ function Ausschreibung(): JSX.Element {
         <p>7,1 km Rundkurs - anspruchvoll (ca. 160 HM) geteert, geschottert und Waldweg - gelbe Bodenmarkierung</p>
         <h4 className="md:font-bold mt-2">Nordic Walking:</h4>
         <p>7,1 km Rundkurs - anspruchvoll (ca. 160 HM) geteert, geschottert und Waldweg - gelbe Bodenmarkierung</p>
-        <h4 className="md:font-bold mt-2">5km Lauf:</h4>
+        <h4 className="md:font-bold mt-2">5 km Lauf:</h4>
         <p>5,4 km Rundkurs - flach, meist geteert - weiße Bodenmarkierung</p>
-        <h4 className="md:font-bold mt-2">10km Lauf:</h4>
+        <h4 className="md:font-bold mt-2">10 km Lauf:</h4>
         <p>10 km Rundkurs - flach, meist geteert, geschottert - blaue Bodenmarkierung</p>
       </DataList>
       <DataList headline="Startzeiten">
@@ -70,7 +70,7 @@ function Ausschreibung(): JSX.Element {
         Medaillen beim Zieleinlauf und Online Urkunden
         <br />
         <br />
-        <h4 className="md:font-bold">7km Waldlauf und Nordic-Walking</h4>
+        <h4 className="md:font-bold">7 km Waldlauf und Nordic-Walking</h4>
         Ab ca. 12:50 Uhr
         <p className="text-xs sm:text-sm">
           jeweils die ersten drei Sieger männlich und weiblich
@@ -78,7 +78,7 @@ function Ausschreibung(): JSX.Element {
           Jugend U16: jeweils die ersten drei Sieger männlich und weiblich <br />
         </p>
         <br />
-        <h4 className="md:font-bold"> 5 km Lauf und 10 km Lauf</h4>
+        <h4 className="md:font-bold">5 km Lauf und 10 km Lauf</h4>
         Ab ca. 15:15 Uhr
         <p className="text-xs sm:text-sm">
           jeweils die ersten drei Sieger männlich und weiblich
@@ -88,11 +88,11 @@ function Ausschreibung(): JSX.Element {
       </DataList>
       <DataList headline="Verlosung">Ab ca. 11:00 Uhr findet eine Verlosung für die Teilnehmer der Kinderläufe statt.</DataList>
       <DataList headline="Startgebühren">
-        5 km Lauf, 7km Waldlauf, 10 km Lauf und Nordic-Walking bis 06.03.2024 je 12 EUR
+        5 km Lauf, 7 km Waldlauf, 10 km Lauf und Nordic-Walking bis 26.03.2025 je 12 EUR
         <br />
-        5 km Lauf, 7km Waldlauf, 10 km Lauf und Nordic-Walking ab 07.03.2024 je 15 EUR
+        5 km Lauf, 7 km Waldlauf, 10 km Lauf und Nordic-Walking ab 27.03.2025 je 15 EUR
         <br />
-        Nachmeldegebühr, am 07.04.2024 und am Veranstaltungstag 3 EUR
+        Nachmeldegebühr, am 27.04.2025 und am Veranstaltungstag 3 EUR
         <br />
         <br />
         Bambini-Lauf und Kid&apos;s Run kostenfrei
@@ -100,9 +100,9 @@ function Ausschreibung(): JSX.Element {
       <DataList headline="Anmeldung">
         <span className="page-section">über ZEITGEMAESS GmbH</span>
       </DataList>
-      <DataList headline="Anmeldeschluss">Freitag, den 05.04.2024, 23:59 Uhr (Online)</DataList>
+      <DataList headline="Anmeldeschluss">Freitag, den 25.04.2025, 23:59 Uhr (Online)</DataList>
       <DataList headline="Nachmeldung / Startunterlagen">
-        <h4 className="md:font-bold">Am 06.04.2024 von 17:00 Uhr – 19:00 Uhr:</h4>
+        <h4 className="md:font-bold">Am 26.04.2025 von 17:00 Uhr – 19:00 Uhr:</h4>
         Mehrzweckhalle (Jugendzimmer)
         <br />
         Regensburger Str. 30
@@ -110,7 +110,7 @@ function Ausschreibung(): JSX.Element {
         93093 Donaustauf
         <br />
         <br />
-        <h4 className="md:font-bold">Am 07.04.2024 von 09:30 Uhr bis 30 Minuten vor dem jeweiligen Start möglich:</h4>
+        <h4 className="md:font-bold">Am 27.04.2025 von 09:30 Uhr bis 30 Minuten vor dem jeweiligen Start möglich:</h4>
         Fürstengarten <br />
         (gegenüber Maxstraße 2)
         <br />

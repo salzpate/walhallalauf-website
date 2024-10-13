@@ -59,7 +59,7 @@ function Informationen(): JSX.Element {
             Bereits einen Tag vor dem Lauf kann man sich stressfrei die Startunterlagen im Jugendzimmer der Mehrzweckhalle abholen oder auch noch Nachmelden. Aktuell befindet sich der Eingang zum Jugendzimmer hinter dem Haus:
             <br />
             <br />
-            <strong>Samstag, den 06.04.2024 von 17:00 Uhr bis 19:00 Uhr:</strong>
+            <strong>Samstag, den 26.04.2025 von 17:00 Uhr bis 19:00 Uhr:</strong>
             <br />
             <br />
             Mehrzweckhalle Donaustauf (Jungendzimmer)
@@ -69,7 +69,7 @@ function Informationen(): JSX.Element {
             93093 Donaustauf
             <br />
             <br />
-            <strong>Sonntag, den 07.04.2024 ab 09:30 Uhr bis 30 Minuten vor dem jeweiligen Start:</strong>
+            <strong>Sonntag, den 27.04.2025 ab 09:30 Uhr bis 30 Minuten vor dem jeweiligen Start:</strong>
             <br />
             <br />
             Fürstengarten <br />

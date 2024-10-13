@@ -37,7 +37,7 @@ async function getData(): Promise<Info[]> {
       };
     });
 
-    await infos.forEach(async info => await convertMarkdownToHtml(info));
+    infos.forEach(async info => await convertMarkdownToHtml(info));
 
     return infos;
   } catch (error) {
