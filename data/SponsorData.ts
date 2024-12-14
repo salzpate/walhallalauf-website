@@ -11,12 +11,6 @@ export const SponsorData: SponsorGalleryGroup[] = [
         link: 'https://www.rb-os.de',
         name: 'Raiffeisenbank Oberpfalz Süd eG',
       },
-      {
-        id: 'sponsor-kneitinger',
-        imageUrl: '/assets/images/sponsoring/kneitinger-2022.jpg',
-        link: 'https://www.kneitinger.de',
-        name: 'Brauerei Kneitinger',
-      },
     ],
   },
   {
@@ -28,6 +22,12 @@ export const SponsorData: SponsorGalleryGroup[] = [
         imageUrl: '/assets/images/sponsoring/killmann-2023.png',
         link: 'https://www.maler-killmann.de',
         name: 'Malerbetrieb Killmann',
+      },
+      {
+        id: 'sponsor-kneitinger',
+        imageUrl: '/assets/images/sponsoring/bischofshof-2024.jpg',
+        link: 'https://www.bischofshof.de',
+        name: 'Brauerei Bischofshof',
       },
       {
         id: 'sponsor-lattus',
