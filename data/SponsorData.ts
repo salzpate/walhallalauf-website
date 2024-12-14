@@ -24,8 +24,8 @@ export const SponsorData: SponsorGalleryGroup[] = [
         name: 'Malerbetrieb Killmann',
       },
       {
-        id: 'sponsor-kneitinger',
-        imageUrl: '/assets/images/sponsoring/bischofshof-2024.jpg',
+        id: 'sponsor-bischofshof',
+        imageUrl: '/assets/images/sponsoring/bischofshof-2024.png',
         link: 'https://www.bischofshof.de',
         name: 'Brauerei Bischofshof',
       },
