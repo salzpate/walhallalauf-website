@@ -21,9 +21,9 @@ function Ausschreibung(): JSX.Element {
         <h4 className="md:font-bold mt-2">Kid&apos;s Run:</h4>
         <p>1,2 km Rundkurs - 2 Runden - geschottert (ab 7 Jahre)</p>
         <h4 className="md:font-bold mt-2">Waldlauf:</h4>
-        <p>7,1 km Rundkurs - anspruchvoll (ca. 160 HM) geteert, geschottert und Waldweg - gelbe Bodenmarkierung</p>
+        <p>7,1 km Rundkurs - anspruchsvoll (ca. 160 HM) geteert, geschottert und Waldweg - gelbe Bodenmarkierung</p>
         <h4 className="md:font-bold mt-2">Nordic Walking:</h4>
-        <p>7,1 km Rundkurs - anspruchvoll (ca. 160 HM) geteert, geschottert und Waldweg - gelbe Bodenmarkierung</p>
+        <p>7,1 km Rundkurs - anspruchsvoll (ca. 160 HM) geteert, geschottert und Waldweg - gelbe Bodenmarkierung</p>
         <h4 className="md:font-bold mt-2">5 km Lauf:</h4>
         <p>5,4 km Rundkurs - flach, meist geteert - weiße Bodenmarkierung</p>
         <h4 className="md:font-bold mt-2">10 km Lauf:</h4>
