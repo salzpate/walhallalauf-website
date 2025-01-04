@@ -17,9 +17,9 @@ function Ausschreibung(): JSX.Element {
       </DataList>
       <DataList headline="Strecken">
         <h4 className="md:font-bold">Bambini-Lauf:</h4>
-        <p>400 m Strecke - geschottert (bis 7 Jahre)</p>
+        <p>400 m Strecke - geschottert (bis 8 Jahre)</p>
         <h4 className="md:font-bold mt-2">Kid&apos;s Run:</h4>
-        <p>1,2 km Rundkurs - 2 Runden - geschottert (ab 7 Jahre)</p>
+        <p>1,2 km Rundkurs - 2 Runden - geschottert (ab 6 Jahre)</p>
         <h4 className="md:font-bold mt-2">Waldlauf:</h4>
         <p>7,1 km Rundkurs - anspruchsvoll (ca. 160 HM) geteert, geschottert und Waldweg - gelbe Bodenmarkierung</p>
         <h4 className="md:font-bold mt-2">Nordic Walking:</h4>
@@ -72,18 +72,15 @@ function Ausschreibung(): JSX.Element {
         <br />
         <h4 className="md:font-bold">7 km Waldlauf und Nordic-Walking</h4>
         Ab ca. 12:50 Uhr
-        <p className="text-xs sm:text-sm">
-          jeweils die ersten drei Sieger männlich und weiblich
-          <br />
-          Jugend U16: jeweils die ersten drei Sieger männlich und weiblich <br />
-        </p>
+        <p className="text-xs sm:text-sm">jeweils die ersten drei Sieger männlich und weiblich</p>
         <br />
         <h4 className="md:font-bold">5 km Lauf und 10 km Lauf</h4>
         Ab ca. 15:15 Uhr
         <p className="text-xs sm:text-sm">
           jeweils die ersten drei Sieger männlich und weiblich
           <br />
-          Jugend U16: jeweils die ersten drei Sieger männlich und weiblich <br />
+          Jugend U16: jeweils die ersten drei Sieger männlich und weiblich
+          <br />
         </p>
       </DataList>
       <DataList headline="Verlosung">Ab ca. 11:00 Uhr findet eine Verlosung für die Teilnehmer der Kinderläufe statt.</DataList>
@@ -130,7 +127,7 @@ function Ausschreibung(): JSX.Element {
       <DataList headline="Sonstiges">
         Für das leibliche Wohl wird bestens gesorgt.
         <br />
-        Wir können dieses Jahr leider keine Duschmöglichkeiten anbieten, die Baustelle in der Mehrzweckhalle ist leider noch nicht fertig geworden.
+        Wir können leider keine Duschmöglichkeiten anbieten.
       </DataList>
       <DataList headline="Haftungsausschluss">
         Der SV Donaustauf übernimmt keine Garantie dafür, dass die bereitgestellten Informationen vollständig, richtig und in jedem Fall aktuell sind.
