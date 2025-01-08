@@ -97,7 +97,7 @@ function Ausschreibung(): JSX.Element {
       <DataList headline="Anmeldung">
         <span className="page-section">über ZEITGEMAESS GmbH</span>
       </DataList>
-      <DataList headline="Anmeldeschluss">Freitag, den 25.04.2025, 23:59 Uhr (Online)</DataList>
+      <DataList headline="Anmeldeschluss">Freitag, den 25.04.2025, 18:00 Uhr (Online)</DataList>
       <DataList headline="Nachmeldung / Startunterlagen">
         <h4 className="md:font-bold">Am 26.04.2025 von 17:00 Uhr – 19:00 Uhr:</h4>
         Mehrzweckhalle (Jugendzimmer)
