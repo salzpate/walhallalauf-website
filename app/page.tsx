@@ -13,9 +13,7 @@ import markdownToHtml from '@/lib/markdownToHtml';
 import styles from '@/styles/index.module.css';
 import { HEADER_LINE_1, HEADER_LINE_2 } from 'lib/constants';
 import { SponsorData } from '@/data/SponsorData';
-import { AnmeldungData, ErgebnisseData, StarterListeData } from '@/data/TimingPartnerData';
 import Image from 'next/image';
-import ButtonLink from '@/components/ButtonLink';
 import PageLink from '@/components/PageLink';
 import { TimingButtons } from '@/components/TimingButtons';
 
