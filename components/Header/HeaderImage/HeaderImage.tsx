@@ -3,21 +3,21 @@ import cn from 'classnames';
 import styles from './HeaderImage.module.css';
 import { AnmeldungData, ErgebnisseData, StarterListeData } from '@/data/TimingPartnerData';
 
-type HeaderImageProps = {
+interface HeaderImageProps {
   imageClass?: string;
   text1?: string;
   text2?: string;
 };
 
-export type TimingPartnerDataItem =
+type TimingPartnerDataItem =
   | {
-      id: string;
-      name: string;
-      link: string;
-    }
+    id: string;
+    name: string;
+    link: string;
+  }
   | undefined;
 
-function HeaderImage(props: PropsWithChildren<HeaderImageProps>): JSX.Element {
+function HeaderImage(props: Readonly<PropsWithChildren<HeaderImageProps>>): JSX.Element {
   const { imageClass, text1, text2, children } = props;
 
   if (children) {
@@ -42,7 +42,7 @@ function HeaderImage(props: PropsWithChildren<HeaderImageProps>): JSX.Element {
                     {AnmeldungData && (
                       <div className="float-left md:float-none">
                         <a
-                          className="text-white sm:text-2xl tracking-wider py-1 px-4 border border-white rounded transition ease-in-out duration-150 bg-secondary hover:bg-opacity-75 md:w-40 inline-block"
+                          className="text-white sm:text-2xl tracking-wider py-1 px-4 border border-white rounded-sm transition ease-in-out duration-150 bg-secondary hover:bg-secondary/75 md:w-40 inline-block"
                           href={AnmeldungData.link}
                           target="_blank"
                           rel="noreferrer"
@@ -54,7 +54,7 @@ function HeaderImage(props: PropsWithChildren<HeaderImageProps>): JSX.Element {
                     {StarterListeData && (
                       <div className="float-left px-6 md:px-0 md:right-6 md:mt-2 md:float-none">
                         <a
-                          className="text-white sm:text-2xl tracking-wider py-1 px-4 border border-white rounded transition ease-in-out duration-150 bg-secondary hover:bg-opacity-75 md:w-40 inline-block"
+                          className="text-white sm:text-2xl tracking-wider py-1 px-4 border border-white rounded-sm transition ease-in-out duration-150 bg-secondary hover:bg-secondary/75 md:w-40 inline-block"
                           href={StarterListeData.link}
                           target="_blank"
                           rel="noreferrer"
@@ -66,7 +66,7 @@ function HeaderImage(props: PropsWithChildren<HeaderImageProps>): JSX.Element {
                     {ErgebnisseData && (
                       <div className="float-left px-6 md:px-0 md:right-6 md:mt-2 md:float-none">
                         <a
-                          className="text-white sm:text-2xl tracking-wider py-1 px-4 border border-white rounded transition ease-in-out duration-150 bg-secondary hover:bg-opacity-75 md:w-40 inline-block"
+                          className="text-white sm:text-2xl tracking-wider py-1 px-4 border border-white rounded-sm transition ease-in-out duration-150 bg-secondary hover:bg-secondary/75 md:w-40 inline-block"
                           href={ErgebnisseData.link}
                           target="_blank"
                           rel="noreferrer"
@@ -86,3 +86,4 @@ function HeaderImage(props: PropsWithChildren<HeaderImageProps>): JSX.Element {
   }
 }
 export default HeaderImage;
+export type { TimingPartnerDataItem };

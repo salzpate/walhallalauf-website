@@ -1,3 +1,4 @@
+import PageLink from '@/components/PageLink';
 import PageSection from '@/components/PageSection';
 import { JSX } from 'react';
 
@@ -191,46 +192,46 @@ function Datenschutz(): JSX.Element {
           </li>
           <li className="pb-2">
             <strong>Datenübermittlung/Empfängerkategorie:</strong> Soziales Netzwerk. Soweit die US-Anbieter unter dem Privacy-Shield-Abkommen zertifiziert (
-            <a href="https://www.privacyshield.gov/EU-US-Framework" target="_blank" rel="nofollow noreferrer">
+            <PageLink href="https://www.privacyshield.gov/EU-US-Framework" target="_blank" rel="nofollow noreferrer">
               https://www.privacyshield.gov/EU-US-Framework
-            </a>
+            </PageLink>
             ) sind, wird sichergestellt, dass das europäische Datenschutzrecht eingehalten wird.
           </li>
           <li>
             Die Datenschutzhinweise, Auskunftsmöglichkeiten und Widerspruchmöglichkeiten (Opt-Out) der jeweiligen Netzwerke / Diensteanbieter finden Sie hier:
             <br />
             <br />• <strong>Facebook</strong> – Diensteanbieter: Facebook Ireland Ltd., 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Irland); Website:{' '}
-            <a href="https://www.facebook.com/" rel="nofollow noreferrer" target="_blank">
+            <PageLink href="https://www.facebook.com/" rel="nofollow noreferrer" target="_blank">
               www.facebook.com
-            </a>
+            </PageLink>
             ; Datenschutzerklärung:&nbsp;
-            <a href="https://www.facebook.com/about/privacy/" rel="nofollow noreferrer" target="_blank">
+            <PageLink href="https://www.facebook.com/about/privacy/" rel="nofollow noreferrer" target="_blank">
               https://www.facebook.com/about/privacy/
-            </a>
+            </PageLink>
             , Opt-Out:&nbsp;
-            <a href="https://www.facebook.com/settings?tab=ads" rel="nofollow noreferrer" target="_blank">
+            <PageLink href="https://www.facebook.com/settings?tab=ads" rel="nofollow noreferrer" target="_blank">
               https://www.facebook.com/settings?tab=ads
-            </a>
+            </PageLink>
             &nbsp;und&nbsp;
-            <a href="https://www.youronlinechoices.com/" rel="nofollow noreferrer" target="_blank">
+            <PageLink href="https://www.youronlinechoices.com/" rel="nofollow noreferrer" target="_blank">
               https://www.youronlinechoices.com
-            </a>
+            </PageLink>
             ; Widerspruch:{' '}
-            <a href="https://www.facebook.com/help/contact/2061665240770586" rel="nofollow noreferrer" target="_blank">
+            <PageLink href="https://www.facebook.com/help/contact/2061665240770586" rel="nofollow noreferrer" target="_blank">
               https://www.facebook.com/help/contact/2061665240770586
-            </a>
+            </PageLink>
             ; PrivacyShield:&nbsp;
-            <a href="https://www.privacyshield.gov/participant?id=a2zt0000000GnywAAC&amp;status=Active" rel="nofollow noreferrer" target="_blank">
+            <PageLink href="https://www.privacyshield.gov/participant?id=a2zt0000000GnywAAC&amp;status=Active" rel="nofollow noreferrer" target="_blank">
               https://www.privacyshield.gov/participant?id=a2zt0000000GnywAAC&amp;status=Active
-            </a>
+            </PageLink>
             ; Vereinbarung &uuml;ber gemeinsame Verarbeitung personenbezogener Daten auf Facebook-Seiten (Art. 26 DS-GVO):{' '}
-            <a href="https://www.facebook.com/legal/terms/page_controller_addendum" rel="nofollow noreferrer" target="_blank">
+            <PageLink href="https://www.facebook.com/legal/terms/page_controller_addendum" rel="nofollow noreferrer" target="_blank">
               https://www.facebook.com/legal/terms/page_controller_addendum
-            </a>
+            </PageLink>
             , Datenschutzhinweise f&uuml;r Facebook-Seiten:{' '}
-            <a href="https://www.facebook.com/legal/terms/information_about_page_insights_data" rel="nofollow noreferrer" target="_blank">
+            <PageLink href="https://www.facebook.com/legal/terms/information_about_page_insights_data" rel="nofollow noreferrer" target="_blank">
               https://www.facebook.com/legal/terms/information_about_page_insights_data
-            </a>
+            </PageLink>
             .
           </li>
         </ol>
@@ -329,9 +330,9 @@ function Datenschutz(): JSX.Element {
         <br />
         <br />
         Quelle:{' '}
-        <a href="https://www.juraforum.de/datenschutzerklaerung-muster/" rel="nofollow noreferrer" target="_blank">
+        <PageLink href="https://www.juraforum.de/datenschutzerklaerung-muster/" rel="nofollow noreferrer" target="_blank">
           Datenschutzerklärung DSGVO Muster von Juraforum.de
-        </a>
+        </PageLink>
       </div>
     </PageSection>
   );

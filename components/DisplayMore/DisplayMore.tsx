@@ -1,14 +1,15 @@
-import { JSX, useState } from 'react';
+import { JSX, PropsWithChildren, useState } from 'react';
 
-type DisplayMoreProps = {
-  id?: string;
+interface DisplayMoreProps {
   className?: string;
+  id?: string;
+  label?: string;
 };
 
-function DisplayMore(props: React.PropsWithChildren<DisplayMoreProps>): JSX.Element {
+function DisplayMore(props: Readonly<PropsWithChildren<DisplayMoreProps>>): JSX.Element {
   const [isDisplayed, setIsDisplayed] = useState(false);
 
-  const { className, id, children } = props;
+  const { className, id, children, label = 'Mehr' } = props;
   return (
     <div id={id} className={className}>
       {isDisplayed && <div className="text-sm lg:text-base font-light lg:font-normal">{children}</div>}
@@ -16,9 +17,9 @@ function DisplayMore(props: React.PropsWithChildren<DisplayMoreProps>): JSX.Elem
         <div className="mt-2 text-right">
           <button
             className="bg-transparent text-secondary dark:text-secondary-dark text-sm uppercase tracking-wider py-2 px-4 border border-secondary rounded transition ease-in-out duration-150 hover:bg-secondary hover:bg-opacity-15 dark:border-secondary-dark dark:hover:bg-secondary-dark"
-            onClick={() => setIsDisplayed(true)}
+            onClick={(): void => setIsDisplayed(true)}
           >
-            Mehr
+            {label}
           </button>
         </div>
       )}
@@ -26,3 +27,4 @@ function DisplayMore(props: React.PropsWithChildren<DisplayMoreProps>): JSX.Elem
   );
 }
 export default DisplayMore;
+

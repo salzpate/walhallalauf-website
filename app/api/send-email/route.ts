@@ -8,8 +8,7 @@ export async function POST(request: Request): Promise<
     message: string;
   }>
 > {
-  // eslint-disable-next-line no-useless-escape
-  const regexp = new RegExp(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
+  const regexp = new RegExp(/^[^\s@]+@[^\s@]+\.[^\s@]+$/);
   const { antwort, name, nachricht, email, datenschutz } = await request.json();
 
   if (email) {
@@ -34,9 +33,8 @@ export async function POST(request: Request): Promise<
     .then(() => {
       return NextResponse.json({ status: 'success', message: 'Ihre Nachricht wurde erfolgreich versendet.' });
     })
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    .catch(_error => {
-      console.log(_error);
+    .catch(error => {
+      console.log(error);
       return NextResponse.json({ status: 'error', message: 'Beim Versenden Ihre Nachricht ist ein Fehler aufgetreten!' });
     });
   return NextResponse.json({ status: 'success', message: 'Ihre Nachricht wurde erfolgreich versendet.' });

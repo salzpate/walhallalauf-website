@@ -3,13 +3,14 @@
 .success,
 .warning,
 .loading {
-  @apply border;
-  @apply px-4;
-  @apply py-3;
-  @apply rounded;
-  @apply transform;
-  @apply scale-75;
-  @apply text-xl;
+  border-radius: var(--radius-sm);
+  border-style: var(--tw-border-style);
+  border-width: 1px;
+  font-size: var(--text-xl);
+  line-height: var(--tw-leading, var(--text-xl--line-height));
+  padding-block: calc(var(--spacing) * 3);
+  padding-inline: calc(var(--spacing) * 4);
+  transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
 }
 
 .erroricon,
@@ -17,61 +18,61 @@
 .successicon,
 .warningicon,
 .loadingicon {
-  @apply fill-current;
-  @apply h-6;
-  @apply w-6;
+  fill: currentColor;
+  height: calc(var(--spacing) * 6);
+  width: calc(var(--spacing) * 6);
 }
 
 .erroricon {
-  @apply text-red-700;
+  color: var(--color-red-700);
 }
 
 
 .infoicon {
-  @apply text-blue-700;
+  color: var(--color-blue-700);
 }
 
 .successicon {
-  @apply text-teal-700;
+  color: var(--color-teal-700);
 }
 
 .warningicon {
-  @apply text-orange-700;
+  color: var(--color-orange-700);
 }
 
 .loadingicon {
-  @apply text-gray-200;
+  color: var(--color-gray-200);
 }
 
 .error {
-  @apply bg-red-200;
-  @apply border-red-400;
-  @apply text-red-700;
+  background-color: var(--color-red-200);
+  border-color: var(--color-red-400);
+  color: var(--color-red-700);
 }
 
 .success {
-  @apply bg-teal-100;
-  @apply border-teal-500;
-  @apply text-teal-700;
+  background-color: var(--color-teal-100);
+  border-color: var(--color-teal-500);
+  color: var(--color-teal-700);
 }
 
 .warning {
-  @apply bg-orange-100;
-  @apply border-orange-500;
-  @apply text-orange-700;
+  background-color: var(--color-orange-100);
+  border-color: var(--color-orange-500);
+  color: var(--color-orange-700);
 }
 
 .info {
-  @apply bg-blue-100;
-  @apply border-blue-500;
-  @apply text-blue-700;
+  background-color: var(--color-blue-100);
+  border-color: var(--color-blue-500);
+  color: var(--color-blue-700);
 }
 
 .loading {
-  @apply bg-secondary;
-  @apply border-secondary;
-  @apply text-gray-200;
-  @apply uppercase;
-  @apply text-center;
-  @apply opacity-80;
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+  color: var(--color-gray-200);
+  opacity: 80%;
+  text-align: center;
+  text-transform: uppercase;
 }

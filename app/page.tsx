@@ -15,6 +15,8 @@ import { HEADER_LINE_1, HEADER_LINE_2 } from 'lib/constants';
 import { SponsorData } from '@/data/SponsorData';
 import { AnmeldungData, ErgebnisseData, StarterListeData } from '@/data/TimingPartnerData';
 import Image from 'next/image';
+import ButtonLink from '@/components/ButtonLink';
+import PageLink from '@/components/PageLink';
 
 interface Info {
   id: number;
@@ -41,6 +43,8 @@ async function getData(): Promise<Info[]> {
 
     return infos;
   } catch (error) {
+    console.error('Error fetching data:', error);
+
     return [
       {
         id: 1,
@@ -69,34 +73,23 @@ async function Home(): Promise<JSX.Element> {
         ))}
         <div className="pb-4">
           {AnmeldungData && (
-            <a
-              className="bg-transparent text-secondary dark:text-secondary-dark text-sm uppercase tracking-wider py-2 px-4 border border-secondary rounded transition ease-in-out duration-150 hover:bg-secondary hover:bg-opacity-15 hover:no-underline dark:border-secondary-dark dark:hover:bg-secondary-dark"
-              href={AnmeldungData.link}
-              target="_blank"
-              rel="noreferrer"
-            >
+            <ButtonLink href={AnmeldungData.link} target="_blank">
               {AnmeldungData.name}
-            </a>
+            </ButtonLink>
           )}
           {StarterListeData && (
-            <a
-              className="bg-transparent text-secondary dark:text-secondary-dark text-sm uppercase tracking-wider ml-4 py-2 px-4 border border-secondary rounded transition ease-in-out duration-150 hover:bg-secondary hover:bg-opacity-15 hover:no-underline dark:border-secondary-dark dark:hover:bg-secondary-dark"
-              href={StarterListeData.link}
-              target="_blank"
-              rel="noreferrer"
-            >
-              {StarterListeData.name}
-            </a>
+            <span className="pl-4">
+              <ButtonLink href={StarterListeData.link} target="_blank">
+                {StarterListeData.name}
+              </ButtonLink>
+            </span>
           )}
           {ErgebnisseData && (
-            <a
-              className="bg-transparent text-secondary dark:text-secondary-dark text-sm uppercase tracking-wider ml-4 py-2 px-4 border border-secondary rounded transition ease-in-out duration-150 hover:bg-secondary hover:bg-opacity-15 hover:no-underline dark:border-secondary-dark dark:hover:bg-secondary-dark"
-              href={ErgebnisseData.link}
-              target="_blank"
-              rel="noreferrer"
-            >
-              {ErgebnisseData.name}
-            </a>
+            <span className="pl-4">
+              <ButtonLink href={ErgebnisseData.link} target="_blank">
+                {ErgebnisseData.name}
+              </ButtonLink>
+            </span>
           )}
         </div>
       </PageSection>
@@ -141,7 +134,7 @@ async function Home(): Promise<JSX.Element> {
           <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
             <MoreLink href="/informationen/">
               <p>
-                Start- und Zielbereich der Veranstaltung ist auf dem Parkplatz des Fürstengarten (gegenüber Maxstraße 2) in Donaustauf. Alles wichtige zur Laufveranstaltung steht in der <a href="/ausschreibung/">Ausschreibung</a>.
+                Start- und Zielbereich der Veranstaltung ist auf dem Parkplatz des Fürstengarten (gegenüber Maxstraße 2) in Donaustauf. Alles wichtige zur Laufveranstaltung steht in der <PageLink href="/ausschreibung/">Ausschreibung</PageLink>.
               </p>
               <br></br>
               <p>Weitere Themen, wie Startzeiten und Startrichtung, Anreise und Parken, Nachmeldung und Startunterlagen, Kinder, Hunde oder Ergebnislisten befinden sich unter nachfolgenden Link:</p>

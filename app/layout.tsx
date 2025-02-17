@@ -1,11 +1,9 @@
-/* eslint-disable @next/next/no-page-custom-font */
 import { JSX, PropsWithChildren } from 'react';
 import { Metadata } from 'next';
 import Footer from '@/components/Footer';
 import SnackBarProvider from '@/components/SnackBar';
 import { MenuData } from '@/data/MenuData';
 import { SITE_DESC, SITE_TITLE } from '@/lib/constants';
-import '@/styles/tailwind.css';
 import '@/styles/globals.css';
 
 const footerText = '© SV Donaustauf';

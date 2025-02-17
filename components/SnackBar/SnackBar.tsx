@@ -1,7 +1,8 @@
 'use client';
 
-import cn from 'classnames';
 import { createContext, JSX, ReactNode, useContext, useState } from 'react';
+import cn from 'classnames';
+
 import styles from './SnackBar.module.css';
 
 export const defaultDuration = 500;
@@ -36,7 +37,7 @@ type SnackbarContextType = {
 
 export const [useSnackBar, CtxProvider] = createCtx<SnackbarContextType>();
 
-function SnackBarProvider(props: SnackbarProps): JSX.Element {
+function SnackBarProvider(props: Readonly<SnackbarProps>): JSX.Element {
   const [isOpen, setIsOpen] = useState(false);
   const [timeoutId, setTimeoutId] = useState(
     setTimeout(() => {

@@ -1,6 +1,6 @@
 import { JSX, PropsWithChildren, ReactNode } from 'react';
 
-type PageSectionProps = {
+interface PageSectionProps {
   id: string;
   headline: ReactNode;
   className?: string;
@@ -20,4 +20,5 @@ function PageSection(props: PropsWithChildren<PageSectionProps>): JSX.Element {
     </section>
   );
 }
+
 export default PageSection;

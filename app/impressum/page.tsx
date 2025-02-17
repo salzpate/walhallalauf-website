@@ -1,6 +1,6 @@
-/* eslint-disable @next/next/no-html-link-for-pages */
 import { JSX } from 'react';
 import PageSection from '@/components/PageSection';
+import PageLink from '@/components/PageLink';
 
 function Impressum(): JSX.Element {
   return (
@@ -32,9 +32,9 @@ function Impressum(): JSX.Element {
         Telefax: <a href="tel:+499403518915">+49 9403 518915</a>
         <br />
         E-Mail:{' '}
-        <a href="/api/mailto-1vs/" rel="nofollow noreferrer">
+        <PageLink href="/api/mailto-1vs/" rel="nofollow noreferrer">
           1.Vorstand<span className="hidden">beuro</span>@sv-donaustauf.de
-        </a>
+        </PageLink>
         <br />
         <br />
         <h2 className="uppercase text-xl sm:text-2xl lg:text-3xl dark:text-gray-200">Umsatzsteuer-ID</h2>
@@ -54,9 +54,9 @@ function Impressum(): JSX.Element {
         <h2 className="uppercase text-xl sm:text-2xl lg:text-3xl dark:text-gray-200">EU-Streitschlichtung</h2>
         <br />
         Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:{' '}
-        <a href="https://ec.europa.eu/consumers/odr" rel="nofollow noreferrer" target="_blank">
+        <PageLink href="https://ec.europa.eu/consumers/odr" rel="nofollow noreferrer" target="_blank">
           https://ec.europa.eu/consumers/odr
-        </a>
+        </PageLink>
         . Unsere E-Mail-Adresse finden Sie oben im Impressum.
         <br />
         <br />
@@ -143,9 +143,9 @@ function Impressum(): JSX.Element {
         <br />
         <br />
         Quelle:{' '}
-        <a href="https://www.e-recht24.de/impressum-generator.html" target="_blank" rel="nofollow noreferrer">
+        <PageLink href="https://www.e-recht24.de/impressum-generator.html" target="_blank" rel="nofollow noreferrer">
           Impressum Generator von e-recht24.de
-        </a>
+        </PageLink>
       </div>
     </PageSection>
   );

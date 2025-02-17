@@ -1,18 +1,20 @@
 'use client';
 
-import { ActiveMenuItem, NavMenuItem } from '@/components/commons/Menu/Menu';
-import NavBarLink from '@/components/Header/NavBarLink';
-import NavLink from '@/components/Header/NavLink';
+import { JSX, useState } from 'react';
 import cn from 'classnames';
 import Link from 'next/link';
-import { useState } from 'react';
+
+import { type ActiveMenuItem, type NavMenuItem } from '@/components/types/Menu/Menu';
+import NavBarLink from '@/components/Header/NavBarLink';
+import NavLink from '@/components/Header/NavLink';
+
 import styles from './Header.module.css';
 
 interface HeaderProps extends ActiveMenuItem {
   navMenuItems: NavMenuItem[];
 }
 
-function Header(props: HeaderProps): JSX.Element {
+function Header(props: Readonly<HeaderProps>): JSX.Element {
   const [isOn, setIsOn] = useState(false);
   const { activeMenu, navMenuItems } = props;
 
@@ -43,7 +45,7 @@ function Header(props: HeaderProps): JSX.Element {
             </div>
             <div className="-mr-2 flex md:hidden">
               <button
-                className="inline-flex items-center justify-center p-2 rounded-full text-header-color ease-in-out transition-all duration-300 hover:opacity-75 hover:bg-black dark:text-white dark:text-opacity-87"
+                className="inline-flex items-center justify-center p-2 rounded-full text-header-color ease-in-out transition-all duration-300 hover:opacity-75 hover:bg-black dark:text-white/87"
                 onClick={() => setIsOn(true)}
               >
                 <svg className="block h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
