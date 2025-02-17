@@ -13,10 +13,10 @@ import markdownToHtml from '@/lib/markdownToHtml';
 import styles from '@/styles/index.module.css';
 import { HEADER_LINE_1, HEADER_LINE_2 } from 'lib/constants';
 import { SponsorData } from '@/data/SponsorData';
-import { AnmeldungData, ErgebnisseData, StarterListeData } from '@/data/TimingPartnerData';
 import Image from 'next/image';
-import ButtonLink from '@/components/ButtonLink';
 import PageLink from '@/components/PageLink';
+import { ButtonLink } from '@salzpate/react-ui';
+import { TimingButtons } from '@/components/TimingButtons';
 
 interface Info {
   id: number;
@@ -72,25 +72,7 @@ async function Home(): Promise<JSX.Element> {
           </InfoArticle>
         ))}
         <div className="pb-4">
-          {AnmeldungData && (
-            <ButtonLink href={AnmeldungData.link} target="_blank">
-              {AnmeldungData.name}
-            </ButtonLink>
-          )}
-          {StarterListeData && (
-            <span className="pl-4">
-              <ButtonLink href={StarterListeData.link} target="_blank">
-                {StarterListeData.name}
-              </ButtonLink>
-            </span>
-          )}
-          {ErgebnisseData && (
-            <span className="pl-4">
-              <ButtonLink href={ErgebnisseData.link} target="_blank">
-                {ErgebnisseData.name}
-              </ButtonLink>
-            </span>
-          )}
+          <TimingButtons />
         </div>
       </PageSection>
       <PageSection headline="Strecken" id="strecken" subSection className="pb-6 sm:pb-8 page-section strecken-index-image">
