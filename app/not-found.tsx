@@ -17,7 +17,7 @@ function FileNotFound(): JSX.Element {
       <HeaderImage text1={HEADER_LINE_1} text2={HEADER_LINE_2} imageClass={styles.headerimage} />
       <PageSection headline="Seite nicht gefunden" id="notfound">
         <div>Die gewünschte Seite wurde nicht gefunden.</div>
-        <div className="bg-yellow-400 rounded p-8 my-16">
+        <div className="bg-yellow-400 rounded-sm p-8 my-16">
           <Link href="/" legacyBehavior>
             <a className="inline-flex items-center gap-0 text-yellow-800 hover:underline hover:gap-1">
               <span>Weiter zur Startseite</span>{' '}

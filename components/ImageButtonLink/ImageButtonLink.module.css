@@ -1,28 +1,29 @@
 .link {
-  @apply h-full;
-  @apply flex;
-  @apply items-center;
-  @apply border;
-  @apply rounded-lg;
-  @apply border-gray-200;
-  @apply bg-white;
+  align-items: center;
+  background-color: var(--color-white);
+  border-color: var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  border-style: var(--tw-border-style);
+  border-width: 1px;
+  display: flex;
+  height: 100%;
 }
 
 .link:hover {
-  @apply bg-gray-200;
-  @apply border-gray-300;
-  @apply no-underline;
+  background-color: var(--color-gray-200);
+  border-color: var(--color-gray-300);
+  text-decoration-line: none;
 }
 
 @media (prefers-color-scheme: dark) {
   .link {
-    @apply border-gray-500;
-    @apply bg-black;
+    background-color: var(--color-black);
+    border-color: var(--color-gray-500);
   }
 
   .link:hover {
-    @apply bg-gray-500;
-    @apply border-gray-600;
-    @apply no-underline;
+    background-color: var(--color-gray-500);
+    border-color: var(--color-gray-600);
+    text-decoration-line: none;
   }
 }

@@ -2,12 +2,12 @@
 
 import { JSX, PropsWithChildren, ReactNode, useEffect, useState } from 'react';
 
-type InfoArticleProps = {
+interface InfoArticleProps {
   id?: number;
   headline: string;
 };
 
-function InfoArticle(props: PropsWithChildren<InfoArticleProps>): JSX.Element {
+function InfoArticle(props: Readonly<PropsWithChildren<InfoArticleProps>>): JSX.Element {
   const { headline, id = 1, children } = props;
   const [content, setContent] = useState<ReactNode>();
   const articleId = `article-${id}`;
@@ -22,4 +22,5 @@ function InfoArticle(props: PropsWithChildren<InfoArticleProps>): JSX.Element {
     </article>
   );
 }
+
 export default InfoArticle;

@@ -1,5 +1,5 @@
 import { JSX, ReactNode } from 'react';
-import { NavMenuItem } from '@/components/commons/Menu/Menu';
+import { NavMenuItem } from '@/components/types/Menu/Menu';
 import FooterLink from '@/components/Footer/FooterLink';
 
 interface FooterProps {
@@ -7,7 +7,7 @@ interface FooterProps {
   menuItems: NavMenuItem[];
 }
 
-function Footer(props: FooterProps): JSX.Element {
+function Footer(props: Readonly<FooterProps>): JSX.Element {
   const { text, menuItems } = props;
   return (
     <footer className="bg-gray-800 w-full py-6 dark:bg-gray-900">
@@ -22,7 +22,7 @@ function Footer(props: FooterProps): JSX.Element {
                 href="https://de-de.facebook.com/walhallalauf/"
                 target="_blank"
                 rel="nofollow noreferrer"
-                className="inline-flex items-center justify-center px-2 py-2 text-sm tracking-widest rounded-md text-gray-400 shadow-sm transition ease-in-out duration-150 my-2 sm:my-0 hover:bg-gray-700 dark:hover:bg-gray-800 focus:outline-none focus:bg-gray-600 dark:focus:bg-gray-700"
+                className="inline-flex items-center justify-center px-2 py-2 text-sm tracking-widest rounded-md text-gray-400 shadow-xs transition ease-in-out duration-150 my-2 sm:my-0 hover:bg-gray-700 dark:hover:bg-gray-800 focus:outline-hidden focus:bg-gray-600 dark:focus:bg-gray-700"
               >
                 <svg className="block h-5 w-5" viewBox="0 0 77.809997 156.31039" xmlns="http://www.w3.org/2000/svg">
                   <path

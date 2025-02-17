@@ -42,7 +42,7 @@ function Newsletter(props: PageSectionProps): JSX.Element {
         <form>
           <div className={styles.checkboxfield}>
             <label className="flex justify-start items-start">
-              <div className="bg-white border-2 rounded border-gray-500 w-5 h-5 flex shrink-0 justify-center items-center mr-2 focus-within:border-blue-500 dark:bg-black">
+              <div className="bg-white border-2 rounded-sm border-gray-500 w-5 h-5 flex shrink-0 justify-center items-center mr-2 focus-within:border-blue-500 dark:bg-black">
                 <input {...register('datenschutz', { required: true })} type="checkbox" className={styles.checkbox} id="datenschutz" name="datenschutz" />
                 <svg className="fill-current hidden w-3 h-3 text-secondary pointer-events-none dark:text-secondary-dark" viewBox="0 0 20 20">
                   <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
@@ -58,7 +58,7 @@ function Newsletter(props: PageSectionProps): JSX.Element {
             <input {...register('email', { required: true })} className={errors.email ? styles.textinputerror : styles.textinput} id="email" name="email" type="text" placeholder="E-Mail Adresse" />
           </div>
           <div className="my-4 text-right">
-            <button type="submit" disabled={isSubmitting} className="bg-secondary text-gray-200 text-sm uppercase tracking-wider py-2 px-8 rounded transition ease-in-out duration-150 hover:bg-opacity-75 dark:bg-secondary-dark">
+            <button type="submit" disabled={isSubmitting} className="bg-secondary text-gray-200 text-sm uppercase tracking-wider py-2 px-8 rounded-sm transition ease-in-out duration-150 hover:bg-secondary/75 dark:bg-secondary-dark">
               Abonnieren
             </button>
           </div>

@@ -2,6 +2,7 @@ import { JSX } from 'react';
 import PageSection from '@/components/PageSection';
 import Image from 'next/image';
 import { START_TIME_10, START_TIME_5, START_TIME_7, START_TIME_BAMBINI, START_TIME_KIDS, START_TIME_NORDIC } from '@/lib/constants';
+import ButtonLink from '@/components/ButtonLink';
 
 function Strecken(): JSX.Element {
   return (
@@ -32,12 +33,9 @@ function Strecken(): JSX.Element {
           <div className="w-full md:w-1/3 md:shrink-0 md:justify-center">
             <Image src="/assets/images/strecken-10km.jpg" width={405} height={236} alt="Strecke 10 km Lauf" />
             <div className="my-4">
-              <a
-                href="/assets/gpx/walhallalauf-10-km.gpx"
-                className="button-link w-full block bg-transparent text-secondary dark:text-secondary-dark text-sm uppercase tracking-wider py-2 px-4 border border-secondary rounded transition ease-in-out duration-150 hover:bg-secondary hover:bg-opacity-15 dark:border-secondary-dark dark:hover:bg-secondary-dark"
-              >
+              <ButtonLink href="/assets/gpx/walhallalauf-10-km.gpx" className='block w-full'>
                 GPX-Datei (10km Strecke)
-              </a>
+              </ButtonLink>
             </div>
           </div>
         </div>
@@ -60,12 +58,9 @@ function Strecken(): JSX.Element {
           <div className="w-full md:w-1/3 md:shrink-0 md:justify-center">
             <Image src="/assets/images/strecken-5km.jpg" width={405} height={155} alt="Strecke 5 km Lauf" />
             <div className="my-4">
-              <a
-                href="/assets/gpx/walhallalauf-5-km.gpx"
-                className="button-link w-full block bg-transparent text-secondary dark:text-secondary-dark text-sm uppercase tracking-wider py-2 px-4 border border-secondary rounded transition ease-in-out duration-150 hover:bg-secondary hover:bg-opacity-15 dark:border-secondary-dark dark:hover:bg-secondary-dark"
-              >
+              <ButtonLink href="/assets/gpx/walhallalauf-5-km.gpx" className='block w-full'>
                 GPX-Datei (5km Strecke)
-              </a>
+              </ButtonLink>
             </div>
           </div>
         </div>
@@ -91,12 +86,9 @@ function Strecken(): JSX.Element {
           <div className="w-full md:w-1/3 md:shrink-0 md:justify-center">
             <Image src="/assets/images/strecken-waldlauf-2022.jpg" width={405} height={304} alt="Strecke Waldlauf" />
             <div className="my-4">
-              <a
-                href="/assets/gpx/walhallalauf-7-km.gpx"
-                className="button-link w-full block bg-transparent text-secondary dark:text-secondary-dark text-sm uppercase tracking-wider py-2 px-4 border border-secondary rounded transition ease-in-out duration-150 hover:bg-secondary hover:bg-opacity-15 dark:border-secondary-dark dark:hover:bg-secondary-dark"
-              >
+              <ButtonLink href="/assets/gpx/walhallalauf-7-km.gpx" className='block w-full'>
                 GPX-Datei (Waldlauf Strecke)
-              </a>
+              </ButtonLink>
             </div>
           </div>
         </div>
@@ -114,14 +106,6 @@ function Strecken(): JSX.Element {
           </div>
           <div className="w-full md:w-1/3 md:shrink-0 md:justify-center">
             <Image src="/assets/images/strecken-kidsrun.jpg" width={405} height={150} alt="Strecke Kid's Run" />
-            <div className="my-4">
-              <a
-                href="/assets/gpx/walhallalauf-kidsrun.gpx"
-                className="button-link w-full block bg-transparent text-secondary dark:text-secondary-dark text-sm uppercase tracking-wider py-2 px-4 border border-secondary rounded transition ease-in-out duration-150 hover:bg-secondary hover:bg-opacity-15 dark:border-secondary-dark dark:hover:bg-secondary-dark"
-              >
-                GPX-Datei (Kid&apos;s Run Strecke)
-              </a>
-            </div>
           </div>
         </div>
       </PageSection>

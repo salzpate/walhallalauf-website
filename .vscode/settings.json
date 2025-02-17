@@ -11,11 +11,13 @@
     "**/compiled": true,
     "**/build": true
   },
-  "editor.rulers": [240],
+  "editor.rulers": [
+    240
+  ],
   "editor.tabSize": 2,
   "editor.autoIndent": "full",
   "editor.formatOnPaste": false,
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "editor.codeActionsOnSave": [
     "source.fixAll"
   ],

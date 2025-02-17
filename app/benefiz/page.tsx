@@ -1,6 +1,7 @@
 import { JSX } from 'react';
 import PageSection from '@/components/PageSection';
 import Image from 'next/image';
+import PageLink from '@/components/PageLink';
 
 function Benefiz(): JSX.Element {
   return (
@@ -33,9 +34,9 @@ function Benefiz(): JSX.Element {
         <br></br>
         <p className="page-section">
           Weitere Informationen finden Sie auf der Homepage des Kinderzentrum St. Vincent:<br></br>
-          <a href="https://www.vincent-regensburg.de" target="_blank" rel="noreferrer">
+          <PageLink href="https://www.vincent-regensburg.de" target="_blank" rel="noreferrer">
             https://www.vincent-regensburg.de
-          </a>
+          </PageLink>
         </p>
       </PageSection>
       <PageSection subSection headline="Benefizaktion 2023" id="benefiz2023" className="pb-6 sm:pb-8 page-section">
@@ -70,9 +71,9 @@ function Benefiz(): JSX.Element {
         <br></br>
         <p className="page-section">
           Weitere Informationen finden Sie auf der Homepage des Vereins für helfende Hunde e.V.:<br></br>
-          <a href="https://www.rote-pfote.de" target="_blank" rel="noreferrer">
+          <PageLink href="https://www.rote-pfote.de" target="_blank" rel="noreferrer">
             https://www.rote-pfote.de
-          </a>
+          </PageLink>
         </p>
       </PageSection>
     </>

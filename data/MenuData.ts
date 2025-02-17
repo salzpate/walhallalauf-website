@@ -1,4 +1,4 @@
-import { AppMenu } from '@/components/commons/Menu/Menu';
+import { AppMenu } from '@/components/types/Menu/Menu';
 
 export const MenuData: AppMenu = {
   main: [

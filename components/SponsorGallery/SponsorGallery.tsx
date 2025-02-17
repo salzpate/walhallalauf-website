@@ -1,20 +1,20 @@
 /* eslint-disable @next/next/no-img-element */
 import { JSX, PropsWithChildren } from 'react';
 
-export type SponsorGalleryItems = {
+interface SponsorGalleryItems {
   imageUrl: string;
   link: string;
   name: string;
   id: string;
 };
 
-export type SponsorGalleryGroup = {
+interface SponsorGalleryGroup {
   id: string;
   name: string;
   items: SponsorGalleryItems[];
 };
 
-export type SponsorGalleryProps = {
+interface SponsorGalleryProps {
   id?: string;
   groups: SponsorGalleryGroup[];
 };
@@ -26,7 +26,7 @@ function SponsorGallery(props: PropsWithChildren<SponsorGalleryProps>): JSX.Elem
     <div id={id}>
       {groups.map(group => {
         return (
-          <>
+          <div key={group.id}>
             <h3 className="mt-6 uppercase tracking-tight font-medium text-lg sm:text-xl lg:text-1xl">{group.name}</h3>
             <ul key={group.id} className="my-6 sm:my-8 sm:columns-2 md:columns-4 lg:columns-5 block gap-x-4">
               {group.items.map(item => {
@@ -39,10 +39,12 @@ function SponsorGallery(props: PropsWithChildren<SponsorGalleryProps>): JSX.Elem
                 );
               })}
             </ul>
-          </>
+          </div>
         );
       })}
     </div>
   );
 }
+
 export default SponsorGallery;
+export type { SponsorGalleryItems, SponsorGalleryGroup, SponsorGalleryProps };

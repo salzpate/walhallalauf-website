@@ -4,6 +4,7 @@ import SponsorGallery from '@/components/SponsorGallery/SponsorGallery';
 import { SponsorData } from '@/data/SponsorData';
 import Image from 'next/image';
 import { START_TIME_10, START_TIME_5, START_TIME_7, START_TIME_BAMBINI, START_TIME_KIDS, START_TIME_NORDIC } from '@/lib/constants';
+import PageLink from '@/components/PageLink';
 
 function Informationen(): JSX.Element {
   return (
@@ -106,54 +107,54 @@ function Informationen(): JSX.Element {
       <PageSection headline="Ergebnislisten vergangener Läufe" id="ergebnislisten" subSection className="bg-gray-200 dark:bg-gray-900 pb-6 sm:pb-8">
         <ul className="page-section">
           <li>
-            <a href="https://ergebnisse.zeitgemaess.info/202404071" target="_blank" rel="noreferrer">
+            <PageLink href="https://ergebnisse.zeitgemaess.info/202404071" target="_blank" rel="noreferrer">
               13. Walhallalauf (07.04.2024)
-            </a>
+            </PageLink>
           </li>
           <li>
-            <a href="https://ergebnisse.zeitgemaess.info/202304161" target="_blank" rel="noreferrer">
+            <PageLink href="https://ergebnisse.zeitgemaess.info/202304161" target="_blank" rel="noreferrer">
               12. Walhallalauf (16.04.2023)
-            </a>
+            </PageLink>
           </li>
           <li>
-            <a href="https://ergebnisse.zeitgemaess.info/202205152" target="_blank" rel="noreferrer">
+            <PageLink href="https://ergebnisse.zeitgemaess.info/202205152" target="_blank" rel="noreferrer">
               11. Walhallalauf (15.05.2022)
-            </a>
+            </PageLink>
           </li>
           <li>
-            <a href="https://www.zeitgemaess.info/event.php?ACCESSCODE=201904281" target="_blank" rel="noreferrer">
+            <PageLink href="https://www.zeitgemaess.info/event.php?ACCESSCODE=201904281" target="_blank" rel="noreferrer">
               10. Walhallalauf (28.04.2019)
-            </a>
+            </PageLink>
           </li>
           <li>
-            <a href="https://www.zeitgemaess.info/event.php?ACCESSCODE=201804081" target="_blank" rel="noreferrer">
+            <PageLink href="https://www.zeitgemaess.info/event.php?ACCESSCODE=201804081" target="_blank" rel="noreferrer">
               9. Walhallalauf (08.04.2018)
-            </a>
+            </PageLink>
           </li>
           <li>
-            <a href="https://www.zeitgemaess.info/event.php?ACCESSCODE=201703261" target="_blank" rel="noreferrer">
+            <PageLink href="https://www.zeitgemaess.info/event.php?ACCESSCODE=201703261" target="_blank" rel="noreferrer">
               8. Walhallalauf (26.03.2017)
-            </a>
+            </PageLink>
           </li>
           <li>
-            <a href="https://www.zeitgemaess.info/event.php?ACCESSCODE=201604021" target="_blank" rel="noreferrer">
+            <PageLink href="https://www.zeitgemaess.info/event.php?ACCESSCODE=201604021" target="_blank" rel="noreferrer">
               7. Walhallalauf (02.04.2016)
-            </a>
+            </PageLink>
           </li>
           <li>
-            <a href="https://www.zeitgemaess.info/event.php?ACCESSCODE=201503281" target="_blank" rel="noreferrer">
+            <PageLink href="https://www.zeitgemaess.info/event.php?ACCESSCODE=201503281" target="_blank" rel="noreferrer">
               6. Walhallalauf (28.03.2015)
-            </a>
+            </PageLink>
           </li>
           <li>
-            <a href="https://www.zeitgemaess.info/event.php?ACCESSCODE=201403291" target="_blank" rel="noreferrer">
+            <PageLink href="https://www.zeitgemaess.info/event.php?ACCESSCODE=201403291" target="_blank" rel="noreferrer">
               5. Walhallalauf (29.03.2014)
-            </a>
+            </PageLink>
           </li>
           <li>
-            <a href="https://www.zeitgemaess.info/event.php?ACCESSCODE=201303231" target="_blank" rel="noreferrer">
+            <PageLink href="https://www.zeitgemaess.info/event.php?ACCESSCODE=201303231" target="_blank" rel="noreferrer">
               4. Walhallalauf (23.03.2013)
-            </a>
+            </PageLink>
           </li>
         </ul>
       </PageSection>

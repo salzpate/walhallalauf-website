@@ -1,22 +1,24 @@
 import { HTMLAttributeAnchorTarget, ReactNode } from 'react';
 import { UrlObject } from 'url';
 
-export type Url = string | UrlObject;
+type Url = string | UrlObject;
 
-export interface NavMenuItem {
+interface NavMenuItem {
   children: ReactNode;
   href: Url;
   activeMenuName?: string;
   target?: HTMLAttributeAnchorTarget;
 }
 
-export interface ActiveMenuItem {
+interface ActiveMenuItem {
   activeMenu?: string;
 }
 
-export interface NavMenu extends NavMenuItem, ActiveMenuItem {}
+interface NavMenu extends NavMenuItem, ActiveMenuItem { }
 
-export interface AppMenu {
+interface AppMenu {
   main: NavMenuItem[];
   footer: NavMenuItem[];
 }
+
+export type { Url, NavMenuItem, ActiveMenuItem, NavMenu, AppMenu }

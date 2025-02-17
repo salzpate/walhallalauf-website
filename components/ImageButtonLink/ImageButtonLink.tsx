@@ -1,18 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
-import styles from './ImageButtonLink.module.css';
 import { JSX, PropsWithChildren, ReactNode } from 'react';
-import { UrlObject } from 'url';
 import Link from 'next/link';
+import { Url } from '../types/Menu/Menu';
 
-export type Url = string | UrlObject;
+import styles from './ImageButtonLink.module.css';
 
-type ImageButtonLinkProps = {
+interface ImageButtonLinkProps {
   href: Url;
   headline: ReactNode;
   imgSrc?: string;
 };
 
-function ImageButtonLink(props: PropsWithChildren<ImageButtonLinkProps>): JSX.Element {
+function ImageButtonLink(props: Readonly<PropsWithChildren<ImageButtonLinkProps>>): JSX.Element {
   const { href, headline, imgSrc, children } = props;
 
   return (
