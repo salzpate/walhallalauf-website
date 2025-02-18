@@ -24,7 +24,7 @@ function MoreLink(props: Readonly<PropsWithChildren<MoreLinkProps>>): JSX.Elemen
       <div className="my-4 text-sm lg:text-base font-light lg:font-normal">{children}</div>
       <div className="my-4">
         <Link href={href} legacyBehavior>
-          <a className="inline-flex items-center text-secondary gap-0 hover:gap-1 hover:underline hover:decoration-dotted">
+          <a className="inline-flex items-center text-link gap-0 hover:gap-1 hover:underline hover:decoration-dotted">
             <span>Weitere Informationen</span>
             <svg className="w-3 h-3 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

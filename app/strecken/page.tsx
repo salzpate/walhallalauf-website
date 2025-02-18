@@ -1,8 +1,13 @@
+
+'use client';
+
 import { JSX } from 'react';
 import PageSection from '@/components/PageSection';
 import Image from 'next/image';
+import { ButtonLink } from '@salzpate/react-ui';
+
 import { START_TIME_10, START_TIME_5, START_TIME_7, START_TIME_BAMBINI, START_TIME_KIDS, START_TIME_NORDIC } from '@/lib/constants';
-import ButtonLink from '@/components/ButtonLink';
+
 
 function Strecken(): JSX.Element {
   return (
