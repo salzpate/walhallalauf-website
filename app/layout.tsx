@@ -4,6 +4,8 @@ import Footer from '@/components/Footer';
 import SnackBarProvider from '@/components/SnackBar';
 import { MenuData } from '@/data/MenuData';
 import { SITE_DESC, SITE_TITLE } from '@/lib/constants';
+
+import '@salzpate/react-ui/dist/style.css';
 import '@/styles/globals.css';
 
 const footerText = '© SV Donaustauf';

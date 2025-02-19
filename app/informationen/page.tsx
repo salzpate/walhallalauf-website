@@ -1,10 +1,12 @@
+'use client';
+
 import { JSX } from 'react';
-import PageSection from '@/components/PageSection';
 import SponsorGallery from '@/components/SponsorGallery/SponsorGallery';
 import { SponsorData } from '@/data/SponsorData';
 import Image from 'next/image';
 import { START_TIME_10, START_TIME_5, START_TIME_7, START_TIME_BAMBINI, START_TIME_KIDS, START_TIME_NORDIC } from '@/lib/constants';
-import PageLink from '@/components/PageLink';
+import { PageLink, PageSection } from '@salzpate/react-ui';
+
 
 function Informationen(): JSX.Element {
   return (
@@ -15,17 +17,17 @@ function Informationen(): JSX.Element {
       <PageSection headline="Startzeiten und -richtung" id="sectionzeiten" subSection className="pb-6 sm:pb-8">
         <div className="md:inline-flex">
           <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
-            <h4 className="font-bold pb-4">Bambinilauf</h4>
+            <h4 className="pb-4 font-bold">Bambinilauf</h4>
             <div>{START_TIME_BAMBINI} - Richtung Fürstengarten / Wiese</div>
-            <h4 className="font-bold py-4">Kid&apos;s Run</h4>
+            <h4 className="py-4 font-bold">Kid&apos;s Run</h4>
             <div>{START_TIME_KIDS} - Richtung Fürstengarten / Wiese</div>
-            <h4 className="font-bold py-4">7 km Waldlauf</h4>
+            <h4 className="py-4 font-bold">7 km Waldlauf</h4>
             <div>{START_TIME_7} - Richtung Fürstengarten Schotterweg - gelbe Bodenmarkierung</div>
-            <h4 className="font-bold py-4">7 km Nordic Walking</h4>
+            <h4 className="py-4 font-bold">7 km Nordic Walking</h4>
             <div>{START_TIME_NORDIC} - Richtung Fürstengarten Schotterweg - gelbe Bodenmarkierung</div>
-            <h4 className="font-bold py-4">10 km Laufen</h4>
+            <h4 className="py-4 font-bold">10 km Laufen</h4>
             <div>{START_TIME_10} - Richtung Maxstraße - blaue Bodenmarkierung</div>
-            <h4 className="font-bold py-4">5 km Laufen</h4>
+            <h4 className="py-4 font-bold">5 km Laufen</h4>
             <div>{START_TIME_5} - Richtung Maxstraße - weiße Bodenmarkierung</div>
           </div>
           <div className="w-full md:w-1/3 md:shrink-0 md:justify-center">
@@ -33,12 +35,12 @@ function Informationen(): JSX.Element {
           </div>
         </div>
       </PageSection>
-      <PageSection headline="Anreise und Parken" id="parken" subSection className="bg-gray-200 dark:bg-gray-900 pb-6 sm:pb-8">
+      <PageSection headline="Anreise und Parken" id="parken" subSection className="bg-gray-200 pb-6 sm:pb-8 dark:bg-gray-900">
         <div className="md:inline-flex">
           <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
-            <h4 className="font-bold pb-4">Parkplätze</h4>
+            <h4 className="pb-4 font-bold">Parkplätze</h4>
             <div>Donaustauf bietet rund um den Fürstengarten mehrere, kleinere Parkplätze. Es bietet sich an, den von uns bereitgestellten Parkplatz am Festplatz zu benutzen. Dieser liegt ca. 500m vom Veranstaltungsort entfernt.</div>
-            <h4 className="font-bold py-4">Anfahrt mit dem öffentlichen Verkehrsmitteln</h4>
+            <h4 className="py-4 font-bold">Anfahrt mit dem öffentlichen Verkehrsmitteln</h4>
             <div>Direkt am Veranstaltungsort hält die Buslinie 5 des RVV. Haltestelle: Kriegerdenkmal, Donaustauf.</div>
           </div>
           <div className="w-full md:w-1/3 md:shrink-0 md:justify-center">
@@ -85,7 +87,7 @@ function Informationen(): JSX.Element {
           </div>
         </div>
       </PageSection>
-      <PageSection headline="Kinder" id="kinder" subSection className="bg-gray-200 dark:bg-gray-900 pb-6 sm:pb-8">
+      <PageSection headline="Kinder" id="kinder" subSection className="bg-gray-200 pb-6 sm:pb-8 dark:bg-gray-900">
         <div className="md:inline-flex">
           <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
             Unser Anspruch ist es &quot;Kinder und Jugendliche für Sport zu begeistern&quot;, weshalb auch die Teilnahme am Baminilauf und am Kid&apos;s Run völlig kostenlos für die Teilnehmer ist. Die Kinderläufe enden alle im Zielbereich,
@@ -104,7 +106,7 @@ function Informationen(): JSX.Element {
           </div>
         </div>
       </PageSection>
-      <PageSection headline="Ergebnislisten vergangener Läufe" id="ergebnislisten" subSection className="bg-gray-200 dark:bg-gray-900 pb-6 sm:pb-8">
+      <PageSection headline="Ergebnislisten vergangener Läufe" id="ergebnislisten" subSection className="bg-gray-200 pb-6 sm:pb-8 dark:bg-gray-900">
         <ul className="page-section">
           <li>
             <PageLink href="https://ergebnisse.zeitgemaess.info/202404071" target="_blank" rel="noreferrer">
@@ -158,7 +160,7 @@ function Informationen(): JSX.Element {
           </li>
         </ul>
       </PageSection>
-      <PageSection headline="Sponsoren" id="sponsoren" subSection className="pb-6 sm:pb-8 page-section">
+      <PageSection headline="Sponsoren" id="sponsoren" subSection className="page-section pb-6 sm:pb-8">
         <p>Wir sagen vielen Dank für die Unterstützung an unsere Partner und Sponsoren</p>
         <SponsorGallery groups={SponsorData} />
       </PageSection>

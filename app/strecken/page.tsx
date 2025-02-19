@@ -1,13 +1,10 @@
-
 'use client';
 
 import { JSX } from 'react';
-import PageSection from '@/components/PageSection';
 import Image from 'next/image';
-import { ButtonLink } from '@salzpate/react-ui';
+import { ButtonLink, PageSection } from '@salzpate/react-ui';
 
 import { START_TIME_10, START_TIME_5, START_TIME_7, START_TIME_BAMBINI, START_TIME_KIDS, START_TIME_NORDIC } from '@/lib/constants';
-
 
 function Strecken(): JSX.Element {
   return (
@@ -21,11 +18,11 @@ function Strecken(): JSX.Element {
       </PageSection>
       <a id="lauf10" aria-label="10 km Lauf"></a>
       <PageSection headline="10 km Lauf" id="sectionlauf10" subSection className="pb-8">
-        <h4 className="font-bold pb-4">Profil</h4>
+        <h4 className="pb-4 font-bold">Profil</h4>
         <div>10 km Rundkurs, flach, meist geteert, geschottert - blaue Bodenmarkierung</div>
-        <h4 className="font-bold py-4">Startzeit</h4>
+        <h4 className="py-4 font-bold">Startzeit</h4>
         <div>{START_TIME_10}</div>
-        <h4 className="font-bold py-4">Wegbeschreibung</h4>
+        <h4 className="py-4 font-bold">Wegbeschreibung</h4>
         <div className="md:inline-flex">
           <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
             <div>
@@ -38,7 +35,7 @@ function Strecken(): JSX.Element {
           <div className="w-full md:w-1/3 md:shrink-0 md:justify-center">
             <Image src="/assets/images/strecken-10km.jpg" width={405} height={236} alt="Strecke 10 km Lauf" />
             <div className="my-4">
-              <ButtonLink href="/assets/gpx/walhallalauf-10-km.gpx" className='block w-full'>
+              <ButtonLink href="/assets/gpx/walhallalauf-10-km.gpx" className="block w-full">
                 GPX-Datei (10km Strecke)
               </ButtonLink>
             </div>
@@ -46,12 +43,12 @@ function Strecken(): JSX.Element {
         </div>
       </PageSection>
       <a id="lauf5" aria-label="5 km Lauf"></a>
-      <PageSection headline="5 km Lauf" id="sectionlauf5" subSection className="bg-gray-200 dark:bg-gray-900 sm:pb-8 page-section pb-8">
-        <h4 className="font-bold pb-4">Profil</h4>
+      <PageSection headline="5 km Lauf" id="sectionlauf5" subSection className="page-section bg-gray-200 pb-8 sm:pb-8 dark:bg-gray-900">
+        <h4 className="pb-4 font-bold">Profil</h4>
         <div>5,4 km Rundkurs, flach, meist geteert - weiße Bodenmarkierung</div>
-        <h4 className="font-bold py-4">Startzeit</h4>
+        <h4 className="py-4 font-bold">Startzeit</h4>
         <div>{START_TIME_5}</div>
-        <h4 className="text-lg tracking-wide font-medium py-4">Wegbeschreibung</h4>
+        <h4 className="py-4 text-lg font-medium tracking-wide">Wegbeschreibung</h4>
         <div className="md:inline-flex">
           <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
             <div>
@@ -63,7 +60,7 @@ function Strecken(): JSX.Element {
           <div className="w-full md:w-1/3 md:shrink-0 md:justify-center">
             <Image src="/assets/images/strecken-5km.jpg" width={405} height={155} alt="Strecke 5 km Lauf" />
             <div className="my-4">
-              <ButtonLink href="/assets/gpx/walhallalauf-5-km.gpx" className='block w-full'>
+              <ButtonLink href="/assets/gpx/walhallalauf-5-km.gpx" className="block w-full">
                 GPX-Datei (5km Strecke)
               </ButtonLink>
             </div>
@@ -72,13 +69,13 @@ function Strecken(): JSX.Element {
       </PageSection>
       <a id="waldlauf" aria-label="7,1 km Waldlauf und Nordic Walken"></a>
       <PageSection headline="7,1 km Waldlauf und Nordic Walken" id="sectionwaldlauf" subSection className="pb-8">
-        <h4 className="font-bold pb-4">Profil</h4>
+        <h4 className="pb-4 font-bold">Profil</h4>
         <div>7,1 km Rundkurs, anspruchvoll (ca. 160 HM) geteert, geschottert und Waldweg - gelbe Bodenmarkierung</div>
-        <h4 className="font-bold py-4">Startzeit</h4>
+        <h4 className="py-4 font-bold">Startzeit</h4>
         <div>
           Waldlauf: {START_TIME_7}, Nordic Walken: {START_TIME_NORDIC}
         </div>
-        <h4 className="text-lg tracking-wide font-medium py-4">Wegbeschreibung</h4>
+        <h4 className="py-4 text-lg font-medium tracking-wide">Wegbeschreibung</h4>
         <div className="md:inline-flex">
           <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
             <div>
@@ -91,7 +88,7 @@ function Strecken(): JSX.Element {
           <div className="w-full md:w-1/3 md:shrink-0 md:justify-center">
             <Image src="/assets/images/strecken-waldlauf-2022.jpg" width={405} height={304} alt="Strecke Waldlauf" />
             <div className="my-4">
-              <ButtonLink href="/assets/gpx/walhallalauf-7-km.gpx" className='block w-full'>
+              <ButtonLink href="/assets/gpx/walhallalauf-7-km.gpx" className="block w-full">
                 GPX-Datei (Waldlauf Strecke)
               </ButtonLink>
             </div>
@@ -99,12 +96,12 @@ function Strecken(): JSX.Element {
         </div>
       </PageSection>
       <a id="kidsrun" aria-label="1,2 km Kid's Run"></a>
-      <PageSection headline="1,2 km Kid's Run" id="sectionkidsrun" subSection className="bg-gray-200 dark:bg-gray-900 sm:pb-8 page-section pb-8">
-        <h4 className="font-bold pb-4">Profil</h4>
+      <PageSection headline="1,2 km Kid's Run" id="sectionkidsrun" subSection className="page-section bg-gray-200 pb-8 sm:pb-8 dark:bg-gray-900">
+        <h4 className="pb-4 font-bold">Profil</h4>
         <div>1,2 km Rundkurs, 2 Runden, geschottert (ab 7 Jahre)</div>
-        <h4 className="font-bold py-4">Startzeit</h4>
+        <h4 className="py-4 font-bold">Startzeit</h4>
         <div>{START_TIME_KIDS}</div>
-        <h4 className="text-lg tracking-wide font-medium py-4">Wegbeschreibung</h4>
+        <h4 className="py-4 text-lg font-medium tracking-wide">Wegbeschreibung</h4>
         <div className="md:inline-flex">
           <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
             <div>Der Start erfolgt in Richtung Osten etwas unterhalb der Zielbereiches. Am chinesischen Turm wird zweimal hintereinander links abgebogen. Es werden drei Runden gelaufen, bevor es ins Ziel geht.</div>
@@ -116,11 +113,11 @@ function Strecken(): JSX.Element {
       </PageSection>
       <a id="bambini" aria-label="400 m Bambinilauf"></a>
       <PageSection headline="400 m Bambinilauf" id="sectionbambini" subSection className="pb-8">
-        <h4 className="font-bold pb-4">Profil</h4>
+        <h4 className="pb-4 font-bold">Profil</h4>
         <div>400 m Strecke, geschottert (bis 7 Jahre)</div>
-        <h4 className="font-bold py-4">Startzeit</h4>
+        <h4 className="py-4 font-bold">Startzeit</h4>
         <div>{START_TIME_BAMBINI}</div>
-        <h4 className="text-lg tracking-wide font-medium py-4">Wegbeschreibung</h4>
+        <h4 className="py-4 text-lg font-medium tracking-wide">Wegbeschreibung</h4>
         <div className="md:inline-flex">
           <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
             <div>Der Start erfolgt in Richtung Osten etwas unterhalb der Zielbereiches. Am chinesischen Turm wird zweimal hintereinander links abgebogen, bevor es ins Ziel geht.</div>

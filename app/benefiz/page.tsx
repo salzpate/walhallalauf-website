@@ -1,7 +1,8 @@
+'use client';
+
 import { JSX } from 'react';
-import PageSection from '@/components/PageSection';
 import Image from 'next/image';
-import PageLink from '@/components/PageLink';
+import { PageLink, PageSection } from '@salzpate/react-ui';
 
 function Benefiz(): JSX.Element {
   return (
@@ -12,7 +13,7 @@ function Benefiz(): JSX.Element {
           es uns zudem wichtig, regionale Organisationen bei der Bewegungs- und Sportförderung von Kindern und Jugendlichen im Rahmen unserer Benefizaktionen zu unterstützen.
         </div>
       </PageSection>
-      <PageSection subSection headline="Benefizaktion 2024" id="benefiz2024" className="pb-6 sm:pb-8 page-section">
+      <PageSection subSection headline="Benefizaktion 2024" id="benefiz2024" className="page-section pb-6 sm:pb-8">
         <p>
           Im Jahr 2024 unterstützen wir mit dem Lauf die <strong>Clearingstelle des Kinderzentrum St. Vincent.</strong>
         </p>
@@ -39,7 +40,7 @@ function Benefiz(): JSX.Element {
           </PageLink>
         </p>
       </PageSection>
-      <PageSection subSection headline="Benefizaktion 2023" id="benefiz2023" className="pb-6 sm:pb-8 page-section">
+      <PageSection subSection headline="Benefizaktion 2023" id="benefiz2023" className="page-section pb-6 sm:pb-8">
         <p>
           In den Jahren 2022 und 2023 unterstützten wir mit dem Lauf den <strong>Verein für helfende Hunde e.V.</strong>
         </p>

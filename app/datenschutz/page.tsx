@@ -1,11 +1,12 @@
-import PageLink from '@/components/PageLink';
-import PageSection from '@/components/PageSection';
+'use client';
+
+import { PageLink, PageSection } from '@salzpate/react-ui';
 import { JSX } from 'react';
 
 function Datenschutz(): JSX.Element {
   return (
     <PageSection headline="Datenschutz" id="datenschutz">
-      <div className="pb-8 page-section">
+      <div className="page-section pb-8">
         Wir informieren Sie nachfolgend gemäß den gesetzlichen Vorgaben des Datenschutzrechts (insb. gemäß BDSG n.F. und der europäischen Datenschutz-Grundverordnung &lsquo;DS-GVO&lsquo;) über die Art, den Umfang und Zweck der Verarbeitung
         personenbezogener Daten durch unser Unternehmen. Diese Datenschutzerklärung gilt auch für unsere Websites und Sozial-Media-Profile. Bezüglich der Definition von Begriffen wie etwa &quot;personenbezogene Daten&quot; oder
         &quot;Verarbeitung&quot; verweisen wir auf Art. 4 DS-GVO.

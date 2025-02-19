@@ -76,7 +76,7 @@ function SnackBarProvider(props: Readonly<SnackbarProps>): JSX.Element {
       {children}
 
       {isOpen && (
-        <div className="fixed z-10 right-0 left-0 bottom-0 m-4">
+        <div className="fixed right-0 bottom-0 left-0 z-10 m-4">
           <div
             className={cn({
               [styles.success]: type === SnackBarTypes.success,
@@ -88,7 +88,7 @@ function SnackBarProvider(props: Readonly<SnackbarProps>): JSX.Element {
             role="alert"
           >
             <div>{text}</div>
-            <span className="absolute top-0 bottom-0 right-0 px-4 py-3">
+            <span className="absolute top-0 right-0 bottom-0 px-4 py-3">
               <button onClick={closeSnackbar}>
                 <svg
                   className={cn({

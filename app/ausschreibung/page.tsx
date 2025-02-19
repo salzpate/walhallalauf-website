@@ -1,7 +1,8 @@
+'use client';
+
 import { JSX } from 'react';
-import DataList from '@/components/DataList';
-import PageSection from '@/components/PageSection';
 import { START_TIME_10, START_TIME_5, START_TIME_7, START_TIME_BAMBINI, START_TIME_KIDS, START_TIME_NORDIC } from '@/lib/constants';
+import { PageSection, DataList } from '@salzpate/react-ui';
 
 function Ausschreibung(): JSX.Element {
   return (
@@ -18,15 +19,15 @@ function Ausschreibung(): JSX.Element {
       <DataList headline="Strecken">
         <h4 className="md:font-bold">Bambini-Lauf:</h4>
         <p>400 m Strecke - geschottert (bis 8 Jahre)</p>
-        <h4 className="md:font-bold mt-2">Kid&apos;s Run:</h4>
+        <h4 className="mt-2 md:font-bold">Kid&apos;s Run:</h4>
         <p>1,2 km Rundkurs - 2 Runden - geschottert (ab 6 Jahre)</p>
-        <h4 className="md:font-bold mt-2">Waldlauf:</h4>
+        <h4 className="mt-2 md:font-bold">Waldlauf:</h4>
         <p>7,1 km Rundkurs - anspruchsvoll (ca. 160 HM) geteert, geschottert und Waldweg - gelbe Bodenmarkierung</p>
-        <h4 className="md:font-bold mt-2">Nordic Walking:</h4>
+        <h4 className="mt-2 md:font-bold">Nordic Walking:</h4>
         <p>7,1 km Rundkurs - anspruchsvoll (ca. 160 HM) geteert, geschottert und Waldweg - gelbe Bodenmarkierung</p>
-        <h4 className="md:font-bold mt-2">5 km Lauf:</h4>
+        <h4 className="mt-2 md:font-bold">5 km Lauf:</h4>
         <p>5,4 km Rundkurs - flach, meist geteert - weiße Bodenmarkierung</p>
-        <h4 className="md:font-bold mt-2">10 km Lauf:</h4>
+        <h4 className="mt-2 md:font-bold">10 km Lauf:</h4>
         <p>10 km Rundkurs - flach, meist geteert, geschottert - blaue Bodenmarkierung</p>
       </DataList>
       <DataList headline="Startzeiten">
@@ -34,32 +35,32 @@ function Ausschreibung(): JSX.Element {
           <tbody>
             <tr>
               <td>{START_TIME_BAMBINI}</td>
-              <td className="text-right px-4">400 m</td>
+              <td className="px-4 text-right">400 m</td>
               <td>Bambini-Lauf (bis 7 Jahre)</td>
             </tr>
             <tr>
               <td>{START_TIME_KIDS}</td>
-              <td className="text-right px-4">1,2 km</td>
+              <td className="px-4 text-right">1,2 km</td>
               <td>Kid&apos;s Run (ab 7 Jahren)</td>
             </tr>
             <tr>
               <td>{START_TIME_7}</td>
-              <td className="text-right px-4">7 km</td>
+              <td className="px-4 text-right">7 km</td>
               <td>Waldlauf</td>
             </tr>
             <tr>
               <td>{START_TIME_NORDIC}</td>
-              <td className="text-right px-4">7 km</td>
+              <td className="px-4 text-right">7 km</td>
               <td>Nordic Walking</td>
             </tr>
             <tr>
               <td>{START_TIME_10}</td>
-              <td className="text-right px-4">10 km</td>
+              <td className="px-4 text-right">10 km</td>
               <td>Lauf</td>
             </tr>
             <tr>
               <td>{START_TIME_5}</td>
-              <td className="text-right px-4">5 km</td>
+              <td className="px-4 text-right">5 km</td>
               <td>Lauf</td>
             </tr>
           </tbody>
