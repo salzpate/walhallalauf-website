@@ -61,7 +61,7 @@
 .textinputwhite:hover,
 .textinputerror:focus,
 .textinputerror:hover {
-  border-color: var(--secondary);
+  border-color: var(--color-secondary);
   outline-style: none;
 }
 
@@ -71,7 +71,7 @@
 .textinputwhite:hover + label,
 .textinputerror:focus + label,
 .textinputerror:hover + label {
-  color: var(--secondary);
+  color: var(--color-secondary);
 }
 
 .checkbox {
@@ -101,7 +101,7 @@
   .textinputwhite:hover,
   .textinputerror:focus,
   .textinputerror:hover {
-    border-color: var(--secondary-dark);
+    border-color: var(--color-secondary-dark);
   }
 
   .textinput:focus + label,
@@ -110,6 +110,6 @@
   .textinputwhite:hover + label,
   .textinputerror:focus + label,
   .textinputerror:hover + label {
-    color: var(--secondary-dark);
+    color: var(--color-secondary-dark);
   }
 }
