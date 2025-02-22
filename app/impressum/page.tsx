@@ -3,8 +3,6 @@
 import { JSX } from 'react';
 import { PageLink, PageSection } from '@salzpate/react-ui';
 
-
-
 function Impressum(): JSX.Element {
   return (
     <PageSection headline="Impressum" id="impressum">

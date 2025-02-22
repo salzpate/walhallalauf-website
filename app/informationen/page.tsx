@@ -7,7 +7,6 @@ import Image from 'next/image';
 import { START_TIME_10, START_TIME_5, START_TIME_7, START_TIME_BAMBINI, START_TIME_KIDS, START_TIME_NORDIC } from '@/lib/constants';
 import { PageLink, PageSection } from '@salzpate/react-ui';
 
-
 function Informationen(): JSX.Element {
   return (
     <>

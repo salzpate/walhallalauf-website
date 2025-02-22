@@ -16,6 +16,20 @@ CONTRIBUTORS.md
 
 # Ignore CHANGELOG.md files to avoid issues with automated release job
 CHANGELOG.md
+SECURITY.md
+README.md
+LICENSE
+**/.npmrc
+**/.editorconfig
+**/.gitignore
+**/.prettierignore
+**/.stylelintignore
+**/.next
+**/*.xml
+**/*.txt
+**/*.css
+public/**
+out/**
 
 # TODO - remove this once prettier supports labelled tuples
 packages/scope-manager/tests/fixtures/type-declaration/tuple-labelled.ts
