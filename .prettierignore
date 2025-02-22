@@ -13,6 +13,7 @@ packages/eslint-plugin-tslint/tests/test-tslint-rules-directory/alwaysFailRule.j
 packages/eslint-plugin/src/configs/*.json
 .all-contributorsrc
 CONTRIBUTORS.md
+package-lock.json
 
 # Ignore CHANGELOG.md files to avoid issues with automated release job
 CHANGELOG.md
