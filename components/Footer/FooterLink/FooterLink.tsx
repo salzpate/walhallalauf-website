@@ -17,3 +17,5 @@ function FooterLink(props: Readonly<NavMenu>): JSX.Element {
     </Link>
   );
 }
+
+export default FooterLink;
