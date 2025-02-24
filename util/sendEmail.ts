@@ -6,7 +6,7 @@ export const sendEmail = async (from: string, text: string): Promise<APIResponse
     apiKey: process.env.MAILERSEND_API_KEY as string,
   });
 
-  const sentFrom = new Sender('orga@walhallalauf.de', 'Walhallalauf-Homepage <orga@walhallalauf.de>');
+  const sentFrom = new Sender('orga@walhallalauf.de', 'orga@walhallalauf.de');
 
   const recipients = [new Recipient('orga@walhallalauf.de', 'orga@walhallalauf.de')];
 

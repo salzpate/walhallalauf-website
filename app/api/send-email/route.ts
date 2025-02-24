@@ -29,7 +29,7 @@ export async function POST(request: Request): Promise<
                 Nachricht:
                 ${nachricht}`;
 
-  await sendEmail(antwort, text)
+  return sendEmail(antwort, text)
     .then(() => {
       return NextResponse.json({ status: 'success', message: 'Ihre Nachricht wurde erfolgreich versendet.' });
     })
@@ -37,5 +37,4 @@ export async function POST(request: Request): Promise<
       console.log(error);
       return NextResponse.json({ status: 'error', message: 'Beim Versenden Ihre Nachricht ist ein Fehler aufgetreten!' });
     });
-  return NextResponse.json({ status: 'success', message: 'Ihre Nachricht wurde erfolgreich versendet.' });
 }
