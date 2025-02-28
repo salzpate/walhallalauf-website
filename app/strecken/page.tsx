@@ -13,7 +13,8 @@ function Strecken(): JSX.Element {
         <div className="mb-4">
           Mit unseren Strecken decken wir alle Alters- und Leistungsstufen ab. Beim Walhallalauf geht es auch darum, etwas von Donaustauf zu erleben. Dein Weg führt dich zunächst durch den historischen Markt. Entlang der Donau siehst du
           schon von Weitem unsere Burg und natürlich auch die Walhalla. Vorbei an der historischen St. Salvator Kirche und dem chinesischen Turm geht es zum Schlussspurt. Im Ziel lädt der Fürstengarten zum Verweilen ein. Dort laufen auch
-          die Kinder mit unserem Maskottchen um die Wette. Als Alternative zur Donau geht es auch gerne in den Wald und dort du darfst ein paar Höhenmeter zurücklegen.
+          die Kinder mit unserem Maskottchen um die Wette. Als Alternative zur Donau geht es auch gerne in den Wald und dort du darfst ein paar Höhenmeter zurücklegen. Zu beachten gilt, auf allen nicht voll gesperrten Strecken gilt, der
+          Straßenverkehr Vorrang hat und man notfalls warten muss, bis ein Fahrzeug eine nicht gesperrte Straße passiert hat. Den Anweisungen der Streckenposten und der Feuerwehr ist unbedingt Folge zu leisten.
         </div>
       </PageSection>
       <a id="lauf10" aria-label="10 km Lauf"></a>

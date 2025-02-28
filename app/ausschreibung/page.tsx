@@ -138,7 +138,10 @@ function Ausschreibung(): JSX.Element {
         <br />
         Alle Angebote sind freibleibend und unverbindlich.
         <br />
-        Der SV Donaustauf behält sich ausdrücklich vor, Teile der Seiten oder Angebotsbereiche ohne gesonderte Ankündigung zu verändern, zu ergänzen, zu löschen oder die Veröffentlichung zeitweise oder endgültig einzustellen
+        Der SV Donaustauf behält sich ausdrücklich vor, Teile der Seiten oder Angebotsbereiche ohne gesonderte Ankündigung zu verändern, zu ergänzen, zu löschen oder die Veröffentlichung zeitweise oder endgültig einzustellen.
+        <br />
+        Auf allen nicht voll gesperrten Strecken gilt, der Straßenverkehr Vorrang hat und man notfalls warten muss, bis ein Fahrzeug eine nicht gesperrte Straße passiert hat. Den Anweisungen der Streckenposten und der Feuerwehr ist
+        unbedingt Folge zu leisten.
       </DataList>
     </PageSection>
   );
