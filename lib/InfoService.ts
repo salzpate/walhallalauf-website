@@ -1,18 +1,13 @@
-import axios, { AxiosRequestConfig, AxiosResponse } from 'axios';
+import { FilteredResponseQueryOptions, type SanityDocument } from "next-sanity";
+import { client } from "./sanityClient";
+
+const POSTS_QUERY = '*[_type == "info"]{ _id, title, message }';
+
+const options: FilteredResponseQueryOptions = { next: { revalidate: 30 } };
 
 class InfoService {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  getInfos = async (): Promise<AxiosResponse<any, any>> => {
-    const baseUrl = process.env.STRAPI_API_URL as string;
-    const apiToken = process.env.STRAPI_API_TOKEN as string;
-
-    const config: AxiosRequestConfig = {
-      headers: {
-        Authorization: 'Bearer ' + apiToken,
-      },
-    };
-
-    return axios.get(`${baseUrl}/infos`, config);
+  getInfos = async (): Promise<SanityDocument[]> => {
+    return client.fetch<SanityDocument[]>(POSTS_QUERY, {}, options);
   };
 }
 

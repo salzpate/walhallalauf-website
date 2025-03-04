@@ -4,48 +4,15 @@ import InfoArticle from '@/components/InfoArticle';
 import HeaderMainLayout from '@/components/HeaderMainLayout/HeaderMainLayout';
 import PageSection from '@/components/PageSection';
 import infoService from '@/lib/InfoService';
-import markdownToHtml from '@/lib/markdownToHtml';
 import { HEADER_LINE_1, HEADER_LINE_2 } from 'lib/constants';
 import { TimingButtons } from '@/features/TimingButtons';
 import MainContent from '@/features/MainContent';
 
 import styles from '@/styles/index.module.css';
+import { PortableText, SanityDocument } from 'next-sanity';
 
-interface Info {
-  id: number;
-  title: string;
-  message: string;
-}
-
-async function convertMarkdownToHtml(info: Info): Promise<void> {
-  info.message = await markdownToHtml(info.message);
-}
-
-async function getData(): Promise<Info[]> {
-  try {
-    const res = await infoService.getInfos();
-    const infos: Info[] = res.data.data.map((d: { id: number; attributes: { title: string; message: string } }) => {
-      return {
-        id: d.id,
-        title: d.attributes.title,
-        message: d.attributes.message,
-      };
-    });
-
-    infos.forEach(async info => await convertMarkdownToHtml(info));
-
-    return infos;
-  } catch (error) {
-    console.error('Error fetching data:', error);
-
-    return [
-      {
-        id: 1,
-        title: '',
-        message: '',
-      },
-    ];
-  }
+async function getData(): Promise<SanityDocument[]> {
+  return infoService.getInfos();
 }
 
 async function Home(): Promise<JSX.Element> {
@@ -60,8 +27,8 @@ async function Home(): Promise<JSX.Element> {
 
       <PageSection headline="Aktuelles" id="aktuelles" subSection className="page-section pb-4 sm:pb-8">
         {infos?.map(info => (
-          <InfoArticle key={info.id} headline={info.title}>
-            <div className="index-page-article" dangerouslySetInnerHTML={{ __html: info.message }} />
+          <InfoArticle key={info._id} headline={info.title}>
+            {Array.isArray(info.message) && <div className="index-page-article"><PortableText value={info.message} /></div>}
           </InfoArticle>
         ))}
         <div className="pb-4">
