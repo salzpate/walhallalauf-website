@@ -8,16 +8,18 @@
     "lint": "next lint",
     "lint:style": "npx stylelint '**/*.css' --fix",
     "prettier": "npx prettier --write .",
-    "start": "next start"
+    "start": "next start",
+    "typegen": "sanity typegen generate"
   },
   "dependencies": {
     "@salzpate/react-ui": "^1.2.6",
+    "@sanity/image-url": "^1.1.0",
     "axios": "^1.8.1",
     "classnames": "^2.5.1",
     "lucide-react": "^0.475.0",
     "mailersend": "^2.3.0",
     "next": "^15.1.7",
-    "next-sanity": "^9.8.61",
+    "next-sanity": "^9.9.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.54.2"

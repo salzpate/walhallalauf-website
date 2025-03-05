@@ -9,9 +9,10 @@ import { TimingButtons } from '@/features/TimingButtons';
 import MainContent from '@/features/MainContent';
 
 import styles from '@/styles/index.module.css';
-import { PortableText, SanityDocument } from 'next-sanity';
+import { PortableText } from 'next-sanity';
+import { INFO_QUERYResult } from '@/types/sanityTypes';
 
-async function getData(): Promise<SanityDocument[]> {
+async function getData(): Promise<INFO_QUERYResult> {
   return infoService.getInfos();
 }
 
@@ -27,7 +28,7 @@ async function Home(): Promise<JSX.Element> {
 
       <PageSection headline="Aktuelles" id="aktuelles" subSection className="page-section pb-4 sm:pb-8">
         {infos?.map(info => (
-          <InfoArticle key={info._id} headline={info.title}>
+          <InfoArticle key={info._id} headline={info.title || ''}>
             {Array.isArray(info.message) && <div className="index-page-article"><PortableText value={info.message} /></div>}
           </InfoArticle>
         ))}
