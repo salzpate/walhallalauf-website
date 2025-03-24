@@ -13,6 +13,22 @@ function Benefiz(): JSX.Element {
           es uns zudem wichtig, regionale Organisationen bei der Bewegungs- und Sportförderung von Kindern und Jugendlichen im Rahmen unserer Benefizaktionen zu unterstützen.
         </div>
       </PageSection>
+      <PageSection subSection headline="Benefizaktion 2025" id="benefiz2025" className="page-section pb-6 sm:pb-8">
+        <p>
+          Im Jahr 2025 unterstützen wir mit dem Lauf die <strong>Traumzeit e.V.</strong> - Herzenswunsch-Aktionen für krebskranke Kinder.
+        </p>
+        <br></br>
+        <p>
+          Traumzeit e.V. ist ein gemeinnütziger Verein, der sich zum Ziel gesetzt hat, krebskranken Kindern und deren Familien Herzenswünsche zu erfüllen und bei gemeinsamen Aktionen unvergessliche Stunden zu ermöglichen.
+        </p>
+        <br></br>
+        <p className="page-section">
+          Weitere Informationen finden Sie auf der Homepage von Traumzeit e.V.:<br></br>
+          <PageLink href="http://www.traumzeit-ev.de" target="_blank" rel="noreferrer">
+            http://www.traumzeit-ev.de
+          </PageLink>
+        </p>
+      </PageSection>
       <PageSection subSection headline="Benefizaktion 2024" id="benefiz2024" className="page-section pb-6 sm:pb-8">
         <p>
           Im Jahr 2024 unterstützen wir mit dem Lauf die <strong>Clearingstelle des Kinderzentrum St. Vincent.</strong>

@@ -124,7 +124,7 @@ function Ausschreibung(): JSX.Element {
         Nach dem Lauf werden die Ergebnisse und Online-Urkunden bei <span className="page-section">ZEITGEMAESS GmbH</span> veröffentlicht.
       </DataList>
       <DataList headline="Verpflegung">Wasserstation beim 10 km Lauf und bei Nordic-Walking Getränke und Obst im Zielbereich</DataList>
-      <DataList headline="Benefizaktion">wird noch definiert</DataList>
+      <DataList headline="Benefizaktion">Traumzeit e.V. - Herzenswunsch-Aktionen für krebskranke Kinder</DataList>
       <DataList headline="Sonstiges">
         Für das leibliche Wohl wird bestens gesorgt.
         <br />
