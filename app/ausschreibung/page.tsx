@@ -34,12 +34,12 @@ function Ausschreibung(): JSX.Element {
         <table>
           <tbody>
             <tr>
-              <td>{START_TIME_BAMBINI}</td>
-              <td className="px-4 text-right">400 m</td>
+              <td>ab {START_TIME_BAMBINI}</td>
+              <td className="px-4 text-right">400/600 m</td>
               <td>Bambini-Lauf (bis 7 Jahre)</td>
             </tr>
             <tr>
-              <td>{START_TIME_KIDS}</td>
+              <td>ab {START_TIME_KIDS}</td>
               <td className="px-4 text-right">1,2 km</td>
               <td>Kid&apos;s Run (ab 7 Jahren)</td>
             </tr>
