@@ -96,22 +96,10 @@ export const SponsorData: SponsorGalleryGroup[] = [
         name: 'Historisches Armen Spital',
       },
       {
-        id: 'sponsor-bella-napoli',
-        imageUrl: '/assets/images/sponsoring/bella-napoli-2023.jpg',
-        link: 'http://trattoria-bella-napoli.de',
-        name: 'Trattoria Bella Napoli',
-      },
-      {
         id: 'sponsor-hammermuehle',
         imageUrl: '/assets/images/sponsoring/hammermuehle-2024.jpg',
         link: 'https://hammermuehle-donaustauf.de/',
         name: 'Landgasthof Hammermühle',
-      },
-      {
-        id: 'sponsor-carmelinas',
-        imageUrl: '/assets/images/sponsoring/carmelina-2024.png',
-        link: 'https://carmelinas-donaustauf.de',
-        name: 'Carmelina`s',
       },
       {
         id: 'sponsor-burgfrieden',
