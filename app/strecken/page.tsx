@@ -101,11 +101,11 @@ function Strecken(): JSX.Element {
         <h4 className="pb-4 font-bold">Profil</h4>
         <div>1,2 km Rundkurs, 2 Runden, geschottert (ab 7 Jahre)</div>
         <h4 className="py-4 font-bold">Startzeit</h4>
-        <div>{START_TIME_KIDS}</div>
+        <div>ab {START_TIME_KIDS}</div>
         <h4 className="py-4 text-lg font-medium tracking-wide">Wegbeschreibung</h4>
         <div className="md:inline-flex">
           <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
-            <div>Der Start erfolgt in Richtung Osten etwas unterhalb der Zielbereiches. Am chinesischen Turm wird zweimal hintereinander links abgebogen. Es werden drei Runden gelaufen, bevor es ins Ziel geht.</div>
+            <div>Der Start erfolgt in Richtung Osten im Start/Zielbereiches. Am chinesischen Turm wird zweimal hintereinander links abgebogen. Es werden drei Runden gelaufen, bevor es ins Ziel geht.</div>
           </div>
           <div className="w-full md:w-1/3 md:shrink-0 md:justify-center">
             <Image src="/assets/images/strecken-kidsrun.jpg" width={405} height={150} alt="Strecke Kid's Run" />
@@ -115,16 +115,14 @@ function Strecken(): JSX.Element {
       <a id="bambini" aria-label="400 m Bambinilauf"></a>
       <PageSection headline="400 m Bambinilauf" id="sectionbambini" subSection className="pb-8">
         <h4 className="pb-4 font-bold">Profil</h4>
-        <div>400 m Strecke, geschottert (bis 7 Jahre)</div>
+        <div>400 m Strecke, geschottert (bis 5 Jahre)</div>
+        <div>600 m Strecke, geschottert (bis 7 Jahre)</div>
         <h4 className="py-4 font-bold">Startzeit</h4>
-        <div>{START_TIME_BAMBINI}</div>
+        <div>ab {START_TIME_BAMBINI}</div>
         <h4 className="py-4 text-lg font-medium tracking-wide">Wegbeschreibung</h4>
         <div className="md:inline-flex">
           <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
-            <div>Der Start erfolgt in Richtung Osten etwas unterhalb der Zielbereiches. Am chinesischen Turm wird zweimal hintereinander links abgebogen, bevor es ins Ziel geht.</div>
-          </div>
-          <div className="w-full md:w-1/3 md:shrink-0 md:justify-center">
-            <Image src="/assets/images/strecken-bambini.jpg" width={405} height={150} alt="Strecke Bambinilauf" />
+            <div>Der Start erfolgt in Richtung Osten im Start/Zielbereiches. Die 400 m Strecke biegt vor dem chinesischen Turm in Richtung Ziel um, die 600 m Strecke nach dem chinesischen Turm.</div>
           </div>
         </div>
       </PageSection>

@@ -17,9 +17,9 @@ function Informationen(): JSX.Element {
         <div className="md:inline-flex">
           <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
             <h4 className="pb-4 font-bold">Bambinilauf</h4>
-            <div>{START_TIME_BAMBINI} - Richtung Fürstengarten / Wiese</div>
+            <div>ab {START_TIME_BAMBINI} - Richtung Fürstengarten</div>
             <h4 className="py-4 font-bold">Kid&apos;s Run</h4>
-            <div>{START_TIME_KIDS} - Richtung Fürstengarten / Wiese</div>
+            <div>ab {START_TIME_KIDS} - Richtung Fürstengarten</div>
             <h4 className="py-4 font-bold">7 km Waldlauf</h4>
             <div>{START_TIME_7} - Richtung Fürstengarten Schotterweg - gelbe Bodenmarkierung</div>
             <h4 className="py-4 font-bold">7 km Nordic Walking</h4>
