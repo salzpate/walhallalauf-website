@@ -73,7 +73,7 @@ function MainContent(): JSX.Element {
           </p>
           <br></br>
           <p>
-            Im Jahr 2024 unterstützen wir mit dem Lauf die <strong>Clearingstelle des Kinderzentrum St. Vincent.</strong>
+            Im Jahr 2025 unterstützen wir mit dem Lauf die <strong>Traumzeit e.V.</strong> - Herzenswunsch-Aktionen für krebskranke Kinder.
           </p>
         </MoreLink>
       </PageSection>
