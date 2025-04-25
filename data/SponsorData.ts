@@ -119,6 +119,12 @@ export const SponsorData: SponsorGalleryGroup[] = [
         link: 'https://www.pizza-alponte.de/de/',
         name: 'Al Ponte',
       },
+      {
+        id: 'sponsor-cafe-nebenan',
+        imageUrl: '/assets/images/sponsoring/nebenan.png',
+        link: 'https://www.nebenan-donaustauf.de',
+        name: 'nebenan Cafébar',
+      },
     ],
   },
 ];
