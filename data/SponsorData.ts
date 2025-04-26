@@ -36,16 +36,22 @@ export const SponsorData: SponsorGalleryGroup[] = [
         name: 'EDEKA Lattus',
       },
       {
-        id: 'sponsor-alex-mueller',
-        imageUrl: '/assets/images/sponsoring/alexmueller-2022.png',
-        link: 'https://al-mueller.de',
-        name: 'Bureau 2+ Alex Müller',
-      },
-      {
         id: 'sponsor-peppex',
         imageUrl: '/assets/images/sponsoring/peppex-2024.jpg',
         link: 'https://www.peppex-sports.de',
         name: 'Peppex Sports',
+      },
+      {
+        id: 'sponsor-blumenhandl',
+        imageUrl: '/assets/images/sponsoring/blumenhandl-2023.png',
+        link: 'https://www.blumenhandl.de',
+        name: 'Blumen Handl',
+      },
+      {
+        id: 'sponsor-alex-mueller',
+        imageUrl: '/assets/images/sponsoring/alexmueller-2022.png',
+        link: 'https://al-mueller.de',
+        name: 'Bureau 2+ Alex Müller',
       },
       {
         id: 'sponsor-tt',
@@ -64,12 +70,6 @@ export const SponsorData: SponsorGalleryGroup[] = [
         imageUrl: '/assets/images/sponsoring/thurnundtaxis-apotheke-2022.jpg',
         link: 'https://www.apotheke-donaustauf.de',
         name: 'Thurn und Taxis Apotheke Donaustauf',
-      },
-      {
-        id: 'sponsor-blumenhandl',
-        imageUrl: '/assets/images/sponsoring/blumenhandl-2023.png',
-        link: 'https://www.blumenhandl.de',
-        name: 'Blumen Handl',
       },
       {
         id: 'sponsor-boulderwelt',
