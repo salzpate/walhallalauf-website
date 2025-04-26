@@ -72,12 +72,6 @@ export const SponsorData: SponsorGalleryGroup[] = [
         name: 'Blumen Handl',
       },
       {
-        id: 'sponsor-sporthartl',
-        imageUrl: '/assets/images/sponsoring/sport-hartl-2023.png',
-        link: 'https://www.sporthartl.de',
-        name: 'Sport Hartl',
-      },
-      {
         id: 'sponsor-boulderwelt',
         imageUrl: '/assets/images/sponsoring/boulderwelt-2023.png',
         link: 'https://www.boulderwelt-regensburg.de',
@@ -124,6 +118,12 @@ export const SponsorData: SponsorGalleryGroup[] = [
         imageUrl: '/assets/images/sponsoring/nebenan.png',
         link: 'https://www.nebenan-donaustauf.de',
         name: 'nebenan Cafébar',
+      },
+      {
+        id: 'sponsor-bella-napoli',
+        imageUrl: '/assets/images/sponsoring/bella-napoli-2023.jpg',
+        link: 'http://trattoria-bella-napoli.de',
+        name: 'Trattoria Bella Napoli',
       },
     ],
   },
