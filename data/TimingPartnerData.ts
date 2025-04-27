@@ -6,7 +6,7 @@ export const AnmeldungData2: TimingPartnerDataItem = {
   name: 'Anmeldung',
 };
 
-export const StarterListeData: TimingPartnerDataItem = {
+export const StarterListeData2: TimingPartnerDataItem = {
   id: 'starterliste',
   link: 'https://starterliste.zeitgemaess.info/202504271',
   name: 'Starterliste',
@@ -20,4 +20,4 @@ export const ErgebnisseData: TimingPartnerDataItem = {
 
 export const AnmeldungData: TimingPartnerDataItem = undefined;
 export const ErgebnisseData2: TimingPartnerDataItem = undefined;
-export const StarterListeData2: TimingPartnerDataItem = undefined;
+export const StarterListeData: TimingPartnerDataItem = undefined;
