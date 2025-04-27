@@ -30,7 +30,7 @@ function Informationen(): JSX.Element {
             <div>{START_TIME_5} - Richtung Maxstraße - weiße Bodenmarkierung</div>
           </div>
           <div className="w-full md:w-1/3 md:shrink-0 md:justify-center">
-            <Image src="/assets/images/information-start-ziel-2024.jpg" width={810} height={372} alt="Start-Ziel Bereich" />
+            <Image src="/assets/images/information-start-ziel-2025.jpg" width={810} height={372} alt="Start-Ziel Bereich" />
           </div>
         </div>
       </PageSection>
