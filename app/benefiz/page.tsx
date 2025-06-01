@@ -24,6 +24,10 @@ function Benefiz(): JSX.Element {
         <p>Vorsitzende ist Nadine Guggenberger, die für ihr karitatives Engagement unter anderem mit der Bundesverdienstmedaille ausgezeichnet wurde. Schirmherrin des Vereins Traumzeit e.V. ist die Münchener TV-Moderatorin Alexandra Polzin.
         </p>
         <br></br>
+        <p>
+          <Image src="/assets/images/spende-traumzeit-2025.jpg" width={640} height={480} alt="Spendenübergabe 2025" />
+        </p>
+        <br></br>
         <p className="page-section">
           Weitere Informationen finden Sie auf der Homepage von Traumzeit e.V.:<br></br>
           <PageLink href="http://www.traumzeit-ev.de" target="_blank" rel="noreferrer">
