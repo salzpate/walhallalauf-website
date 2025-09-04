@@ -1,4 +1,4 @@
-import { JSX, PropsWithChildren } from 'react';
+import { JSX } from 'react';
 import { Metadata } from 'next';
 import HeaderMainLayout from '@/components/HeaderMainLayout/HeaderMainLayout';
 import { HEADER_LINE_1, HEADER_LINE_2, SITE_TITLE } from '@/lib/constants';
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: `Kontakt - ${SITE_TITLE}`,
 };
 
-function KontaktLayout({ children }: PropsWithChildren<object>): JSX.Element {
+function KontaktLayout({ children }: LayoutProps<'/kontakt'>): JSX.Element {
   return (
     <HeaderMainLayout activeMenu="kontakt">
       <HeaderImage text1={HEADER_LINE_1} text2={HEADER_LINE_2} imageClass={styles.headerimage} />

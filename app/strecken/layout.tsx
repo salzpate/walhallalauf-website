@@ -1,4 +1,4 @@
-import { JSX, PropsWithChildren } from 'react';
+import { JSX } from 'react';
 import { Metadata } from 'next';
 import HeaderMainLayout from '@/components/HeaderMainLayout/HeaderMainLayout';
 import { HEADER_LINE_1, HEADER_LINE_2, SITE_TITLE } from '@/lib/constants';
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: `Strecken - ${SITE_TITLE}`,
 };
 
-function StreckenLayout({ children }: PropsWithChildren<object>): JSX.Element {
+function StreckenLayout({ children }: LayoutProps<'/strecken'>): JSX.Element {
   return (
     <HeaderMainLayout activeMenu="strecken">
       <HeaderImage text1={HEADER_LINE_1} text2={HEADER_LINE_2} imageClass={styles.headerimage} />
