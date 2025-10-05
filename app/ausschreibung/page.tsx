@@ -7,8 +7,8 @@ import { PageSection, DataList } from '@salzpate/react-ui';
 function Ausschreibung(): JSX.Element {
   return (
     <PageSection headline="Ausschreibung" id="ausschreibung">
-      <DataList headline="Veranstaltung">14. Walhallalauf</DataList>
-      <DataList headline="Termin">Sonntag, 27.04.2025</DataList>
+      <DataList headline="Veranstaltung">15. Walhallalauf</DataList>
+      <DataList headline="Termin">Sonntag, 26.04.2026</DataList>
       <DataList headline="Veranstalter">SV Donaustauf, Abteilung Ausdauer</DataList>
       <DataList headline="Ort">
         Fürstengarten <br />
@@ -86,11 +86,14 @@ function Ausschreibung(): JSX.Element {
       </DataList>
       <DataList headline="Verlosung">Ab ca. 11:00 Uhr findet eine Verlosung für die Teilnehmer der Kinderläufe statt.</DataList>
       <DataList headline="Startgebühren">
-        5 km Lauf, 7 km Waldlauf, 10 km Lauf und Nordic-Walking bis 26.03.2025 je 12 EUR
+        5 km Lauf bis 25.03.2026 je 13 EUR
+        7 km Waldlauf, 10 km Lauf und Nordic-Walking bis 25.03.2026 je 14 EUR
         <br />
-        5 km Lauf, 7 km Waldlauf, 10 km Lauf und Nordic-Walking ab 27.03.2025 je 15 EUR
+        5 km Lauf ab 26.03.2026 je 16 EUR
         <br />
-        Nachmeldegebühr, am 27.04.2025 und am Veranstaltungstag 3 EUR
+        7 km Waldlauf, 10 km Lauf und Nordic-Walking ab 26.03.2026 je 17 EUR
+        <br />
+        5km, 7 km Waldlauf, 10 km Lauf und Nordic-Walking am Veranstaltungstag 26.04.2026 je 20 EUR (3-4 EUR Nachmeldegebühr)
         <br />
         <br />
         Bambini-Lauf und Kid&apos;s Run kostenfrei
@@ -98,9 +101,9 @@ function Ausschreibung(): JSX.Element {
       <DataList headline="Anmeldung">
         <span className="page-section">über ZEITGEMAESS GmbH</span>
       </DataList>
-      <DataList headline="Anmeldeschluss">Freitag, den 25.04.2025, 18:00 Uhr (Online)</DataList>
+      <DataList headline="Anmeldeschluss">Freitag, den 24.04.2026, 18:00 Uhr (Online)</DataList>
       <DataList headline="Nachmeldung / Ummeldung / Startunterlagen">
-        <h4 className="md:font-bold">Am 26.04.2025 von 17:00 Uhr – 19:00 Uhr:</h4>
+        <h4 className="md:font-bold">Am 25.04.2026 von 17:00 Uhr – 19:00 Uhr:</h4>
         Mehrzweckhalle (Jugendzimmer)
         <br />
         Regensburger Str. 30
@@ -108,7 +111,7 @@ function Ausschreibung(): JSX.Element {
         93093 Donaustauf
         <br />
         <br />
-        <h4 className="md:font-bold">Am 27.04.2025 von 09:30 Uhr bis 30 Minuten vor dem jeweiligen Start möglich:</h4>
+        <h4 className="md:font-bold">Am 26.04.2026 von 09:30 Uhr bis 30 Minuten vor dem jeweiligen Start möglich:</h4>
         Fürstengarten <br />
         (gegenüber Maxstraße 2)
         <br />
@@ -124,7 +127,7 @@ function Ausschreibung(): JSX.Element {
         Nach dem Lauf werden die Ergebnisse und Online-Urkunden bei <span className="page-section">ZEITGEMAESS GmbH</span> veröffentlicht.
       </DataList>
       <DataList headline="Verpflegung">Wasserstation beim 10 km Lauf und bei Nordic-Walking Getränke und Obst im Zielbereich</DataList>
-      <DataList headline="Benefizaktion">Traumzeit e.V. - Herzenswunsch-Aktionen für krebskranke Kinder</DataList>
+      <DataList headline="Benefizaktion">für 2026 noch offen</DataList>
       <DataList headline="Sonstiges">
         Für das leibliche Wohl wird bestens gesorgt.
         <br />
