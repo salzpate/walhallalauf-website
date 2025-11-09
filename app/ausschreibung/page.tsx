@@ -86,8 +86,7 @@ function Ausschreibung(): JSX.Element {
       </DataList>
       <DataList headline="Verlosung">Ab ca. 11:00 Uhr findet eine Verlosung für die Teilnehmer der Kinderläufe statt.</DataList>
       <DataList headline="Startgebühren">
-        5 km Lauf bis 25.03.2026 je 13 EUR
-        7 km Waldlauf, 10 km Lauf und Nordic-Walking bis 25.03.2026 je 14 EUR
+        5 km Lauf bis 25.03.2026 je 13 EUR 7 km Waldlauf, 10 km Lauf und Nordic-Walking bis 25.03.2026 je 14 EUR
         <br />
         5 km Lauf ab 26.03.2026 je 16 EUR
         <br />

@@ -43,12 +43,16 @@ function Header(props: Readonly<HeaderProps>): JSX.Element {
             </div>
             <div className="-mr-2 flex md:hidden">
               <button className="text-header-color inline-flex items-center justify-center rounded-full p-2 transition-all duration-300 ease-in-out hover:bg-black hover:opacity-75 dark:text-white/87" onClick={() => setIsOn(true)}>
-                <svg className="block h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-                <svg className="hidden h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-                </svg>
+                {!isOn && (
+                  <svg className="block h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                )}
+                {isOn && (
+                  <svg className="block h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                )}
               </button>
             </div>
           </div>
@@ -56,7 +60,7 @@ function Header(props: Readonly<HeaderProps>): JSX.Element {
       </header>
       <div
         aria-hidden="true"
-        className={cn('fixed inset-0 z-10 transition-opacity', { hidden: !isOn })}
+        className={cn('fixed inset-0 z-10 transition-opacity', { 'inset-0 hidden': !isOn })}
         onClick={() => setIsOn(false)}
         onKeyDown={(event: React.KeyboardEvent<HTMLDivElement>) => {
           if (event.key === 'Enter' || event.key === 'Escape') {
@@ -66,7 +70,7 @@ function Header(props: Readonly<HeaderProps>): JSX.Element {
       >
         <div className="absolute inset-0 bg-black opacity-25"></div>
       </div>
-      <aside className={cn('fixed top-0 left-0 z-30 h-full w-64 transform overflow-auto bg-gray-100 shadow-xl transition-all duration-300 ease-in-out dark:bg-gray-900', { 'translate-x-0': isOn }, { '-translate-x-full': !isOn })}>
+      <aside className={cn('fixed top-0 left-0 z-30 h-full w-70 transform overflow-auto bg-gray-100 shadow-xl transition-all duration-300 ease-in-out dark:bg-gray-900', { 'translate-x-0': isOn }, { '-translate-x-full': !isOn })}>
         <span className="flex w-full items-center p-4">
           <Link href="/" className={styles.headlogoSide} tabIndex={-1}>
             &nbsp;

@@ -19,9 +19,12 @@ function Benefiz(): JSX.Element {
         </p>
         <br></br>
         <p>
-          Traumzeit e.V. wurde im Februar 2016 gegründet. Der Verein betreut krebskranke Kinder und Jugendliche sowie deren Angehörige. Der Schwerpunkt der Vereinsarbeit liegt darin, gemeinsame Aktivitäten (Wunschaktionen) für die betroffenen Kinder sowie deren Familien zu organisieren und zu begleiten. Dazu gehören Gruppenausflüge genauso wie besondere Erlebnisse und Herzenswünsche für einzelne Kinder. Die Angebote sind für die Familien kostenlos und finanziert sich durch Spenden.
+          Traumzeit e.V. wurde im Februar 2016 gegründet. Der Verein betreut krebskranke Kinder und Jugendliche sowie deren Angehörige. Der Schwerpunkt der Vereinsarbeit liegt darin, gemeinsame Aktivitäten (Wunschaktionen) für die
+          betroffenen Kinder sowie deren Familien zu organisieren und zu begleiten. Dazu gehören Gruppenausflüge genauso wie besondere Erlebnisse und Herzenswünsche für einzelne Kinder. Die Angebote sind für die Familien kostenlos und
+          finanziert sich durch Spenden.
         </p>
-        <p>Vorsitzende ist Nadine Guggenberger, die für ihr karitatives Engagement unter anderem mit der Bundesverdienstmedaille ausgezeichnet wurde. Schirmherrin des Vereins Traumzeit e.V. ist die Münchener TV-Moderatorin Alexandra Polzin.
+        <p>
+          Vorsitzende ist Nadine Guggenberger, die für ihr karitatives Engagement unter anderem mit der Bundesverdienstmedaille ausgezeichnet wurde. Schirmherrin des Vereins Traumzeit e.V. ist die Münchener TV-Moderatorin Alexandra Polzin.
         </p>
         <br></br>
         <p>
