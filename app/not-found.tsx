@@ -7,7 +7,7 @@ import PageSection from '@/components/PageSection/PageSection';
 import Link from 'next/link';
 import styles from '@/styles/index.module.css';
 import { MenuData } from '@/data/MenuData';
-import { Home, FileText, Map, Mail } from 'lucide-react';
+import { HomeIcon, DocumentTextIcon, MapIcon, EnvelopeIcon } from '@heroicons/react/24/outline';
 
 export const metadata: Metadata = {
   title: '404 - Seite nicht gefunden',
@@ -17,15 +17,15 @@ export const metadata: Metadata = {
 type PopularPage = {
   title: string;
   href: string;
-  icon: typeof Home;
+  icon: typeof HomeIcon;
 };
 
 function FileNotFound(): JSX.Element {
   const popularPages: PopularPage[] = [
-    { title: 'Startseite', href: '/', icon: Home },
-    { title: 'Ausschreibung', href: '/ausschreibung/', icon: FileText },
-    { title: 'Strecken', href: '/strecken/', icon: Map },
-    { title: 'Kontakt', href: '/kontakt/', icon: Mail },
+    { title: 'Startseite', href: '/', icon: HomeIcon },
+    { title: 'Ausschreibung', href: '/ausschreibung/', icon: DocumentTextIcon },
+    { title: 'Strecken', href: '/strecken/', icon: MapIcon },
+    { title: 'Kontakt', href: '/kontakt/', icon: EnvelopeIcon },
   ];
 
   return (
@@ -40,7 +40,7 @@ function FileNotFound(): JSX.Element {
               const Icon = page.icon;
               return (
                 <Link key={page.title} href={page.href} className="flex items-center gap-3 rounded-lg border border-gray-200 p-4 transition-all hover:border-secondary hover:shadow-md dark:border-gray-700 dark:hover:border-secondary">
-                  <Icon className="size-6 shrink-0 text-secondary dark:text-secondary-dark" strokeWidth={1.5} />
+                  <Icon className="size-6 shrink-0 text-secondary dark:text-secondary-dark" />
                   <span className="font-medium text-paragraph dark:text-paragraph-dark">{page.title}</span>
                 </Link>
               );

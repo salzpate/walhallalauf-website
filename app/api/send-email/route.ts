@@ -34,7 +34,7 @@ export async function POST(request: Request): Promise<
       return NextResponse.json({ status: 'success', message: 'Ihre Nachricht wurde erfolgreich versendet.' });
     })
     .catch(error => {
-      console.log(error);
+      console.error('Email send error:', error);
       return NextResponse.json({ status: 'error', message: 'Beim Versenden Ihre Nachricht ist ein Fehler aufgetreten!' });
     });
 }

@@ -12,6 +12,7 @@
     "typegen": "sanity typegen generate"
   },
   "dependencies": {
+    "@heroicons/react": "^2.2.0",
     "@salzpate/react-ui": "^1.4.3",
     "@sanity/image-url": "^1.2.0",
     "axios": "^1.13.2",
