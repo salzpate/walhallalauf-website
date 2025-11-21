@@ -15,8 +15,8 @@ function ImageButtonLink(props: Readonly<PropsWithChildren<ImageButtonLinkProps>
   const { href, headline, imgSrc, children } = props;
 
   return (
-    <Link href={href} className={styles.link + ' button-link'}>
-      {imgSrc && <img className="images-dark mr-4 h-auto w-32 shrink-0 rounded-l-lg object-cover object-center" src={imgSrc} alt={headline as string} />}
+    <Link href={href} className={styles.link + ' button-link'} aria-label={`${headline}`}>
+      {imgSrc && <img className="images-dark mr-4 h-auto w-32 shrink-0 rounded-l-lg object-cover object-center" src={imgSrc} alt="" role="presentation" />}
       <div className="grow">
         <h2 className="title-font pb-1 font-bold text-gray-900 dark:text-gray-200">{headline}</h2>
         <p className="pr-2 text-sm text-gray-500 dark:text-gray-400">{children}</p>

@@ -73,22 +73,34 @@ function ContactForm(props: Readonly<ContactFormProps>): JSX.Element {
         <input {...register('email')} id="email" type="email" name="email" placeholder="E-Mail-Adresse eingeben" />
       </div>
       <div className={styles.formfield}>
-        {errors.name && errors.name.type === 'required' && <div className="-mt-2 mb-2 text-right text-xs text-red-700 dark:text-red-500">Der Name muss eingeben werden.</div>}
-        <input {...register('name', { required: true })} className={errors.name ? styles.textinputerror : textInputClass} id="name" name="name" type="text" placeholder="Namen eingeben" />
+        {errors.name && errors.name.type === 'required' && (
+          <div className="-mt-2 mb-2 text-right text-xs text-red-700 dark:text-red-500" role="alert">
+            Der Name muss eingeben werden.
+          </div>
+        )}
+        <input {...register('name', { required: true })} className={errors.name ? styles.textinputerror : textInputClass} id="name" name="name" type="text" placeholder="Namen eingeben" aria-required="true" aria-invalid={!!errors.name} />
         <label className="mb-2 block text-xs font-medium tracking-wide dark:text-gray-500" htmlFor="name">
           Name <sup className="text-red-700">*</sup>
         </label>
       </div>
       <div className={styles.formfield}>
-        {errors.antwort && errors.antwort.type === 'required' && <div className="-mt-2 mb-2 text-right text-xs text-red-700 dark:text-red-500">Die E-Mail Adresse muss eingeben werden.</div>}
-        <input {...register('antwort', { required: true })} className={errors.antwort ? styles.textinputerror : textInputClass} id="antwort" name="antwort" type="text" placeholder="E-Mail Adresse" />
+        {errors.antwort && errors.antwort.type === 'required' && (
+          <div className="-mt-2 mb-2 text-right text-xs text-red-700 dark:text-red-500" role="alert">
+            Die E-Mail Adresse muss eingeben werden.
+          </div>
+        )}
+        <input {...register('antwort', { required: true })} className={errors.antwort ? styles.textinputerror : textInputClass} id="antwort" name="antwort" type="email" placeholder="E-Mail Adresse" aria-required="true" aria-invalid={!!errors.antwort} />
         <label className="mb-2 block text-xs font-medium tracking-wide dark:text-gray-500" htmlFor="antwort">
           E-Mail <sup className="text-red-700">*</sup>
         </label>
       </div>
       <div className={styles.formfield}>
-        {errors.nachricht && errors.nachricht.type === 'required' && <div className="-mt-2 mb-2 text-right text-xs text-red-700 dark:text-red-500">Es muss eine Nachricht eingeben werden.</div>}
-        <textarea {...register('nachricht', { required: true })} className={errors.nachricht ? styles.textinputerror : textInputClass} id="nachricht" name="nachricht" rows={4} cols={40} placeholder="Nachricht eingeben" />
+        {errors.nachricht && errors.nachricht.type === 'required' && (
+          <div className="-mt-2 mb-2 text-right text-xs text-red-700 dark:text-red-500" role="alert">
+            Es muss eine Nachricht eingeben werden.
+          </div>
+        )}
+        <textarea {...register('nachricht', { required: true })} className={errors.nachricht ? styles.textinputerror : textInputClass} id="nachricht" name="nachricht" rows={4} cols={40} placeholder="Nachricht eingeben" aria-required="true" aria-invalid={!!errors.nachricht} />
         <label className="mb-2 block text-xs font-medium tracking-wide dark:text-gray-500" htmlFor="nachricht">
           Nachricht <sup className="text-red-700">*</sup>
         </label>
@@ -110,14 +122,19 @@ function ContactForm(props: Readonly<ContactFormProps>): JSX.Element {
           </div>
         </label>
       </div>
-      {errors.datenschutz && errors.datenschutz.type === 'required' && <div className="-mt-2 mb-2 text-right text-xs text-red-700 dark:text-red-500">Die Datenschutzerklärung muss als gelesen bestätigt werden.</div>}
+      {errors.datenschutz && errors.datenschutz.type === 'required' && (
+        <div className="-mt-2 mb-2 text-right text-xs text-red-700 dark:text-red-500" role="alert">
+          Die Datenschutzerklärung muss als gelesen bestätigt werden.
+        </div>
+      )}
       <div className="my-4 text-right">
         <button
           type="submit"
           disabled={isSubmitting}
-          className="cursor-pointer rounded-sm bg-secondary px-8 py-2 text-sm tracking-wider text-gray-200 uppercase transition duration-150 ease-in-out hover:bg-secondary/75 dark:bg-secondary-dark"
+          className="cursor-pointer rounded-sm bg-secondary px-8 py-2 text-sm tracking-wider text-gray-200 uppercase transition duration-150 ease-in-out hover:bg-secondary/75 disabled:cursor-not-allowed disabled:opacity-50 dark:bg-secondary-dark"
+          aria-label={isSubmitting ? 'Nachricht wird gesendet...' : 'Nachricht senden'}
         >
-          Senden
+          {isSubmitting ? 'Wird gesendet...' : 'Senden'}
         </button>
       </div>
     </form>

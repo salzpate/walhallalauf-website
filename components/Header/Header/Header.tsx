@@ -1,12 +1,14 @@
 'use client';
 
-import { JSX, useState } from 'react';
+import { JSX, useState, useRef } from 'react';
 import cn from 'classnames';
 import Link from 'next/link';
 
 import { type ActiveMenuItem, type NavMenuItem } from '@/components/types/Menu/Menu';
 import NavBarLink from '@/components/Header/NavBarLink';
 import NavLink from '@/components/Header/NavLink';
+import { useBodyScrollLock } from '@/hooks/useBodyScrollLock';
+import { useFocusTrap } from '@/hooks/useFocusTrap';
 
 import styles from './Header.module.css';
 
@@ -17,15 +19,20 @@ interface HeaderProps extends ActiveMenuItem {
 function Header(props: Readonly<HeaderProps>): JSX.Element {
   const [isOn, setIsOn] = useState(false);
   const { activeMenu, navMenuItems } = props;
+  const menuRef = useRef<HTMLElement>(null);
+
+  // Custom Hooks für Fokus-Management und Body-Scroll-Lock
+  useFocusTrap(isOn, menuRef, () => setIsOn(false));
+  useBodyScrollLock(isOn);
 
   return (
     <>
-      <header className="fixed z-10 w-full bg-white dark:bg-gray-900">
-        <nav className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+      <header className="fixed z-10 w-full bg-white dark:bg-gray-900" role="banner">
+        <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Hauptnavigation">
           <div className="flex h-14 items-center justify-between sm:h-16">
             <div className="flex items-center">
               <div className="shrink-0">
-                <Link href="/" className={styles.headlogo} tabIndex={-1}>
+                <Link href="/" className={styles.headlogo} aria-label="Zur Startseite">
                   &nbsp;
                 </Link>
               </div>
@@ -42,14 +49,20 @@ function Header(props: Readonly<HeaderProps>): JSX.Element {
               </div>
             </div>
             <div className="-mr-2 flex md:hidden">
-              <button className="text-header-color inline-flex items-center justify-center rounded-full p-2 transition-all duration-300 ease-in-out hover:bg-black hover:opacity-75 dark:text-white/87" onClick={() => setIsOn(true)}>
+              <button
+                className="text-header-color inline-flex items-center justify-center rounded-full p-2 transition-all duration-300 ease-in-out hover:bg-black hover:opacity-75 dark:text-white/87"
+                onClick={() => setIsOn(true)}
+                aria-label={isOn ? 'Menü schließen' : 'Menü öffnen'}
+                aria-expanded={isOn}
+                aria-controls="mobile-menu"
+              >
                 {!isOn && (
-                  <svg className="block h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                  <svg className="block h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
                   </svg>
                 )}
                 {isOn && (
-                  <svg className="block h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                  <svg className="block h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
                   </svg>
                 )}
@@ -58,21 +71,18 @@ function Header(props: Readonly<HeaderProps>): JSX.Element {
           </div>
         </nav>
       </header>
-      <div
-        aria-hidden="true"
-        className={cn('fixed inset-0 z-10 transition-opacity', { 'inset-0 hidden': !isOn })}
-        onClick={() => setIsOn(false)}
-        onKeyDown={(event: React.KeyboardEvent<HTMLDivElement>) => {
-          if (event.key === 'Enter' || event.key === 'Escape') {
-            setIsOn(false);
-          }
-        }}
-      >
+      <div role="presentation" aria-hidden="true" className={cn('fixed inset-0 z-10 transition-opacity', { 'inset-0 hidden': !isOn })} onClick={() => setIsOn(false)}>
         <div className="absolute inset-0 bg-black opacity-25"></div>
       </div>
-      <aside className={cn('fixed top-0 left-0 z-30 h-full w-70 transform overflow-auto bg-gray-100 shadow-xl transition-all duration-300 ease-in-out dark:bg-gray-900', { 'translate-x-0': isOn }, { '-translate-x-full': !isOn })}>
+      <aside
+        ref={menuRef}
+        id="mobile-menu"
+        className={cn('fixed top-0 left-0 z-30 h-full w-70 transform overflow-auto bg-gray-100 shadow-xl transition-all duration-300 ease-in-out dark:bg-gray-900', { 'translate-x-0': isOn }, { '-translate-x-full': !isOn })}
+        aria-label="Mobile Navigation"
+        aria-hidden={!isOn}
+      >
         <span className="flex w-full items-center p-4">
-          <Link href="/" className={styles.headlogoSide} tabIndex={-1}>
+          <Link href="/" className={styles.headlogoSide} aria-label="Zur Startseite">
             &nbsp;
           </Link>
         </span>

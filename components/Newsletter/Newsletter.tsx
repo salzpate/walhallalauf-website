@@ -34,7 +34,7 @@ function Newsletter(props: PageSectionProps): JSX.Element {
 
   return (
     <section id="newsletter" className={className}>
-      <div className="mx-auto max-w-screen-xl px-4 pt-4 text-base tracking-wide text-gray-900 sm:px-6 sm:pt-6 lg:px-8 lg:pt-8 dark:text-gray-300">
+      <div className="mx-auto max-w-7xl px-4 pt-4 text-base tracking-wide text-gray-900 sm:px-6 sm:pt-6 lg:px-8 lg:pt-8 dark:text-gray-300">
         <h2 className="text-xl font-medium tracking-tight text-secondary uppercase sm:text-2xl lg:text-3xl">Newsletter</h2>
         <div className="py-4 text-sm font-light sm:py-6 lg:py-8 lg:text-base lg:font-normal">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius recusandae modi quis, illo numquam neque, quos non distinctio voluptas rem repudiandae velit cupiditate omnis ex placeat odio repellat vel aliquam?
@@ -54,12 +54,31 @@ function Newsletter(props: PageSectionProps): JSX.Element {
             </label>
           </div>
           <div className={cn(styles.formfield, 'mt-2')}>
-            {errors.email && errors.email.type === 'required' && <div className="-mt-2 mb-2 text-right text-xs text-red-700 dark:text-red-500">Die E-Mail Adresse muss eingeben werden.</div>}
-            <input {...register('email', { required: true })} className={errors.email ? styles.textinputerror : styles.textinput} id="email" name="email" type="text" placeholder="E-Mail Adresse" />
+            {errors.email && errors.email.type === 'required' && (
+              <div className="-mt-2 mb-2 text-right text-xs text-red-700 dark:text-red-500" role="alert">
+                Die E-Mail Adresse muss eingeben werden.
+              </div>
+            )}
+            <input
+              {...register('email', { required: true })}
+              className={errors.email ? styles.textinputerror : styles.textinput}
+              id="email"
+              name="email"
+              type="email"
+              placeholder="E-Mail Adresse"
+              aria-required="true"
+              aria-invalid={!!errors.email}
+              aria-label="E-Mail Adresse für Newsletter"
+            />
           </div>
           <div className="my-4 text-right">
-            <button type="submit" disabled={isSubmitting} className="rounded-sm bg-secondary px-8 py-2 text-sm tracking-wider text-gray-200 uppercase transition duration-150 ease-in-out hover:bg-secondary/75 dark:bg-secondary-dark">
-              Abonnieren
+            <button
+              type="submit"
+              disabled={isSubmitting}
+              className="rounded-sm bg-secondary px-8 py-2 text-sm tracking-wider text-gray-200 uppercase transition duration-150 ease-in-out hover:bg-secondary/75 disabled:cursor-not-allowed disabled:opacity-50 dark:bg-secondary-dark"
+              aria-label={isSubmitting ? 'Newsletter wird abonniert...' : 'Newsletter abonnieren'}
+            >
+              {isSubmitting ? 'Wird abonniert...' : 'Abonnieren'}
             </button>
           </div>
         </form>

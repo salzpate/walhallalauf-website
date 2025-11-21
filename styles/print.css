@@ -1,0 +1,190 @@
+/**
+ * Print Stylesheet für Walhallalauf Website
+ * Optimiert die Druckausgabe für bessere Lesbarkeit und Papierersparnis
+ */
+
+@media print {
+  /* === Allgemeine Einstellungen === */
+  * {
+    background: transparent !important;
+    box-shadow: none !important;
+    color: #000 !important;
+    text-shadow: none !important;
+  }
+
+  html {
+    font-size: 12pt;
+  }
+
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* === Seitenumbrüche === */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    break-after: avoid;
+    break-inside: avoid;
+  }
+
+  p,
+  blockquote {
+    orphans: 3;
+    widows: 3;
+  }
+
+  img,
+  figure,
+  table {
+    break-inside: avoid;
+  }
+
+  /* === Versteckte Elemente === */
+  header,
+  nav,
+  footer,
+  aside,
+  .no-print {
+    display: none !important;
+  }
+
+  button,
+  input,
+  select,
+  textarea,
+  .button,
+  form {
+    display: none !important;
+  }
+
+  [class*='social'],
+  [class*='share'],
+  [class*='facebook'] {
+    display: none !important;
+  }
+
+  [role='navigation'],
+  [role='banner'],
+  [role='contentinfo'],
+  [aria-hidden='true'] {
+    display: none !important;
+  }
+
+  /* === Hauptinhalt === */
+  main {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+  /* === Typografie === */
+  h1 {
+    font-size: 24pt;
+    margin-bottom: 12pt;
+  }
+
+  h2 {
+    font-size: 18pt;
+    margin-bottom: 6pt;
+    margin-top: 12pt;
+  }
+
+  h3 {
+    font-size: 14pt;
+    margin-bottom: 6pt;
+    margin-top: 12pt;
+  }
+
+  h4,
+  h5,
+  h6 {
+    font-size: 12pt;
+    margin-bottom: 3pt;
+    margin-top: 6pt;
+  }
+
+  p {
+    margin-bottom: 6pt;
+  }
+
+  /* === Links === */
+  a {
+    color: #000 !important;
+    text-decoration: underline;
+  }
+
+  a[href^='http']:after {
+    content: ' (' attr(href) ')';
+    font-size: 10pt;
+    font-style: italic;
+  }
+
+  a[href^='/']:after,
+  a[href^='#']:after {
+    content: '';
+  }
+
+  /* === Bilder === */
+  img {
+    height: auto !important;
+    max-width: 100% !important;
+  }
+
+  /* === Tabellen === */
+  table {
+    border-collapse: collapse;
+    margin-bottom: 12pt;
+    width: 100%;
+  }
+
+  th,
+  td {
+    border: 1px solid #000;
+    padding: 6pt;
+    text-align: left;
+  }
+
+  th {
+    background: #f0f0f0 !important;
+    font-weight: bold;
+  }
+
+  /* === Listen === */
+  ul,
+  ol {
+    margin-bottom: 6pt;
+    padding-left: 20pt;
+  }
+
+  li {
+    margin-bottom: 3pt;
+  }
+
+  /* === Seitenzahlen === */
+  @page {
+    margin: 2cm;
+    size: A4 portrait;
+  }
+
+  /* === Utility === */
+  .print-only {
+    display: block !important;
+  }
+
+  .no-break {
+    break-inside: avoid;
+  }
+
+  .sr-only,
+  [class*='skip-link'] {
+    display: none !important;
+  }
+}
