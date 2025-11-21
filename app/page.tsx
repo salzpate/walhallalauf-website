@@ -23,7 +23,7 @@ async function Home(): Promise<JSX.Element> {
     <HeaderMainLayout>
       <HeaderImage text1={HEADER_LINE_1} text2={HEADER_LINE_2} imageClass={styles.headerimage} />
       <section id="fuss" className="page-section">
-        <div className="mx-auto max-w-screen-xl py-4 text-center text-2xl font-bold tracking-wide text-gray-900 sm:py-6 sm:text-3xl lg:px-8 lg:py-8 lg:text-4xl dark:text-gray-300">Donaustauf erleben - Der Lauf am Fuße der Walhalla</div>
+        <div className="mx-auto max-w-7xl py-4 text-center text-2xl font-bold tracking-wide text-gray-900 sm:py-6 sm:text-3xl lg:px-8 lg:py-8 lg:text-4xl dark:text-gray-300">Donaustauf erleben - Der Lauf am Fuße der Walhalla</div>
       </section>
 
       <PageSection headline="Aktuelles" id="aktuelles" subSection className="page-section pb-4 sm:pb-8">

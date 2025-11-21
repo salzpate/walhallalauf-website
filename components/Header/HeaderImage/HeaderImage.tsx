@@ -9,13 +9,11 @@ interface HeaderImageProps {
   text2?: string;
 }
 
-type TimingPartnerDataItem =
-  | {
-      id: string;
-      name: string;
-      link: string;
-    }
-  | undefined;
+type TimingPartnerDataItem = {
+  id: string;
+  name: string;
+  link: string;
+};
 
 function HeaderImage(props: Readonly<PropsWithChildren<HeaderImageProps>>): JSX.Element {
   const { imageClass, text1, text2, children } = props;
@@ -27,7 +25,7 @@ function HeaderImage(props: Readonly<PropsWithChildren<HeaderImageProps>>): JSX.
       <div className={cn(styles.headerimage, 'bg-transparent bg-cover bg-scroll bg-center bg-no-repeat', imageClass)}>
         <div className="flex flex-wrap">
           <section className="absolute w-full">
-            <div className="mx-auto flex max-w-screen-xl px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto flex max-w-7xl px-4 sm:px-6 lg:px-8">
               <div className="relative mt-14 w-full sm:mt-32">
                 <div className="md:flex">
                   <div className="grow">

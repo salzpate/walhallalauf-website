@@ -18,6 +18,6 @@ export const ErgebnisseData2: TimingPartnerDataItem = {
   name: 'Ergebnisse 2025',
 };
 
-export const AnmeldungData: TimingPartnerDataItem = undefined;
-export const ErgebnisseData: TimingPartnerDataItem = undefined;
-export const StarterListeData: TimingPartnerDataItem = undefined;
+export const AnmeldungData: TimingPartnerDataItem | undefined = undefined;
+export const ErgebnisseData: TimingPartnerDataItem | undefined = undefined;
+export const StarterListeData: TimingPartnerDataItem | undefined = undefined;

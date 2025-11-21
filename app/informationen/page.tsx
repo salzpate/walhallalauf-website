@@ -58,12 +58,13 @@ function Informationen(): JSX.Element {
             </div>
           </div>
         </article>
-      </PageSection >
+      </PageSection>
       <PageSection headline="Nachmeldung / Ummeldung / Startunterlagen" id="startnummernausgabe" subSection className="pb-6 sm:pb-8">
         <article>
           <div className="md:inline-flex">
             <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
-              Bereits einen Tag vor dem Lauf kann man sich stressfrei die Startunterlagen im Jugendzimmer der Mehrzweckhalle abholen oder auch noch Ummelden oder Nachmelden. Aktuell befindet sich der Eingang zum Jugendzimmer hinter dem Haus:
+              Bereits einen Tag vor dem Lauf kann man sich stressfrei die Startunterlagen im Jugendzimmer der Mehrzweckhalle abholen oder auch noch Ummelden oder Nachmelden. Aktuell befindet sich der Eingang zum Jugendzimmer hinter dem
+              Haus:
               <br />
               <br />
               <strong>Samstag, den 25.04.2026 von 17:00 Uhr bis 19:00 Uhr:</strong>
@@ -96,9 +97,9 @@ function Informationen(): JSX.Element {
         <article>
           <div className="md:inline-flex">
             <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
-              Unser Anspruch ist es &quot;Kinder und Jugendliche für Sport zu begeistern&quot;, weshalb auch die Teilnahme am Baminilauf und am Kid&apos;s Run völlig kostenlos für die Teilnehmer ist. Die Kinderläufe enden alle im Zielbereich,
-              hier erhalten die Kinder dann je nach Jahr eine Urkunde und/oder Medaille. Und nach dem Lauf können sich die Kleinen noch auf dem Spielplatz im Fürstengarten austoben oder in Ruhe eine Bratwurstsemmel oder ein Stück Kuchen
-              genießen.
+              Unser Anspruch ist es &quot;Kinder und Jugendliche für Sport zu begeistern&quot;, weshalb auch die Teilnahme am Baminilauf und am Kid&apos;s Run völlig kostenlos für die Teilnehmer ist. Die Kinderläufe enden alle im
+              Zielbereich, hier erhalten die Kinder dann je nach Jahr eine Urkunde und/oder Medaille. Und nach dem Lauf können sich die Kleinen noch auf dem Spielplatz im Fürstengarten austoben oder in Ruhe eine Bratwurstsemmel oder ein
+              Stück Kuchen genießen.
             </div>
             <div className="w-full md:w-1/3 md:shrink-0 md:justify-center">
               <Image src="/assets/images/information-kinderlauf.jpg" width={405} height={189} alt="Kinderlauf" />

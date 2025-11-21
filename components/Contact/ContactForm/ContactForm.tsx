@@ -89,7 +89,16 @@ function ContactForm(props: Readonly<ContactFormProps>): JSX.Element {
             Die E-Mail Adresse muss eingeben werden.
           </div>
         )}
-        <input {...register('antwort', { required: true })} className={errors.antwort ? styles.textinputerror : textInputClass} id="antwort" name="antwort" type="email" placeholder="E-Mail Adresse" aria-required="true" aria-invalid={!!errors.antwort} />
+        <input
+          {...register('antwort', { required: true })}
+          className={errors.antwort ? styles.textinputerror : textInputClass}
+          id="antwort"
+          name="antwort"
+          type="email"
+          placeholder="E-Mail Adresse"
+          aria-required="true"
+          aria-invalid={!!errors.antwort}
+        />
         <label className="mb-2 block text-xs font-medium tracking-wide dark:text-gray-500" htmlFor="antwort">
           E-Mail <sup className="text-red-700">*</sup>
         </label>
@@ -100,7 +109,17 @@ function ContactForm(props: Readonly<ContactFormProps>): JSX.Element {
             Es muss eine Nachricht eingeben werden.
           </div>
         )}
-        <textarea {...register('nachricht', { required: true })} className={errors.nachricht ? styles.textinputerror : textInputClass} id="nachricht" name="nachricht" rows={4} cols={40} placeholder="Nachricht eingeben" aria-required="true" aria-invalid={!!errors.nachricht} />
+        <textarea
+          {...register('nachricht', { required: true })}
+          className={errors.nachricht ? styles.textinputerror : textInputClass}
+          id="nachricht"
+          name="nachricht"
+          rows={4}
+          cols={40}
+          placeholder="Nachricht eingeben"
+          aria-required="true"
+          aria-invalid={!!errors.nachricht}
+        />
         <label className="mb-2 block text-xs font-medium tracking-wide dark:text-gray-500" htmlFor="nachricht">
           Nachricht <sup className="text-red-700">*</sup>
         </label>
