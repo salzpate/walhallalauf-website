@@ -4,7 +4,7 @@ import { JSX } from 'react';
 import SponsorGallery from '@/components/SponsorGallery/SponsorGallery';
 import { SponsorData } from '@/data/SponsorData';
 import Image from 'next/image';
-import { START_TIME_10, START_TIME_5, START_TIME_7, START_TIME_BAMBINI, START_TIME_KIDS, START_TIME_NORDIC } from '@/lib/constants';
+import { START_TIME_10, START_TIME_5, START_TIME_7, START_TIME_KIDS_1000, START_TIME_KIDS_400, START_TIME_KIDS_600, START_TIME_NORDIC } from '@/lib/constants';
 import { PageLink, PageSection } from '@salzpate/react-ui';
 
 function Informationen(): JSX.Element {
@@ -17,10 +17,12 @@ function Informationen(): JSX.Element {
         <article>
           <div className="md:inline-flex">
             <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
-              <h4 className="pb-4 font-bold">Bambinilauf</h4>
-              <div>ab {START_TIME_BAMBINI} - Richtung Fürstengarten</div>
-              <h4 className="py-4 font-bold">Kid&apos;s Run</h4>
-              <div>ab {START_TIME_KIDS} - Richtung Fürstengarten</div>
+              <h4 className="pb-4 font-bold">Kinderlauf 400 m</h4>
+              <div>{START_TIME_KIDS_400} - Richtung Fürstengarten</div>
+              <h4 className="py-4 font-bold">Kinderlauf 600 m</h4>
+              <div>{START_TIME_KIDS_600} - Richtung Fürstengarten</div>
+              <h4 className="py-4 font-bold">Kinderlauf 1.000 m</h4>
+              <div>{START_TIME_KIDS_1000} - Richtung Fürstengarten</div>
               <h4 className="py-4 font-bold">7 km Waldlauf</h4>
               <div>{START_TIME_7} - Richtung Fürstengarten Schotterweg - gelbe Bodenmarkierung</div>
               <h4 className="py-4 font-bold">7 km Nordic Walking</h4>

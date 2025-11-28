@@ -1,7 +1,7 @@
 'use client';
 
 import { JSX } from 'react';
-import { START_TIME_10, START_TIME_5, START_TIME_7, START_TIME_BAMBINI, START_TIME_KIDS, START_TIME_NORDIC } from '@/lib/constants';
+import { START_TIME_10, START_TIME_5, START_TIME_7, START_TIME_KIDS_1000, START_TIME_KIDS_400, START_TIME_KIDS_600, START_TIME_NORDIC } from '@/lib/constants';
 import { PageSection, DataList } from '@salzpate/react-ui';
 
 function Ausschreibung(): JSX.Element {
@@ -17,10 +17,12 @@ function Ausschreibung(): JSX.Element {
         93093 Donaustauf
       </DataList>
       <DataList headline="Strecken">
-        <h4 className="md:font-bold">Bambini-Lauf:</h4>
-        <p>400 m Strecke - geschottert (bis 8 Jahre)</p>
-        <h4 className="mt-2 md:font-bold">Kid&apos;s Run:</h4>
-        <p>1,2 km Rundkurs - 2 Runden - geschottert (ab 6 Jahre)</p>
+        <h4 className="md:font-bold">Kinderlauf 400 m:</h4>
+        <p>ca. 400 m Strecke - geschottert, Wiese (bis ca. 5 Jahre)</p>
+        <h4 className="md:font-bold">Kinderlauf 600 m:</h4>
+        <p>ca. 600 m Strecke - geschottert, Wiese (bis ca. 7 Jahre)</p>
+        <h4 className="md:font-bold">Kinderlauf 1.000 m:</h4>
+        <p>ca. 1.000 m Strecke - geschottert, Wiese (ab ca. 8 Jahre)</p>
         <h4 className="mt-2 md:font-bold">Waldlauf:</h4>
         <p>7,1 km Rundkurs - anspruchsvoll (ca. 160 HM) geteert, geschottert und Waldweg - gelbe Bodenmarkierung</p>
         <h4 className="mt-2 md:font-bold">Nordic Walking:</h4>
@@ -34,14 +36,19 @@ function Ausschreibung(): JSX.Element {
         <table>
           <tbody>
             <tr>
-              <td>ab {START_TIME_BAMBINI}</td>
-              <td className="px-4 text-right">400/600 m</td>
-              <td>Bambini-Lauf (bis 7 Jahre)</td>
+              <td>{START_TIME_KIDS_400}</td>
+              <td className="px-4 text-right">ca. 400 m</td>
+              <td>Kinderlauf (bis ca. 5 Jahre)</td>
             </tr>
             <tr>
-              <td>ab {START_TIME_KIDS}</td>
-              <td className="px-4 text-right">1,2 km</td>
-              <td>Kid&apos;s Run (ab 7 Jahren)</td>
+              <td>{START_TIME_KIDS_600}</td>
+              <td className="px-4 text-right">ca. 600 m</td>
+              <td>Kinderlauf (bis ca. 7 Jahre)</td>
+            </tr>
+            <tr>
+              <td>{START_TIME_KIDS_1000}</td>
+              <td className="px-4 text-right">ca. 1.000 m</td>
+              <td>Kinderlauf (ab ca. 8 Jahren)</td>
             </tr>
             <tr>
               <td>{START_TIME_7}</td>
@@ -67,7 +74,7 @@ function Ausschreibung(): JSX.Element {
         </table>
       </DataList>
       <DataList headline="Siegerehrung">
-        <h4 className="md:font-bold">Bambini-Lauf und Kid&apos;s Run</h4>
+        <h4 className="md:font-bold">Kinderläufe</h4>
         Medaillen beim Zieleinlauf und Online Urkunden
         <br />
         <br />
@@ -95,7 +102,7 @@ function Ausschreibung(): JSX.Element {
         5km, 7 km Waldlauf, 10 km Lauf und Nordic-Walking am Veranstaltungstag 26.04.2026 je 20 EUR (3-4 EUR Nachmeldegebühr)
         <br />
         <br />
-        Bambini-Lauf und Kid&apos;s Run kostenfrei
+        Kinderläufe sind kostenfrei
       </DataList>
       <DataList headline="Anmeldung">
         <span className="page-section">über ZEITGEMAESS GmbH</span>
@@ -120,7 +127,7 @@ function Ausschreibung(): JSX.Element {
         Mit Transponder durch ZEITGEMAESS GmbH bei 5 km Lauf, 7 km Waldlauf, 10 km Lauf und Nordic-Walking.
         <br />
         <br />
-        Bambini-Lauf und Kid&apos;s Run sind ohne Zeitmessung.
+        Kinderläufe sind ohne Zeitmessung.
       </DataList>
       <DataList headline="Ergebnisliste">
         Nach dem Lauf werden die Ergebnisse und Online-Urkunden bei <span className="page-section">ZEITGEMAESS GmbH</span> veröffentlicht.

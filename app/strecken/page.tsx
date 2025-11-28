@@ -4,7 +4,7 @@ import { JSX } from 'react';
 import Image from 'next/image';
 import { ButtonLink, PageSection } from '@salzpate/react-ui';
 
-import { START_TIME_10, START_TIME_5, START_TIME_7, START_TIME_BAMBINI, START_TIME_KIDS, START_TIME_NORDIC } from '@/lib/constants';
+import { START_TIME_10, START_TIME_5, START_TIME_7, START_TIME_KIDS_1000, START_TIME_KIDS_400, START_TIME_KIDS_600, START_TIME_NORDIC } from '@/lib/constants';
 
 function Strecken(): JSX.Element {
   return (
@@ -102,36 +102,47 @@ function Strecken(): JSX.Element {
           </div>
         </article>
       </PageSection>
-      <a id="kidsrun" aria-label="1,2 km Kid's Run"></a>
-      <PageSection headline="1,2 km Kid's Run" id="sectionkidsrun" subSection className="page-section bg-gray-200 pb-8 sm:pb-8 dark:bg-gray-900">
+      <a id="kinder-1000" aria-label="1000 m Kinderlauf"></a>
+      <PageSection headline="1.000 m Kinderlauf" id="sectionkidsrun" subSection className="page-section bg-gray-200 pb-8 sm:pb-8 dark:bg-gray-900">
         <article>
           <h4 className="pb-4 font-bold">Profil</h4>
-          <div>1,2 km Rundkurs, 2 Runden, geschottert (ab 7 Jahre)</div>
+          <div>1.000 m Rundkurs, 1 Runde, geschottert (ab ca. 8 Jahre)</div>
           <h4 className="py-4 font-bold">Startzeit</h4>
-          <div>ab {START_TIME_KIDS}</div>
+          <div>{START_TIME_KIDS_1000}</div>
           <h4 className="py-4 text-lg font-medium tracking-wide">Wegbeschreibung</h4>
           <div className="md:inline-flex">
             <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
-              <div>Der Start erfolgt in Richtung Osten im Start/Zielbereiches. Am chinesischen Turm wird zweimal hintereinander links abgebogen. Es werden drei Runden gelaufen, bevor es ins Ziel geht.</div>
-            </div>
-            <div className="w-full md:w-1/3 md:shrink-0 md:justify-center">
-              <Image src="/assets/images/strecken-kidsrun.jpg" width={405} height={150} alt="Strecke Kid's Run" />
+              <div>Der Start erfolgt in Richtung Osten im Start/Zielbereiches. Es geht einmal bis ans andere Ende des Fürstengartens und dann wieder zurück.</div>
             </div>
           </div>
         </article>
       </PageSection>
-      <a id="bambini" aria-label="400 m Bambinilauf"></a>
-      <PageSection headline="400 m Bambinilauf" id="sectionbambini" subSection className="pb-8">
+      <a id="kinder-600" aria-label="600 m Kinderlauf"></a>
+      <PageSection headline="600 m Kinderlauf" id="sectionkinder600" subSection className="pb-8">
         <article>
           <h4 className="pb-4 font-bold">Profil</h4>
-          <div>400 m Strecke, geschottert (bis 5 Jahre)</div>
-          <div>600 m Strecke, geschottert (bis 7 Jahre)</div>
+          <div>1,2 km Rundkurs, 2 Runden, geschottert (bis ca. 7 Jahre)</div>
           <h4 className="py-4 font-bold">Startzeit</h4>
-          <div>ab {START_TIME_BAMBINI}</div>
+          <div>{START_TIME_KIDS_600}</div>
           <h4 className="py-4 text-lg font-medium tracking-wide">Wegbeschreibung</h4>
           <div className="md:inline-flex">
             <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
-              <div>Der Start erfolgt in Richtung Osten im Start/Zielbereiches. Die 400 m Strecke biegt vor dem chinesischen Turm in Richtung Ziel um, die 600 m Strecke nach dem chinesischen Turm.</div>
+              <div>Der Start erfolgt in Richtung Osten im Start/Zielbereiches. Die 600 m Strecke geht einmal um den chinesischen Turm rum.</div>
+            </div>
+          </div>
+        </article>
+      </PageSection>
+      <a id="kinder-400" aria-label="400 m Kinderlauf"></a>
+      <PageSection headline="400 m Kinderlauf" id="sectionbambini" subSection className="page-section bg-gray-200 pb-8 sm:pb-8 dark:bg-gray-900">
+        <article>
+          <h4 className="pb-4 font-bold">Profil</h4>
+          <div>400 m Strecke, geschottert (bis ca. 5 Jahre)</div>
+          <h4 className="py-4 font-bold">Startzeit</h4>
+          <div>{START_TIME_KIDS_400}</div>
+          <h4 className="py-4 text-lg font-medium tracking-wide">Wegbeschreibung</h4>
+          <div className="md:inline-flex">
+            <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
+              <div>Der Start erfolgt in Richtung Osten im Start/Zielbereiches. Die 400 m Strecke biegt vor dem chinesischen Turm in Richtung Ziel ab.</div>
             </div>
           </div>
         </article>

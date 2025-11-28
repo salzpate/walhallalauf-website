@@ -30,19 +30,28 @@ function MainContent(): JSX.Element {
                 7,1 km Rundkurs, anspruchsvoll (ca. 160 HM) geteert, geschottert und Waldweg
               </ImageButtonLink>
             </div>
+          </div>
+          <div className="-m-2 my-6 flex flex-wrap sm:my-8">
             <div className="w-full p-2 md:w-1/2 lg:w-1/3">
               <ImageButtonLink headline="Nordic Walken" href="/strecken/#waldlauf" imgSrc="/assets/images/index-walken.jpg">
                 7,1 km Rundkurs, anspruchsvoll (ca. 160 HM) geteert, geschottert und Waldweg
               </ImageButtonLink>
             </div>
+          </div>
+          <div className="-m-2 my-6 flex flex-wrap sm:my-8">
             <div className="w-full p-2 md:w-1/2 lg:w-1/3">
-              <ImageButtonLink headline="1,2 km Kid's Run" href="/strecken/#kidsrun" imgSrc="/assets/images/index-kidsrun.jpg">
-                1,2 km Rundkurs, 2 Runden, geschottert (ab 7 Jahre)
+              <ImageButtonLink headline="1.000 m Kinderlauf" href="/strecken/#kinder-1000" imgSrc="/assets/images/index-kidsrun.jpg">
+                1.000 m Rundkurs, 1 Runden, geschottert (ab ca. 8 Jahre)
               </ImageButtonLink>
             </div>
             <div className="w-full p-2 md:w-1/2 lg:w-1/3">
-              <ImageButtonLink headline="400 m Bambinilauf" href="/strecken/#bambini" imgSrc="/assets/images/index-bambini.jpg">
-                400 m Strecke, geschottert (bis 7 Jahre)
+              <ImageButtonLink headline="600 m Kinderlauf" href="/strecken/#kinder-600" imgSrc="/assets/images/index-bambini.jpg">
+                600 m Strecke, geschottert (bis ca. 7 Jahre)
+              </ImageButtonLink>
+            </div>
+            <div className="w-full p-2 md:w-1/2 lg:w-1/3">
+              <ImageButtonLink headline="400 m Kinderlauf" href="/strecken/#kinder-400" imgSrc="/assets/images/index-bambini.jpg">
+                400 m Strecke, geschottert (bis ca. 5 Jahre)
               </ImageButtonLink>
             </div>
           </div>
