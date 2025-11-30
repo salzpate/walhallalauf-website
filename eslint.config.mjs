@@ -1,3 +1,4 @@
+import js from '@eslint/js';
 import { defineConfig, globalIgnores } from 'eslint/config';
 import reactPlugin from 'eslint-plugin-react';
 import nextVitals from 'eslint-config-next/core-web-vitals';
@@ -7,6 +8,7 @@ import simpleImportSort from 'eslint-plugin-simple-import-sort';
 
 const eslintConfig = defineConfig([
   globalIgnores(['.next/**', 'out/**', 'build/**', 'coverage/**', 'node_modules/**', 'next-env.d.ts', 'postcss.config.mjs', 'vitest.setup.ts']),
+  js.configs.recommended,
   ...nextVitals,
   ...nextTs,
   prettier,
