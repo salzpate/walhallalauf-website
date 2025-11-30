@@ -41,17 +41,17 @@ function MainContent(): JSX.Element {
           <div className="-m-2 my-6 flex flex-wrap sm:my-8">
             <div className="w-full p-2 md:w-1/2 lg:w-1/3">
               <ImageButtonLink headline="1.000 m Kinderlauf" href="/strecken/#kinder-1000" imgSrc="/assets/images/index-kidsrun.jpg">
-                1.000 m Rundkurs, 1 Runden, geschottert (ab ca. 8 Jahre)
+                1.000 m Rundkurs, 1 Runden, Park- und Wiesenwege (ab ca. 8 Jahre)
               </ImageButtonLink>
             </div>
             <div className="w-full p-2 md:w-1/2 lg:w-1/3">
               <ImageButtonLink headline="600 m Kinderlauf" href="/strecken/#kinder-600" imgSrc="/assets/images/index-bambini.jpg">
-                600 m Strecke, geschottert (bis ca. 7 Jahre)
+                600 m Strecke, Park- und Wiesenwege (bis ca. 7 Jahre)
               </ImageButtonLink>
             </div>
             <div className="w-full p-2 md:w-1/2 lg:w-1/3">
               <ImageButtonLink headline="400 m Kinderlauf" href="/strecken/#kinder-400" imgSrc="/assets/images/index-bambini.jpg">
-                400 m Strecke, geschottert (bis ca. 5 Jahre)
+                400 m Strecke, Park- und Wiesenwege (bis ca. 5 Jahre)
               </ImageButtonLink>
             </div>
           </div>

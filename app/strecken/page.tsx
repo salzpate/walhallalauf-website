@@ -106,7 +106,7 @@ function Strecken(): JSX.Element {
       <PageSection headline="1.000 m Kinderlauf" id="sectionkidsrun" subSection className="page-section bg-gray-200 pb-8 sm:pb-8 dark:bg-gray-900">
         <article>
           <h4 className="pb-4 font-bold">Profil</h4>
-          <div>1.000 m Rundkurs, 1 Runde, geschottert (ab ca. 8 Jahre)</div>
+          <div>1.000 m Rundkurs, 1 Runde, Park- und Wiesenwege (ab ca. 8 Jahre)</div>
           <h4 className="py-4 font-bold">Startzeit</h4>
           <div>{START_TIME_KIDS_1000}</div>
           <h4 className="py-4 text-lg font-medium tracking-wide">Wegbeschreibung</h4>
@@ -121,7 +121,7 @@ function Strecken(): JSX.Element {
       <PageSection headline="600 m Kinderlauf" id="sectionkinder600" subSection className="pb-8">
         <article>
           <h4 className="pb-4 font-bold">Profil</h4>
-          <div>1,2 km Rundkurs, 2 Runden, geschottert (bis ca. 7 Jahre)</div>
+          <div>1,2 km Rundkurs, 2 Runden, Park- und Wiesenwege (bis ca. 7 Jahre)</div>
           <h4 className="py-4 font-bold">Startzeit</h4>
           <div>{START_TIME_KIDS_600}</div>
           <h4 className="py-4 text-lg font-medium tracking-wide">Wegbeschreibung</h4>
@@ -136,7 +136,7 @@ function Strecken(): JSX.Element {
       <PageSection headline="400 m Kinderlauf" id="sectionbambini" subSection className="page-section bg-gray-200 pb-8 sm:pb-8 dark:bg-gray-900">
         <article>
           <h4 className="pb-4 font-bold">Profil</h4>
-          <div>400 m Strecke, geschottert (bis ca. 5 Jahre)</div>
+          <div>400 m Strecke, Park- und Wiesenwege (bis ca. 5 Jahre)</div>
           <h4 className="py-4 font-bold">Startzeit</h4>
           <div>{START_TIME_KIDS_400}</div>
           <h4 className="py-4 text-lg font-medium tracking-wide">Wegbeschreibung</h4>

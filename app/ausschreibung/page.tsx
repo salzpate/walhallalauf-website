@@ -18,11 +18,11 @@ function Ausschreibung(): JSX.Element {
       </DataList>
       <DataList headline="Strecken">
         <h4 className="md:font-bold">Kinderlauf 400 m:</h4>
-        <p>ca. 400 m Strecke - geschottert, Wiese (bis ca. 5 Jahre)</p>
+        <p>ca. 400 m Strecke - Park- und Wiesenwege (bis ca. 5 Jahre)</p>
         <h4 className="md:font-bold">Kinderlauf 600 m:</h4>
-        <p>ca. 600 m Strecke - geschottert, Wiese (bis ca. 7 Jahre)</p>
+        <p>ca. 600 m Strecke - Park- und Wiesenwege (bis ca. 7 Jahre)</p>
         <h4 className="md:font-bold">Kinderlauf 1.000 m:</h4>
-        <p>ca. 1.000 m Strecke - geschottert, Wiese (ab ca. 8 Jahre)</p>
+        <p>ca. 1.000 m Strecke - Park- und Wiesenwege (ab ca. 8 Jahre)</p>
         <h4 className="mt-2 md:font-bold">Waldlauf:</h4>
         <p>7,1 km Rundkurs - anspruchsvoll (ca. 160 HM) geteert, geschottert und Waldweg - gelbe Bodenmarkierung</p>
         <h4 className="mt-2 md:font-bold">Nordic Walking:</h4>
