@@ -52,7 +52,7 @@ function Header(props: Readonly<HeaderProps>): JSX.Element {
             </div>
             <div className="-mr-2 md:hidden">
               <button
-                className="text-header-color cursor-pointer inline-flex items-center justify-center rounded-full p-2 transition-all duration-300 ease-in-out hover:bg-black hover:opacity-75 dark:text-white/87"
+                className="text-header-color inline-flex cursor-pointer items-center justify-center rounded-full p-2 transition-all duration-300 ease-in-out hover:bg-black hover:opacity-75 dark:text-white/87"
                 onClick={() => setIsOn(true)}
                 aria-label={isOn ? 'Menü schließen' : 'Menü öffnen'}
                 aria-expanded={isOn}
@@ -84,11 +84,7 @@ function Header(props: Readonly<HeaderProps>): JSX.Element {
         aria-hidden={!isOn}
       >
         <span className="flex w-full items-center p-4">
-          <Link
-            href="/"
-            className="mx-auto block h-12 w-[155px] bg-[url('/assets/images/logo-7ddb1f8f39.png')] bg-size-[155px_48px] dark:bg-[url('/assets/images/logo-dark-7ddb1f8f39.png')]"
-            aria-label="Zur Startseite"
-          >
+          <Link href="/" className="mx-auto block h-12 w-[155px] bg-[url('/assets/images/logo-7ddb1f8f39.png')] bg-size-[155px_48px] dark:bg-[url('/assets/images/logo-dark-7ddb1f8f39.png')]" aria-label="Zur Startseite">
             &nbsp;
           </Link>
         </span>

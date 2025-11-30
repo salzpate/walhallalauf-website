@@ -100,20 +100,33 @@ function ContactForm(props: Readonly<ContactFormProps>): JSX.Element {
             Es muss eine Nachricht eingeben werden.
           </div>
         )}
-        <textarea {...register('nachricht', { required: true })} className={getInputClass(!!errors.nachricht)} id="nachricht" name="nachricht" rows={4} cols={40} placeholder="Nachricht eingeben" aria-required="true" aria-invalid={!!errors.nachricht} />
-        <label className={cn('mb-2 block text-xs font-medium tracking-wide dark:text-gray-500', errors.nachricht && 'hover:text-secondary focus:text-secondary dark:hover:text-secondary-dark dark:focus:text-secondary-dark')} htmlFor="nachricht">
+        <textarea
+          {...register('nachricht', { required: true })}
+          className={getInputClass(!!errors.nachricht)}
+          id="nachricht"
+          name="nachricht"
+          rows={4}
+          cols={40}
+          placeholder="Nachricht eingeben"
+          aria-required="true"
+          aria-invalid={!!errors.nachricht}
+        />
+        <label
+          className={cn('mb-2 block text-xs font-medium tracking-wide dark:text-gray-500', errors.nachricht && 'hover:text-secondary focus:text-secondary dark:hover:text-secondary-dark dark:focus:text-secondary-dark')}
+          htmlFor="nachricht"
+        >
           Nachricht <sup className="text-red-700">*</sup>
         </label>
       </div>
       <div className="flex w-full">
         <label className="flex items-start justify-start">
           <div className="mr-2 flex h-5 w-5 shrink-0 items-center justify-center rounded-sm border-2 border-gray-500 bg-white focus-within:border-blue-500 dark:bg-black">
-            <input {...register('datenschutz', { required: true })} type="checkbox" className="absolute opacity-0 peer" id="datenschutz" name="datenschutz" />
+            <input {...register('datenschutz', { required: true })} type="checkbox" className="peer absolute opacity-0" id="datenschutz" name="datenschutz" />
             <svg className="pointer-events-none hidden h-3 w-3 fill-current text-secondary peer-checked:block dark:text-secondary-dark" viewBox="0 0 20 20">
               <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
             </svg>
           </div>
-          <div className={cn('mb-2 block select-none text-xs tracking-wide', errors.datenschutz ? 'text-red-700 dark:text-red-500' : 'dark:text-gray-500')}>
+          <div className={cn('mb-2 block text-xs tracking-wide select-none', errors.datenschutz ? 'text-red-700 dark:text-red-500' : 'dark:text-gray-500')}>
             Ich habe die{' '}
             <Link href="/datenschutz/" className="text-secondary no-underline transition-all duration-150 ease-in-out hover:underline hover:decoration-dotted">
               Datenschutzerklärung

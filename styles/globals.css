@@ -143,21 +143,6 @@ body {
   }
 }
 
-/* Print Styles */
-@media print {
-  .no-print {
-    display: none !important;
-  }
-
-  .print-only {
-    display: block !important;
-  }
-
-  .no-break {
-    break-inside: avoid !important;
-  }
-}
-
 @media screen {
   .print-only {
     display: none !important;

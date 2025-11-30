@@ -18,6 +18,9 @@ dist
 # Static assets
 public/**
 
+# CSS files (Tailwind CSS 4 syntax not supported by Prettier)
+**/*.css
+
 # Documentation
 README.md
 SECURITY.md
