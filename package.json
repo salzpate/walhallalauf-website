@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "build": "next build",
     "lint": "eslint && tsc --noEmit",
     "lint:style": "npx stylelint '**/*.css' --fix",
     "lint:style:check": "stylelint '**/*.css'",
