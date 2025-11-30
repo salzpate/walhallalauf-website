@@ -5,9 +5,9 @@ import SnackBarProvider from '@/components/SnackBar';
 import { MenuData } from '@/data/MenuData';
 import { SITE_DESC, SITE_TITLE } from '@/lib/constants';
 
-import '@salzpate/react-ui/dist/style.css';
 import '@/styles/globals.css';
 import '@/styles/print.css';
+import ThemeProvider from '@/components/ThemeProvider';
 
 const footerText = '© SV Donaustauf';
 
@@ -43,10 +43,12 @@ function RootLayout({ children }: PropsWithChildren<object>): JSX.Element {
         <meta name="theme-color" content="#ff0000" />
       </head>
       <body>
-        <SnackBarProvider>
-          {children}
-          <Footer text={footerText} menuItems={footerMenuItems} />
-        </SnackBarProvider>
+        <ThemeProvider>
+          <SnackBarProvider>
+            {children}
+            <Footer text={footerText} menuItems={footerMenuItems} />
+          </SnackBarProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

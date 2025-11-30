@@ -1,7 +1,6 @@
 'use client';
 
 import { JSX, useState, useRef } from 'react';
-import cn from 'classnames';
 import Link from 'next/link';
 
 import { type ActiveMenuItem, type NavMenuItem } from '@/components/types/Menu/Menu';
@@ -9,8 +8,7 @@ import NavBarLink from '@/components/Header/NavBarLink';
 import NavLink from '@/components/Header/NavLink';
 import { useBodyScrollLock } from '@/hooks/useBodyScrollLock';
 import { useFocusTrap } from '@/hooks/useFocusTrap';
-
-import styles from './Header.module.css';
+import { cn } from '@/lib/cn';
 
 interface HeaderProps extends ActiveMenuItem {
   navMenuItems: NavMenuItem[];
@@ -32,12 +30,16 @@ function Header(props: Readonly<HeaderProps>): JSX.Element {
           <div className="flex h-14 items-center justify-between sm:h-16">
             <div className="flex items-center">
               <div className="shrink-0">
-                <Link href="/" className={styles.headlogo} aria-label="Zur Startseite">
+                <Link
+                  href="/"
+                  className="block h-[34px] w-[110px] bg-[url('/assets/images/logo-7ddb1f8f39.png')] bg-size-[110px_34px] sm:h-12 sm:w-[155px] sm:bg-size-[155px_48px] dark:bg-[url('/assets/images/logo-dark-7ddb1f8f39.png')]"
+                  aria-label="Zur Startseite"
+                >
                   &nbsp;
                 </Link>
               </div>
             </div>
-            <div className="hidden md:flex">
+            <div className="hidden md:inline-flex md:items-center md:justify-center md:space-x-6">
               <div className="inline-flex items-center justify-center space-x-6">
                 {navMenuItems.map((item, i) => {
                   return (
@@ -48,9 +50,9 @@ function Header(props: Readonly<HeaderProps>): JSX.Element {
                 })}
               </div>
             </div>
-            <div className="-mr-2 flex md:hidden">
+            <div className="-mr-2 md:hidden">
               <button
-                className="text-header-color inline-flex items-center justify-center rounded-full p-2 transition-all duration-300 ease-in-out hover:bg-black hover:opacity-75 dark:text-white/87"
+                className="text-header-color cursor-pointer inline-flex items-center justify-center rounded-full p-2 transition-all duration-300 ease-in-out hover:bg-black hover:opacity-75 dark:text-white/87"
                 onClick={() => setIsOn(true)}
                 aria-label={isOn ? 'Menü schließen' : 'Menü öffnen'}
                 aria-expanded={isOn}
@@ -82,7 +84,11 @@ function Header(props: Readonly<HeaderProps>): JSX.Element {
         aria-hidden={!isOn}
       >
         <span className="flex w-full items-center p-4">
-          <Link href="/" className={styles.headlogoSide} aria-label="Zur Startseite">
+          <Link
+            href="/"
+            className="mx-auto block h-12 w-[155px] bg-[url('/assets/images/logo-7ddb1f8f39.png')] bg-size-[155px_48px] dark:bg-[url('/assets/images/logo-dark-7ddb1f8f39.png')]"
+            aria-label="Zur Startseite"
+          >
             &nbsp;
           </Link>
         </span>

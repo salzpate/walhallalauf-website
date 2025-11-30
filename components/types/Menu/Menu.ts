@@ -1,5 +1,5 @@
 import { HTMLAttributeAnchorTarget, ReactNode } from 'react';
-import { UrlObject } from 'url';
+import { UrlObject } from 'node:url';
 
 type Url = string | UrlObject;
 
@@ -14,7 +14,9 @@ interface ActiveMenuItem {
   activeMenu?: string;
 }
 
-interface NavMenu extends NavMenuItem, ActiveMenuItem {}
+interface NavMenu extends NavMenuItem, ActiveMenuItem {
+  id?: string;
+}
 
 interface AppMenu {
   main: NavMenuItem[];

@@ -2,7 +2,7 @@ import { JSX } from 'react';
 import { useForm } from 'react-hook-form';
 import styles from '../Contact/ContactForm/ContactForm.module.css';
 import Link from 'next/link';
-import cn from 'classnames';
+import { cn } from '@/lib/cn';
 
 type PageSectionProps = {
   url: string;

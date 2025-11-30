@@ -1,6 +1,9 @@
 /* stylelint-disable at-rule-no-unknown */
 
+@import '@salzpate/react-ui/styles';
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
   --color-primary: #ffffff;
@@ -17,6 +20,27 @@
   /* Responsive Header-Höhen */
   --header-height-mobile: 3.5rem; /* 56px / 14 * 4 */
   --header-height-desktop: 4rem; /* 64px / 16 * 4 */
+}
+
+:root {
+  --color-primary: #fff;
+  --color-secondary: #ff0000;
+  --color-header: #ffffff;
+  --color-link: #ff0000;
+  --color-heading: #ff0000;
+  --color-paragraph: #101828;
+}
+
+.dark {
+  --color-primary: #ff0000;
+  --color-secondary: #ff0000;
+  --color-secondary-dark: #ff0000;
+  --color-link: #ff0000;
+  --color-link-dark-hover: #ff0000;
+  --color-heading: #ff0000;
+  --color-heading-dark: #ff0000;
+  --color-paragraph: #d1d5dc;
+  --color-paragraph-dark: #d1d5dc;
 }
 
 /* Verbessertes Scroll-Offset für Anker-Links - responsive */
@@ -153,4 +177,28 @@ body {
   .strecken-index-image {
     background-image: url('/assets/images/index-bg-strecken-dark.jpg');
   }
+}
+
+.dark body {
+  background-color: #000;
+}
+
+.dark .images-dark {
+  filter: grayscale(60%);
+}
+
+.dark .strecken-index-image {
+  background-image: url('/assets/images/index-bg-strecken-dark.jpg');
+}
+
+.light body {
+  background-color: #fff;
+}
+
+.light .images-dark {
+  filter: none;
+}
+
+.light .strecken-index-image {
+  background-image: url('/assets/images/index-bg-strecken.jpg');
 }

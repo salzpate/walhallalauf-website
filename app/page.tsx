@@ -7,8 +7,6 @@ import infoService from '@/lib/InfoService';
 import { HEADER_LINE_1, HEADER_LINE_2 } from 'lib/constants';
 import { TimingButtons } from '@/features/TimingButtons';
 import MainContent from '@/features/MainContent';
-
-import styles from '@/styles/index.module.css';
 import { PortableText } from 'next-sanity';
 import { INFO_QUERYResult } from '@/types/sanityTypes';
 
@@ -21,7 +19,7 @@ async function Home(): Promise<JSX.Element> {
 
   return (
     <HeaderMainLayout>
-      <HeaderImage text1={HEADER_LINE_1} text2={HEADER_LINE_2} imageClass={styles.headerimage} />
+      <HeaderImage text1={HEADER_LINE_1} text2={HEADER_LINE_2} imageClass="bg-[url('/assets/images/head-index.jpg')]" />
       <section id="fuss" className="page-section">
         <div className="mx-auto max-w-7xl py-4 text-center text-2xl font-bold tracking-wide text-gray-900 sm:py-6 sm:text-3xl lg:px-8 lg:py-8 lg:text-4xl dark:text-gray-300">Donaustauf erleben - Der Lauf am Fuße der Walhalla</div>
       </section>

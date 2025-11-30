@@ -1,6 +1,5 @@
 import { JSX, PropsWithChildren } from 'react';
-import cn from 'classnames';
-import styles from './HeaderImage.module.css';
+import { cn } from '@/lib/cn';
 import { AnmeldungData, ErgebnisseData, StarterListeData } from '@/data/TimingPartnerData';
 
 interface HeaderImageProps {
@@ -19,10 +18,10 @@ function HeaderImage(props: Readonly<PropsWithChildren<HeaderImageProps>>): JSX.
   const { imageClass, text1, text2, children } = props;
 
   if (children) {
-    return <div className={cn(styles.headerimage, 'bg-transparent bg-cover bg-scroll bg-center bg-no-repeat', imageClass)}>{children}</div>;
+    return <div className={cn('min-h-60 bg-transparent bg-cover bg-scroll bg-center bg-no-repeat sm:min-h-80 lg:min-h-[360px] dark:grayscale-60', imageClass)}>{children}</div>;
   } else {
     return (
-      <div className={cn(styles.headerimage, 'bg-transparent bg-cover bg-scroll bg-center bg-no-repeat', imageClass)}>
+      <div className={cn('min-h-60 bg-transparent bg-cover bg-scroll bg-center bg-no-repeat sm:min-h-80 lg:min-h-[360px] dark:grayscale-60', imageClass)}>
         <div className="flex flex-wrap">
           <section className="absolute w-full">
             <div className="mx-auto flex max-w-7xl px-4 sm:px-6 lg:px-8">

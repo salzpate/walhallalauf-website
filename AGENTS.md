@@ -63,9 +63,15 @@ Next.js 16 Website für den Walhallalauf mit App Router, TypeScript und Tailwind
 npm run dev          # Development Server (Port 3000)
 npm run build        # Production Build
 npm run start        # Production Server
-npm run lint         # ESLint + TypeScript Check
-npm run lint:style   # Stylelint für CSS
-npm run prettier     # Code Formatting
+npm run lint              # ESLint + TypeScript Check
+npm run lint:style        # Stylelint fix für CSS
+npm run lint:style:check  # Stylelint check für CSS
+npm run format            # Code-Formatierung
+npm run format:check      # Code-Formatierung überprüfung
+npm run test            # Tests ausführen (Single Run)
+npm run test:watch      # Tests im Watch-Mode
+npm run test:ui         # Vitest UI
+npm run test:coverage   # Coverage Report
 npm run typegen      # Sanity Type Generation
 ```
 
@@ -108,6 +114,7 @@ npm run typegen      # Sanity Type Generation
 - Funktionale Komponenten mit TypeScript
 - Async Server Components für Data Fetching
 - Props mit `Readonly<>` für Immutability
+- Falls es Bedingungen im Tailwindcss className String gibt, soll die utility Methode cn() verwendet werden.
 
 ## Deployment
 

@@ -5,7 +5,6 @@ import { Metadata } from 'next';
 import { HEADER_LINE_1, HEADER_LINE_2 } from '@/lib/constants';
 import PageSection from '@/components/PageSection/PageSection';
 import Link from 'next/link';
-import styles from '@/styles/index.module.css';
 import { MenuData } from '@/data/MenuData';
 import { HomeIcon, DocumentTextIcon, MapIcon, EnvelopeIcon } from '@heroicons/react/24/outline';
 
@@ -30,7 +29,7 @@ function FileNotFound(): JSX.Element {
 
   return (
     <HeaderMainLayout>
-      <HeaderImage text1={HEADER_LINE_1} text2={HEADER_LINE_2} imageClass={styles.headerimage} />
+      <HeaderImage text1={HEADER_LINE_1} text2={HEADER_LINE_2} imageClass="bg-[url('/assets/images/head-index.jpg')]" />
       <PageSection headline="Seite nicht gefunden" id="notfound">
         <div className="pb-6 text-lg text-paragraph sm:pb-8 dark:text-paragraph-dark">Die gewünschte Seite wurde leider nicht gefunden. Möglicherweise wurde sie verschoben oder gelöscht.</div>
         <div className="pb-6 sm:pb-8">
