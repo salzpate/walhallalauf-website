@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 function RootLayout({ children }: PropsWithChildren<object>): JSX.Element {
   const footerMenuItems = MenuData.footer;
   return (
-    <html lang="de">
+    <html lang="de" suppressHydrationWarning>
       <head>
         <meta name="theme-color" content="#ff0000" />
       </head>
