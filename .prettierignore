@@ -6,6 +6,7 @@ package-lock.json
 .next
 out
 dist
+*.tsbuildinfo
 
 # Config files
 .env
