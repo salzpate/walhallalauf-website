@@ -13,6 +13,34 @@ function Benefiz(): JSX.Element {
           es uns zudem wichtig, regionale Organisationen bei der Bewegungs- und Sportförderung von Kindern und Jugendlichen im Rahmen unserer Benefizaktionen zu unterstützen.
         </div>
       </PageSection>
+      <PageSection subSection headline="Benefizaktion 2026" id="benefiz2026" className="page-section pb-6 sm:pb-8">
+        <article>
+          <p>
+            Im Jahr 2026 unterstützen wir mit dem Lauf den <strong>GeschwisterCLUB Regensburg</strong>.
+          </p>
+          <br></br>
+          <p>
+            Der GeschwisterCLUB Regensburg richtet sich an Kinder und Jugendliche, deren Geschwister eine Behinderung und/oder eine chronische bzw. schwere Erkrankung haben. Er ist Teil des GKV-geförderten Projekts „GeschwisterCLUB in
+            Bayern“, das an mehreren Standorten Präventionsangebote für Kinder in dieser besonderen Lebenssituation aufbaut. In Regensburg wird das Projekt in Kooperation mit der Geschäftsstelle der Gesundheitsregionplus Stadt und Landkreis
+            Regensburg umgesetzt und ist am Kinderzentrum St. Martin verankert.
+          </p>
+          <p>
+            Der CLUB bietet den betroffenen Kindern einen geschützten Raum, stärkt ihr Selbstbewusstsein und ihre Resilienz und unterstützt sie im Umgang mit belastenden Alltagssituationen. Angebote sind kreative Gruppen, Präventionskurse,
+            Workshops zu speziellen Diagnosen sowie Freizeitausflüge. Hier können die Kinder spielen, ihre Ängste teilen, ihre Gefühle kennenlernen und gemeinsam mit Gleichaltrigen neue Kraft schöpfen.
+          </p>
+          <p>
+            Die Spendeneinnahmen des Walhallalaufs werden gezielt eingesetzt, um einen Teil des Eigenanteil des Projekts zu decken, Übungsleiterinnen und Übungsleiter zu honorieren und Freizeitausflüge für die Geschwisterkinder zu
+            verwirklichen.
+          </p>
+          <br></br>
+          <p className="page-section">
+            Weitere Informationen finden Sie auf der Homepage der KJF Regensburg:<br></br>
+            <PageLink href="http://www.geschwisterclub-regensburg.de" target="_blank" rel="noreferrer">
+              http://www.geschwisterclub-regensburg.de
+            </PageLink>
+          </p>
+        </article>
+      </PageSection>
       <PageSection subSection headline="Benefizaktion 2025" id="benefiz2025" className="page-section pb-6 sm:pb-8">
         <article>
           <p>

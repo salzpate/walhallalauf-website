@@ -87,7 +87,7 @@ function MainContent(): JSX.Element {
             </p>
             <br></br>
             <p>
-              Im Jahr 2025 unterstützen wir mit dem Lauf die <strong>Traumzeit e.V.</strong> - Herzenswunsch-Aktionen für krebskranke Kinder.
+              Im Jahr 2026 unterstützen wir mit dem Lauf den <strong>GeschwisterCLUB Regensburg</strong>.
             </p>
           </MoreLink>
         </article>
