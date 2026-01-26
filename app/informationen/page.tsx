@@ -123,7 +123,7 @@ function Informationen(): JSX.Element {
           <ul className="page-section">
             <li>
               <PageLink href="https://ergebnisse.zeitgemaess.info/202504271" target="_blank" rel="noreferrer">
-                14. Walhallalauf (07.04.2024)
+                14. Walhallalauf (27.04.2025)
               </PageLink>
             </li>
             <li>
