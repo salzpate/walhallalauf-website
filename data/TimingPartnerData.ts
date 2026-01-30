@@ -2,20 +2,20 @@ import { TimingPartnerDataItem } from '@/components/Header/HeaderImage/HeaderIma
 
 export const AnmeldungData2: TimingPartnerDataItem = {
   id: 'anmeldung',
-  link: 'https://anmeldung.zeitgemaess.info/202504271',
+  link: 'https://anmeldung.zeitgemaess.info/202604011',
   name: 'Anmeldung',
 };
 
 export const StarterListeData2: TimingPartnerDataItem = {
   id: 'starterliste',
-  link: 'https://starterliste.zeitgemaess.info/202504271',
+  link: 'https://starterliste.zeitgemaess.info/202604011',
   name: 'Starterliste',
 };
 
 export const ErgebnisseData2: TimingPartnerDataItem = {
   id: 'ergebnisse',
-  link: 'https://ergebnisse.zeitgemaess.info/202504271',
-  name: 'Ergebnisse 2025',
+  link: 'https://ergebnisse.zeitgemaess.info/202604011',
+  name: 'Ergebnisse 2026',
 };
 
 export const AnmeldungData: TimingPartnerDataItem | undefined = undefined;
