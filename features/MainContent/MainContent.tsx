@@ -98,15 +98,34 @@ function MainContent(): JSX.Element {
         <SponsorGallery groups={SponsorData} />
       </PageSection>
 
-      <PageSection headline="Kontakt" id="kontakt" subSection className="page-section bg-gray-200 pb-6 sm:pb-8 dark:bg-gray-900">
+      <PageSection
+        headline="Kontakt"
+        id="kontakt"
+        subSection
+        className="page-section bg-gray-200 bg-[url(/assets/images/bg-svd-gray.jpg)] bg-cover bg-scroll bg-center bg-no-repeat pb-6 sm:pb-8 dark:bg-gray-900 dark:bg-[url(/assets/images/bg-svd-dark-gray.jpg)]"
+      >
         <article>
           <div>Hast du Fragen rund um den Walhallalauf?</div>
           <div className="my-6 grid grid-cols-1 gap-6 sm:my-8 sm:grid-cols-2 lg:grid-cols-4">
             <div>
-              <ContactCard name="Ronny Krammer" position="1. Abteilungsleiter Ausdauer" imageSrc="/assets/images/contact-krammer.jpg" email="1.ausdauer@sv-donaustauf.de" emailHref="/api/mailto-1aus/" className="bg-white dark:bg-black" />
+              <ContactCard
+                name="Ronny Krammer"
+                position="1. Abteilungsleiter Ausdauer"
+                imageSrc="/assets/images/contact-krammer.jpg"
+                email="1.ausdauer@sv-donaustauf.de"
+                emailHref="/api/mailto-1aus/"
+                className="bg-white backdrop-blur-xs transition-all duration-200 supports-backdrop-filter:bg-white/60 dark:supports-backdrop-filter:bg-gray-700/30"
+              />
             </div>
             <div>
-              <ContactCard name="Jean-Marc Schwarz" position="2. Abteilungsleiter Ausdauer" imageSrc="/assets/images/contact-folgt.avif" email="2.ausdauer@sv-donaustauf.de" emailHref="/api/mailto-2aus/" className="bg-white dark:bg-black" />
+              <ContactCard
+                name="Jean-Marc Schwarz"
+                position="2. Abteilungsleiter Ausdauer"
+                imageSrc="/assets/images/contact-folgt.png"
+                email="2.ausdauer@sv-donaustauf.de"
+                emailHref="/api/mailto-2aus/"
+                className="bg-white backdrop-blur-xs transition-all duration-200 supports-backdrop-filter:bg-white/60 dark:supports-backdrop-filter:bg-gray-700/30"
+              />
             </div>
             <div className="sm:col-span-2 lg:col-span-2">
               <ContactForm url="/api/send-email/" style="white" />

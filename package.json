@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
-    "@salzpate/react-ui": "^1.4.11",
+    "@salzpate/react-ui": "^1.4.12",
     "@sanity/image-url": "^2.0.3",
     "axios": "^1.13.5",
     "clsx": "^2.1.1",

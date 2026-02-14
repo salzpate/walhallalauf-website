@@ -20,13 +20,13 @@ function Strecken(): JSX.Element {
       <a id="lauf10" aria-label="10 km Lauf"></a>
       <PageSection headline="10 km Lauf" id="sectionlauf10" subSection className="pb-8">
         <article>
-          <h4 className="pb-4 font-bold">Profil</h4>
-          <div>10 km Rundkurs, flach, meist geteert, geschottert - blaue Bodenmarkierung</div>
-          <h4 className="py-4 font-bold">Startzeit</h4>
-          <div>{START_TIME_10}</div>
-          <h4 className="py-4 font-bold">Wegbeschreibung</h4>
           <div className="md:inline-flex">
             <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
+              <h4 className="pb-4 font-bold">Profil</h4>
+              <div>10 km Rundkurs, flach, meist geteert, geschottert - blaue Bodenmarkierung</div>
+              <h4 className="py-4 font-bold">Startzeit</h4>
+              <div>{START_TIME_10}</div>
+              <h4 className="py-4 font-bold">Wegbeschreibung</h4>
               <div>
                 Der Start erfolgt Richtung Westen durch den historischen Ortskern Donaustaufs bis Donaustauf West Bauernbrücke. Erst links abbiegen, die Bauernbrücke überqueren und rechts in Richtung Tegernheim weiter. Kurz darauf rechts
                 einbiegen, danach links weiter. Nun den Donauradweg überqueren und über den Damm drüber. An der ersten Kreuzung rechts weiter und dann am Ende des Weges nach links dem Bachlauf entlang. Kurz vor dem Altwasser wieder nach
@@ -48,13 +48,13 @@ function Strecken(): JSX.Element {
       <a id="lauf5" aria-label="5 km Lauf"></a>
       <PageSection headline="5 km Lauf" id="sectionlauf5" subSection className="page-section bg-gray-200 pb-8 sm:pb-8 dark:bg-gray-900">
         <article>
-          <h4 className="pb-4 font-bold">Profil</h4>
-          <div>5,4 km Rundkurs, flach, meist geteert - weiße Bodenmarkierung</div>
-          <h4 className="py-4 font-bold">Startzeit</h4>
-          <div>{START_TIME_5}</div>
-          <h4 className="py-4 text-lg font-medium tracking-wide">Wegbeschreibung</h4>
           <div className="md:inline-flex">
             <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
+              <h4 className="pb-4 font-bold">Profil</h4>
+              <div>5,4 km Rundkurs, flach, meist geteert - weiße Bodenmarkierung</div>
+              <h4 className="py-4 font-bold">Startzeit</h4>
+              <div>{START_TIME_5}</div>
+              <h4 className="py-4 text-lg font-medium tracking-wide">Wegbeschreibung</h4>
               <div>
                 Der Start erfolgt Richtung Westen durch den historischen Ortskern Donaustaufs bis Donaustauf West Bauernbrücke. Erst links abbiegen, die Bauernbrücke überqueren und rechts in Richtung Tegernheim weiter. Kurz darauf rechts
                 einbiegen, dann zweimal links (Schleife) und in entgegengesetzter Richtung (Sulzbach / Demling) dem Dammweg/Donauradweg folgen. Nun geht es gerade bis zur Unterführung Walhalla. Hier geht links unter der Unterführung durch
@@ -75,15 +75,15 @@ function Strecken(): JSX.Element {
       <a id="waldlauf" aria-label="7,1 km Waldlauf und Nordic Walken"></a>
       <PageSection headline="7,1 km Waldlauf und Nordic Walken" id="sectionwaldlauf" subSection className="pb-8">
         <article>
-          <h4 className="pb-4 font-bold">Profil</h4>
-          <div>7,1 km Rundkurs, anspruchvoll (ca. 160 HM) geteert, geschottert und Waldweg - gelbe Bodenmarkierung</div>
-          <h4 className="py-4 font-bold">Startzeit</h4>
-          <div>
-            Waldlauf: {START_TIME_7}, Nordic Walken: {START_TIME_NORDIC}
-          </div>
-          <h4 className="py-4 text-lg font-medium tracking-wide">Wegbeschreibung</h4>
           <div className="md:inline-flex">
             <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
+              <h4 className="pb-4 font-bold">Profil</h4>
+              <div>7,1 km Rundkurs, anspruchvoll (ca. 160 HM) geteert, geschottert und Waldweg - gelbe Bodenmarkierung</div>
+              <h4 className="py-4 font-bold">Startzeit</h4>
+              <div>
+                Waldlauf: {START_TIME_7}, Nordic Walken: {START_TIME_NORDIC}
+              </div>
+              <h4 className="py-4 text-lg font-medium tracking-wide">Wegbeschreibung</h4>
               <div>
                 Vom Start weg geht es in Richtung Osten durch den Fürstengarten und entlang der Walhalla. Bei Sulzbach nach links einen kleinen Anstieg hinauf. Oben, hinter der Walhalla angekommen, links abbiegen und kurz darauf rechts
                 Richtung Reiflding weiter. In Reiflding rechts abbiegen von dort geht es in den Donaustaufer Forst. Im Wald die erste Abzweigung nehmen. Entlang der südlichen Hänge schlängelt sich der Weg erst aufwärts dann abwärts bis zur
