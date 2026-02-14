@@ -13,7 +13,7 @@ function InfoArticle(props: Readonly<PropsWithChildren<InfoArticleProps>>): JSX.
 
   return (
     <article className="mx-auto mb-8 max-w-7xl text-gray-900 dark:text-gray-300" id={articleId}>
-      <p className="font-bold">{headline}</p>
+      <p className="text-lg font-bold">{headline}</p>
       <p>&nbsp;</p>
       <div>{children}</div>
     </article>
