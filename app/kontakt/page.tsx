@@ -13,7 +13,7 @@ function Contact(): JSX.Element {
           <ContactCard name="Ronny Krammer" position="1. Abteilungsleiter Ausdauer" imageSrc="/assets/images/contact-krammer.jpg" email="1.ausdauer@sv-donaustauf.de" emailHref="/api/mailto-1aus/" />
         </div>
         <div>
-          <ContactCard name="Andreas Hintermeier" position="2. Jugendwart Ausdauer" imageSrc="/assets/images/contact-hintermeier.jpg" email="1.ausdauer@sv-donaustauf.de" emailHref="/api/mailto-1aus/" />
+          <ContactCard name="Jean-Marc Schwarz" position="2. Abteilungsleiter Ausdauer" imageSrc="/assets/images/contact-folgt.avif" email="2.ausdauer@sv-donaustauf.de" emailHref="/api/mailto-2aus/" />
         </div>
         <div className="sm:col-span-2 lg:col-span-2">
           <ContactForm url="/api/send-email/" />
