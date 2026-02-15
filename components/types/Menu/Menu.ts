@@ -4,17 +4,20 @@ import { UrlObject } from 'node:url';
 type Url = string | UrlObject;
 
 interface NavMenuItem {
+  id: string;
   children: ReactNode;
   href: Url;
   activeMenuName?: string;
   target?: HTMLAttributeAnchorTarget;
+  subMenue?: NavMenuItem[];
+  hideFooter?: boolean;
 }
 
 interface ActiveMenuItem {
   activeMenu?: string;
 }
 
-interface NavMenu extends NavMenuItem, ActiveMenuItem {
+interface NavMenu extends Omit<NavMenuItem, 'id'>, ActiveMenuItem {
   id?: string;
 }
 

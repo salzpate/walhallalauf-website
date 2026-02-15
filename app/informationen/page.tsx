@@ -72,7 +72,7 @@ function Informationen(): JSX.Element {
               <strong>Samstag, den 25.04.2026 von 17:00 Uhr bis 19:00 Uhr:</strong>
               <br />
               <br />
-              Mehrzweckhalle Donaustauf (Jungendzimmer)
+              Mehrzweckhalle Donaustauf (Jugendzimmer)
               <br />
               Regensburger Str. 30
               <br />

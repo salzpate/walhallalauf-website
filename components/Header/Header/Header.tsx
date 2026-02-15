@@ -41,9 +41,9 @@ function Header(props: Readonly<HeaderProps>): JSX.Element {
             </div>
             <div className="hidden md:inline-flex md:items-center md:justify-center md:space-x-6">
               <div className="inline-flex items-center justify-center space-x-6">
-                {navMenuItems.map((item, i) => {
+                {navMenuItems.map(item => {
                   return (
-                    <NavBarLink key={i} href={item.href} activeMenuName={item.activeMenuName} activeMenu={activeMenu}>
+                    <NavBarLink key={item.id} href={item.href} activeMenuName={item.activeMenuName} activeMenu={activeMenu}>
                       {item.children}
                     </NavBarLink>
                   );

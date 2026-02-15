@@ -2,51 +2,54 @@ import { JSX, ReactNode } from 'react';
 import { NavMenuItem } from '@/components/types/Menu/Menu';
 import FooterLink from '@/components/Footer/FooterLink';
 import { ThemeSwitcher } from '@/components/ThemeSwitcher';
+import WlLogoSvgIcon from '@/components/wlLogoSvgIcon/WlLogoSvgIcon';
+import FacebookSvgIcon from '@/components/FacebookSvgIcon';
+import FooterMainLinks from '@/components/Footer/FooterMainLinks/FooterMainLinks';
 
 interface FooterProps {
   text: ReactNode;
   menuItems: NavMenuItem[];
+  mainMenuItems: NavMenuItem[];
 }
 
 function Footer(props: Readonly<FooterProps>): JSX.Element {
-  const { text, menuItems } = props;
+  const { text, menuItems, mainMenuItems } = props;
   return (
     <footer className="w-full bg-gray-800 py-6 dark:bg-gray-900" role="contentinfo">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <FooterMainLinks menuItems={mainMenuItems} />
         <div className="mb-4 flex justify-center sm:mb-2 md:justify-end">
           <ThemeSwitcher />
         </div>
-        <div className="flex flex-col items-center justify-between sm:flex-row md:flex-wrap">
-          <div className="order-2 flex items-center lg:order-1">
-            <div className="my-8 text-center text-xs font-thin text-gray-400 md:my-0 md:text-left md:text-sm">{text}</div>
+        <div className="flex flex-col md:flex-row md:items-stretch md:justify-end">
+          <div className="mb-2 grow text-center md:mb-0 md:text-left">
+            <a
+              href="https://www.facebook.com/walhallalauf/"
+              target="_blank"
+              rel="nofollow noreferrer"
+              className="my-2 inline-flex items-center justify-center rounded-md px-2 py-2 text-sm tracking-widest text-gray-400 shadow-xs transition duration-150 ease-in-out hover:bg-gray-700 focus:bg-gray-600 focus:outline-hidden sm:my-0 dark:hover:bg-gray-800 dark:focus:bg-gray-700"
+              aria-label="Besuche uns auf Facebook"
+            >
+              <FacebookSvgIcon className="block h-5 w-5" aria-hidden="true" />
+            </a>
           </div>
-          <div className="order-1 flex flex-col md:grow md:flex-row md:items-stretch md:justify-end">
-            <span className="text-center md:text-left">
-              <a
-                href="https://de-de.facebook.com/walhallalauf/"
-                target="_blank"
-                rel="nofollow noreferrer"
-                className="my-2 inline-flex items-center justify-center rounded-md px-2 py-2 text-sm tracking-widest text-gray-400 shadow-xs transition duration-150 ease-in-out hover:bg-gray-700 focus:bg-gray-600 focus:outline-hidden sm:my-0 dark:hover:bg-gray-800 dark:focus:bg-gray-700"
-                aria-label="Besuche uns auf Facebook"
-              >
-                <svg className="block h-5 w-5" viewBox="0 0 77.809997 156.31039" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                  <path
-                    d="m64.13 24.850402c-9.65 0-12.44 4.28-12.44 13.72v15.66h25.739997l-2.58 25.299997h-23.149997v76.780001h-30.89v-76.780001h-20.81v-25.299997h20.81v-15.23c0-25.52 10.29-38.99999996 39-38.99999996a146.17 146.17 0 0 1 17.999997 1.06999996v23.81z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </a>
-            </span>
+          <nav aria-label="Footer Navigation" className="text-center md:text-right">
             {menuItems.map((item, i) => {
               return (
-                <span key={'footer' + i} className="text-center md:text-left">
-                  {<span className="mx-1 hidden text-gray-600 md:inline">|</span>}
+                <span key={'footer' + item.id}>
+                  {i > 0 && <span className="mx-1 inline text-gray-600">|</span>}
                   <FooterLink href={item.href} target={item.target}>
                     {item.children}
                   </FooterLink>
                 </span>
               );
             })}
+          </nav>
+        </div>
+        <div className="mt-4 border-t border-gray-600">
+          <div className="mt-4 flex items-center justify-between text-gray-400 md:flex-wrap">
+            <WlLogoSvgIcon width={110} height={34} fill="currentColor" />
+            <small className="mt-4 text-right text-xs font-thin text-gray-400 md:text-sm">{text}</small>
           </div>
         </div>
       </div>

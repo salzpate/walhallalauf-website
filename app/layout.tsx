@@ -9,7 +9,7 @@ import '@/styles/globals.css';
 import '@/styles/print.css';
 import ThemeProvider from '@/components/ThemeProvider';
 
-const footerText = '© SV Donaustauf';
+const footerText = `© ${new Date().getFullYear()} SV Donaustauf`;
 
 export const metadata: Metadata = {
   title: SITE_TITLE,
@@ -37,6 +37,8 @@ export const metadata: Metadata = {
 
 function RootLayout({ children }: PropsWithChildren<object>): JSX.Element {
   const footerMenuItems = MenuData.footer;
+  const mainMenuItems = MenuData.main;
+
   return (
     <html lang="de" suppressHydrationWarning>
       <head>
@@ -46,7 +48,7 @@ function RootLayout({ children }: PropsWithChildren<object>): JSX.Element {
         <ThemeProvider>
           <SnackBarProvider>
             {children}
-            <Footer text={footerText} menuItems={footerMenuItems} />
+            <Footer text={footerText} menuItems={footerMenuItems} mainMenuItems={mainMenuItems} />
           </SnackBarProvider>
         </ThemeProvider>
       </body>

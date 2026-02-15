@@ -3,26 +3,97 @@ import { AppMenu } from '@/components/types/Menu/Menu';
 export const MenuData: AppMenu = {
   main: [
     {
+      id: 'Ausschreibung',
       children: 'Ausschreibung',
       href: '/ausschreibung/',
       activeMenuName: 'ausschreibung',
     },
     {
+      id: 'Strecken',
       children: 'Strecken',
       href: '/strecken/',
       activeMenuName: 'strecken',
+      subMenue: [
+        {
+          id: '10km',
+          children: '10 km Lauf',
+          href: '/strecken/#lauf10',
+        },
+        {
+          id: '5km',
+          children: '5 km Lauf',
+          href: '/strecken/#lauf5',
+        },
+        {
+          id: 'waldlauf',
+          children: 'Waldlauf und Walken',
+          href: '/strecken/#waldlauf',
+        },
+        {
+          id: 'kinder-1000',
+          children: 'Kinderläufe',
+          href: '/strecken/#kinder-1000',
+        },
+      ],
     },
     {
+      id: 'Informationen',
       children: 'Informationen',
       href: '/informationen/',
       activeMenuName: 'informationen',
+      subMenue: [
+        {
+          id: 'Benefiz-footer',
+          children: 'Benefiz',
+          href: '/benefiz/',
+        },
+
+        {
+          id: 'zeiten',
+          children: 'Startzeiten und -richtung',
+          href: '/informationen/#sectionzeiten',
+        },
+        {
+          id: 'parken',
+          children: 'Anreise und Parken',
+          href: '/informationen/#parken',
+        },
+        {
+          id: 'startnummernausgabe',
+          children: 'Nachmeldung / Ummeldung / Startunterlagen',
+          href: '/informationen/#startnummernausgabe',
+        },
+        {
+          id: 'kinder',
+          children: 'Kinder',
+          href: '/informationen/#kinder',
+        },
+        {
+          id: 'hunde',
+          children: 'Hunde',
+          href: '/informationen/#hunde',
+        },
+        {
+          id: 'ergebnislisten',
+          children: 'Ergebnislisten',
+          href: '/informationen/#ergebnislisten',
+        },
+        {
+          id: 'sponsoren',
+          children: 'Sponsoren',
+          href: '/informationen/#sponsoren',
+        },
+      ],
     },
     {
+      id: 'Benefiz',
       children: 'Benefiz',
       href: '/benefiz/',
       activeMenuName: 'benefiz',
+      hideFooter: true,
     },
     {
+      id: 'Kontakt',
       children: 'Kontakt',
       href: '/kontakt/',
       activeMenuName: 'kontakt',
@@ -35,11 +106,13 @@ export const MenuData: AppMenu = {
       target: '_blank',
     },*/
     {
+      id: 'Datenschutz',
       children: 'Datenschutz',
       href: '/datenschutz/',
       activeMenuName: 'datenschutz',
     },
     {
+      id: 'Impressum',
       children: 'Impressum',
       href: '/impressum/',
       activeMenuName: 'impressum',
