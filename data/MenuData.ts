@@ -26,7 +26,7 @@ export const MenuData: AppMenu = {
         },
         {
           id: 'waldlauf',
-          children: 'Waldlauf und Walken',
+          children: 'Waldlauf und Nordic Walking',
           href: '/strecken/#waldlauf',
         },
         {
