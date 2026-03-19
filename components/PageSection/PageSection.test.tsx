@@ -1,4 +1,15 @@
 import { render, screen } from '@testing-library/react';
+import { vi } from 'vitest';
+
+vi.mock('@salzpate/react-ui', () => ({
+  PageSection: ({ id, headline, children }: { id: string; headline: string; children: React.ReactNode }) => (
+    <section id={id}>
+      {headline && <h2>{headline}</h2>}
+      {children}
+    </section>
+  ),
+}));
+
 import PageSection from './PageSection';
 
 describe('PageSection', () => {
