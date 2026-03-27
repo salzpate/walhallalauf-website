@@ -4,7 +4,7 @@ import InfoArticle from '@/components/InfoArticle';
 import HeaderMainLayout from '@/components/HeaderMainLayout/HeaderMainLayout';
 import PageSection from '@/components/PageSection';
 import infoService from '@/lib/InfoService';
-import { HEADER_LINE_1, HEADER_LINE_2 } from 'lib/constants';
+import { HEADER_LINE_1, HEADER_LINE_2 } from '@/lib/constants';
 import { TimingButtons } from '@/features/TimingButtons';
 import MainContent from '@/features/MainContent';
 import { PortableText, PortableTextComponents } from 'next-sanity';

@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 
-import { sendEmail } from 'util/sendEmail';
+import { sendEmail } from '@/util/sendEmail';
 
 export async function POST(request: Request): Promise<
   NextResponse<{
@@ -33,7 +33,7 @@ export async function POST(request: Request): Promise<
     .then(() => {
       return NextResponse.json({ status: 'success', message: 'Ihre Nachricht wurde erfolgreich versendet.' });
     })
-    .catch(error => {
+    .catch((error: unknown) => {
       console.error('Email send error:', error);
       return NextResponse.json({ status: 'error', message: 'Beim Versenden Ihre Nachricht ist ein Fehler aufgetreten!' });
     });
