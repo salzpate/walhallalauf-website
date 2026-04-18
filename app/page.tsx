@@ -79,8 +79,12 @@ async function Home(): Promise<JSX.Element> {
           noch die Wörther Straße in Richtung Ziel überqueren lassen.
         </p>
         <br />
-        <p>Die gute Nachricht: Der Lauf kann stattfinden.</p>
-        <p>Die schlechte Nachricht: Wir mussten die Strecken leicht verändern.</p>
+        <p>
+          <strong>Die gute Nachricht: Der Lauf kann stattfinden.</strong>
+        </p>
+        <p>
+          <strong>Die schlechte Nachricht: Wir mussten die Strecken leicht verändern.</strong>
+        </p>
         <br />
         <p>Unter Strecken findet ihr die Beschreibungen, GPX-Daten der neuen Strecken sowie eine Übersicht der Änderungen.</p>
         <br />
