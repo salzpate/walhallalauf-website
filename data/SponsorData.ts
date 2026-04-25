@@ -24,12 +24,6 @@ export const SponsorData: SponsorGalleryGroup[] = [
         name: 'Malerbetrieb Killmann',
       },
       {
-        id: 'sponsor-bischofshof',
-        imageUrl: '/assets/images/sponsoring/bischofshof-2024.png',
-        link: 'https://www.bischofshof.de',
-        name: 'Brauerei Bischofshof',
-      },
-      {
         id: 'sponsor-lattus',
         imageUrl: '/assets/images/sponsoring/lattus-2022.jpg',
         link: 'https://www.edeka.de/eh/s%C3%BCdbayern/edeka-lattus-regensburger-stra%C3%9Fe-15/index.jsp',
@@ -84,10 +78,10 @@ export const SponsorData: SponsorGalleryGroup[] = [
         name: 'Restaurant Athen Donaustauf',
       },
       {
-        id: 'sponsor-historisches-armen-spital',
-        imageUrl: '/assets/images/sponsoring/armenspital-2022.png',
-        link: 'https://www.historisches-armen-spital.de',
-        name: 'Historisches Armen Spital',
+        id: 'sportgarten-donaustauf',
+        imageUrl: '/assets/images/sponsoring/sportgarten-donaustauf.jpg',
+        link: 'https://www.facebook.com/SportgartenDonaustauf/',
+        name: 'Sportgarten Donaustauf',
       },
       {
         id: 'sponsor-hammermuehle',
