@@ -23,40 +23,22 @@ function Strecken(): JSX.Element {
           <div className="md:inline-flex">
             <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
               <h4 className="pb-4 font-bold">Profil</h4>
-              <div>9,1 km Rundkurs, flach, meist geteert, geschottert - blaue Bodenmarkierung</div>
+              <div>10 km Rundkurs, flach, meist geteert, geschottert - blaue Bodenmarkierung</div>
               <h4 className="py-4 font-bold">Startzeit</h4>
               <div>{START_TIME_10}</div>
               <h4 className="py-4 font-bold">Wegbeschreibung</h4>
               <div>
-                Der Start erfolgt am Ende der Eichendorffstraße (auf Höhe des Wertstoffhofs) in Richtung Westen. Nach etwa 400 Metern überquert die Strecke die Barbinger Straße bei der Einfahrt Donaustauf Mitte. Danach geht es Richtung
-                Festplatz und hinter der Feuerwehr vorbei über den Parkplatz weiter bis zur Bauernbrücke. Von dort läuft man auf dem Donauradweg weiter Richtung Tegernheim. Danach wird der Donauradweg überquert, und die Strecke führt über
-                den Damm. An der ersten Kreuzung geht es rechts weiter. Am Ende des Weges biegt man links ab und läuft am Bachlauf entlang. Kurz vor dem Altwasser geht es noch einmal links. Nach der nächsten Biegung folgt gleich rechts eine
-                weitere Abzweigung, am Ende des Weges dann links. Danach führt die Route zurück zum Damm und dem Dammweg beziehungsweise Donauradweg in Richtung Sulzbach/Demling. Auf diesem Weg geht es geradeaus bis zur Einfahrt zur
-                Slipanlage. Dort läuft man wieder unter der Brücke hindurch, anschließend direkt über die Treppen hinauf und weiter bis zur Unterführung Donaustauf Ost. Dort wird die Straße unterquert, dann geht es in den Fürstengarten und
-                von dort Richtung Ziel.
-              </div>
-              <h4 className="py-4 font-bold">Änderungen zur normalen Strecke</h4>
-              <div>
-                <ul className="list-inside list-disc space-y-1">
-                  <li className="list-disc">Start in der Eichendorffstraße (auf Höhe des Wertstoffhofs). Vom gewohnten Start aus geht es gleich die Straße noch links runter. Ist 100m vom alten Startplatz aus entfernt.</li>
-                  <li className="list-disc">
-                    Nachdem die Strecke die Barbinger Straße (Einfahrt Donaustauf Mitte) überquert hat, wird es ein bisschen enger und es geht am Ende des Weges nach links entlang des Festplatzes und hinterhalb der Feuerwehr vorbei über den
-                    Parkplatz auf die Bauernbrücke.
-                  </li>
-                  <li className="list-disc">
-                    Auf dem Donauradweg vor der (Donau) Brücke Richtung in Richtung Slip-Anlage laufen und dann nach der Brücke links über die Treppen den Damm überqueren. Der Durchgang unter der Brücke direkt am Donauradweg ist gesperrt.
-                  </li>
-                  <li className="list-disc">
-                    Die Staatsstraße wird schon bei der Unterführung Donaustauf Ost überquert. <b>Die Unterführung ist sehr eng und es gilt hier ein Überholverbot.</b>
-                  </li>
-                </ul>
+                Der Start erfolgt Richtung Westen durch den historischen Ortskern Donaustaufs bis Donaustauf West Bauernbrücke. Erst links abbiegen, die Bauernbrücke überqueren und rechts in Richtung Tegernheim weiter. Kurz darauf rechts
+                einbiegen, danach links weiter. Nun den Donauradweg überqueren und über den Damm drüber. An der ersten Kreuzung rechts weiter und dann am Ende des Weges nach links dem Bachlauf entlang. Kurz vor dem Altwasser wieder nach
+                links. Nach der nächsten Biegung geht es gleich rechts und am Ende des Weges links. Nach dem Damm Richtung (Sulzbach / Demling) dem Dammweg/Donauradweg folgen Nun geht es gerade bis zur Unterführung Walhalla. Hier geht links
+                unter der Unterführung durch und nach 20m wieder links unter der Walhalla entlang. Bei Donaustauf Ost die Straße überqueren, im Fürstengarten einbiegen und Richtung Ziel laufen.
               </div>
             </div>
             <div className="w-full md:w-1/3 md:shrink-0 md:justify-center">
-              <Image src="/assets/images/strecken-10km-2026.jpg" width={405} height={236} alt="Strecke 9 km Lauf" />
+              <Image src="/assets/images/strecken-10km.jpg" width={405} height={236} alt="Strecke 10 km Lauf" />
               <div className="my-4">
-                <ButtonLink href="/assets/gpx-2026/walhallalauf-10-km.gpx" className="block w-full">
-                  GPX-Datei (9km Strecke)
+                <ButtonLink href="/assets/gpx/walhallalauf-10-km.gpx" className="block w-full">
+                  GPX-Datei (10km Strecke)
                 </ButtonLink>
               </div>
             </div>
@@ -69,39 +51,20 @@ function Strecken(): JSX.Element {
           <div className="md:inline-flex">
             <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
               <h4 className="pb-4 font-bold">Profil</h4>
-              <div>5,5 km Rundkurs, flach, meist geteert - weiße Bodenmarkierung</div>
+              <div>5,4 km Rundkurs, flach, meist geteert - weiße Bodenmarkierung</div>
               <h4 className="py-4 font-bold">Startzeit</h4>
               <div>{START_TIME_5}</div>
               <h4 className="py-4 text-lg font-medium tracking-wide">Wegbeschreibung</h4>
               <div>
-                Der Start erfolgt am Ende der Eichendorffstraße (auf Höhe des Wertstoffhofs) in Richtung Westen. Nach etwa 400 Metern überquert die Strecke die Barbinger Straße bei der Einfahrt Donaustauf Mitte. Danach geht es Richtung
-                Festplatz und hinter der Feuerwehr vorbei über den Parkplatz weiter bis zur Bauernbrücke. Von dort läuft man auf dem Donauradweg in Richtung Tegernheim. Kurz darauf biegt die Strecke rechts ab, anschließend geht es zweimal
-                links durch eine Schleife. Danach folgt man dem Dammweg beziehungsweise Donauradweg in entgegengesetzter Richtung, also Richtung Sulzbach/Demling. Es geht geradeaus bis zur Einfahrt zur Slipanlage. Dort führt die Route
-                wieder unter der Brücke hindurch, danach gleich über die Treppen hinauf und weiter bis zur Unterführung Donaustauf Ost. Dort wird die Straße unterquert, anschließend biegt man in den Fürstengarten ein und läuft von dort zum
-                Ziel.
-              </div>
-              <h4 className="py-4 font-bold">Änderungen zur normalen Strecke</h4>
-              <div>
-                <ul className="list-inside list-disc space-y-1">
-                  <li className="list-disc">Start in der Eichendorffstraße (auf Höhe des Wertstoffhofs). Vom gewohnten Start aus geht es gleich die Straße noch links runter. Ist 100m vom alten Startplatz aus entfernt.</li>
-                  <li className="list-disc">
-                    Nachdem die Strecke die Barbinger Straße (Einfahrt Donaustauf Mitte) überquert hat, wird es ein bisschen enger und es geht am Ende des Weges nach links entlang des Festplatzes und hinterhalb der Feuerwehr vorbei über den
-                    Parkplatz auf die Bauernbrücke.
-                  </li>
-                  <li className="list-disc">Es geht einen Weg später nach links Richtung Donauradweg / Wende.</li>
-                  <li className="list-disc">
-                    Auf dem Donauradweg vor der (Donau) Brücke Richtung in Richtung Slip-Anlage laufen und dann nach der Brücke links über die Treppen den Damm überqueren. Der Durchgang unter der Brücke direkt am Donauradweg ist gesperrt.
-                  </li>
-                  <li className="list-disc">
-                    Die Staatsstraße wird schon bei der Unterführung Donaustauf Ost überquert. <b>Die Unterführung ist sehr eng und es gilt hier ein Überholverbot.</b>
-                  </li>
-                </ul>
+                Der Start erfolgt Richtung Westen durch den historischen Ortskern Donaustaufs bis Donaustauf West Bauernbrücke. Erst links abbiegen, die Bauernbrücke überqueren und rechts in Richtung Tegernheim weiter. Kurz darauf rechts
+                einbiegen, dann zweimal links (Schleife) und in entgegengesetzter Richtung (Sulzbach / Demling) dem Dammweg/Donauradweg folgen. Nun geht es gerade bis zur Unterführung Walhalla. Hier geht links unter der Unterführung durch
+                und nach 20m wieder links unter der Walhalla entlang. Bei Donaustauf Ost die Straße überqueren, im Fürstengarten einbiegen und Richtung Ziel laufen.
               </div>
             </div>
             <div className="w-full md:w-1/3 md:shrink-0 md:justify-center">
-              <Image src="/assets/images/strecken-5km-2026.jpg" width={405} height={155} alt="Strecke 5 km Lauf" />
+              <Image src="/assets/images/strecken-5km.jpg" width={405} height={155} alt="Strecke 5 km Lauf" />
               <div className="my-4">
-                <ButtonLink href="/assets/gpx-2026/walhallalauf-5-km.gpx" className="block w-full">
+                <ButtonLink href="/assets/gpx/walhallalauf-5-km.gpx" className="block w-full">
                   GPX-Datei (5km Strecke)
                 </ButtonLink>
               </div>
@@ -109,42 +72,29 @@ function Strecken(): JSX.Element {
           </div>
         </article>
       </PageSection>
-      <a id="waldlauf" aria-label="8 km Waldlauf und Nordic Walken"></a>
-      <PageSection headline="8 km Waldlauf und Nordic Walken" id="sectionwaldlauf" subSection className="pb-8">
+      <a id="waldlauf" aria-label="7,1 km Waldlauf und Nordic Walken"></a>
+      <PageSection headline="7,1 km Waldlauf und Nordic Walken" id="sectionwaldlauf" subSection className="pb-8">
         <article>
           <div className="md:inline-flex">
             <div className="w-full pb-4 md:w-2/3 md:pr-4 md:pb-0">
               <h4 className="pb-4 font-bold">Profil</h4>
-              <div>8,3 km Rundkurs, anspruchvoll (ca. 176 HM) geteert, geschottert und Waldweg - gelbe Bodenmarkierung</div>
+              <div>7,1 km Rundkurs, anspruchvoll (ca. 160 HM) geteert, geschottert und Waldweg - gelbe Bodenmarkierung</div>
               <h4 className="py-4 font-bold">Startzeit</h4>
               <div>
                 Waldlauf: {START_TIME_7}, Nordic Walken: {START_TIME_NORDIC}
               </div>
               <h4 className="py-4 text-lg font-medium tracking-wide">Wegbeschreibung</h4>
               <div>
-                Vom Start geht es durch den Fürstengarten und durch die Unterführung auf den Donauradweg Richtung Osten. Nach etwa 400 Metern führt die Strecke links wieder durch die Unterführung in Richtung Walhalla. Dann läufst du entlang
-                der Walhalla bis Sulzbach. Dort geht es links einen kurzen Anstieg hinauf. Oben, hinter der Walhalla, biegst du links ab und kurz darauf rechts in Richtung Reiflding. In Reiflding hältst du dich rechts, läufst dann links in
-                die Bergstraße und weiter in den Donaustaufer Forst. Im Wald nimmst du die erste Abzweigung rechts und danach gleich wieder die erste rechts. Sobald du den Wald verlässt, läufst du auf demselben Weg hinter der Walhalla
-                wieder zurück. An der Walhalla gehst du erneut durch die Unterführung auf den Radweg und läufst Richtung Westen, also zurück nach Regensburg. Nach etwa 400 Metern gehst du an der Unterführung bei Donaustauf Ost durch, läufst
-                wieder durch den Fürstengarten und kommst ins Ziel.
-              </div>
-              <h4 className="py-4 font-bold">Änderungen zur normalen Strecke</h4>
-              <div>
-                <ul className="list-inside list-disc space-y-1">
-                  <li className="list-disc">
-                    Vom Fürstengarten kann man nicht direkt auf den Schotterweg zur Walhalla weiterlaufen. Es muss die Staatsstraße bei der Unterführung Donaustauf Ost überquert werden.{' '}
-                    <strong>Die Unterführung ist sehr eng und es gilt hier ein Überholverbot.</strong> Danach geht es ein Stück auf den Donauradweg entlang und über die Unterführung bei der Walhalla zurück auf die gewohnte Strecke.
-                  </li>
-                  <li className="list-disc">Statt gerade in den Wald, wird links die Bergstraße hoch gelaufen.</li>
-                  <li className="list-disc">Am Ende des Weges nach rechts und wieder am Ende des Weges rechts.</li>
-                  <li className="list-disc">Wenn man aus dem Wald rauskommt geht es wieder den gleichen Weg zurück zum Ziel.</li>
-                </ul>
+                Vom Start weg geht es in Richtung Osten durch den Fürstengarten und entlang der Walhalla. Bei Sulzbach nach links einen kleinen Anstieg hinauf. Oben, hinter der Walhalla angekommen, links abbiegen und kurz darauf rechts
+                Richtung Reiflding weiter. In Reiflding rechts abbiegen von dort geht es in den Donaustaufer Forst. Im Wald die erste Abzweigung nehmen. Entlang der südlichen Hänge schlängelt sich der Weg erst aufwärts dann abwärts bis zur
+                Jahnstraße. Dort am ersten Wohnhaus Linksabbiegen entlang des „alten Baches“. Danach gerade aus der Fatimastraße folgen und am Ende rechts abbiegen. Nochmals rechts in die Walhallastraße abbiegen bis Ecke Wörther Straße /
+                Ludwigstraße. Dort die Wörther Straße überqueren und im Fürstengarten ins Ziel Walken.
               </div>
             </div>
             <div className="w-full md:w-1/3 md:shrink-0 md:justify-center">
-              <Image src="/assets/images/strecken-waldlauf-2026.jpg" width={405} height={304} alt="Strecke Waldlauf" />
+              <Image src="/assets/images/strecken-waldlauf-2022.jpg" width={405} height={304} alt="Strecke Waldlauf" />
               <div className="my-4">
-                <ButtonLink href="/assets/gpx-2026/walhallalauf-7-km.gpx" className="block w-full">
+                <ButtonLink href="/assets/gpx/walhallalauf-7-km.gpx" className="block w-full">
                   GPX-Datei (Waldlauf Strecke)
                 </ButtonLink>
               </div>
