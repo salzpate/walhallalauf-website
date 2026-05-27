@@ -12,12 +12,12 @@ export const StarterListeData2: TimingPartnerDataItem = {
   name: 'Starterliste',
 };
 
-export const ErgebnisseData: TimingPartnerDataItem = {
+export const ErgebnisseData2: TimingPartnerDataItem = {
   id: 'ergebnisse',
   link: 'https://ergebnisse.zeitgemaess.info/202604011',
   name: 'Ergebnisse 2026',
 };
 
 export const AnmeldungData: TimingPartnerDataItem | undefined = undefined;
-export const ErgebnisseData2: TimingPartnerDataItem | undefined = undefined;
+export const ErgebnisseData: TimingPartnerDataItem | undefined = undefined;
 export const StarterListeData: TimingPartnerDataItem | undefined = undefined;

@@ -33,6 +33,10 @@ function Benefiz(): JSX.Element {
             verwirklichen.
           </p>
           <br></br>
+          <p>
+            <Image src="/assets/images/spende-geschwister-2026.jpg" width={640} height={480} alt="Spendenübergabe 2026" />
+          </p>
+          <br></br>
           <p className="page-section">
             Weitere Informationen finden Sie auf der Homepage der KJF Regensburg:<br></br>
             <PageLink href="http://www.geschwisterclub-regensburg.de" target="_blank" rel="noreferrer">

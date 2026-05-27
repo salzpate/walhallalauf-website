@@ -15,11 +15,11 @@ describe('constants', () => {
   });
 
   it('should export HEADER_LINE_1', () => {
-    expect(HEADER_LINE_1).toBe('15. Walhallalauf');
+    expect(HEADER_LINE_1).toBe('16. Walhallalauf');
   });
 
   it('should export HEADER_LINE_2', () => {
-    expect(HEADER_LINE_2).toBe('26.04.2026');
+    expect(HEADER_LINE_2).toBe('25.04.2027');
   });
 
   it('should export all start times', () => {

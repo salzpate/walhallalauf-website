@@ -7,8 +7,8 @@ import { PageSection, DataList } from '@salzpate/react-ui';
 function Ausschreibung(): JSX.Element {
   return (
     <PageSection headline="Ausschreibung" id="ausschreibung">
-      <DataList headline="Veranstaltung">15. Walhallalauf</DataList>
-      <DataList headline="Termin">Sonntag, 26.04.2026</DataList>
+      <DataList headline="Veranstaltung">16. Walhallalauf</DataList>
+      <DataList headline="Termin">Sonntag, 25.04.2027</DataList>
       <DataList headline="Veranstalter">SV Donaustauf, Abteilung Ausdauer</DataList>
       <DataList headline="Ort">
         Fürstengarten <br />
@@ -93,13 +93,13 @@ function Ausschreibung(): JSX.Element {
       </DataList>
       <DataList headline="Verlosung">Ab ca. 11:00 Uhr findet eine Verlosung für die Teilnehmer der Kinderläufe statt.</DataList>
       <DataList headline="Startgebühren">
-        5 km Lauf bis 25.03.2026 je 13 EUR 7 km Waldlauf, 10 km Lauf und Nordic-Walking bis 25.03.2026 je 14 EUR
+        5 km Lauf bis 24.03.2027 je 13 EUR 7 km Waldlauf, 10 km Lauf und Nordic-Walking bis 24.03.2027 je 14 EUR
         <br />
-        5 km Lauf ab 26.03.2026 je 16 EUR
+        5 km Lauf ab 25.03.2027 je 16 EUR
         <br />
-        7 km Waldlauf, 10 km Lauf und Nordic-Walking ab 26.03.2026 je 17 EUR
+        7 km Waldlauf, 10 km Lauf und Nordic-Walking ab 25.03.2027 je 17 EUR
         <br />
-        5km, 7 km Waldlauf, 10 km Lauf und Nordic-Walking am Veranstaltungstag 26.04.2026 je 20 EUR (3-4 EUR Nachmeldegebühr)
+        5km, 7 km Waldlauf, 10 km Lauf und Nordic-Walking am Veranstaltungstag 25.04.2027 je 20 EUR (3-4 EUR Nachmeldegebühr)
         <br />
         <br />
         Kinderläufe sind kostenfrei
@@ -107,9 +107,9 @@ function Ausschreibung(): JSX.Element {
       <DataList headline="Anmeldung">
         <span className="page-section">über ZEITGEMAESS GmbH</span>
       </DataList>
-      <DataList headline="Anmeldeschluss">Freitag, den 24.04.2026, 18:00 Uhr (Online)</DataList>
+      <DataList headline="Anmeldeschluss">Freitag, den 23.04.2027, 18:00 Uhr (Online)</DataList>
       <DataList headline="Nachmeldung / Ummeldung / Startunterlagen">
-        <h4 className="md:font-bold">Am 25.04.2026 von 17:00 Uhr – 19:00 Uhr:</h4>
+        <h4 className="md:font-bold">Am 24.04.2027 von 17:00 Uhr – 19:00 Uhr:</h4>
         Mehrzweckhalle (Jugendzimmer)
         <br />
         Regensburger Str. 30
@@ -117,7 +117,7 @@ function Ausschreibung(): JSX.Element {
         93093 Donaustauf
         <br />
         <br />
-        <h4 className="md:font-bold">Am 26.04.2026 von 09:30 Uhr bis 30 Minuten vor dem jeweiligen Start möglich:</h4>
+        <h4 className="md:font-bold">Am 25.04.2027 von 09:30 Uhr bis 30 Minuten vor dem jeweiligen Start möglich:</h4>
         Fürstengarten <br />
         (gegenüber Maxstraße 2)
         <br />

@@ -37,9 +37,7 @@ function Informationen(): JSX.Element {
               </div>
             </div>
             <div className="w-full md:w-1/3 md:shrink-0 md:justify-center">
-              <Image src="/assets/images/information-start-ziel-2026.jpg" width={810} height={372} alt="Start-Ziel Bereich" />
-              Start für 2026 des 5 km und 10 km Laufs:
-              <Image src="/assets/images/information-start-2026.jpg" width={810} height={372} alt="Start-Ziel Bereich" />
+              <Image src="/assets/images/information-start-ziel-2025.jpg" width={810} height={372} alt="Start-Ziel Bereich" />
             </div>
           </div>
         </article>
@@ -85,7 +83,7 @@ function Informationen(): JSX.Element {
               93093 Donaustauf
               <br />
               <br />
-              <strong>Sonntag, den 26.04.2026 ab 09:30 Uhr bis 30 Minuten vor dem jeweiligen Start:</strong>
+              <strong>Sonntag, den 25.04.2027 ab 09:30 Uhr bis 30 Minuten vor dem jeweiligen Start:</strong>
               <br />
               <br />
               Fürstengarten <br />
